@@ -1,0 +1,13 @@
+@charset "UTF-8";
+.container1{  
+   width:627x;  
+   border:1px solid #6C9C2C;  
+   height:25px;  
+ }
+#bar{  
+   background:#95CA0D;  
+   float:left; 
+   height:100%;  
+   text-align:center;  
+   line-height:150%; 
+ }  

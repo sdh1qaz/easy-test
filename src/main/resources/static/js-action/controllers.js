@@ -1,6 +1,3 @@
-/**
- * 
- */
 
 actionApp.controller('View1Controller', ['$rootScope', '$scope', '$http', function($rootScope, $scope,$http) {
     $scope.$on('$viewContentLoaded', function() {

@@ -1,6 +1,8 @@
 package com.example.demo;
 
 import java.io.IOException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.List;
 
 import org.apache.http.ParseException;
@@ -10,70 +12,41 @@ import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.demo.constant.RequestDtoConstant;
+import com.demo.constant.ParamPojoContant;
+import com.demo.pojo.ParamPojo;
+import com.demo.util.ExcelUtil;
 import com.demo.util.HttpClientUtil;
 import com.demo.util.Operation;
-import com.demo.util.StringComomnUtil;
 
 
 @RestController
 @SpringBootApplication
 public class DemoApplication {
     
-
-	
-	//返回请求体 requestDTO
-	@RequestMapping("requestDto/getBody")
-	String getRequestDto(String key,String phoneNumber) {
-		String phoneNum = "18878722354";
-		if(!StringComomnUtil.isNullOrEmpry(phoneNumber))
-			phoneNum = phoneNumber;
-		String rd = RequestDtoConstant.operate(key).replaceAll("@@@", phoneNum);
-		return rd;
+    //相应请求加载节点数据
+	@RequestMapping("init/getNodes")
+	String getTreeNodes() throws IOException {
+		return ExcelUtil.getNodesStr();
 	}
 	
-	//响应测试按钮ajax请求
-	@RequestMapping("test/testApi")
-	String testApi(String params) throws ParseException, IOException {
-		StringBuffer buffer = new StringBuffer();
-		buffer.append("http://");
-		//buffer.append("172.20.118.74:20601");
-		buffer.append("localhost:18080");
-		buffer.append("/api/business/gx/");
-		if(params.indexOf("gx_query")!=-1)
-			buffer.append("businessQuery");
-		else
-			buffer.append("businessHandle");
-		System.out.println(buffer.toString());
-		
-		return HttpClientUtil.sendPost(buffer.toString(), params);
-	}
 	
 	//响应批量测试按钮ajax请求
-		@RequestMapping("test/testApiByBatch")
-		String testApiByBatch(String param,String phoneNumber) throws ParseException, IOException {
+		@RequestMapping("test/testBatchApi")
+		String testApiByBatch1(String param) throws ParseException, IOException {
 			StringBuffer bufReturn = new StringBuffer();
-			String phoneNum = "18878722354";
-			if(!StringComomnUtil.isNullOrEmpry(phoneNumber))
-				phoneNum = phoneNumber;
-			String params = RequestDtoConstant.operate(param).replaceAll("@@@", phoneNum);
+			ParamPojo paramPojo = ParamPojoContant.mapParamPojo.get(param);
 			
-			bufReturn.append(param + "  开始测试。。。。。\n请求参数:\n" + params +"\n" );
-			StringBuffer buffer = new StringBuffer();
-			buffer.append("http://");
-			//buffer.append("172.20.118.74:20601");
-			buffer.append("localhost:18080");
-			buffer.append("/api/business/gx/");
-			if(params.indexOf("gx_query")!=-1)
-				buffer.append("businessQuery");
-			else
-				buffer.append("businessHandle");
-			System.out.println(buffer.toString());
-			bufReturn.append("返回报文:\n" + HttpClientUtil.sendPost(buffer.toString(), params) + "\n");
+			String params = paramPojo.getParams();
+			String url = paramPojo.getApiUrl();
+			SimpleDateFormat df = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");//设置日期格式
+			bufReturn.append(df.format(new Date()) + "\n");
+			bufReturn.append(param + "  开始测试。。。。。\n"+"接口地址： " + url  + "\n请求参数:\n" + params +"\n" );
+			
+			bufReturn.append("返回报文:\n" + HttpClientUtil.sendPost(url, params) + "\n");
 			return bufReturn.toString();
 		}
 	
-	
+		
 	@RequestMapping(value="/search",produces={MediaType.APPLICATION_JSON_VALUE})
 	public Person search(String personName){
 		List<String> list = Operation.quchong(personName);

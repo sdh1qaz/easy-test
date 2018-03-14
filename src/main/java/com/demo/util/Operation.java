@@ -13,7 +13,7 @@ import java.util.List;
 
 public class Operation {
     
-	//字符串數字去重
+	//字符串數组去重
 	public static List<String> quchong(String str){
 		List<String> list = null;
 		if(str==null ||"".equals(str)) 

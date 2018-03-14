@@ -1,4 +1,4 @@
-package com.demo.pojo;
+package com.easytestall.pojo;
 /**
  * @ClassName： ParamPojo
  * @Author: dhSu

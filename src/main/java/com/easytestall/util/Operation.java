@@ -1,4 +1,4 @@
-package com.demo.util;
+package com.easytestall.util;
 
 import java.util.Collections;
 import java.util.List;

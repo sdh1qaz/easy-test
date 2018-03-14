@@ -1,4 +1,4 @@
-package com.demo.constant;
+package com.easytestall.constant;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -6,8 +6,8 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import com.demo.pojo.ParamPojo;
-import com.demo.util.ExcelUtil;
+import com.easytestall.pojo.ParamPojo;
+import com.easytestall.util.ExcelUtil;
 
 /**
  * @ClassName： ParamPojoContant

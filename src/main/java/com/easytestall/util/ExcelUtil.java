@@ -1,4 +1,4 @@
-package com.demo.util;
+package com.easytestall.util;
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -17,9 +17,9 @@ import org.springframework.util.ResourceUtils;
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONArray;
 import com.alibaba.fastjson.JSONObject;
-import com.demo.constant.ParamPojoContant;
-import com.demo.pojo.ParamPojo;
-import com.demo.pojo.TreeNode;
+import com.easytestall.constant.ParamPojoContant;
+import com.easytestall.pojo.ParamPojo;
+import com.easytestall.pojo.TreeNode;
 
 /**
  * @ClassName： ExcelUtil

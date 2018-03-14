@@ -12,11 +12,11 @@ import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.demo.constant.ParamPojoContant;
-import com.demo.pojo.ParamPojo;
-import com.demo.util.ExcelUtil;
-import com.demo.util.HttpClientUtil;
-import com.demo.util.Operation;
+import com.easytestall.constant.ParamPojoContant;
+import com.easytestall.pojo.ParamPojo;
+import com.easytestall.util.ExcelUtil;
+import com.easytestall.util.HttpClientUtil;
+import com.easytestall.util.Operation;
 
 
 @RestController

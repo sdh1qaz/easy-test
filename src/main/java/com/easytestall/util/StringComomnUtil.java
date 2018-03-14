@@ -1,4 +1,4 @@
-package com.demo.util;
+package com.easytestall.util;
 
 import java.util.ArrayList;
 import java.util.Arrays;

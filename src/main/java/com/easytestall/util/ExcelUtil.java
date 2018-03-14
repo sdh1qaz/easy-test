@@ -102,7 +102,7 @@ public class ExcelUtil {
       * @return String
       * @throws 
  	 */
-	 public static String getNodesStr() throws IOException {
+	 public static String getNodesStr() {
 		 return getJsonArray(getTreeNodeSet(ParamPojoContant.listParamPojo)).toJSONString();
 	 }
 	 

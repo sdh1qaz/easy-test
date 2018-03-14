@@ -31,10 +31,12 @@
             url: "init/getNodes",
             dataType: "json", //返回的结果为json  
             success: function(data) {
+            	if(data==""||data==null)
+            		alert("接口数据初始化失败！！！\n请把 initail_tps.xls 放在 D 盘根目录下，然后重启工具。");
                 zTree = $.fn.zTree.init($(treeId), setting, data); //创建树
             },
             error: function(data) {
-                alert("数据初始化失败!");
+                alert("解析初始化文件 initail_tps.xls时出错！\n该表中任何一个单元格都不能是纯数字，请检查其格式 !");
             }
         }); 
        

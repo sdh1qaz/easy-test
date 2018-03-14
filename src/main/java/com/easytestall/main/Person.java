@@ -1,4 +1,4 @@
-package com.easytestall.demo;
+package com.easytestall.main;
 
 public class Person {
 	private String name;

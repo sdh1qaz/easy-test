@@ -1,4 +1,4 @@
-package com.easytestall.demo;
+package com.easytestall.main;
 
 import java.io.IOException;
 import java.text.SimpleDateFormat;

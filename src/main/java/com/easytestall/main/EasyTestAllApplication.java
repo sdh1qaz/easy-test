@@ -14,6 +14,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.easytestall.constant.ParamPojoContant;
 import com.easytestall.pojo.ParamPojo;
+import com.easytestall.pojo.TextReduplicationPojo;
 import com.easytestall.util.ExcelUtil;
 import com.easytestall.util.HttpClientUtil;
 import com.easytestall.util.Operation;
@@ -21,7 +22,7 @@ import com.easytestall.util.Operation;
 
 @RestController
 @SpringBootApplication
-public class DemoApplication {
+public class EasyTestAllApplication {
     
     //相应请求加载节点数据
 	@RequestMapping("init/getNodes")
@@ -46,9 +47,9 @@ public class DemoApplication {
 			return bufReturn.toString();
 		}
 	
-		
+    
 	@RequestMapping(value="/search",produces={MediaType.APPLICATION_JSON_VALUE})
-	public Person search(String personName){
+	public TextReduplicationPojo search(String personName){
 		List<String> list = Operation.quchong(personName);
 		StringBuffer stringBuffer = new StringBuffer();
 		int count = 0;
@@ -58,11 +59,11 @@ public class DemoApplication {
 				count = count + 1;
 			}
 		}		
-		return new Person(stringBuffer.toString(),String.valueOf(count));
+		return new TextReduplicationPojo(stringBuffer.toString(),String.valueOf(count));
 		
 	}
 	
 	public static void main(String[] args) {
-		SpringApplication.run(DemoApplication.class, args);
+		SpringApplication.run(EasyTestAllApplication.class, args);
 	}
 }

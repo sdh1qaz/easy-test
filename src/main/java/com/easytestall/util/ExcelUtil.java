@@ -5,13 +5,13 @@ import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.ArrayList;
-import java.util.HashSet;
+import java.util.LinkedHashSet;
 import java.util.List;
+import java.util.Set;
 
 import org.apache.poi.hssf.usermodel.HSSFRow;
 import org.apache.poi.hssf.usermodel.HSSFSheet;
 import org.apache.poi.hssf.usermodel.HSSFWorkbook;
-import org.mockito.internal.stubbing.answers.ReturnsElementsOf;
 import org.springframework.util.ResourceUtils;
 
 import com.alibaba.fastjson.JSON;
@@ -60,8 +60,8 @@ public class ExcelUtil {
      * @return HashSet<TreeNode>
      * @throws 
 	 */
-	 public static HashSet<TreeNode> getTreeNodeSet(List<ParamPojo> listParamPojo){
-		 HashSet<TreeNode> hashSet = new HashSet<TreeNode>();
+	 public static LinkedHashSet<TreeNode> getTreeNodeSet(List<ParamPojo> listParamPojo){
+		 LinkedHashSet<TreeNode> linkedHashSet = new LinkedHashSet<TreeNode>();
 		 for(int i = 0;i < listParamPojo.size();i ++) {
 			 String batchNum = listParamPojo.get(i).getBatchNum();//批次
 			 String businessName = listParamPojo.get(i).getBusinessName();//业务
@@ -70,11 +70,11 @@ public class ExcelUtil {
 			 TreeNode treeNodeBatch = new TreeNode(batchNum, "0", batchNum,true,"");//批次级节点
 			 TreeNode treeNodeBusine = new TreeNode(businessName, batchNum, businessName,false,"");//业务级节点
 			 TreeNode treeNodelua = new TreeNode(luaName, businessName, luaName,false,attr);//业务级节点
-			 hashSet.add(treeNodeBatch);
-			 hashSet.add(treeNodeBusine);
-			 hashSet.add(treeNodelua);
+			 linkedHashSet.add(treeNodeBatch);
+			 linkedHashSet.add(treeNodeBusine);
+			 linkedHashSet.add(treeNodelua);
 		 }
-		 return hashSet;
+		 return linkedHashSet;
 	 }
 	 
 	 /**
@@ -83,9 +83,9 @@ public class ExcelUtil {
      * @return jsonArray
      * @throws 
 	 */
-     public static JSONArray getJsonArray(HashSet<TreeNode> hashSet) {
+     public static JSONArray getJsonArray(Set<TreeNode> linkedHashSet) {
     	 List<TreeNode> list = new ArrayList<TreeNode>();
-    	 list.addAll(hashSet);
+    	 list.addAll(linkedHashSet);
     	 JSONArray jsonArray = new JSONArray();
     	 for (TreeNode treeNode:list) {
     		 JSONObject jsonObject = (JSONObject)JSON.toJSON(treeNode);

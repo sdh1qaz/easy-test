@@ -1,6 +1,6 @@
-package com.easytestall.main;
+package com.easytestall.pojo;
 
-public class Person {
+public class TextReduplicationPojo {
 	private String name;
 	private String amount;//去重后字符串的的个数
 	
@@ -12,10 +12,10 @@ public class Person {
 	public void setAmount(String amount) {
 		this.amount = amount;
 	}
-	public Person() {
+	public TextReduplicationPojo() {
 		super();
 	}
-	public Person(String name, String amount) {
+	public TextReduplicationPojo(String name, String amount) {
 		super();
 		this.name = name;
 		this.amount = amount;

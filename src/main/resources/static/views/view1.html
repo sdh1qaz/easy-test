@@ -1,18 +1,26 @@
 
-
-
 <div class="container-fluid">
+    <script type="text/javascript">  
+    
+   function reduText(){
+      var textBeforeRedu = $("#beforeReduTextArea").val();
+      $.post("redu/reduText", {"text": textBeforeRedu }, function (data) {
+    	  $("#afterReduTextArea").val(data.name + "\n\n去重后有  " + data.amount + " 个字符串"); 
+      });
+      
+    }
+   </script> 
 	<div class="row">
 		<div class="col-md-6">
-			 <textarea class="form-control" rows="15"  ng-model="personName"></textarea>
+			 <textarea class="form-control" rows="15"  id="beforeReduTextArea"></textarea>
 			 <p></p>
-			<button type="button" class="btn btn-primary" ng-click="search()">
+			<button type="button" class="btn btn-primary" onclick="reduText()">
 				去重
 			</button>
 		</div>
 		
 		<div class="col-md-6">
-		     <textarea class="form-control" rows="15"  id="fuck"></textarea>
+		     <textarea class="form-control" rows="15"  id="afterReduTextArea"></textarea>
 		</div>
 	</div>
 </div>

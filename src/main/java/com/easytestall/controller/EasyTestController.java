@@ -39,8 +39,10 @@ public class EasyTestController {
 		SimpleDateFormat df = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");//设置日期格式
 		bufReturn.append(df.format(new Date()) + "\n");
 		bufReturn.append(param + "  开始测试。。。。。\n"+"接口地址： " + url  + "\n请求参数:\n" + params +"\n" );
-		
+		long start = System.currentTimeMillis();
 		bufReturn.append("返回报文:\n" + HttpClientUtil.sendPost(url, params) + "\n");
+		String timeConsume = String.valueOf((System.currentTimeMillis()-start)/1000);
+		bufReturn.append("\n-------->>>用时 " + timeConsume + "秒\n\n" );
 		return bufReturn.toString();
 	}
 }

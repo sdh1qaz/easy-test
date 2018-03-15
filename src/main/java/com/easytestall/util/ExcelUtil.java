@@ -37,7 +37,7 @@ public class ExcelUtil {
 		 List<ParamPojo> listParamPojo = new ArrayList<ParamPojo>();
 		 
 		 //File file = ResourceUtils.getFile("classpath:initail_tps.xls");
-		 File file = ResourceUtils.getFile("D:\\initail_tps.xls");
+		 File file = ResourceUtils.getFile("D:\\initial_tps.xls");
 		 InputStream inputStream = new FileInputStream(file);
 		 //HSSFWorkbook book = new HSSFWorkbook(new FileInputStream(ResourceUtils.getFile("classpath:web-info.xls")));
 		 HSSFWorkbook book = new HSSFWorkbook(inputStream);

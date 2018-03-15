@@ -1,6 +1,6 @@
 <!-- 参考 http://blog.csdn.net/zbw18297786698/article/details/71940731 -->
 <div class="col-md-6">
-   <div style="margin-left: 100px;margin-top: 40px;">
+   <div style="margin-left: 130px;margin-top: 40px;">
     
     <ul id="treeDemo" class="ztree" style="margin-top: 10px; width: 20px; height: 50px;"></ul>
     
@@ -32,11 +32,11 @@
             dataType: "json", //返回的结果为json  
             success: function(data) {
             	if(data==""||data==null)
-            		alert("接口数据初始化失败！！！\n请把 initail_tps.xls 放在 D 盘根目录下，然后重启工具。");
+            		alert("接口数据初始化失败！！！\n\n请把 initail_tps.xls 放在 D 盘根目录下，\n\n表单元格不允许空或纯数字！！！");
                 zTree = $.fn.zTree.init($(treeId), setting, data); //创建树
             },
             error: function(data) {
-                alert("解析初始化文件 initail_tps.xls时出错！\n该表中任何一个单元格都不能是纯数字，请检查其格式 !");
+            	alert("接口数据初始化失败！！！\n请把 initail_tps.xls 放在 D 盘根目录下，\n表单元格不允许空或纯数字！！！");
             }
         }); 
        
@@ -128,7 +128,7 @@
     <div class="container1"> 
     <div id="bar" style="width:0%;"></div>  
     </div>  
-    <textarea class="form-control" rows="22"  id="returnText"></textarea>
+    <textarea class="form-control" rows="23"  id="returnText"></textarea>
     
     <script type="text/javascript">  
 		  function run(percent,isOver){ 

@@ -5,7 +5,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.ComponentScan;
 
 
-@ComponentScan(basePackages = {"com.easytestall.controller"})
+@ComponentScan(basePackages = {"com.easytestall.controller","com.easytest.service.impl"})
 @SpringBootApplication
 public class EasyTestAllApplication {
     

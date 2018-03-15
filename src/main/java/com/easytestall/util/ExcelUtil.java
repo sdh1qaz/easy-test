@@ -17,7 +17,7 @@ import org.springframework.util.ResourceUtils;
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONArray;
 import com.alibaba.fastjson.JSONObject;
-import com.easytestall.constant.ParamPojoContant;
+import com.easytestall.constant.RuntimeData;
 import com.easytestall.pojo.ParamPojo;
 import com.easytestall.pojo.TreeNode;
 
@@ -103,7 +103,7 @@ public class ExcelUtil {
       * @throws 
  	 */
 	 public static String getNodesStr() {
-		 return getJsonArray(getTreeNodeSet(ParamPojoContant.listParamPojo)).toJSONString();
+		 return getJsonArray(getTreeNodeSet(RuntimeData.listParamPojo)).toJSONString();
 	 }
 	 
 	 public static void main(String[] args) throws IOException {

@@ -8,7 +8,7 @@ import org.apache.http.ParseException;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.easytestall.constant.ParamPojoContant;
+import com.easytestall.constant.RuntimeData;
 import com.easytestall.pojo.ParamPojo;
 import com.easytestall.util.ExcelUtil;
 import com.easytestall.util.HttpClientUtil;
@@ -32,7 +32,7 @@ public class EasyTestController {
 	@RequestMapping("test/testBatchApi")
 	String testApiByBatch(String param) throws ParseException, IOException {
 		StringBuffer bufReturn = new StringBuffer();
-		ParamPojo paramPojo = ParamPojoContant.mapParamPojo.get(param);
+		ParamPojo paramPojo = RuntimeData.mapParamPojo.get(param);
 		
 		String params = paramPojo.getParams();
 		String url = paramPojo.getApiUrl();

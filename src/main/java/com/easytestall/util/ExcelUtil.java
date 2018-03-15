@@ -1,5 +1,7 @@
 package com.easytestall.util;
 
+import static org.assertj.core.api.Assertions.in;
+
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
@@ -67,12 +69,22 @@ public class ExcelUtil {
 			 String businessName = listParamPojo.get(i).getBusinessName();//业务
 			 String luaName = listParamPojo.get(i).getLuaName();//接口
 			 String attr = batchNum+"_"+businessName+"_"+luaName;
-			 TreeNode treeNodeBatch = new TreeNode(batchNum, "0", batchNum,true,"");//批次级节点
+			 TreeNode treeNodeBatch = new TreeNode(batchNum, "0", batchNum,false,"");//批次级节点
 			 TreeNode treeNodeBusine = new TreeNode(businessName, batchNum, businessName,false,"");//业务级节点
 			 TreeNode treeNodelua = new TreeNode(luaName, businessName, luaName,false,attr);//业务级节点
 			 linkedHashSet.add(treeNodeBatch);
 			 linkedHashSet.add(treeNodeBusine);
 			 linkedHashSet.add(treeNodelua);
+		 }
+		 int count = 0;
+		 //遍历linkedHashSet，pid=0的头两个父节点open=true
+		 for(TreeNode treeNode:linkedHashSet) {
+			 if("0".equals(treeNode.getPid())) {
+				 treeNode.setOpen(true);
+				 count = count + 1;
+				 if(count > 1)
+					 break;
+			 }
 		 }
 		 return linkedHashSet;
 	 }

@@ -2,6 +2,7 @@ package com.easytest.service.impl;
 
 import java.io.IOException;
 
+import org.apache.log4j.Logger;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Service;
 
@@ -18,9 +19,10 @@ import com.easytestall.util.ExcelUtil;
 
 @Service
 public class LoadDataService implements CommandLineRunner{
+	private static final Logger logger = Logger.getLogger(LoadDataService.class);
 	@Override
     public void run(String... arg0) {
-		System.out.println("启动时加载数据..........");
+		logger.info("启动时加载数据..........");
 		//加载接口信息列表
 		try {
 			RuntimeData.getListparampojo().addAll(ExcelUtil.getParamPojoList());
@@ -31,6 +33,6 @@ public class LoadDataService implements CommandLineRunner{
 		for(ParamPojo paramPojo:RuntimeData.getListparampojo()) {
 			RuntimeData.getMapparampojo().put(paramPojo.getBatchNum()+"_"+paramPojo.getBusinessName()+"_"+paramPojo.getLuaName(), paramPojo);
 		}
-		System.out.println("启动时加载数据完毕..........");
+		logger.info("启动时加载数据完毕..........");
 	}
 }

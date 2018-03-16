@@ -5,6 +5,7 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 
 import org.apache.http.ParseException;
+import org.apache.log4j.Logger;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -21,6 +22,7 @@ import com.easytestall.util.HttpClientUtil;
  */
 @RestController
 public class EasyTestController {
+	private Logger logger = Logger.getLogger(EasyTestController.class);
     
     //加载节点数据
 	@RequestMapping("init/getNodes")
@@ -43,6 +45,7 @@ public class EasyTestController {
 		bufReturn.append("返回报文:\n" + HttpClientUtil.sendPost(url, params) + "\n");
 		String timeConsume = String.valueOf((System.currentTimeMillis()-start)/1000);
 		bufReturn.append("\n-------->>>用时 " + timeConsume + "秒\n\n" );
+		logger.info(bufReturn.toString());
 		return bufReturn.toString();
 	}
 }

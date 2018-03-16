@@ -5,14 +5,14 @@
    function reduText(){
       var textBeforeRedu = $("#beforeReduTextArea").val();
       $.post("redu/reduText", {"text": textBeforeRedu }, function (data) {
-    	  $("#afterReduTextArea").val(data.name + "\n\n去重后有  " + data.amount + " 个字符串"); 
+    	  $("#afterReduTextArea").val(data.name  + "\n去重前有  " + data.amountBefore + " 个文本" + "\n去重后有  " + data.amount + " 个文本"); 
       });
       
     }
    </script> 
 	<div class="row">
 		<div class="col-md-6">
-			 <textarea class="form-control" rows="15"  id="beforeReduTextArea"></textarea>
+			 <textarea class="form-control" rows="20"  id="beforeReduTextArea"></textarea>
 			 <p></p>
 			<button type="button" class="btn btn-primary" onclick="reduText()">
 				去重
@@ -21,7 +21,7 @@
 		</div>
 		
 		<div class="col-md-6">
-		     <textarea class="form-control" rows="15"  id="afterReduTextArea"></textarea>
+		     <textarea class="form-control" rows="20"  id="afterReduTextArea"></textarea>
 		</div>
 	</div>
 </div>
@@ -39,9 +39,9 @@
 				</h4>
 			</div>
 			<div class="modal-body">
-				<p align="left">1.在左侧文本框中逐个输入或者复制接口名称，每一行被认为是一个文本。</p>
-				<p align="left">2.点击去重按钮，右侧文本框显示去重后的接口和个数。</p>
-				<p align="left">3.在小工具文件夹logs目录下可查看工具使用日志。</p>
+				<p align="left">1.在左侧文本框中逐个输入或者粘贴接口名称（文本），两个文本之间以空格（1个或多个）、回车（一个或多个）分开。</p>
+				<p align="left">2.点击去重按钮，右侧文本框显示去重后的接口名称和个数。</p>
+				<p align="left">3.在小工具文件夹logs目录下可查看工具使用日志和去重记录。</p>
 				
 			</div>
 			<div class="modal-footer">

@@ -17,10 +17,37 @@
 			<button type="button" class="btn btn-primary" onclick="reduText()">
 				去重
 			</button>
+			<button class="btn btn-primary" data-toggle="modal" data-target="#myModal">	帮助 </button>
 		</div>
 		
 		<div class="col-md-6">
 		     <textarea class="form-control" rows="15"  id="afterReduTextArea"></textarea>
 		</div>
 	</div>
+</div>
+
+<!-- 模态框（Modal） -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+					&times;
+				</button>
+				<h4 class="modal-title" id="myModalLabel">
+					如何使用?
+				</h4>
+			</div>
+			<div class="modal-body">
+				<p align="left">1.在左侧文本框中逐个输入或者复制接口名称，每一行被认为是一个文本。</p>
+				<p align="left">2.点击去重按钮，右侧文本框显示去重后的接口和个数。</p>
+				<p align="left">3.在小工具文件夹logs目录下可查看工具使用日志。</p>
+				
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-default" data-dismiss="modal">关闭
+				</button>
+			</div>
+		</div><!-- /.modal-content -->
+	</div><!-- /.modal -->
 </div>

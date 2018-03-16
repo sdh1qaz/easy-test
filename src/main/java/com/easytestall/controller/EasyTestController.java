@@ -14,6 +14,8 @@ import com.easytestall.pojo.ParamPojo;
 import com.easytestall.util.ExcelUtil;
 import com.easytestall.util.HttpClientUtil;
 
+import net.bytebuddy.asm.Advice.Return;
+
 /**
  * @ClassName： EasyTestController
  * @Author: dhSu
@@ -28,6 +30,12 @@ public class EasyTestController {
 	@RequestMapping("init/getNodes")
 	String getTreeNodes() throws IOException {
 		return ExcelUtil.getNodesStr();
+	}
+	
+	//返回单个接口的请求入参
+	@RequestMapping("requestDto/getBody")
+	String getRequBody(String interfaceName) throws IOException {
+		return RuntimeData.getMapparampojo().get(interfaceName).getParams();
 	}
 	
 	//批量测试接口

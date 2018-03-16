@@ -1,11 +1,9 @@
 <!-- 参考 http://blog.csdn.net/zbw18297786698/article/details/71940731 -->
-<div class="col-md-6">
-   <div style="margin-left: 130px;margin-top: 40px;">
-    
+<div class="col-md-4">
+   <div style="margin-left: 20px;margin-top: 40px;">
     <ul id="treeDemo" class="ztree" style="margin-top: 10px; width: 20px; height: 50px;"></ul>
+   </div> 
     
-  </div>  
-  
     <script type="text/javascript"> 
     function createTree(url, treeId) {
         var zTree; //用于保存创建的树节点
@@ -24,7 +22,11 @@
                     pIdKey: "pid",
                     rootPId: 0
                 }
+            },
+            callback:{
+            	onClick:zTreeOnClick
             }
+            
         };
          $.ajax({ //请求数据,创建树
             type: 'GET',
@@ -41,7 +43,21 @@
         }); 
        
     }
-    
+      /*点击Ztree节点事件*/
+     function zTreeOnClick(event, treeId, treeNode) {
+          //alert(treeNode.attr);
+          //读取该接口的请求参数
+          var interFaceName = treeNode.attr;
+          if(interFaceName!=null && interFaceName!=""){
+        	  var url = "requestDto/getBody";
+              $.post(url,{"interfaceName":interFaceName},function(params){
+             	 $("#requestParam").val(params); 
+              })
+          }
+     }
+     
+     
+     
      /*点击"复制返回报文"按钮，复制文本域内容到剪切板*/
     /* function jsCopyResPon(){   
         var e=document.getElementById("returnText");//对象是contents   
@@ -146,23 +162,55 @@
 	</div><!-- /.modal -->
 </div>
 
+<div class="col-md-3">
+    <div class="panel panel-default">
+	   <div class="panel-heading">
+		  <h3 class="panel-title">
+			   请求参数	
+		  </h3>
+	   </div>
+	   <div class="panel-body">
+		  <textarea class="form-control" rows="21"  id="requestParam" readonly="readonly"></textarea>
+		  <button type="button" class="btn btn-primary" onClick="editRequParam();">编辑</button>
+		  <button type="button" class="btn btn-primary" onClick="saveRequParam();">保存 </button>
+	   </div>
+    </div>
+</div>
 
-<div class="col-md-6">
-    <p>
-        <img src="views/timg.gif" height="50" width="50" alt="" id="testing"/>
-        <button type="button" class="btn btn-primary" id="startTest">测试</button>
-        <!-- <button type="button" class="btn btn-primary" onClick="jsCopyResPon();">复制返回报文</button>  -->
-        <button type="button" class="btn btn-primary" onClick="clearResPon();">清空</button>
-        <!-- 按钮触发模态框 -->
-        <button class="btn btn-primary" data-toggle="modal" data-target="#myModal">	帮助
-         </button>
-    </p>
-    <div class="container1"> 
-    <div id="bar" style="width:0%;"></div>  
-    </div>  
-    <textarea class="form-control" rows="22"  id="returnText"></textarea>
+<div class="col-md-5">
+
+    <div class="panel panel-default">
+	   <div class="panel-heading">
+		  <div class="container1"> 
+                <div id="bar" style="width:0%;"></div>  
+          </div>  
+	   </div>
+	   <div class="panel-body">
+				  <textarea class="form-control" rows="21"  id="returnText" ></textarea>
+				  <img src="views/timg.gif" height="50" width="50" alt="" id="testing"/>
+		        <button type="button" class="btn btn-primary" id="startTest">测试</button>
+		        <!-- <button type="button" class="btn btn-primary" onClick="jsCopyResPon();">复制返回报文</button>  -->
+		        <button type="button" class="btn btn-primary" onClick="clearResPon();">清空</button>
+		        <!-- 按钮触发模态框 -->
+		        <button class="btn btn-primary" data-toggle="modal" data-target="#myModal">	帮助 </button>
+	   </div>
+	  
+    </div>
+    
     
     <script type="text/javascript">  
+          
+          /*点击编辑按钮，请求参数文本域可以编辑*/
+          function editRequParam(){
+        	  $("#requestParam").removeAttr("readonly");
+          }
+          
+          
+          /*请求参数文本域点击保存*/
+          function saveRequParam(){
+        	  $("#requestParam").attr("readonly","readonly");
+          }
+          
 		  function run(percent,isOver){ 
 			var bar = document.getElementById("bar"); 
 			if(isOver==false)
@@ -171,7 +219,6 @@
 				bar.style.width="100%"; 
 			    $("#testing").hide();
 			}
-				
 		  } 
    </script> 
 </div>

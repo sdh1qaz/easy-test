@@ -25,7 +25,7 @@ import com.easytestall.util.ExcelUtil;
 public class DataUpdateService {
 	private static final Logger logger = Logger.getLogger(DataUpdateService.class);
 	// 每5分钟执行一次
-	@Scheduled(cron = "0/10 * * * * ? ")
+	/*@Scheduled(cron = "0/10 * * * * ? ")
 	public void updateData() {
 		//加载接口信息列表
 		logger.info("从initial_tps.xls中读取最新接口信息。。。。。。。。。。");
@@ -41,5 +41,5 @@ public class DataUpdateService {
 			RuntimeData.getMapparampojo().put(paramPojo.getBatchNum()+"_"+paramPojo.getBusinessName()+"_"+paramPojo.getLuaName(), paramPojo);
 		}
 		logger.info("从initial_tps.xls中读取最新接口信息完毕。。。。。。。。。。");
-	}
+	}*/
 }

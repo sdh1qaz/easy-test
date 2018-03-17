@@ -14,8 +14,6 @@ import com.easytestall.pojo.ParamPojo;
 import com.easytestall.util.ExcelUtil;
 import com.easytestall.util.HttpClientUtil;
 
-import net.bytebuddy.asm.Advice.Return;
-
 /**
  * @ClassName： EasyTestController
  * @Author: dhSu
@@ -26,6 +24,8 @@ import net.bytebuddy.asm.Advice.Return;
 public class EasyTestController {
 	private Logger logger = Logger.getLogger(EasyTestController.class);
     
+	
+	
     //加载节点数据
 	@RequestMapping("init/getNodes")
 	String getTreeNodes() throws IOException {
@@ -36,6 +36,18 @@ public class EasyTestController {
 	@RequestMapping("requestDto/getBody")
 	String getRequBody(String interfaceName) throws IOException {
 		return RuntimeData.getMapparampojo().get(interfaceName).getParams();
+	}
+	
+	
+	//更新某一行的params列单元格内容（请求入参）
+	@RequestMapping("requestDto/updateBody")
+	String updateParam(String params,int rowNum,String attrKey) {
+		RuntimeData.getMapparampojo().get(attrKey).setParams(params);//将新的请求参数更新到内存中
+		boolean result = ExcelUtil.setCell(rowNum, 4, params);
+		if(result)
+			return  "请求参数(第" + (rowNum+1) + "行第5列)修改成功!";
+		else
+			return "修改失败，找不到文件或者文件正在被其他程序使用！";
 	}
 	
 	//批量测试接口

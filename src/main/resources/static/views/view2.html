@@ -5,6 +5,8 @@
    </div> 
     
     <script type="text/javascript"> 
+    var selectNode = 0;
+    var selectNodeAttr="";
     function createTree(url, treeId) {
         var zTree; //用于保存创建的树节点
         var setting = { //设置
@@ -48,25 +50,29 @@
           //alert(treeNode.attr);
           //读取该接口的请求参数
           var interFaceName = treeNode.attr;
+          selectNode = treeNode.rowNum;
+          selectNodeAttr = treeNode.attr;
           if(interFaceName!=null && interFaceName!=""){
         	  var url = "requestDto/getBody";
               $.post(url,{"interfaceName":interFaceName},function(params){
              	 $("#requestParam").val(params); 
               })
           }
+          else
+        	  $("#requestParam").val("");
      }
      
      
      
      /*点击"复制返回报文"按钮，复制文本域内容到剪切板*/
-    /* function jsCopyResPon(){   
-        var e=document.getElementById("returnText");//对象是contents   
+    function jsCopyResPon(){   
+        var e=document.getElementById("requestParam");//对象是contents   
         e.select(); //选择对象   
         tag=document.execCommand("Copy"); //执行浏览器复制命令  
         if(!tag){  
           alert('复制失败');  
         }  
-    }  */
+    } 
     
     /*清空文本域，进度条归0*/
     function clearResPon(){
@@ -172,6 +178,7 @@
 	   </div>
 	   <div class="panel-body">
 		  <textarea class="form-control" rows="21"  id="requestParam" ></textarea>
+		  <button type="button" class="btn btn-primary" onClick="jsCopyResPon();">复制</button>
 		  <button type="button" class="btn btn-primary" onClick="saveRequParam();">保存 </button>
 	   </div>
     </div>
@@ -207,6 +214,12 @@
           /*请求参数文本域点击保存*/
           function saveRequParam(){
         	  /* $("#requestParam").attr("readonly","readonly"); */
+        	  if(selectNode == 0 || selectNodeAttr=="")
+        		  return;
+        	  var params = $("#requestParam").val();
+        	  $.post("requestDto/updateBody",{"params":params,"rowNum":selectNode,"attrKey":selectNodeAttr},function(status){
+        	      alert(status);
+        	  })
           }
           
 		 function run(percent,isOver){ 

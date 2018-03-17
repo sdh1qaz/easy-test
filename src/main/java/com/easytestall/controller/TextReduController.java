@@ -3,10 +3,10 @@ package com.easytestall.controller;
 import java.util.List;
 
 import org.apache.log4j.Logger;
-import org.springframework.context.annotation.ComponentScan;
 import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+
 import com.easytestall.pojo.TextReduplicationPojo;
 import com.easytestall.util.TextOperation;
 

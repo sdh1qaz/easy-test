@@ -2,6 +2,7 @@ package com.easytestall.util;
 
 import java.io.File;
 import java.io.FileInputStream;
+import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
@@ -36,30 +37,58 @@ import com.easytestall.pojo.TreeNode;
 public class ExcelUtil {
 	private static final Logger logger = Logger.getLogger(ExcelUtil.class);
      //读取initial。clx，将其每一行放入对象ParamPojo中，整体的excel内容变成一个list<ParamPojo> 放于内存中
-	 public static List<ParamPojo> getParamPojoList() throws IOException{
+	 public static List<ParamPojo> getParamPojoList() {
 		 List<ParamPojo> listParamPojo = new ArrayList<ParamPojo>();
 		 
 		 //File file = ResourceUtils.getFile("classpath:initail_tps.xls");
-		 File file = ResourceUtils.getFile("D:\\initial_tps.xls");
-		 InputStream inputStream = new FileInputStream(file);
-		 //HSSFWorkbook book = new HSSFWorkbook(new FileInputStream(ResourceUtils.getFile("classpath:web-info.xls")));
-		 HSSFWorkbook book = new HSSFWorkbook(inputStream);
-		 HSSFSheet sheet = book.getSheetAt(0);
+		 
+		try {
+			  File file;
+			  file = ResourceUtils.getFile("D:\\initial_tps.xls");
+			  InputStream inputStream = new FileInputStream(file);
+			  HSSFWorkbook book = new HSSFWorkbook(inputStream);
+			  HSSFSheet sheet = book.getSheetAt(0);
 
-		 for(int i=1; i<sheet.getLastRowNum()+1; i++) {
-	        HSSFRow row = sheet.getRow(i);
-	        String batchNum = row.getCell(0).getStringCellValue(); //批次
-	        String businessName = row.getCell(1).getStringCellValue(); //业务名称
-	        String luaName = row.getCell(2).getStringCellValue();//接口名称
-	        String apiUrl = row.getCell(3).getStringCellValue();//接口url
-	        String params = row.getCell(4).getStringCellValue();//API URL
-	        int rowNum = row.getRowNum();
-	        listParamPojo.add(new ParamPojo(batchNum, businessName, luaName, apiUrl, params,rowNum));
-		 }
-		 book.close();
+			  for(int i=1; i<sheet.getLastRowNum()+1; i++) {
+			        HSSFRow row = sheet.getRow(i);
+			        if(isEmptyRow(row))
+			        	continue;
+			        String batchNum = row.getCell(0).getStringCellValue(); //批次
+			        String businessName = row.getCell(1).getStringCellValue(); //业务名称
+			        String luaName = row.getCell(2).getStringCellValue();//接口名称
+			        String apiUrl = row.getCell(3).getStringCellValue();//接口url
+			        String params = row.getCell(4).getStringCellValue();//API URL
+			        int rowNum = row.getRowNum();
+			        listParamPojo.add(new ParamPojo(batchNum, businessName, luaName, apiUrl, params,rowNum));
+			  }
+			 book.close();
+		} catch (FileNotFoundException e) {
+			//e.printStackTrace();
+			logger.info("initial_tps.xls找不到。。。" + e.toString());
+			return listParamPojo;
+		}
+		catch (IOException e) {
+			logger.info("读取initial_tps.xls文件出错。。。。。" + e.toString());
+			return listParamPojo;
+		}
+		 
 		 return listParamPojo;
 	 }
-	 
+	
+	 /**
+     * 判断是不是空行
+     * @param HSSFRow
+     * @return boolean
+	 */
+	public static boolean isEmptyRow(HSSFRow row) {
+		for (int c = row.getFirstCellNum(); c < row.getLastCellNum(); c++) {
+			Cell cell = row.getCell(c);
+			if (cell != null && cell.getCellType() != Cell.CELL_TYPE_BLANK)
+				return false;
+		}
+		return true;
+	}
+
 	 /**
      * 生成不重复的批次级、业务级、接口级节点集合
      * @param List<ParamPojo>
@@ -154,12 +183,12 @@ public class ExcelUtil {
 	 }
 	 
 	 public static void main(String[] args) throws IOException {
-		 /*List<ParamPojo> listParamPojo = getParamPojoList();
+		 List<ParamPojo> listParamPojo = getParamPojoList();
 		 for (ParamPojo paramPojo:listParamPojo) {
 			 System.out.println(paramPojo.toString());
-		 }*/
+		 }
 		 
-		 setCell(0, 0, "妈了逼");
+		 //setCell(0, 0, "妈了逼");
 		 
 		// System.out.println(getJsonArray(getTreeNodeSet(getParamPojoList())));
 	}

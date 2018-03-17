@@ -180,6 +180,7 @@
 		  <textarea class="form-control" rows="21"  id="requestParam" ></textarea>
 		  <button type="button" class="btn btn-primary" onClick="jsCopyResPon();">复制</button>
 		  <button type="button" class="btn btn-primary" onClick="saveRequParam();">保存 </button>
+		  <button type="button" class="btn btn-primary" onClick="updateRequParam();">更新 </button>
 	   </div>
     </div>
 </div>
@@ -210,6 +211,14 @@
     
     <script type="text/javascript">  
           
+          /*把excel中心加的接口信息更新到ztree*/
+          function updateRequParam(){
+        	  $.get("ztree/updateNodes",function(status){
+        		  //刷新当前页面
+        		  window.location.reload();
+        		  console.log(status);
+        	  })
+          }
           
           /*请求参数文本域点击保存*/
           function saveRequParam(){

@@ -3,6 +3,7 @@ package com.easytestall.controller;
 import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.HashMap;
 
 import org.apache.http.ParseException;
 import org.apache.log4j.Logger;
@@ -12,6 +13,7 @@ import org.springframework.web.bind.annotation.RestController;
 import com.easytestall.constant.RuntimeData;
 import com.easytestall.pojo.ParamPojo;
 import com.easytestall.util.ExcelUtil;
+import com.easytestall.util.HashMapUtil;
 import com.easytestall.util.HttpClientUtil;
 
 /**
@@ -38,6 +40,23 @@ public class EasyTestController {
 		return RuntimeData.getMapparampojo().get(interfaceName).getParams();
 	}
 	
+	//把新添加到excel中的接口数据更新到内存中
+	@RequestMapping("ztree/updateNodes")
+	String updateTreeNodes() {
+		String status="从initial_tps.xls中更新数据成功";
+		logger.info("从initial_tps.xls中读取最新接口信息。。。。。。。。。。");
+		RuntimeData.getListparampojo().clear();//清空原信息列表
+		RuntimeData.getListparampojo().addAll(ExcelUtil.getParamPojoList());
+		//加载批次_业务名_接口名 与接口信息的映射
+		for(ParamPojo paramPojo:RuntimeData.getListparampojo()) {
+			RuntimeData.getMapparampojo().put(paramPojo.getBatchNum()+"_"+paramPojo.getBusinessName()+"_"+paramPojo.getLuaName(), paramPojo);
+		}
+		logger.info("从initial_tps.xls中读取最新接口信息完毕。。。。。。。。。。");
+		/*logger.info("遍历Mapparampojo。。。。。。。。。。");
+		HashMapUtil.goThoughHashMap((HashMap<String, ParamPojo>)RuntimeData.getMapparampojo(), true);
+		logger.info("遍历Mapparampojo完毕。。。。。。。。。。");*/
+		return status;
+	}
 	
 	//更新某一行的params列单元格内容（请求入参）
 	@RequestMapping("requestDto/updateBody")

@@ -1,16 +1,8 @@
 package com.easytest.service.impl;
 
-import java.io.IOException;
-
-import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Configurable;
 import org.springframework.scheduling.annotation.EnableScheduling;
-import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Component;
-
-import com.easytestall.constant.RuntimeData;
-import com.easytestall.pojo.ParamPojo;
-import com.easytestall.util.ExcelUtil;
 
 /**
  * @ClassName： DataUpdateService
@@ -23,7 +15,7 @@ import com.easytestall.util.ExcelUtil;
 @Configurable
 @EnableScheduling
 public class DataUpdateService {
-	private static final Logger logger = Logger.getLogger(DataUpdateService.class);
+	//private static final Logger logger = Logger.getLogger(DataUpdateService.class);
 	// 每5分钟执行一次
 	/*@Scheduled(cron = "0/10 * * * * ? ")
 	public void updateData() {

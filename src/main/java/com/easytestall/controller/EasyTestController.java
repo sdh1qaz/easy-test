@@ -3,7 +3,6 @@ package com.easytestall.controller;
 import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
-import java.util.HashMap;
 
 import org.apache.http.ParseException;
 import org.apache.log4j.Logger;
@@ -13,7 +12,6 @@ import org.springframework.web.bind.annotation.RestController;
 import com.easytestall.constant.RuntimeData;
 import com.easytestall.pojo.ParamPojo;
 import com.easytestall.util.ExcelUtil;
-import com.easytestall.util.HashMapUtil;
 import com.easytestall.util.HttpClientUtil;
 
 /**

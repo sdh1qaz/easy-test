@@ -12,7 +12,6 @@ import java.util.List;
 import java.util.Set;
 
 import org.apache.log4j.Logger;
-import org.apache.poi.hssf.usermodel.HSSFCell;
 import org.apache.poi.hssf.usermodel.HSSFRow;
 import org.apache.poi.hssf.usermodel.HSSFSheet;
 import org.apache.poi.hssf.usermodel.HSSFWorkbook;
@@ -38,10 +37,10 @@ public class ExcelUtil {
 	private static final Logger logger = Logger.getLogger(ExcelUtil.class);
      //读取initial。clx，将其每一行放入对象ParamPojo中，整体的excel内容变成一个list<ParamPojo> 放于内存中
 	 public static List<ParamPojo> getParamPojoList() {
-		 List<ParamPojo> listParamPojo = new ArrayList<ParamPojo>();
+		List<ParamPojo> listParamPojo = new ArrayList<ParamPojo>();
 		 
 		 //File file = ResourceUtils.getFile("classpath:initail_tps.xls");
-		 
+		int i = 0;
 		try {
 			  File file;
 			  file = ResourceUtils.getFile("D:\\initial_tps.xls");
@@ -49,7 +48,7 @@ public class ExcelUtil {
 			  HSSFWorkbook book = new HSSFWorkbook(inputStream);
 			  HSSFSheet sheet = book.getSheetAt(0);
 
-			  for(int i=1; i<sheet.getLastRowNum()+1; i++) {
+			  for(i=1; i<sheet.getLastRowNum()+1; i++) {
 			        HSSFRow row = sheet.getRow(i);
 			        if(isEmptyRow(row))
 			        	continue;
@@ -69,6 +68,10 @@ public class ExcelUtil {
 		}
 		catch (IOException e) {
 			logger.info("读取initial_tps.xls文件出错。。。。。" + e.toString());
+			return listParamPojo;
+		}
+		catch(IllegalStateException e) {
+			logger.info("读取第" + (i+1) + "行出错，该行单元格有纯数字或空值！！！！" + e.toString());
 			return listParamPojo;
 		}
 		 
@@ -131,7 +134,7 @@ public class ExcelUtil {
 	 */
      public static JSONArray getJsonArray(Set<TreeNode> linkedHashSet) {
     	 List<TreeNode> list = new ArrayList<TreeNode>();
-    	 list.addAll(linkedHashSet);
+    	 list.addAll(linkedHashSet);//将不重复的有序的TreeNode对象放到list中
     	 JSONArray jsonArray = new JSONArray();
     	 for (TreeNode treeNode:list) {
     		 JSONObject jsonObject = (JSONObject)JSON.toJSON(treeNode);

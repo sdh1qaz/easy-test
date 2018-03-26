@@ -34,7 +34,7 @@ public class TextReduController {
 			}
 		}	
 		int countBefore = TextOperation.getAmount(text);
-		logger.info("文本去重。输入文本：" + text + "去重后文本：" + stringBuffer.toString() + "去重前的文本个数： " + countBefore + ",  去重后的文本个数： " + count);
+		logger.info("文本去重。\n输入文本：\n" + text + "\n去重后文本：\n" + stringBuffer.toString() + "去重前的文本个数： " + countBefore + ",  去重后的文本个数： " + count);
 		return new TextReduplicationPojo(stringBuffer.toString(),String.valueOf(count),String.valueOf(countBefore));
 	}
 }

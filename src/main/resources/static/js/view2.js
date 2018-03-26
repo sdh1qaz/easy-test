@@ -2,9 +2,10 @@
  * 在view2.html中应用的js
  */
 
-var selectNode = 0;
-    var selectNodeAttr="";
-    function createTree(url, treeId) {
+    var selectNode = 0;//全局变量
+    var selectNodeAttr="";//全局变量
+    
+    function createTree(treeId){ //创建接口Tree函数
         var zTree; //用于保存创建的树节点
         var setting = { //设置
             check: {
@@ -16,10 +17,10 @@ var selectNode = 0;
             },
             data: {
                 simpleData: {
-                    enable: true,
-                    idKey: "id",
-                    pIdKey: "pid",
-                    rootPId: 0
+                    enable: true,  //确定 zTree 初始化时的节点数据、异步加载时的节点数据、或 addNodes 方法中输入的 newNodes 数据是否采用简单数据模式 (Array)
+                    idKey: "id",  //节点数据中保存唯一标识的属性名称
+                    pIdKey: "pid",//节点数据中保存其父节点唯一标识的属性名称
+                    rootPId: 0   //用于修正根节点父节点数据，即 pIdKey 指定的属性值
                 }
             },
             callback:{
@@ -27,7 +28,7 @@ var selectNode = 0;
             }
             
         };
-         $.ajax({ //请求数据,创建树
+        $.ajax({ //请求数据,创建树
             type: 'GET',
             url: "init/getNodes",
             dataType: "json", //返回的结果为json  
@@ -39,7 +40,7 @@ var selectNode = 0;
             error: function(data) {
             	alert("接口数据初始化失败！！！\n请把 initail_tps.xls 放在 D 盘根目录下，\n表单元格不允许空或纯数字！！！");
             }
-        }); 
+       }); 
        
     }
       /*点击Ztree节点事件*/
@@ -73,14 +74,14 @@ var selectNode = 0;
     
     /*清空文本域，进度条归0*/
     function clearResPon(){
-		  $("#returnText").val("");
-		  returnZero();
-		 //alert("你好");
+		$("#returnText").val("");
+		returnZero();
+		//alert("你好");
 	 }
     
     /*采用递归的方法进行循环ajax调用*/
     function Loop_ajax(index, array) {
-        if (index < array.length) {           
+        if (index < array.length) {
             var param = array[index];
             var cont = $("#returnText").val();
             $.post("test/testBatchApi", {"param": param }, function (data) {
@@ -104,7 +105,7 @@ var selectNode = 0;
     
     /*文档加载完后激活后要做的*/
     $(document).ready(function() {
-        createTree("jsonData.json", "#treeDemo"); //创建
+        createTree("#treeDemo"); //创建接口ztree
         $("#testing").hide();
         $("#startTest").click(function() {
         	returnZero();

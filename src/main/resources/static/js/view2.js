@@ -28,19 +28,31 @@
             }
             
         };
-        $.ajax({ //请求数据,创建树
+        /*$.ajax({ //请求数据,创建树
             type: 'GET',
             url: "init/getNodes",
+            async:false,
             dataType: "json", //返回的结果为json  
             success: function(data) {
-            	if(data==""||data==null)
-            		alert("接口数据初始化失败！！！\n\n请把 initail_tps.xls 放在 D 盘根目录下，\n\n表单元格不允许空或纯数字！！！");
+            	if(data.indexOf("初始化")==0){
+            		alert(data);
+            		return;
+            	}
                 zTree = $.fn.zTree.init($(treeId), setting, data); //创建树
             },
             error: function(data) {
-            	alert("接口数据初始化失败！！！\n请把 initail_tps.xls 放在 D 盘根目录下，\n表单元格不允许空或纯数字！！！");
+            	//alert("请求出错");
+            	//console.log(data);
             }
-       }); 
+       }); */
+        $.getJSON("init/getNodes",function(data){
+        	if(data.info != null){
+        		alert(data.info);
+        		return;
+        	}
+        	zTree = $.fn.zTree.init($(treeId), setting, data); //创建树
+        	
+        })
        
     }
       /*点击Ztree节点事件*/
@@ -138,8 +150,11 @@
     function updateRequParam(){
   	  $.get("ztree/updateNodes",function(status){
   		  //刷新当前页面
+  		  if(status != "ok"){
+  			alert(status);
+  			return;
+  		  }
   		  window.location.reload();
-  		  console.log(status);
   	  })
     }
     

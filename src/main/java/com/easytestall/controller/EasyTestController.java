@@ -9,6 +9,7 @@ import org.apache.log4j.Logger;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.easytest.exception.EasyTestException;
 import com.easytestall.constant.RuntimeData;
 import com.easytestall.pojo.ParamPojo;
 import com.easytestall.util.ExcelUtil;
@@ -28,7 +29,7 @@ public class EasyTestController {
 	
     //加载节点数据
 	@RequestMapping("init/getNodes")
-	String getTreeNodes() throws IOException {
+	String getTreeNodes(){
 		return ExcelUtil.getNodesStr();
 	}
 	
@@ -41,18 +42,23 @@ public class EasyTestController {
 	//把新添加到excel中的接口数据更新到内存中  
 	@RequestMapping("ztree/updateNodes")
 	String updateTreeNodes() {
-		String status="从initial_tps.xls中更新数据成功";
+		String status="ok";
 		logger.info("从initial_tps.xls中读取最新接口信息。。。。。。。。。。");
 		RuntimeData.getListparampojo().clear();//清空原信息列表
-		RuntimeData.getListparampojo().addAll(ExcelUtil.getParamPojoList());
+		try {
+			RuntimeData.getListparampojo().addAll(ExcelUtil.getParamPojoList());
+			RuntimeData.dataIsOk = 0;
+			RuntimeData.notOkReason = "更新成功";
+		} catch (EasyTestException e) {
+			RuntimeData.dataIsOk = e.getExceptionCode();
+			RuntimeData.notOkReason = e.getMessage();
+			return "更新失败,错误编号" + e.getExceptionCode() + ", " + e.getMessage();
+		}
 		//加载批次_业务名_接口名 与接口信息的映射
 		for(ParamPojo paramPojo:RuntimeData.getListparampojo()) {
 			RuntimeData.getMapparampojo().put(paramPojo.getBatchNum()+"_"+paramPojo.getBusinessName()+"_"+paramPojo.getLuaName(), paramPojo);
 		}
 		logger.info("从initial_tps.xls中读取最新接口信息完毕。。。。。。。。。。");
-		/*logger.info("遍历Mapparampojo。。。。。。。。。。");
-		HashMapUtil.goThoughHashMap((HashMap<String, ParamPojo>)RuntimeData.getMapparampojo(), true);
-		logger.info("遍历Mapparampojo完毕。。。。。。。。。。");*/
 		return status;
 	}
 	

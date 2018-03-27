@@ -7,6 +7,7 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.LinkedHashSet;
 import java.util.List;
 import java.util.Set;
@@ -16,11 +17,13 @@ import org.apache.poi.hssf.usermodel.HSSFRow;
 import org.apache.poi.hssf.usermodel.HSSFSheet;
 import org.apache.poi.hssf.usermodel.HSSFWorkbook;
 import org.apache.poi.ss.usermodel.Cell;
+import org.springframework.aop.ThrowsAdvice;
 import org.springframework.util.ResourceUtils;
 
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONArray;
 import com.alibaba.fastjson.JSONObject;
+import com.easytest.exception.EasyTestException;
 import com.easytestall.constant.RuntimeData;
 import com.easytestall.pojo.ParamPojo;
 import com.easytestall.pojo.TreeNode;
@@ -32,11 +35,10 @@ import com.easytestall.pojo.TreeNode;
  * @Date:Created in 2018年3月12日
  */
 
-
 public class ExcelUtil {
 	private static final Logger logger = Logger.getLogger(ExcelUtil.class);
      //读取initial。clx，将其每一行放入对象ParamPojo中，整体的excel内容变成一个list<ParamPojo> 放于内存中
-	 public static List<ParamPojo> getParamPojoList() {
+	 public static List<ParamPojo> getParamPojoList() throws EasyTestException {
 		List<ParamPojo> listParamPojo = new ArrayList<ParamPojo>();
 		 
 		 //File file = ResourceUtils.getFile("classpath:initail_tps.xls");
@@ -64,15 +66,22 @@ public class ExcelUtil {
 		} catch (FileNotFoundException e) {
 			//e.printStackTrace();
 			logger.info("initial_tps.xls找不到。。。" + e.toString());
-			return listParamPojo;
+			//return listParamPojo;
+			throw new EasyTestException("找不到initial_tps.xls",e,1001);
 		}
 		catch (IOException e) {
 			logger.info("读取initial_tps.xls文件出错。。。。。" + e.toString());
-			return listParamPojo;
+			//return listParamPojo;
+			throw new EasyTestException("读取initial_tps.xls文件出错",e,1002);
 		}
 		catch(IllegalStateException e) {
-			logger.info("读取第" + (i+1) + "行出错，该行单元格有纯数字或空值！！！！" + e.toString());
-			return listParamPojo;
+			logger.info("读取initial_tps.xls文件第" + (i+1) + "行出错，该行单元格有纯数字！！！！" + e.toString());
+			//return listParamPojo;
+			throw new EasyTestException("读取initial_tps.xls文件第" + (i+1) + "行出错，该行单元格有纯数字！！！！",e,1003);
+		}
+		catch(NullPointerException e) {
+			logger.info("读取initial_tps.xls文件第" + (i+1) + "行出错，该行有空值！！！" + e.toString());
+			throw new EasyTestException("读取initial_tps.xls文件第" + (i+1) + "行出错，该行有空值！！！",e,1004);
 		}
 		 
 		 return listParamPojo;
@@ -150,7 +159,13 @@ public class ExcelUtil {
       * @throws IOException 
  	 */
 	 public static String getNodesStr() {
-		 return getJsonArray(getTreeNodeSet(RuntimeData.listParamPojo)).toJSONString();
+		 if(RuntimeData.dataIsOk != 0) {
+			 String json = "{\"info\":\"初始化失败！错误编码 :" + RuntimeData.dataIsOk +  ", " + RuntimeData.notOkReason +",请修改后点击更新按钮\"}";
+			 JSONObject jsonObject = JSON.parseObject(json);//json字符串转换成jsonobject对象
+			 return jsonObject.toJSONString();
+		 }
+		 else
+			 return getJsonArray(getTreeNodeSet(RuntimeData.listParamPojo)).toJSONString();
 	 }
 	 
 	 /**
@@ -164,7 +179,6 @@ public class ExcelUtil {
 		boolean status = false;
 		String fileName = "D:\\initial_tps.xls";
 		try {
-			//D:\\initial_tps.xls
 			FileInputStream io = new FileInputStream(new File(fileName));
 			HSSFWorkbook book = new HSSFWorkbook(io); // 读取的文件
 			HSSFSheet  sheet = book.getSheetAt(0);
@@ -185,14 +199,10 @@ public class ExcelUtil {
 		return status;
 	 }
 	 
-	 public static void main(String[] args) throws IOException {
+	 public static void main(String[] args) throws EasyTestException {
 		 List<ParamPojo> listParamPojo = getParamPojoList();
 		 for (ParamPojo paramPojo:listParamPojo) {
 			 System.out.println(paramPojo.toString());
 		 }
-		 
-		 //setCell(0, 0, "妈了逼");
-		 
-		// System.out.println(getJsonArray(getTreeNodeSet(getParamPojoList())));
 	}
 }

@@ -15,4 +15,12 @@ actionApp.controller('View2Controller', ['$rootScope', '$scope',  function($root
     
 }]);
 
+actionApp.controller('View3Controller', ['$rootScope', '$scope',  function($rootScope, $scope) {
+    $scope.$on('$viewContentLoaded', function() {
+    	console.log('页面加载完成');
+    });
+    
+    
+}]);
+
 

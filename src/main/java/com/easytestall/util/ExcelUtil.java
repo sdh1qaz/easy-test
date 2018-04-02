@@ -115,14 +115,14 @@ public class ExcelUtil {
 			 String luaName = listParamPojo.get(i).getLuaName();//接口
 			 String attr = batchNum+"_"+businessName+"_"+luaName;
 			 int rowNum = listParamPojo.get(i).getRowNum();
-			 TreeNode treeNodeBatch = new TreeNode(batchNum, "0", batchNum,false,"",0);//批次级节点
-			 TreeNode treeNodeBusine = new TreeNode(businessName, batchNum, businessName,false,"",0);//业务级节点
-			 TreeNode treeNodelua = new TreeNode(luaName, businessName, luaName,false,attr,rowNum);//接口级节点
+			 TreeNode treeNodeBatch = new TreeNode(batchNum, "0", batchNum,true,"",0);//批次级节点
+			 TreeNode treeNodeBusine = new TreeNode(businessName, batchNum, businessName,true,"",0);//业务级节点
+			 TreeNode treeNodelua = new TreeNode(luaName, businessName, luaName,true,attr,rowNum);//接口级节点
 			 linkedHashSet.add(treeNodeBatch);
 			 linkedHashSet.add(treeNodeBusine);
 			 linkedHashSet.add(treeNodelua);
 		 }
-		 int count = 0;
+		 /*int count = 0;
 		 //遍历linkedHashSet，pid=0的头两个父节点open=true
 		 for(TreeNode treeNode:linkedHashSet) {
 			 if("0".equals(treeNode.getPid())) {
@@ -131,7 +131,7 @@ public class ExcelUtil {
 				 if(count > 1)
 					 break;
 			 }
-		 }
+		 }*/
 		 return linkedHashSet;
 	 }
 	 

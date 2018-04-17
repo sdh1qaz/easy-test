@@ -59,8 +59,9 @@ public class ExcelUtil {
 			        String luaName = row.getCell(2).getStringCellValue();//接口名称
 			        String apiUrl = row.getCell(3).getStringCellValue();//接口url
 			        String params = row.getCell(4).getStringCellValue();//API URL
+			        String retFieldDesp = row.getCell(5).getStringCellValue();//返回报文字段含义说明
 			        int rowNum = row.getRowNum();
-			        listParamPojo.add(new ParamPojo(batchNum, businessName, luaName, apiUrl, params,rowNum));
+			        listParamPojo.add(new ParamPojo(batchNum, businessName, luaName, apiUrl, params,retFieldDesp,rowNum));
 			  }
 			 book.close();
 		} catch (FileNotFoundException e) {

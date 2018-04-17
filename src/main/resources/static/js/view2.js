@@ -75,14 +75,14 @@
      
      
      /*点击"复制返回报文"按钮，复制文本域内容到剪切板*/
-   /* function jsCopyResPon(){   
+   function jsCopyResPon(){   
         var e=document.getElementById("requestParam");//对象是contents   
         e.select(); //选择对象   
         tag=document.execCommand("Copy"); //执行浏览器复制命令  
         if(!tag){  
           alert('复制失败');  
         }  
-    } */
+    }
     
     /*清空文本域，进度条归0*/
     function clearResPon(){

@@ -81,11 +81,14 @@ public class EasyTestController {
 		
 		String params = paramPojo.getParams();
 		String url = paramPojo.getApiUrl();
+		String retFieldDesp = paramPojo.getRetFieldDesp();//返回报文字段解释
 		SimpleDateFormat df = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");//设置日期格式
 		bufReturn.append(df.format(new Date()) + "\n");
 		bufReturn.append(param + "  开始测试。。。。。\n"+"接口地址： " + url  + "\n请求参数:\n" + params +"\n" );
 		long start = System.currentTimeMillis();
 		bufReturn.append("返回报文:\n" + HttpClientUtil.sendPost(url, params) + "\n");
+		//添加返回报文字段解释
+		bufReturn.append("\n#######字段解释#########:\n" + retFieldDesp + "\n");
 		String timeConsume = String.valueOf((System.currentTimeMillis()-start)/1000);
 		bufReturn.append("\n-------->>>用时 " + timeConsume + "秒\n\n" );
 		logger.info(bufReturn.toString());

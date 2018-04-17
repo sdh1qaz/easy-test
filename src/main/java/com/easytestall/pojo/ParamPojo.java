@@ -13,17 +13,19 @@ public class ParamPojo {
     private String luaName;//Lua接口名称
     private String apiUrl;//接口访问路径
     private String params;//入参
+    private String retFieldDesp;//返回报文字段解释
     private int rowNum;//对应的initial_tps.xls中的行
     
 	
 
-	public ParamPojo(String batchNum, String businessName, String luaName, String apiUrl, String params, int rowNum) {
+	public ParamPojo(String batchNum, String businessName, String luaName, String apiUrl, String params,String retFieldDesp, int rowNum) {
 		super();
 		this.batchNum = batchNum;
 		this.businessName = businessName;
 		this.luaName = luaName;
 		this.apiUrl = apiUrl;
 		this.params = params;
+		this.retFieldDesp = retFieldDesp;
 		this.rowNum = rowNum;
 	}
 
@@ -78,15 +80,22 @@ public class ParamPojo {
 		this.params = params;
 	}
 
+	
+	public String getRetFieldDesp() {
+		return retFieldDesp;
+	}
+
+
+	public void setRetFieldDesp(String retFieldDesp) {
+		this.retFieldDesp = retFieldDesp;
+	}
+
 
 	@Override
 	public String toString() {
 		return "ParamPojo [batchNum=" + batchNum + ", businessName=" + businessName + ", luaName=" + luaName
-				+ ", apiUrl=" + apiUrl + ", params=" + params + ", rowNum=" + rowNum + "]";
+				+ ", apiUrl=" + apiUrl + ", params=" + params + ", retFieldDesp=" + retFieldDesp + ", rowNum=" + rowNum
+				+ "]";
 	}
 
-	
-	
-	
-    
 }

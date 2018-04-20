@@ -9,10 +9,10 @@ var actionApp = angular.module('actionApp',['ngRoute']);
 
 actionApp.config(['$routeProvider' , function($routeProvider) {
 	
-	$routeProvider.when('/oper', { 
+	$routeProvider.when('/apicount', { 
 		controller: 'View1Controller', 
 		templateUrl: 'views/view1.html', 
-	}).when('/directive', {
+	}).when('/batchtest', {
 		controller: 'View2Controller',
 		templateUrl: 'views/view2.html',
 	}).when('/casetest', {

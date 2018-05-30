@@ -1,6 +1,10 @@
 
 <div class="container-fluid">
     <script type="text/javascript">  
+    function clearAll(){
+    	$("#beforeReduTextArea").val("");
+    	$("#afterReduTextArea").val("");
+    }
     
    function reduText(){
       var textBeforeRedu = $("#beforeReduTextArea").val();
@@ -9,6 +13,35 @@
       });
       
     }
+   
+   function leftHasRightNot(){
+	      var textBeforeRedu = $("#beforeReduTextArea").val();
+	      var afterReduTextArea = $("#afterReduTextArea").val();
+	      if(textBeforeRedu==''||textBeforeRedu==null || afterReduTextArea=='' || afterReduTextArea==null){
+	    	  alert("比较时左右文本域不允许为空！！！");
+	    	  return;
+	      }
+	      $.post("redu/leftHasRightNot", {"textLeft": textBeforeRedu,"textRight":afterReduTextArea }, function (data) {
+	    	  $("#afterReduTextArea").val("################比较结果#######################\n左边文本域中有、右边文本域中没有的字符串: "
+	    			  + data.number + " 个\n" + data.textLeft + "\n\n############################################\n" + afterReduTextArea); 
+	      });
+	      
+   }
+   
+   function leftNotRightHas(){
+	      var textBeforeRedu = $("#beforeReduTextArea").val();
+	      var afterReduTextArea = $("#afterReduTextArea").val();
+	      if(textBeforeRedu==''||textBeforeRedu==null || afterReduTextArea=='' || afterReduTextArea==null){
+	    	  alert("比较时左右文本域不允许为空！！！");
+	    	  return;
+	      }
+	      $.post("redu/leftNotRightHas", {"textLeft": textBeforeRedu,"textRight":afterReduTextArea }, function (data) {
+	    	  $("#afterReduTextArea").val("################比较结果#######################\n左边文本域中无、右边文本域中有的字符串: "
+	    			  + data.number + " 个\n" + data.textRight + "\n\n############################################\n" + afterReduTextArea); 
+	      });
+	      
+   }
+   
    </script> 
 	<div class="row">
 		<div class="col-md-6">
@@ -17,11 +50,21 @@
 			<button type="button" class="btn btn-primary" onclick="reduText()">
 				去重
 			</button>
+			<button type="button" class="btn btn-primary" onclick="clearAll()">
+				清空
+			</button>
 			<button class="btn btn-primary" data-toggle="modal" data-target="#myModal">	帮助 </button>
+			
 		</div>
 		
 		<div class="col-md-6">
 		     <textarea class="form-control" rows="20"  id="afterReduTextArea"></textarea>
+		     <button type="button" class="btn btn-primary" onclick="leftHasRightNot()">
+				左有右无
+			</button>
+			 <button type="button" class="btn btn-primary" onclick="leftNotRightHas()">
+				左无右有
+			</button>
 		</div>
 	</div>
 </div>
@@ -41,7 +84,9 @@
 			<div class="modal-body">
 				<p align="left">1.在左侧文本框中逐个输入或者粘贴接口名称（文本），两个文本之间以空格（1个或多个）、回车（一个或多个）分开。</p>
 				<p align="left">2.点击去重按钮，右侧文本框显示去重后的接口名称和个数。</p>
-				<p align="left">3.在小工具文件夹logs目录下可查看工具使用日志和去重记录。</p>
+				<p align="left">3.点击“左有右无”按钮，在右边文本域中将看到左边文本域中有右边文本域中没有的字符串。</p>
+				<p align="left">4.点击“左无右有”按钮，在右边文本域中将看到左边文本域中没有右边文本域中有的字符串。</p>
+				<p align="left">5.在小工具文件夹logs目录下可查看工具使用日志和去重记录。</p>
 				
 			</div>
 			<div class="modal-footer">

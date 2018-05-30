@@ -1,0 +1,2497 @@
+2018-04-01 09:43:39,072  INFO EasyTestAllApplication:16 - 工具开始启动。。。。。。。。。。。。
+2018-04-01 09:43:39,732  INFO EasyTestAllApplication:16 - 工具开始启动。。。。。。。。。。。。
+2018-04-01 09:43:40,247  INFO Version:21 - HV000001: Hibernate Validator 6.0.7.Final
+2018-04-01 09:43:40,907  INFO EasyTestAllApplication:50 - Starting EasyTestAllApplication on ifly-13753 with PID 7988 (E:\easy-test\target\classes started by admin in E:\easy-test)
+2018-04-01 09:43:40,916  INFO EasyTestAllApplication:652 - No active profile set, falling back to default profiles: default
+2018-04-01 09:43:41,069  INFO AnnotationConfigServletWebServerApplicationContext:589 - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@46805891: startup date [Sun Apr 01 09:43:41 CST 2018]; root of context hierarchy
+2018-04-01 09:43:48,114  INFO TomcatWebServer:91 - Tomcat initialized with port(s): 8008 (http)
+2018-04-01 09:43:49,878  INFO ContextLoader:285 - Root WebApplicationContext: initialization completed in 8809 ms
+2018-04-01 09:43:50,098  INFO ServletRegistrationBean:185 - Servlet dispatcherServlet mapped to [/]
+2018-04-01 09:43:50,114  INFO FilterRegistrationBean:243 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-04-01 09:43:50,114  INFO FilterRegistrationBean:243 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-04-01 09:43:50,114  INFO FilterRegistrationBean:243 - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-04-01 09:43:50,114  INFO FilterRegistrationBean:243 - Mapping filter: 'requestContextFilter' to: [/*]
+2018-04-01 09:43:50,612  INFO RequestMappingHandlerAdapter:567 - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@46805891: startup date [Sun Apr 01 09:43:41 CST 2018]; root of context hierarchy
+2018-04-01 09:43:50,753  INFO RequestMappingHandlerMapping:548 - Mapped "{[/ztree/updateNodes]}" onto java.lang.String com.easytestall.controller.EasyTestController.updateTreeNodes()
+2018-04-01 09:43:50,753  INFO RequestMappingHandlerMapping:548 - Mapped "{[/requestDto/getBody]}" onto java.lang.String com.easytestall.controller.EasyTestController.getRequBody(java.lang.String) throws java.io.IOException
+2018-04-01 09:43:50,753  INFO RequestMappingHandlerMapping:548 - Mapped "{[/init/getNodes]}" onto java.lang.String com.easytestall.controller.EasyTestController.getTreeNodes()
+2018-04-01 09:43:50,753  INFO RequestMappingHandlerMapping:548 - Mapped "{[/requestDto/updateBody]}" onto java.lang.String com.easytestall.controller.EasyTestController.updateParam(java.lang.String,int,java.lang.String)
+2018-04-01 09:43:50,753  INFO RequestMappingHandlerMapping:548 - Mapped "{[/test/testBatchApi]}" onto java.lang.String com.easytestall.controller.EasyTestController.testApiByBatch(java.lang.String) throws org.apache.http.ParseException,java.io.IOException
+2018-04-01 09:43:50,753  INFO RequestMappingHandlerMapping:548 - Mapped "{[/redu/reduText],produces=[application/json]}" onto public com.easytestall.pojo.TextReduplicationPojo com.easytestall.controller.TextReduController.reduText(java.lang.String)
+2018-04-01 09:43:50,753  INFO RequestMappingHandlerMapping:548 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-04-01 09:43:50,753  INFO RequestMappingHandlerMapping:548 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-04-01 09:43:50,816  INFO SimpleUrlHandlerMapping:373 - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-04-01 09:43:50,816  INFO SimpleUrlHandlerMapping:373 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-04-01 09:43:50,908  INFO SimpleUrlHandlerMapping:373 - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-04-01 09:43:51,160  INFO OptionalLiveReloadServer:57 - LiveReload server is running on port 35729
+2018-04-01 09:43:51,222  INFO AnnotationMBeanExporter:434 - Registering beans for JMX exposure on startup
+2018-04-01 09:43:51,316  INFO TomcatWebServer:205 - Tomcat started on port(s): 8008 (http) with context path ''
+2018-04-01 09:43:51,316  INFO EasyTestAllApplication:59 - Started EasyTestAllApplication in 11.555 seconds (JVM running for 12.732)
+2018-04-01 09:43:51,332  INFO LoadDataService:25 - 启动时加载数据..........
+2018-04-01 09:43:52,060  INFO LoadDataService:32 - 启动时加载数据完毕..........
+2018-04-01 09:44:44,005  INFO DispatcherServlet:494 - FrameworkServlet 'dispatcherServlet': initialization started
+2018-04-01 09:44:44,034  INFO DispatcherServlet:513 - FrameworkServlet 'dispatcherServlet': initialization completed in 29 ms
+2018-04-01 09:45:08,428  INFO EasyTestController:91 - 2018-04-01 09:45:05
+第1批_gx001话费查询_是否有话费记录  开始测试。。。。。
+接口地址： http://localhost:18080/api/business/gx/businessQuery
+请求参数:
+{
+"callId":"string",
+"channelCode": "IVR",
+"ext": {"otherPhoneFlag":"0"},
+"regionCode": "GX",
+"telnum": "18878722354",
+"templateCode": "gx_query_0001"
+}
+返回报文:
+{
+	"path":"/api/business/gx/businessQuery",
+	"returnCode":"5003",
+	"returnMessage":"GX: Cannot get Jedis connection; nested exception is redis.clients.jedis.exceptions.JedisConnectionException: Could not get a resource from the pool",
+	"error":"javax.servlet.ServletException: GX: Cannot get Jedis connection; nested exception is redis.clients.jedis.exceptions.JedisConnectionException: Could not get a resource from the pool"
+}
+
+-------->>>用时 2秒
+
+
+2018-04-01 09:45:08,626  INFO EasyTestController:91 - 2018-04-01 09:45:08
+第1批_gx001话费查询_是否开通139邮箱  开始测试。。。。。
+接口地址： http://localhost:18080/api/business/gx/businessQuery
+请求参数:
+{
+"callId":"string",
+"channelCode": "IVR",
+"ext": {},
+"regionCode": "GX",
+"telnum": "18878722354",
+"templateCode": "gx_query_0002"
+}
+返回报文:
+{
+	"returnCode":0,
+	"beans":[
+		
+	],
+	"returnMessage":"",
+	"bean":{
+		"result":"1"
+	},
+	"object":{
+		
+	}
+}
+
+-------->>>用时 0秒
+
+
+2018-04-01 09:45:08,711  INFO EasyTestController:91 - 2018-04-01 09:45:08
+第1批_gx001话费查询_下发139邮箱  开始测试。。。。。
+接口地址： http://localhost:18080/api/business/gx/businessHandle
+请求参数:
+{
+"callId":"string",
+"channelCode": "IVR",
+"ext": {"typeId":"1"},
+"regionCode": "GX",
+"telnum": "18878722354",
+"templateCode": "gx_handle_0001"
+}
+返回报文:
+{
+	"returnCode":0,
+	"beans":[
+		
+	],
+	"returnMessage":"",
+	"bean":{
+		"flag":"1"
+	},
+	"object":{
+		
+	}
+}
+
+-------->>>用时 0秒
+
+
+2018-04-01 09:45:08,767  INFO EasyTestController:91 - 2018-04-01 09:45:08
+第1批_gx002已开通业务查询_查询已开通业务  开始测试。。。。。
+接口地址： http://localhost:18080/api/business/gx/businessHandle
+请求参数:
+{
+"callId":"string",
+"channelCode": "IVR",
+"ext": {"cmd":"1132"},
+"regionCode": "GX",
+"telnum": "13627881651",
+"templateCode": "gx_handle_0002"
+}
+返回报文:
+{
+	"returnCode":0,
+	"beans":[
+		
+	],
+	"returnMessage":"",
+	"bean":{
+		"result":"1"
+	},
+	"object":{
+		
+	}
+}
+
+-------->>>用时 0秒
+
+
+2018-04-01 09:45:08,815  INFO EasyTestController:91 - 2018-04-01 09:45:08
+第1批_gx012已办活动查询_下发已办活动查询短信  开始测试。。。。。
+接口地址： http://localhost:18080/api/business/gx/businessHandle
+请求参数:
+{
+"callId":"string",
+"channelCode": "IVR",
+"ext": {"cmd":"1133"},
+"regionCode": "GX",
+"telnum": "13627881651",
+"templateCode": "gx_handle_0002"
+}
+返回报文:
+{
+	"returnCode":0,
+	"beans":[
+		
+	],
+	"returnMessage":"",
+	"bean":{
+		"result":"1"
+	},
+	"object":{
+		
+	}
+}
+
+-------->>>用时 0秒
+
+
+2018-04-01 09:45:08,871  INFO EasyTestController:91 - 2018-04-01 09:45:08
+第1批_gx013交费记录查询_查询交费记录  开始测试。。。。。
+接口地址： http://localhost:18080/api/business/gx/businessQuery
+请求参数:
+{
+"callId":"string",
+"channelCode": "IVR",
+"ext": {"cmd":"1131"},
+"regionCode": "GX",
+"telnum": "13627881651",
+"templateCode": "gx_query_0003"
+}
+返回报文:
+{
+	"returnCode":0,
+	"beans":[
+		
+	],
+	"returnMessage":"",
+	"bean":{
+		"returnCode":"1",
+		"smsSucc":"1",
+		"ttsContent":"尊敬的客户，最近半年内[
+			n2
+		]3条交费记录为：金额:[
+			n2
+		]10.00元,
+		时间:[
+			n1
+		][
+			y1
+		]2018年[
+			n2
+		]01月[
+			n2
+		]04日[
+			n2
+		]13时[
+			n2
+		]02分[
+			n2
+		]22秒,
+		充值方式：其它金额:[
+			n2
+		]19.96元,
+		时间:[
+			n1
+		][
+			y1
+		]2017年[
+			n2
+		]10月[
+			n2
+		]18日[
+			n2
+		]21时[
+			n2
+		]35分[
+			n2
+		]43秒,
+		充值方式：现金金额:[
+			n2
+		]0.04元,
+		时间:[
+			n1
+		][
+			y1
+		]2017年[
+			n2
+		]10月[
+			n2
+		]18日[
+			n2
+		]21时[
+			n2
+		]35分[
+			n2
+		]43秒,
+		充值方式：现金。"
+	},
+	"object":{
+		
+	}
+}
+
+-------->>>用时 0秒
+
+
+2018-04-01 09:45:08,927  INFO EasyTestController:91 - 2018-04-01 09:45:08
+第1批_gx013交费记录查询_是否已开通139邮箱  开始测试。。。。。
+接口地址： http://localhost:18080/api/business/gx/businessQuery
+请求参数:
+{
+"callId":"string",
+"channelCode": "IVR",
+"ext": {},
+"regionCode": "GX",
+"telnum": "13627881651",
+"templateCode": "gx_query_0002"
+}
+返回报文:
+{
+	"returnCode":0,
+	"beans":[
+		
+	],
+	"returnMessage":"",
+	"bean":{
+		"result":"1"
+	},
+	"object":{
+		
+	}
+}
+
+-------->>>用时 0秒
+
+
+2018-04-01 09:45:08,979  INFO EasyTestController:91 - 2018-04-01 09:45:08
+第1批_gx013交费记录查询_下发139邮箱  开始测试。。。。。
+接口地址： http://localhost:18080/api/business/gx/businessHandle
+请求参数:
+{
+"callId":"string",
+"channelCode": "IVR",
+"ext": {"typeId":"4"},
+"regionCode": "GX",
+"telnum": "13627881651",
+"templateCode": "gx_handle_0001"
+}
+返回报文:
+{
+	"returnCode":0,
+	"beans":[
+		
+	],
+	"returnMessage":"",
+	"bean":{
+		"flag":"1"
+	},
+	"object":{
+		
+	}
+}
+
+-------->>>用时 0秒
+
+
+2018-04-01 09:45:09,048  INFO EasyTestController:91 - 2018-04-01 09:45:09
+第1批_gx019返还记录查询_返还记录查询  开始测试。。。。。
+接口地址： http://localhost:18080/api/business/gx/businessQuery
+请求参数:
+{
+"callId":"string",
+"channelCode": "IVR",
+"ext": {},
+"regionCode": "GX",
+"telnum": "13627881651",
+"templateCode": "gx_query_0004"
+}
+返回报文:
+{
+	"returnCode":0,
+	"beans":[
+		
+	],
+	"returnMessage":"",
+	"bean":{
+		"returnCode":"1",
+		"smsSucc":"1",
+		"ttsContent":"最近三个月返还记录为：[
+			n1
+		][
+			y1
+		]2017年[
+			n2
+		]11月返还[
+			n2
+		]60.00元,
+		[
+			n1
+		][
+			y1
+		]2017年[
+			n2
+		]12月返还[
+			n2
+		]60.00元,
+		[
+			n1
+		][
+			y1
+		]2018年[
+			n2
+		]1月返还[
+			n2
+		]60.00元,
+		"
+	},
+	"object":{
+		
+	}
+}
+
+-------->>>用时 0秒
+
+
+2018-04-01 09:45:09,188  INFO EasyTestController:91 - 2018-04-01 09:45:09
+第1批_gx019返还记录查询_是否开通139邮箱  开始测试。。。。。
+接口地址： http://localhost:18080/api/business/gx/businessQuery
+请求参数:
+{
+"callId":"string",
+"channelCode": "IVR",
+"ext": {},
+"regionCode": "GX",
+"telnum": "13627881651",
+"templateCode": "gx_query_0002"
+}
+返回报文:
+{
+	"returnCode":0,
+	"beans":[
+		
+	],
+	"returnMessage":"",
+	"bean":{
+		"result":"1"
+	},
+	"object":{
+		
+	}
+}
+
+-------->>>用时 0秒
+
+
+2018-04-01 09:45:09,271  INFO EasyTestController:91 - 2018-04-01 09:45:09
+第1批_gx019返还记录查询_下发139邮箱  开始测试。。。。。
+接口地址： http://localhost:18080/api/business/gx/businessHandle
+请求参数:
+{
+"callId":"string",
+"channelCode": "IVR",
+"ext": {"typeId":"5"},
+"regionCode": "GX",
+"telnum": "13627881651",
+"templateCode": "gx_handle_0001"
+}
+返回报文:
+{
+	"returnCode":0,
+	"beans":[
+		
+	],
+	"returnMessage":"",
+	"bean":{
+		"flag":"1"
+	},
+	"object":{
+		
+	}
+}
+
+-------->>>用时 0秒
+
+
+2018-04-01 09:45:09,480  INFO EasyTestController:91 - 2018-04-01 09:45:09
+第1批_gx003账单查询_查询月份选项语音内容(历史话费)  开始测试。。。。。
+接口地址： http://localhost:18080/api/business/gx/businessQuery
+请求参数:
+{
+"callId":"string",
+"channelCode": "IVR",
+"ext": {},
+"regionCode": "GX",
+"telnum": "13627881651",
+"templateCode": "gx_query_0016"
+}
+返回报文:
+{
+	"returnCode":0,
+	"beans":[
+		
+	],
+	"returnMessage":"",
+	"bean":{
+		"isSmartPhone":"1",
+		"pszMonth5":"201706",
+		"isOpen139Mail":"0",
+		"pszMonth2":"201709",
+		"pszMonth1":"201710",
+		"pszMonth4":"201707",
+		"pszMonth3":"201708",
+		"pszMonths":"上月账单查询请按1，09月按2，08月按3，07月按4，06月按5"
+	},
+	"object":{
+		
+	}
+}
+
+-------->>>用时 0秒
+
+
+2018-04-01 09:45:09,557  INFO EasyTestController:91 - 2018-04-01 09:45:09
+第1批_gx003账单查询_是否智能机  开始测试。。。。。
+接口地址： http://localhost:18080/api/business/gx/businessQuery
+请求参数:
+{
+"callId":"string",
+"channelCode": "IVR",
+"ext": {},
+"regionCode": "GX",
+"telnum": "13627881651",
+"templateCode": "gx_query_0017"
+}
+返回报文:
+{
+	"returnCode":0,
+	"beans":[
+		
+	],
+	"returnMessage":"",
+	"bean":{
+		"isSmartPhone":"1"
+	},
+	"object":{
+		
+	}
+}
+
+-------->>>用时 0秒
+
+
+2018-04-01 09:45:10,812  INFO EasyTestController:91 - 2018-04-01 09:45:09
+第1批_gx003账单查询_查询历史话费  开始测试。。。。。
+接口地址： http://localhost:18080/api/business/gx/businessQuery
+请求参数:
+{
+"callId":"string",
+"channelCode": "IVR",
+"ext": {"yearMonth":"201801"},
+"regionCode": "GX",
+"telnum": "13627881651",
+"templateCode": "gx_query_0018"
+}
+返回报文:
+{
+	"path":"/api/business/gx/businessQuery",
+	"returnCode":"5003",
+	"returnMessage":"GX: Cannot get Jedis connection; nested exception is redis.clients.jedis.exceptions.JedisConnectionException: Could not get a resource from the pool",
+	"error":"javax.servlet.ServletException: GX: Cannot get Jedis connection; nested exception is redis.clients.jedis.exceptions.JedisConnectionException: Could not get a resource from the pool"
+}
+
+-------->>>用时 1秒
+
+
+2018-04-01 09:45:10,853  INFO EasyTestController:91 - 2018-04-01 09:45:10
+第1批_gx003账单查询_下发139邮件  开始测试。。。。。
+接口地址： http://localhost:18080/api/business/gx/businessHandle
+请求参数:
+{
+"callId":"string",
+"channelCode": "IVR",
+"ext": {"typeId":"3","billDate":"201712"},
+"regionCode": "GX",
+"telnum": "13627881651",
+"templateCode": "gx_handle_0001"
+}
+返回报文:
+{
+	"returnCode":0,
+	"beans":[
+		
+	],
+	"returnMessage":"",
+	"bean":{
+		"flag":"1"
+	},
+	"object":{
+		
+	}
+}
+
+-------->>>用时 0秒
+
+
+2018-04-01 09:45:11,979  INFO EasyTestController:91 - 2018-04-01 09:45:10
+第1批_gx005流量查询_查询实时流量  开始测试。。。。。
+接口地址： http://localhost:18080/api/business/gx/businessQuery
+请求参数:
+{
+"callId":"string",
+"channelCode": "IVR",
+"ext": {},
+"regionCode": "GX",
+"telnum": "13627881651",
+"templateCode": "gx_query_0005"
+}
+返回报文:
+{
+	"path":"/api/business/gx/businessQuery",
+	"returnCode":"5003",
+	"returnMessage":"GX: Cannot get Jedis connection; nested exception is redis.clients.jedis.exceptions.JedisConnectionException: Could not get a resource from the pool",
+	"error":"javax.servlet.ServletException: GX: Cannot get Jedis connection; nested exception is redis.clients.jedis.exceptions.JedisConnectionException: Could not get a resource from the pool"
+}
+
+-------->>>用时 1秒
+
+
+2018-04-01 10:06:24,671  INFO EasyTestController:91 - 2018-04-01 10:06:24
+第1批_gx001话费查询_是否有话费记录  开始测试。。。。。
+接口地址： http://localhost:18080/api/business/gx/businessQuery
+请求参数:
+{
+"callId":"string",
+"channelCode": "IVR",
+"ext": {"otherPhoneFlag":"0"},
+"regionCode": "GX",
+"telnum": "18878722354",
+"templateCode": "gx_query_0001"
+}
+返回报文:
+{
+	"returnCode":0,
+	"beans":[
+		
+	],
+	"returnMessage":"",
+	"bean":{
+		"isAccOut":"hahahaahha",
+		"test":"成功了",
+		"ttsContent":"您当月累计消费为[
+			n2
+		]9元，普通话费余额为[
+			n2
+		]5.88元。专项预存可用余额为[
+			n2
+		]0元，专项预存待返还金额为[
+			n2
+		]0元。",
+		"smsContent":"尊敬的15289640364客户，您当月累计话费为9元，话费余额为19.80元，已返还未使用专项预存余额0元，专项预存待返还金额0元。\r\n具体话费使用情况请以广西移动出账账单为准。【中国移动】",
+		"isOpen139Mail":"2222222"
+	},
+	"object":{
+		
+	}
+}
+
+-------->>>用时 0秒
+
+
+2018-04-01 10:06:24,724  INFO EasyTestController:91 - 2018-04-01 10:06:24
+第1批_gx001话费查询_是否开通139邮箱  开始测试。。。。。
+接口地址： http://localhost:18080/api/business/gx/businessQuery
+请求参数:
+{
+"callId":"string",
+"channelCode": "IVR",
+"ext": {},
+"regionCode": "GX",
+"telnum": "18878722354",
+"templateCode": "gx_query_0002"
+}
+返回报文:
+{
+	"returnCode":0,
+	"beans":[
+		
+	],
+	"returnMessage":"",
+	"bean":{
+		"result":"1"
+	},
+	"object":{
+		
+	}
+}
+
+-------->>>用时 0秒
+
+
+2018-04-01 10:06:24,764  INFO EasyTestController:91 - 2018-04-01 10:06:24
+第1批_gx001话费查询_下发139邮箱  开始测试。。。。。
+接口地址： http://localhost:18080/api/business/gx/businessHandle
+请求参数:
+{
+"callId":"string",
+"channelCode": "IVR",
+"ext": {"typeId":"1"},
+"regionCode": "GX",
+"telnum": "18878722354",
+"templateCode": "gx_handle_0001"
+}
+返回报文:
+{
+	"returnCode":0,
+	"beans":[
+		
+	],
+	"returnMessage":"",
+	"bean":{
+		"flag":"1"
+	},
+	"object":{
+		
+	}
+}
+
+-------->>>用时 0秒
+
+
+2018-04-01 10:06:24,816  INFO EasyTestController:91 - 2018-04-01 10:06:24
+第1批_gx002已开通业务查询_查询已开通业务  开始测试。。。。。
+接口地址： http://localhost:18080/api/business/gx/businessHandle
+请求参数:
+{
+"callId":"string",
+"channelCode": "IVR",
+"ext": {"cmd":"1132"},
+"regionCode": "GX",
+"telnum": "13627881651",
+"templateCode": "gx_handle_0002"
+}
+返回报文:
+{
+	"returnCode":0,
+	"beans":[
+		
+	],
+	"returnMessage":"",
+	"bean":{
+		"result":"1"
+	},
+	"object":{
+		
+	}
+}
+
+-------->>>用时 0秒
+
+
+2018-04-01 10:06:24,880  INFO EasyTestController:91 - 2018-04-01 10:06:24
+第1批_gx012已办活动查询_下发已办活动查询短信  开始测试。。。。。
+接口地址： http://localhost:18080/api/business/gx/businessHandle
+请求参数:
+{
+"callId":"string",
+"channelCode": "IVR",
+"ext": {"cmd":"1133"},
+"regionCode": "GX",
+"telnum": "13627881651",
+"templateCode": "gx_handle_0002"
+}
+返回报文:
+{
+	"returnCode":0,
+	"beans":[
+		
+	],
+	"returnMessage":"",
+	"bean":{
+		"result":"1"
+	},
+	"object":{
+		
+	}
+}
+
+-------->>>用时 0秒
+
+
+2018-04-01 10:06:24,928  INFO EasyTestController:91 - 2018-04-01 10:06:24
+第1批_gx013交费记录查询_查询交费记录  开始测试。。。。。
+接口地址： http://localhost:18080/api/business/gx/businessQuery
+请求参数:
+{
+"callId":"string",
+"channelCode": "IVR",
+"ext": {"cmd":"1131"},
+"regionCode": "GX",
+"telnum": "13627881651",
+"templateCode": "gx_query_0003"
+}
+返回报文:
+{
+	"returnCode":0,
+	"beans":[
+		
+	],
+	"returnMessage":"",
+	"bean":{
+		"returnCode":"1",
+		"smsSucc":"1",
+		"ttsContent":"尊敬的客户，最近半年内[
+			n2
+		]3条交费记录为：金额:[
+			n2
+		]10.00元,
+		时间:[
+			n1
+		][
+			y1
+		]2018年[
+			n2
+		]01月[
+			n2
+		]04日[
+			n2
+		]13时[
+			n2
+		]02分[
+			n2
+		]22秒,
+		充值方式：其它金额:[
+			n2
+		]19.96元,
+		时间:[
+			n1
+		][
+			y1
+		]2017年[
+			n2
+		]10月[
+			n2
+		]18日[
+			n2
+		]21时[
+			n2
+		]35分[
+			n2
+		]43秒,
+		充值方式：现金金额:[
+			n2
+		]0.04元,
+		时间:[
+			n1
+		][
+			y1
+		]2017年[
+			n2
+		]10月[
+			n2
+		]18日[
+			n2
+		]21时[
+			n2
+		]35分[
+			n2
+		]43秒,
+		充值方式：现金。"
+	},
+	"object":{
+		
+	}
+}
+
+-------->>>用时 0秒
+
+
+2018-04-01 10:06:24,996  INFO EasyTestController:91 - 2018-04-01 10:06:24
+第1批_gx013交费记录查询_是否已开通139邮箱  开始测试。。。。。
+接口地址： http://localhost:18080/api/business/gx/businessQuery
+请求参数:
+{
+"callId":"string",
+"channelCode": "IVR",
+"ext": {},
+"regionCode": "GX",
+"telnum": "13627881651",
+"templateCode": "gx_query_0002"
+}
+返回报文:
+{
+	"returnCode":0,
+	"beans":[
+		
+	],
+	"returnMessage":"",
+	"bean":{
+		"result":"1"
+	},
+	"object":{
+		
+	}
+}
+
+-------->>>用时 0秒
+
+
+2018-04-01 10:06:25,044  INFO EasyTestController:91 - 2018-04-01 10:06:25
+第1批_gx013交费记录查询_下发139邮箱  开始测试。。。。。
+接口地址： http://localhost:18080/api/business/gx/businessHandle
+请求参数:
+{
+"callId":"string",
+"channelCode": "IVR",
+"ext": {"typeId":"4"},
+"regionCode": "GX",
+"telnum": "13627881651",
+"templateCode": "gx_handle_0001"
+}
+返回报文:
+{
+	"returnCode":0,
+	"beans":[
+		
+	],
+	"returnMessage":"",
+	"bean":{
+		"flag":"1"
+	},
+	"object":{
+		
+	}
+}
+
+-------->>>用时 0秒
+
+
+2018-04-01 10:06:25,096  INFO EasyTestController:91 - 2018-04-01 10:06:25
+第1批_gx019返还记录查询_返还记录查询  开始测试。。。。。
+接口地址： http://localhost:18080/api/business/gx/businessQuery
+请求参数:
+{
+"callId":"string",
+"channelCode": "IVR",
+"ext": {},
+"regionCode": "GX",
+"telnum": "13627881651",
+"templateCode": "gx_query_0004"
+}
+返回报文:
+{
+	"returnCode":0,
+	"beans":[
+		
+	],
+	"returnMessage":"",
+	"bean":{
+		"returnCode":"1",
+		"smsSucc":"1",
+		"ttsContent":"最近三个月返还记录为：[
+			n1
+		][
+			y1
+		]2017年[
+			n2
+		]11月返还[
+			n2
+		]60.00元,
+		[
+			n1
+		][
+			y1
+		]2017年[
+			n2
+		]12月返还[
+			n2
+		]60.00元,
+		[
+			n1
+		][
+			y1
+		]2018年[
+			n2
+		]1月返还[
+			n2
+		]60.00元,
+		"
+	},
+	"object":{
+		
+	}
+}
+
+-------->>>用时 0秒
+
+
+2018-04-01 10:06:25,160  INFO EasyTestController:91 - 2018-04-01 10:06:25
+第1批_gx019返还记录查询_是否开通139邮箱  开始测试。。。。。
+接口地址： http://localhost:18080/api/business/gx/businessQuery
+请求参数:
+{
+"callId":"string",
+"channelCode": "IVR",
+"ext": {},
+"regionCode": "GX",
+"telnum": "13627881651",
+"templateCode": "gx_query_0002"
+}
+返回报文:
+{
+	"returnCode":0,
+	"beans":[
+		
+	],
+	"returnMessage":"",
+	"bean":{
+		"result":"1"
+	},
+	"object":{
+		
+	}
+}
+
+-------->>>用时 0秒
+
+
+2018-04-01 10:06:25,204  INFO EasyTestController:91 - 2018-04-01 10:06:25
+第1批_gx019返还记录查询_下发139邮箱  开始测试。。。。。
+接口地址： http://localhost:18080/api/business/gx/businessHandle
+请求参数:
+{
+"callId":"string",
+"channelCode": "IVR",
+"ext": {"typeId":"5"},
+"regionCode": "GX",
+"telnum": "13627881651",
+"templateCode": "gx_handle_0001"
+}
+返回报文:
+{
+	"returnCode":0,
+	"beans":[
+		
+	],
+	"returnMessage":"",
+	"bean":{
+		"flag":"1"
+	},
+	"object":{
+		
+	}
+}
+
+-------->>>用时 0秒
+
+
+2018-04-01 10:06:25,276  INFO EasyTestController:91 - 2018-04-01 10:06:25
+第1批_gx003账单查询_查询月份选项语音内容(历史话费)  开始测试。。。。。
+接口地址： http://localhost:18080/api/business/gx/businessQuery
+请求参数:
+{
+"callId":"string",
+"channelCode": "IVR",
+"ext": {},
+"regionCode": "GX",
+"telnum": "13627881651",
+"templateCode": "gx_query_0016"
+}
+返回报文:
+{
+	"returnCode":0,
+	"beans":[
+		
+	],
+	"returnMessage":"",
+	"bean":{
+		"isSmartPhone":"1",
+		"pszMonth5":"201706",
+		"isOpen139Mail":"0",
+		"pszMonth2":"201709",
+		"pszMonth1":"201710",
+		"pszMonth4":"201707",
+		"pszMonth3":"201708",
+		"pszMonths":"上月账单查询请按1，09月按2，08月按3，07月按4，06月按5"
+	},
+	"object":{
+		
+	}
+}
+
+-------->>>用时 0秒
+
+
+2018-04-01 10:06:25,344  INFO EasyTestController:91 - 2018-04-01 10:06:25
+第1批_gx003账单查询_是否智能机  开始测试。。。。。
+接口地址： http://localhost:18080/api/business/gx/businessQuery
+请求参数:
+{
+"callId":"string",
+"channelCode": "IVR",
+"ext": {},
+"regionCode": "GX",
+"telnum": "13627881651",
+"templateCode": "gx_query_0017"
+}
+返回报文:
+{
+	"returnCode":0,
+	"beans":[
+		
+	],
+	"returnMessage":"",
+	"bean":{
+		"isSmartPhone":"1"
+	},
+	"object":{
+		
+	}
+}
+
+-------->>>用时 0秒
+
+
+2018-04-01 10:06:25,636  INFO EasyTestController:91 - 2018-04-01 10:06:25
+第1批_gx003账单查询_查询历史话费  开始测试。。。。。
+接口地址： http://localhost:18080/api/business/gx/businessQuery
+请求参数:
+{
+"callId":"string",
+"channelCode": "IVR",
+"ext": {"yearMonth":"201801"},
+"regionCode": "GX",
+"telnum": "13627881651",
+"templateCode": "gx_query_0018"
+}
+返回报文:
+{
+	"returnCode":0,
+	"beans":[
+		
+	],
+	"returnMessage":"",
+	"bean":{
+		"returnCode":"1",
+		"ttsContent":"您[
+			n1
+		][
+			y1
+		]2017年[
+			n2
+		]10月的总话费为[
+			n2
+		]9.10元。其中：套餐月租费[
+			n2
+		]8.33元 ，移动梦网上行费用[
+			n2
+		]0.1元 ，套餐月租费(增值费)[
+			n2
+		]0.67元 。",
+		"outItem1":"15289640364",
+		"outItem2":"910"
+	},
+	"object":{
+		
+	}
+}
+
+-------->>>用时 0秒
+
+
+2018-04-01 10:06:25,673  INFO EasyTestController:91 - 2018-04-01 10:06:25
+第1批_gx003账单查询_下发139邮件  开始测试。。。。。
+接口地址： http://localhost:18080/api/business/gx/businessHandle
+请求参数:
+{
+"callId":"string",
+"channelCode": "IVR",
+"ext": {"typeId":"3","billDate":"201712"},
+"regionCode": "GX",
+"telnum": "13627881651",
+"templateCode": "gx_handle_0001"
+}
+返回报文:
+{
+	"returnCode":0,
+	"beans":[
+		
+	],
+	"returnMessage":"",
+	"bean":{
+		"flag":"1"
+	},
+	"object":{
+		
+	}
+}
+
+-------->>>用时 0秒
+
+
+2018-04-01 10:06:25,729  INFO EasyTestController:91 - 2018-04-01 10:06:25
+第1批_gx005流量查询_查询实时流量  开始测试。。。。。
+接口地址： http://localhost:18080/api/business/gx/businessQuery
+请求参数:
+{
+"callId":"string",
+"channelCode": "IVR",
+"ext": {},
+"regionCode": "GX",
+"telnum": "13627881651",
+"templateCode": "gx_query_0005"
+}
+返回报文:
+{
+	"returnCode":0,
+	"beans":[
+		
+	],
+	"returnMessage":"",
+	"bean":{
+		"returnCode":"1",
+		"ttsContent":"上月结转至本月的剩余流量为[
+			n2
+		]0兆，您本月已累计使用移动数据流量[
+			n2
+		]0兆;\u201d）",
+		"smsContent":"尊敬客户，截至2017年11月08日 15点20分，本月流量使用如下：累计已使用国内移动数据上网流量：0M 套餐剩余流量：0M。\r\n其中: 国内通用流量剩余：0M 闲时流量剩余：0M 区内流量剩余：0M 统付流量剩余：0M；超出后按照0.29元/M收取。\r\n各流量资源使用情况具体如下：\r\n具体话费使用情况请以广西移动出账账单为准。【中国移动】"
+	},
+	"object":{
+		
+	}
+}
+
+-------->>>用时 0秒
+
+
+2018-04-01 10:10:56,718  INFO EasyTestController:91 - 2018-04-01 10:10:56
+第1批_gx001话费查询_是否有话费记录  开始测试。。。。。
+接口地址： http://localhost:18080/api/business/gx/businessQuery
+请求参数:
+{
+"callId":"string",
+"channelCode": "IVR",
+"ext": {"otherPhoneFlag":"0"},
+"regionCode": "GX",
+"telnum": "18878722354",
+"templateCode": "gx_query_0001"
+}
+返回报文:
+{
+	"returnCode":0,
+	"beans":[
+		
+	],
+	"returnMessage":"",
+	"bean":{
+		"isAccOut":"hahahaahha",
+		"test":"成功了",
+		"ttsContent":"您当月累计消费为[
+			n2
+		]9元，普通话费余额为[
+			n2
+		]5.88元。专项预存可用余额为[
+			n2
+		]0元，专项预存待返还金额为[
+			n2
+		]0元。",
+		"smsContent":"尊敬的15289640364客户，您当月累计话费为9元，话费余额为19.80元，已返还未使用专项预存余额0元，专项预存待返还金额0元。\r\n具体话费使用情况请以广西移动出账账单为准。【中国移动】",
+		"isOpen139Mail":"2222222"
+	},
+	"object":{
+		
+	}
+}
+
+-------->>>用时 0秒
+
+
+2018-04-01 10:10:56,752  INFO EasyTestController:91 - 2018-04-01 10:10:56
+第1批_gx001话费查询_是否开通139邮箱  开始测试。。。。。
+接口地址： http://localhost:18080/api/business/gx/businessQuery
+请求参数:
+{
+"callId":"string",
+"channelCode": "IVR",
+"ext": {},
+"regionCode": "GX",
+"telnum": "18878722354",
+"templateCode": "gx_query_0002"
+}
+返回报文:
+{
+	"returnCode":0,
+	"beans":[
+		
+	],
+	"returnMessage":"",
+	"bean":{
+		"result":"1"
+	},
+	"object":{
+		
+	}
+}
+
+-------->>>用时 0秒
+
+
+2018-04-01 10:10:56,782  INFO EasyTestController:91 - 2018-04-01 10:10:56
+第1批_gx001话费查询_下发139邮箱  开始测试。。。。。
+接口地址： http://localhost:18080/api/business/gx/businessHandle
+请求参数:
+{
+"callId":"string",
+"channelCode": "IVR",
+"ext": {"typeId":"1"},
+"regionCode": "GX",
+"telnum": "18878722354",
+"templateCode": "gx_handle_0001"
+}
+返回报文:
+{
+	"returnCode":0,
+	"beans":[
+		
+	],
+	"returnMessage":"",
+	"bean":{
+		"flag":"1"
+	},
+	"object":{
+		
+	}
+}
+
+-------->>>用时 0秒
+
+
+2018-04-01 10:10:56,810  INFO EasyTestController:91 - 2018-04-01 10:10:56
+第1批_gx002已开通业务查询_查询已开通业务  开始测试。。。。。
+接口地址： http://localhost:18080/api/business/gx/businessHandle
+请求参数:
+{
+"callId":"string",
+"channelCode": "IVR",
+"ext": {"cmd":"1132"},
+"regionCode": "GX",
+"telnum": "13627881651",
+"templateCode": "gx_handle_0002"
+}
+返回报文:
+{
+	"returnCode":0,
+	"beans":[
+		
+	],
+	"returnMessage":"",
+	"bean":{
+		"result":"1"
+	},
+	"object":{
+		
+	}
+}
+
+-------->>>用时 0秒
+
+
+2018-04-01 10:10:56,841  INFO EasyTestController:91 - 2018-04-01 10:10:56
+第1批_gx012已办活动查询_下发已办活动查询短信  开始测试。。。。。
+接口地址： http://localhost:18080/api/business/gx/businessHandle
+请求参数:
+{
+"callId":"string",
+"channelCode": "IVR",
+"ext": {"cmd":"1133"},
+"regionCode": "GX",
+"telnum": "13627881651",
+"templateCode": "gx_handle_0002"
+}
+返回报文:
+{
+	"returnCode":0,
+	"beans":[
+		
+	],
+	"returnMessage":"",
+	"bean":{
+		"result":"1"
+	},
+	"object":{
+		
+	}
+}
+
+-------->>>用时 0秒
+
+
+2018-04-01 10:10:56,868  INFO EasyTestController:91 - 2018-04-01 10:10:56
+第1批_gx013交费记录查询_查询交费记录  开始测试。。。。。
+接口地址： http://localhost:18080/api/business/gx/businessQuery
+请求参数:
+{
+"callId":"string",
+"channelCode": "IVR",
+"ext": {"cmd":"1131"},
+"regionCode": "GX",
+"telnum": "13627881651",
+"templateCode": "gx_query_0003"
+}
+返回报文:
+{
+	"returnCode":0,
+	"beans":[
+		
+	],
+	"returnMessage":"",
+	"bean":{
+		"returnCode":"1",
+		"smsSucc":"1",
+		"ttsContent":"尊敬的客户，最近半年内[
+			n2
+		]3条交费记录为：金额:[
+			n2
+		]10.00元,
+		时间:[
+			n1
+		][
+			y1
+		]2018年[
+			n2
+		]01月[
+			n2
+		]04日[
+			n2
+		]13时[
+			n2
+		]02分[
+			n2
+		]22秒,
+		充值方式：其它金额:[
+			n2
+		]19.96元,
+		时间:[
+			n1
+		][
+			y1
+		]2017年[
+			n2
+		]10月[
+			n2
+		]18日[
+			n2
+		]21时[
+			n2
+		]35分[
+			n2
+		]43秒,
+		充值方式：现金金额:[
+			n2
+		]0.04元,
+		时间:[
+			n1
+		][
+			y1
+		]2017年[
+			n2
+		]10月[
+			n2
+		]18日[
+			n2
+		]21时[
+			n2
+		]35分[
+			n2
+		]43秒,
+		充值方式：现金。"
+	},
+	"object":{
+		
+	}
+}
+
+-------->>>用时 0秒
+
+
+2018-04-01 10:10:56,896  INFO EasyTestController:91 - 2018-04-01 10:10:56
+第1批_gx013交费记录查询_是否已开通139邮箱  开始测试。。。。。
+接口地址： http://localhost:18080/api/business/gx/businessQuery
+请求参数:
+{
+"callId":"string",
+"channelCode": "IVR",
+"ext": {},
+"regionCode": "GX",
+"telnum": "13627881651",
+"templateCode": "gx_query_0002"
+}
+返回报文:
+{
+	"returnCode":0,
+	"beans":[
+		
+	],
+	"returnMessage":"",
+	"bean":{
+		"result":"1"
+	},
+	"object":{
+		
+	}
+}
+
+-------->>>用时 0秒
+
+
+2018-04-01 10:10:56,929  INFO EasyTestController:91 - 2018-04-01 10:10:56
+第1批_gx013交费记录查询_下发139邮箱  开始测试。。。。。
+接口地址： http://localhost:18080/api/business/gx/businessHandle
+请求参数:
+{
+"callId":"string",
+"channelCode": "IVR",
+"ext": {"typeId":"4"},
+"regionCode": "GX",
+"telnum": "13627881651",
+"templateCode": "gx_handle_0001"
+}
+返回报文:
+{
+	"returnCode":0,
+	"beans":[
+		
+	],
+	"returnMessage":"",
+	"bean":{
+		"flag":"1"
+	},
+	"object":{
+		
+	}
+}
+
+-------->>>用时 0秒
+
+
+2018-04-01 10:10:56,961  INFO EasyTestController:91 - 2018-04-01 10:10:56
+第1批_gx019返还记录查询_返还记录查询  开始测试。。。。。
+接口地址： http://localhost:18080/api/business/gx/businessQuery
+请求参数:
+{
+"callId":"string",
+"channelCode": "IVR",
+"ext": {},
+"regionCode": "GX",
+"telnum": "13627881651",
+"templateCode": "gx_query_0004"
+}
+返回报文:
+{
+	"returnCode":0,
+	"beans":[
+		
+	],
+	"returnMessage":"",
+	"bean":{
+		"returnCode":"1",
+		"smsSucc":"1",
+		"ttsContent":"最近三个月返还记录为：[
+			n1
+		][
+			y1
+		]2017年[
+			n2
+		]11月返还[
+			n2
+		]60.00元,
+		[
+			n1
+		][
+			y1
+		]2017年[
+			n2
+		]12月返还[
+			n2
+		]60.00元,
+		[
+			n1
+		][
+			y1
+		]2018年[
+			n2
+		]1月返还[
+			n2
+		]60.00元,
+		"
+	},
+	"object":{
+		
+	}
+}
+
+-------->>>用时 0秒
+
+
+2018-04-01 10:10:57,001  INFO EasyTestController:91 - 2018-04-01 10:10:56
+第1批_gx019返还记录查询_是否开通139邮箱  开始测试。。。。。
+接口地址： http://localhost:18080/api/business/gx/businessQuery
+请求参数:
+{
+"callId":"string",
+"channelCode": "IVR",
+"ext": {},
+"regionCode": "GX",
+"telnum": "13627881651",
+"templateCode": "gx_query_0002"
+}
+返回报文:
+{
+	"returnCode":0,
+	"beans":[
+		
+	],
+	"returnMessage":"",
+	"bean":{
+		"result":"1"
+	},
+	"object":{
+		
+	}
+}
+
+-------->>>用时 0秒
+
+
+2018-04-01 10:10:57,053  INFO EasyTestController:91 - 2018-04-01 10:10:57
+第1批_gx019返还记录查询_下发139邮箱  开始测试。。。。。
+接口地址： http://localhost:18080/api/business/gx/businessHandle
+请求参数:
+{
+"callId":"string",
+"channelCode": "IVR",
+"ext": {"typeId":"5"},
+"regionCode": "GX",
+"telnum": "13627881651",
+"templateCode": "gx_handle_0001"
+}
+返回报文:
+{
+	"returnCode":0,
+	"beans":[
+		
+	],
+	"returnMessage":"",
+	"bean":{
+		"flag":"1"
+	},
+	"object":{
+		
+	}
+}
+
+-------->>>用时 0秒
+
+
+2018-04-01 10:10:57,088  INFO EasyTestController:91 - 2018-04-01 10:10:57
+第1批_gx003账单查询_查询月份选项语音内容(历史话费)  开始测试。。。。。
+接口地址： http://localhost:18080/api/business/gx/businessQuery
+请求参数:
+{
+"callId":"string",
+"channelCode": "IVR",
+"ext": {},
+"regionCode": "GX",
+"telnum": "13627881651",
+"templateCode": "gx_query_0016"
+}
+返回报文:
+{
+	"returnCode":0,
+	"beans":[
+		
+	],
+	"returnMessage":"",
+	"bean":{
+		"isSmartPhone":"1",
+		"pszMonth5":"201706",
+		"isOpen139Mail":"0",
+		"pszMonth2":"201709",
+		"pszMonth1":"201710",
+		"pszMonth4":"201707",
+		"pszMonth3":"201708",
+		"pszMonths":"上月账单查询请按1，09月按2，08月按3，07月按4，06月按5"
+	},
+	"object":{
+		
+	}
+}
+
+-------->>>用时 0秒
+
+
+2018-04-01 10:10:57,141  INFO EasyTestController:91 - 2018-04-01 10:10:57
+第1批_gx003账单查询_是否智能机  开始测试。。。。。
+接口地址： http://localhost:18080/api/business/gx/businessQuery
+请求参数:
+{
+"callId":"string",
+"channelCode": "IVR",
+"ext": {},
+"regionCode": "GX",
+"telnum": "13627881651",
+"templateCode": "gx_query_0017"
+}
+返回报文:
+{
+	"returnCode":0,
+	"beans":[
+		
+	],
+	"returnMessage":"",
+	"bean":{
+		"isSmartPhone":"1"
+	},
+	"object":{
+		
+	}
+}
+
+-------->>>用时 0秒
+
+
+2018-04-01 10:10:57,175  INFO EasyTestController:91 - 2018-04-01 10:10:57
+第1批_gx003账单查询_查询历史话费  开始测试。。。。。
+接口地址： http://localhost:18080/api/business/gx/businessQuery
+请求参数:
+{
+"callId":"string",
+"channelCode": "IVR",
+"ext": {"yearMonth":"201801"},
+"regionCode": "GX",
+"telnum": "13627881651",
+"templateCode": "gx_query_0018"
+}
+返回报文:
+{
+	"returnCode":0,
+	"beans":[
+		
+	],
+	"returnMessage":"",
+	"bean":{
+		"returnCode":"1",
+		"ttsContent":"您[
+			n1
+		][
+			y1
+		]2017年[
+			n2
+		]10月的总话费为[
+			n2
+		]9.10元。其中：套餐月租费[
+			n2
+		]8.33元 ，移动梦网上行费用[
+			n2
+		]0.1元 ，套餐月租费(增值费)[
+			n2
+		]0.67元 。",
+		"outItem1":"15289640364",
+		"outItem2":"910"
+	},
+	"object":{
+		
+	}
+}
+
+-------->>>用时 0秒
+
+
+2018-04-01 10:10:57,208  INFO EasyTestController:91 - 2018-04-01 10:10:57
+第1批_gx003账单查询_下发139邮件  开始测试。。。。。
+接口地址： http://localhost:18080/api/business/gx/businessHandle
+请求参数:
+{
+"callId":"string",
+"channelCode": "IVR",
+"ext": {"typeId":"3","billDate":"201712"},
+"regionCode": "GX",
+"telnum": "13627881651",
+"templateCode": "gx_handle_0001"
+}
+返回报文:
+{
+	"returnCode":0,
+	"beans":[
+		
+	],
+	"returnMessage":"",
+	"bean":{
+		"flag":"1"
+	},
+	"object":{
+		
+	}
+}
+
+-------->>>用时 0秒
+
+
+2018-04-01 10:10:57,240  INFO EasyTestController:91 - 2018-04-01 10:10:57
+第1批_gx005流量查询_查询实时流量  开始测试。。。。。
+接口地址： http://localhost:18080/api/business/gx/businessQuery
+请求参数:
+{
+"callId":"string",
+"channelCode": "IVR",
+"ext": {},
+"regionCode": "GX",
+"telnum": "13627881651",
+"templateCode": "gx_query_0005"
+}
+返回报文:
+{
+	"returnCode":0,
+	"beans":[
+		
+	],
+	"returnMessage":"",
+	"bean":{
+		"returnCode":"1",
+		"ttsContent":"上月结转至本月的剩余流量为[
+			n2
+		]0兆，您本月已累计使用移动数据流量[
+			n2
+		]0兆;\u201d）",
+		"smsContent":"尊敬客户，截至2017年11月08日 15点20分，本月流量使用如下：累计已使用国内移动数据上网流量：0M 套餐剩余流量：0M。\r\n其中: 国内通用流量剩余：0M 闲时流量剩余：0M 区内流量剩余：0M 统付流量剩余：0M；超出后按照0.29元/M收取。\r\n各流量资源使用情况具体如下：\r\n具体话费使用情况请以广西移动出账账单为准。【中国移动】"
+	},
+	"object":{
+		
+	}
+}
+
+-------->>>用时 0秒
+
+
+2018-04-01 10:11:19,612  INFO EasyTestController:91 - 2018-04-01 10:11:19
+第1批_gx001话费查询_是否有话费记录  开始测试。。。。。
+接口地址： http://localhost:18080/api/business/gx/businessQuery
+请求参数:
+{
+"callId":"string",
+"channelCode": "IVR",
+"ext": {"otherPhoneFlag":"0"},
+"regionCode": "GX",
+"telnum": "18878722354",
+"templateCode": "gx_query_0001"
+}
+返回报文:
+{
+	"returnCode":0,
+	"beans":[
+		
+	],
+	"returnMessage":"",
+	"bean":{
+		"isAccOut":"hahahaahha",
+		"test":"成功了",
+		"ttsContent":"您当月累计消费为[
+			n2
+		]9元，普通话费余额为[
+			n2
+		]5.88元。专项预存可用余额为[
+			n2
+		]0元，专项预存待返还金额为[
+			n2
+		]0元。",
+		"smsContent":"尊敬的15289640364客户，您当月累计话费为9元，话费余额为19.80元，已返还未使用专项预存余额0元，专项预存待返还金额0元。\r\n具体话费使用情况请以广西移动出账账单为准。【中国移动】",
+		"isOpen139Mail":"2222222"
+	},
+	"object":{
+		
+	}
+}
+
+-------->>>用时 0秒
+
+
+2018-04-01 10:11:19,635  INFO EasyTestController:91 - 2018-04-01 10:11:19
+第1批_gx001话费查询_是否开通139邮箱  开始测试。。。。。
+接口地址： http://localhost:18080/api/business/gx/businessQuery
+请求参数:
+{
+"callId":"string",
+"channelCode": "IVR",
+"ext": {},
+"regionCode": "GX",
+"telnum": "18878722354",
+"templateCode": "gx_query_0002"
+}
+返回报文:
+{
+	"returnCode":0,
+	"beans":[
+		
+	],
+	"returnMessage":"",
+	"bean":{
+		"result":"1"
+	},
+	"object":{
+		
+	}
+}
+
+-------->>>用时 0秒
+
+
+2018-04-01 10:11:19,662  INFO EasyTestController:91 - 2018-04-01 10:11:19
+第1批_gx001话费查询_下发139邮箱  开始测试。。。。。
+接口地址： http://localhost:18080/api/business/gx/businessHandle
+请求参数:
+{
+"callId":"string",
+"channelCode": "IVR",
+"ext": {"typeId":"1"},
+"regionCode": "GX",
+"telnum": "18878722354",
+"templateCode": "gx_handle_0001"
+}
+返回报文:
+{
+	"returnCode":0,
+	"beans":[
+		
+	],
+	"returnMessage":"",
+	"bean":{
+		"flag":"1"
+	},
+	"object":{
+		
+	}
+}
+
+-------->>>用时 0秒
+
+
+2018-04-01 10:11:19,688  INFO EasyTestController:91 - 2018-04-01 10:11:19
+第1批_gx002已开通业务查询_查询已开通业务  开始测试。。。。。
+接口地址： http://localhost:18080/api/business/gx/businessHandle
+请求参数:
+{
+"callId":"string",
+"channelCode": "IVR",
+"ext": {"cmd":"1132"},
+"regionCode": "GX",
+"telnum": "13627881651",
+"templateCode": "gx_handle_0002"
+}
+返回报文:
+{
+	"returnCode":0,
+	"beans":[
+		
+	],
+	"returnMessage":"",
+	"bean":{
+		"result":"1"
+	},
+	"object":{
+		
+	}
+}
+
+-------->>>用时 0秒
+
+
+2018-04-01 10:11:19,711  INFO EasyTestController:91 - 2018-04-01 10:11:19
+第1批_gx012已办活动查询_下发已办活动查询短信  开始测试。。。。。
+接口地址： http://localhost:18080/api/business/gx/businessHandle
+请求参数:
+{
+"callId":"string",
+"channelCode": "IVR",
+"ext": {"cmd":"1133"},
+"regionCode": "GX",
+"telnum": "13627881651",
+"templateCode": "gx_handle_0002"
+}
+返回报文:
+{
+	"returnCode":0,
+	"beans":[
+		
+	],
+	"returnMessage":"",
+	"bean":{
+		"result":"1"
+	},
+	"object":{
+		
+	}
+}
+
+-------->>>用时 0秒
+
+
+2018-04-01 10:11:19,738  INFO EasyTestController:91 - 2018-04-01 10:11:19
+第1批_gx013交费记录查询_查询交费记录  开始测试。。。。。
+接口地址： http://localhost:18080/api/business/gx/businessQuery
+请求参数:
+{
+"callId":"string",
+"channelCode": "IVR",
+"ext": {"cmd":"1131"},
+"regionCode": "GX",
+"telnum": "13627881651",
+"templateCode": "gx_query_0003"
+}
+返回报文:
+{
+	"returnCode":0,
+	"beans":[
+		
+	],
+	"returnMessage":"",
+	"bean":{
+		"returnCode":"1",
+		"smsSucc":"1",
+		"ttsContent":"尊敬的客户，最近半年内[
+			n2
+		]3条交费记录为：金额:[
+			n2
+		]10.00元,
+		时间:[
+			n1
+		][
+			y1
+		]2018年[
+			n2
+		]01月[
+			n2
+		]04日[
+			n2
+		]13时[
+			n2
+		]02分[
+			n2
+		]22秒,
+		充值方式：其它金额:[
+			n2
+		]19.96元,
+		时间:[
+			n1
+		][
+			y1
+		]2017年[
+			n2
+		]10月[
+			n2
+		]18日[
+			n2
+		]21时[
+			n2
+		]35分[
+			n2
+		]43秒,
+		充值方式：现金金额:[
+			n2
+		]0.04元,
+		时间:[
+			n1
+		][
+			y1
+		]2017年[
+			n2
+		]10月[
+			n2
+		]18日[
+			n2
+		]21时[
+			n2
+		]35分[
+			n2
+		]43秒,
+		充值方式：现金。"
+	},
+	"object":{
+		
+	}
+}
+
+-------->>>用时 0秒
+
+
+2018-04-01 10:11:19,776  INFO EasyTestController:91 - 2018-04-01 10:11:19
+第1批_gx013交费记录查询_是否已开通139邮箱  开始测试。。。。。
+接口地址： http://localhost:18080/api/business/gx/businessQuery
+请求参数:
+{
+"callId":"string",
+"channelCode": "IVR",
+"ext": {},
+"regionCode": "GX",
+"telnum": "13627881651",
+"templateCode": "gx_query_0002"
+}
+返回报文:
+{
+	"returnCode":0,
+	"beans":[
+		
+	],
+	"returnMessage":"",
+	"bean":{
+		"result":"1"
+	},
+	"object":{
+		
+	}
+}
+
+-------->>>用时 0秒
+
+
+2018-04-01 10:11:19,802  INFO EasyTestController:91 - 2018-04-01 10:11:19
+第1批_gx013交费记录查询_下发139邮箱  开始测试。。。。。
+接口地址： http://localhost:18080/api/business/gx/businessHandle
+请求参数:
+{
+"callId":"string",
+"channelCode": "IVR",
+"ext": {"typeId":"4"},
+"regionCode": "GX",
+"telnum": "13627881651",
+"templateCode": "gx_handle_0001"
+}
+返回报文:
+{
+	"returnCode":0,
+	"beans":[
+		
+	],
+	"returnMessage":"",
+	"bean":{
+		"flag":"1"
+	},
+	"object":{
+		
+	}
+}
+
+-------->>>用时 0秒
+
+
+2018-04-01 10:11:19,843  INFO EasyTestController:91 - 2018-04-01 10:11:19
+第1批_gx019返还记录查询_返还记录查询  开始测试。。。。。
+接口地址： http://localhost:18080/api/business/gx/businessQuery
+请求参数:
+{
+"callId":"string",
+"channelCode": "IVR",
+"ext": {},
+"regionCode": "GX",
+"telnum": "13627881651",
+"templateCode": "gx_query_0004"
+}
+返回报文:
+{
+	"returnCode":0,
+	"beans":[
+		
+	],
+	"returnMessage":"",
+	"bean":{
+		"returnCode":"1",
+		"smsSucc":"1",
+		"ttsContent":"最近三个月返还记录为：[
+			n1
+		][
+			y1
+		]2017年[
+			n2
+		]11月返还[
+			n2
+		]60.00元,
+		[
+			n1
+		][
+			y1
+		]2017年[
+			n2
+		]12月返还[
+			n2
+		]60.00元,
+		[
+			n1
+		][
+			y1
+		]2018年[
+			n2
+		]1月返还[
+			n2
+		]60.00元,
+		"
+	},
+	"object":{
+		
+	}
+}
+
+-------->>>用时 0秒
+
+
+2018-04-01 10:11:19,879  INFO EasyTestController:91 - 2018-04-01 10:11:19
+第1批_gx019返还记录查询_是否开通139邮箱  开始测试。。。。。
+接口地址： http://localhost:18080/api/business/gx/businessQuery
+请求参数:
+{
+"callId":"string",
+"channelCode": "IVR",
+"ext": {},
+"regionCode": "GX",
+"telnum": "13627881651",
+"templateCode": "gx_query_0002"
+}
+返回报文:
+{
+	"returnCode":0,
+	"beans":[
+		
+	],
+	"returnMessage":"",
+	"bean":{
+		"result":"1"
+	},
+	"object":{
+		
+	}
+}
+
+-------->>>用时 0秒
+
+
+2018-04-01 10:11:19,923  INFO EasyTestController:91 - 2018-04-01 10:11:19
+第1批_gx019返还记录查询_下发139邮箱  开始测试。。。。。
+接口地址： http://localhost:18080/api/business/gx/businessHandle
+请求参数:
+{
+"callId":"string",
+"channelCode": "IVR",
+"ext": {"typeId":"5"},
+"regionCode": "GX",
+"telnum": "13627881651",
+"templateCode": "gx_handle_0001"
+}
+返回报文:
+{
+	"returnCode":0,
+	"beans":[
+		
+	],
+	"returnMessage":"",
+	"bean":{
+		"flag":"1"
+	},
+	"object":{
+		
+	}
+}
+
+-------->>>用时 0秒
+
+
+2018-04-01 10:11:19,969  INFO EasyTestController:91 - 2018-04-01 10:11:19
+第1批_gx003账单查询_查询月份选项语音内容(历史话费)  开始测试。。。。。
+接口地址： http://localhost:18080/api/business/gx/businessQuery
+请求参数:
+{
+"callId":"string",
+"channelCode": "IVR",
+"ext": {},
+"regionCode": "GX",
+"telnum": "13627881651",
+"templateCode": "gx_query_0016"
+}
+返回报文:
+{
+	"returnCode":0,
+	"beans":[
+		
+	],
+	"returnMessage":"",
+	"bean":{
+		"isSmartPhone":"1",
+		"pszMonth5":"201706",
+		"isOpen139Mail":"0",
+		"pszMonth2":"201709",
+		"pszMonth1":"201710",
+		"pszMonth4":"201707",
+		"pszMonth3":"201708",
+		"pszMonths":"上月账单查询请按1，09月按2，08月按3，07月按4，06月按5"
+	},
+	"object":{
+		
+	}
+}
+
+-------->>>用时 0秒
+
+
+2018-04-01 10:11:20,020  INFO EasyTestController:91 - 2018-04-01 10:11:20
+第1批_gx003账单查询_是否智能机  开始测试。。。。。
+接口地址： http://localhost:18080/api/business/gx/businessQuery
+请求参数:
+{
+"callId":"string",
+"channelCode": "IVR",
+"ext": {},
+"regionCode": "GX",
+"telnum": "13627881651",
+"templateCode": "gx_query_0017"
+}
+返回报文:
+{
+	"returnCode":0,
+	"beans":[
+		
+	],
+	"returnMessage":"",
+	"bean":{
+		"isSmartPhone":"1"
+	},
+	"object":{
+		
+	}
+}
+
+-------->>>用时 0秒
+
+
+2018-04-01 10:11:20,080  INFO EasyTestController:91 - 2018-04-01 10:11:20
+第1批_gx003账单查询_查询历史话费  开始测试。。。。。
+接口地址： http://localhost:18080/api/business/gx/businessQuery
+请求参数:
+{
+"callId":"string",
+"channelCode": "IVR",
+"ext": {"yearMonth":"201801"},
+"regionCode": "GX",
+"telnum": "13627881651",
+"templateCode": "gx_query_0018"
+}
+返回报文:
+{
+	"returnCode":0,
+	"beans":[
+		
+	],
+	"returnMessage":"",
+	"bean":{
+		"returnCode":"1",
+		"ttsContent":"您[
+			n1
+		][
+			y1
+		]2017年[
+			n2
+		]10月的总话费为[
+			n2
+		]9.10元。其中：套餐月租费[
+			n2
+		]8.33元 ，移动梦网上行费用[
+			n2
+		]0.1元 ，套餐月租费(增值费)[
+			n2
+		]0.67元 。",
+		"outItem1":"15289640364",
+		"outItem2":"910"
+	},
+	"object":{
+		
+	}
+}
+
+-------->>>用时 0秒
+
+
+2018-04-01 10:11:20,114  INFO EasyTestController:91 - 2018-04-01 10:11:20
+第1批_gx003账单查询_下发139邮件  开始测试。。。。。
+接口地址： http://localhost:18080/api/business/gx/businessHandle
+请求参数:
+{
+"callId":"string",
+"channelCode": "IVR",
+"ext": {"typeId":"3","billDate":"201712"},
+"regionCode": "GX",
+"telnum": "13627881651",
+"templateCode": "gx_handle_0001"
+}
+返回报文:
+{
+	"returnCode":0,
+	"beans":[
+		
+	],
+	"returnMessage":"",
+	"bean":{
+		"flag":"1"
+	},
+	"object":{
+		
+	}
+}
+
+-------->>>用时 0秒
+
+
+2018-04-01 10:11:20,169  INFO EasyTestController:91 - 2018-04-01 10:11:20
+第1批_gx005流量查询_查询实时流量  开始测试。。。。。
+接口地址： http://localhost:18080/api/business/gx/businessQuery
+请求参数:
+{
+"callId":"string",
+"channelCode": "IVR",
+"ext": {},
+"regionCode": "GX",
+"telnum": "13627881651",
+"templateCode": "gx_query_0005"
+}
+返回报文:
+{
+	"returnCode":0,
+	"beans":[
+		
+	],
+	"returnMessage":"",
+	"bean":{
+		"returnCode":"1",
+		"ttsContent":"上月结转至本月的剩余流量为[
+			n2
+		]0兆，您本月已累计使用移动数据流量[
+			n2
+		]0兆;\u201d）",
+		"smsContent":"尊敬客户，截至2017年11月08日 15点20分，本月流量使用如下：累计已使用国内移动数据上网流量：0M 套餐剩余流量：0M。\r\n其中: 国内通用流量剩余：0M 闲时流量剩余：0M 区内流量剩余：0M 统付流量剩余：0M；超出后按照0.29元/M收取。\r\n各流量资源使用情况具体如下：\r\n具体话费使用情况请以广西移动出账账单为准。【中国移动】"
+	},
+	"object":{
+		
+	}
+}
+
+-------->>>用时 0秒
+
+
+2018-04-01 10:19:36,321  INFO EasyTestController:91 - 2018-04-01 10:19:36
+第1批_gx001话费查询_是否有话费记录  开始测试。。。。。
+接口地址： http://localhost:18080/api/business/gx/businessQuery
+请求参数:
+{
+"callId":"string",
+"channelCode": "IVR",
+"ext": {"otherPhoneFlag":"0"},
+"regionCode": "GX",
+"telnum": "18878722354",
+"templateCode": "gx_query_0001"
+}
+返回报文:
+{
+	"returnCode":0,
+	"beans":[
+		
+	],
+	"returnMessage":"",
+	"bean":{
+		"isAccOut":"hahahaahha",
+		"test":"成功了",
+		"ttsContent":"您当月累计消费为[
+			n2
+		]9元，普通话费余额为[
+			n2
+		]5.88元。专项预存可用余额为[
+			n2
+		]0元，专项预存待返还金额为[
+			n2
+		]0元。",
+		"smsContent":"尊敬的15289640364客户，您当月累计话费为9元，话费余额为19.80元，已返还未使用专项预存余额0元，专项预存待返还金额0元。\r\n具体话费使用情况请以广西移动出账账单为准。【中国移动】",
+		"isOpen139Mail":"2222222"
+	},
+	"object":{
+		
+	}
+}
+
+-------->>>用时 0秒
+
+
+2018-04-01 10:25:00,294  INFO EasyTestController:91 - 2018-04-01 10:25:00
+第1批_gx001话费查询_是否有话费记录  开始测试。。。。。
+接口地址： http://localhost:18080/api/business/gx/businessQuery
+请求参数:
+{
+"callId":"string",
+"channelCode": "IVR",
+"ext": {"otherPhoneFlag":"0"},
+"regionCode": "GX",
+"telnum": "18878722354",
+"templateCode": "gx_query_0001"
+}
+返回报文:
+{
+	"returnCode":0,
+	"beans":[
+		
+	],
+	"returnMessage":"",
+	"bean":{
+		"isAccOut":"hahahaahha",
+		"test":"成功了",
+		"ttsContent":"您当月累计消费为[
+			n2
+		]9元，普通话费余额为[
+			n2
+		]5.88元。专项预存可用余额为[
+			n2
+		]0元，专项预存待返还金额为[
+			n2
+		]0元。",
+		"smsContent":"尊敬的15289640364客户，您当月累计话费为9元，话费余额为19.80元，已返还未使用专项预存余额0元，专项预存待返还金额0元。\r\n具体话费使用情况请以广西移动出账账单为准。【中国移动】",
+		"isOpen139Mail":"2222222"
+	},
+	"object":{
+		
+	}
+}
+
+-------->>>用时 0秒
+
+

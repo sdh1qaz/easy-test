@@ -87,29 +87,29 @@ public class StringComomnUtil {
     }
    
     /**  
-    * @Description: TODO(字符串数组A和字符串数组B比较，返回的列表中的每一个字符串
-    * 都在A中且都不在B中,打印，就是A有B没有的)  
+    * @Description: TODO(字符串数组A和字符串数组B比较，返回A有B没有的字符串列表)  
     * @param  String[]
     * @return  String[]
     * @throws  
     */ 
-    public static List<String> getStrA(String[] strA,String[] strB ){
+    public static List<String> getStrA(String strA,String strB ){
+    	List<String> listA = TextOperation.quchong(strA);//字符串去重
+    	List<String> listB = TextOperation.quchong(strB);
     	List<String> list = new ArrayList<String>();
-    	List<String> listB = Arrays.asList(strB);//字符串数组strB换成集合
-    	for(int i=0;i<strA.length;i++){
-    		if(!listB.contains(strA[i]))
-    			list.add(strA[i]);
-    		else {
+    	for(int i=0;i<listA.size();i++){
+    		if(!listB.contains(listA.get(i)))
+    			list.add(listA.get(i));
+    		/*else {
 				System.out.println("两个字符串数组都有   " + strA[i]);
-			}
+			}*/
     	}
-    	if(list.size() > 0){
+    	/*if(list.size() > 0){
     		ArrayListUtil.traverseAndprint(list);
     		System.out.println("前者有后者没有： " + list.size());
     	}
     	else {
 			System.out.println("后面的数组包含前一个数组************************");//A有的B全有
-		}
+		}*/
     	return list;
     	
     }

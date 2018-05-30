@@ -1,0 +1,665 @@
+2018-03-30 15:26:40,653  INFO EasyTestAllApplication:16 - 工具开始启动。。。。。。。。。。。。
+2018-03-30 15:26:40,937  INFO EasyTestAllApplication:16 - 工具开始启动。。。。。。。。。。。。
+2018-03-30 15:26:41,121  INFO Version:21 - HV000001: Hibernate Validator 6.0.7.Final
+2018-03-30 15:26:41,316  INFO EasyTestAllApplication:50 - Starting EasyTestAllApplication on ifly-13753 with PID 4400 (E:\easy-test\target\classes started by admin in E:\easy-test)
+2018-03-30 15:26:41,317  INFO EasyTestAllApplication:652 - No active profile set, falling back to default profiles: default
+2018-03-30 15:26:41,438  INFO AnnotationConfigServletWebServerApplicationContext:589 - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@4d4eab72: startup date [Fri Mar 30 15:26:41 CST 2018]; root of context hierarchy
+2018-03-30 15:26:44,511  INFO TomcatWebServer:91 - Tomcat initialized with port(s): 8008 (http)
+2018-03-30 15:26:44,753  INFO ContextLoader:285 - Root WebApplicationContext: initialization completed in 3318 ms
+2018-03-30 15:26:45,060  INFO ServletRegistrationBean:185 - Servlet dispatcherServlet mapped to [/]
+2018-03-30 15:26:45,065  INFO FilterRegistrationBean:243 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-03-30 15:26:45,066  INFO FilterRegistrationBean:243 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-03-30 15:26:45,067  INFO FilterRegistrationBean:243 - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-03-30 15:26:45,067  INFO FilterRegistrationBean:243 - Mapping filter: 'requestContextFilter' to: [/*]
+2018-03-30 15:26:45,637  INFO RequestMappingHandlerAdapter:567 - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@4d4eab72: startup date [Fri Mar 30 15:26:41 CST 2018]; root of context hierarchy
+2018-03-30 15:26:45,729  INFO RequestMappingHandlerMapping:548 - Mapped "{[/init/getNodes]}" onto java.lang.String com.easytestall.controller.EasyTestController.getTreeNodes()
+2018-03-30 15:26:45,732  INFO RequestMappingHandlerMapping:548 - Mapped "{[/requestDto/getBody]}" onto java.lang.String com.easytestall.controller.EasyTestController.getRequBody(java.lang.String) throws java.io.IOException
+2018-03-30 15:26:45,734  INFO RequestMappingHandlerMapping:548 - Mapped "{[/test/testBatchApi]}" onto java.lang.String com.easytestall.controller.EasyTestController.testApiByBatch(java.lang.String) throws org.apache.http.ParseException,java.io.IOException
+2018-03-30 15:26:45,734  INFO RequestMappingHandlerMapping:548 - Mapped "{[/ztree/updateNodes]}" onto java.lang.String com.easytestall.controller.EasyTestController.updateTreeNodes()
+2018-03-30 15:26:45,735  INFO RequestMappingHandlerMapping:548 - Mapped "{[/requestDto/updateBody]}" onto java.lang.String com.easytestall.controller.EasyTestController.updateParam(java.lang.String,int,java.lang.String)
+2018-03-30 15:26:45,736  INFO RequestMappingHandlerMapping:548 - Mapped "{[/redu/reduText],produces=[application/json]}" onto public com.easytestall.pojo.TextReduplicationPojo com.easytestall.controller.TextReduController.reduText(java.lang.String)
+2018-03-30 15:26:45,747  INFO RequestMappingHandlerMapping:548 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-03-30 15:26:45,748  INFO RequestMappingHandlerMapping:548 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-03-30 15:26:45,809  INFO SimpleUrlHandlerMapping:373 - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-30 15:26:45,810  INFO SimpleUrlHandlerMapping:373 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-30 15:26:45,908  INFO SimpleUrlHandlerMapping:373 - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-30 15:26:46,467  INFO OptionalLiveReloadServer:57 - LiveReload server is running on port 35729
+2018-03-30 15:26:46,537  INFO AnnotationMBeanExporter:434 - Registering beans for JMX exposure on startup
+2018-03-30 15:26:46,805  INFO TomcatWebServer:205 - Tomcat started on port(s): 8008 (http) with context path ''
+2018-03-30 15:26:46,810  INFO EasyTestAllApplication:59 - Started EasyTestAllApplication in 5.866 seconds (JVM running for 6.675)
+2018-03-30 15:26:46,812  INFO LoadDataService:25 - 启动时加载数据..........
+2018-03-30 15:26:47,877  INFO LoadDataService:32 - 启动时加载数据完毕..........
+2018-03-30 15:27:49,493  INFO DispatcherServlet:494 - FrameworkServlet 'dispatcherServlet': initialization started
+2018-03-30 15:27:49,520  INFO DispatcherServlet:513 - FrameworkServlet 'dispatcherServlet': initialization completed in 27 ms
+2018-03-30 15:28:03,917  INFO EasyTestController:46 - 从initial_tps.xls中读取最新接口信息。。。。。。。。。。
+2018-03-30 15:28:03,927  INFO EasyTestController:61 - 从initial_tps.xls中读取最新接口信息完毕。。。。。。。。。。
+2018-03-30 15:32:38,068  INFO ExcelUtil:196 - 设置单元格内容时出错:
+java.io.FileNotFoundException: D:\initial_tps.xls (另一个程序正在使用此文件，进程无法访问。)
+2018-03-30 15:32:57,612  INFO EasyTestController:46 - 从initial_tps.xls中读取最新接口信息。。。。。。。。。。
+2018-03-30 15:32:57,624  INFO EasyTestController:61 - 从initial_tps.xls中读取最新接口信息完毕。。。。。。。。。。
+2018-03-30 15:51:12,343  INFO AnnotationConfigServletWebServerApplicationContext:989 - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@4d4eab72: startup date [Fri Mar 30 15:26:41 CST 2018]; root of context hierarchy
+2018-03-30 15:51:12,354  INFO AnnotationMBeanExporter:452 - Unregistering JMX-exposed beans on shutdown
+2018-03-30 15:51:12,638  INFO EasyTestAllApplication:16 - 工具开始启动。。。。。。。。。。。。
+2018-03-30 15:51:12,687  INFO EasyTestAllApplication:50 - Starting EasyTestAllApplication on ifly-13753 with PID 4400 (E:\easy-test\target\classes started by admin in E:\easy-test)
+2018-03-30 15:51:12,688  INFO EasyTestAllApplication:652 - No active profile set, falling back to default profiles: default
+2018-03-30 15:51:12,691  INFO AnnotationConfigServletWebServerApplicationContext:589 - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@47ec00b0: startup date [Fri Mar 30 15:51:12 CST 2018]; root of context hierarchy
+2018-03-30 15:51:13,209  INFO TomcatWebServer:91 - Tomcat initialized with port(s): 8008 (http)
+2018-03-30 15:51:13,362  INFO ContextLoader:285 - Root WebApplicationContext: initialization completed in 671 ms
+2018-03-30 15:51:13,391  INFO ServletRegistrationBean:185 - Servlet dispatcherServlet mapped to [/]
+2018-03-30 15:51:13,392  INFO FilterRegistrationBean:243 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-03-30 15:51:13,394  INFO FilterRegistrationBean:243 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-03-30 15:51:13,395  INFO FilterRegistrationBean:243 - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-03-30 15:51:13,396  INFO FilterRegistrationBean:243 - Mapping filter: 'requestContextFilter' to: [/*]
+2018-03-30 15:51:13,506  INFO RequestMappingHandlerAdapter:567 - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@47ec00b0: startup date [Fri Mar 30 15:51:12 CST 2018]; root of context hierarchy
+2018-03-30 15:51:13,515  INFO RequestMappingHandlerMapping:548 - Mapped "{[/init/getNodes]}" onto java.lang.String com.easytestall.controller.EasyTestController.getTreeNodes()
+2018-03-30 15:51:13,516  INFO RequestMappingHandlerMapping:548 - Mapped "{[/requestDto/getBody]}" onto java.lang.String com.easytestall.controller.EasyTestController.getRequBody(java.lang.String) throws java.io.IOException
+2018-03-30 15:51:13,516  INFO RequestMappingHandlerMapping:548 - Mapped "{[/test/testBatchApi]}" onto java.lang.String com.easytestall.controller.EasyTestController.testApiByBatch(java.lang.String) throws org.apache.http.ParseException,java.io.IOException
+2018-03-30 15:51:13,517  INFO RequestMappingHandlerMapping:548 - Mapped "{[/ztree/updateNodes]}" onto java.lang.String com.easytestall.controller.EasyTestController.updateTreeNodes()
+2018-03-30 15:51:13,518  INFO RequestMappingHandlerMapping:548 - Mapped "{[/requestDto/updateBody]}" onto java.lang.String com.easytestall.controller.EasyTestController.updateParam(java.lang.String,int,java.lang.String)
+2018-03-30 15:51:13,518  INFO RequestMappingHandlerMapping:548 - Mapped "{[/redu/reduText],produces=[application/json]}" onto public com.easytestall.pojo.TextReduplicationPojo com.easytestall.controller.TextReduController.reduText(java.lang.String)
+2018-03-30 15:51:13,525  INFO RequestMappingHandlerMapping:548 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-03-30 15:51:13,526  INFO RequestMappingHandlerMapping:548 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-03-30 15:51:13,534  INFO SimpleUrlHandlerMapping:373 - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-30 15:51:13,535  INFO SimpleUrlHandlerMapping:373 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-30 15:51:13,550  INFO SimpleUrlHandlerMapping:373 - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-30 15:51:13,610  INFO OptionalLiveReloadServer:57 - LiveReload server is running on port 35729
+2018-03-30 15:51:13,656  INFO AnnotationMBeanExporter:434 - Registering beans for JMX exposure on startup
+2018-03-30 15:51:13,671  INFO TomcatWebServer:205 - Tomcat started on port(s): 8008 (http) with context path ''
+2018-03-30 15:51:13,672  INFO EasyTestAllApplication:59 - Started EasyTestAllApplication in 1.029 seconds (JVM running for 1473.537)
+2018-03-30 15:51:13,673  INFO LoadDataService:25 - 启动时加载数据..........
+2018-03-30 15:51:13,684  INFO LoadDataService:32 - 启动时加载数据完毕..........
+2018-03-30 15:51:13,685  INFO ConditionEvaluationDeltaLoggingListener:56 - Condition evaluation unchanged
+2018-03-30 15:55:03,959  INFO DispatcherServlet:494 - FrameworkServlet 'dispatcherServlet': initialization started
+2018-03-30 15:55:03,975  INFO DispatcherServlet:513 - FrameworkServlet 'dispatcherServlet': initialization completed in 13 ms
+2018-03-30 15:59:51,168  INFO TextReduController:37 - 文本去重。
+输入文本：
+是否有话费记录 
+是否开通139邮箱 
+下发139邮箱 
+查询已开通业务（根据短信指令，下发短信） 
+下发已办活动查询短信 
+查询交费记录（短信不由业务端下发） 
+是否开通139邮箱 
+下发139邮箱 
+返还记录查询（短信不由业务端下发） 
+是否开通139邮箱 
+下发139邮箱 
+查询月份选项语音内容(历史话费) 
+是否智能机 
+查询历史话费 
+下发139邮件 
+查询实时流量 
+是否已开通安心包 
+开通安心包 
+是否已开通放心用 
+开通放心用 
+套餐资费查询 
+查询本月套餐 
+套餐分钟数查询 
+查询本月套餐 
+下月是否有18元飞享套餐 
+本月是否有18元飞享套餐 
+查询本月套餐 
+开通18元飞享套餐 
+下月是否有38元飞享套餐 
+本月是否有38元飞享套餐 
+查询本月套餐 
+开通38元飞享套餐 
+下月是否有58元飞享套餐 
+本月是否有58元飞享套餐 
+查询本月套餐 
+开通58元飞享套餐 
+当月是否开通流量套餐 
+当月是否开通流量套餐 
+下月是否有20元流量套餐 
+开通20元流量套餐 
+当月是否开通流量套餐 
+下月是否有30元流量套餐 
+开通30元流量套餐 
+当月是否开通流量套餐 
+下月是否有50元流量套餐 
+开通50元流量套餐 
+当月是否开通流量套餐 
+下月是否有70元流量套餐 
+开通70元流量套餐 
+获取当前总积分 
+获取当前总积分 
+查询积分范围 
+获取当前总积分 
+查询积分范围 
+获取当前总积分 
+查询积分范围 
+判断是否开通GPRS 
+查询积分兑换100M流量是否超限 
+查询积分兑换30M流量是否超限 
+积分兑换流量 
+开通GPRS功能 
+本月是否积分兑换过话费 
+查询积分范围 
+积分兑换话费 
+查询全额代付 
+查询实时话费 
+查询是否月结用户 
+紧急开机 
+查找用户星级 
+下月是否有8元飞享套餐 
+本月是否有8元飞享套餐 
+开通8元飞享套餐 
+下月是否有88元飞享套餐 
+本月是否有88元飞享套餐 
+查询本月套餐 
+开通88元飞享套餐 
+下月是否有138元飞享套餐 
+本月是否有138元飞享套餐 
+查询本月套餐 
+开通138元飞享套餐 
+下月是否有188元飞享套餐 
+本月是否有188元飞享套餐 
+查询本月套餐 
+开通188元飞享套餐 
+查询特殊号码 
+查询垃圾短信黑名单 
+检测密码是否被锁 
+密码校验 
+停开机 
+下发业务限制短信 
+根据宽带账号获取宽带信息 
+检测宽带密码是否被锁 
+检查宽带密码 
+按规则校验密码 
+修改宽带密码 
+根据宽带账号获取宽带信息 
+查询用户停开机状态信息 
+检查身份证信息 
+重置宽带密码 
+检测密码是否被锁 
+密码校验 
+按规则校验密码 
+密码变更 
+下发密码修改成功短信 
+检查身份证信息 
+密码变更 
+下发密码重置成功短信 
+当月是否开通流量套餐 
+下月是否开通100元5G流量套餐 
+开通100元5G流量套餐 
+当月是否开通流量套餐 
+下月是否开通150元10G流量套餐 
+开通150元10G流量套餐 
+当月是否开通非常流量套餐 
+下月是否开通10元国内闲时流量套餐 
+开通10元国内闲时流量套餐 
+获取当月开通流量套餐达到10次 
+开通500M日流量套餐 
+获取当月开通流量套餐达到10次 
+开通15元1G流量日流量套餐 
+获取当月开通流量套餐达到10次 
+开通6元500M流量小时流量套餐 
+获取当月开通流量套餐达到10次 
+开通9元1G流量小时流量套餐 
+当月是否开通非常流量套餐 
+当月是否开通流量套餐 
+当月是否开通非常流量套餐 
+下月是否开通10元国内闲时流量套餐 
+取消10元国内闲时流量套餐 
+当月是否开通流量套餐 
+下月是否开通XX元流量套餐 
+取消XX元流量套餐 
+去重后文本：
+下发139邮件
+下发139邮箱
+下发业务限制短信
+下发密码修改成功短信
+下发密码重置成功短信
+下发已办活动查询短信
+下月是否开通100元5G流量套餐
+下月是否开通10元国内闲时流量套餐
+下月是否开通150元10G流量套餐
+下月是否开通XX元流量套餐
+下月是否有138元飞享套餐
+下月是否有188元飞享套餐
+下月是否有18元飞享套餐
+下月是否有20元流量套餐
+下月是否有30元流量套餐
+下月是否有38元飞享套餐
+下月是否有50元流量套餐
+下月是否有58元飞享套餐
+下月是否有70元流量套餐
+下月是否有88元飞享套餐
+下月是否有8元飞享套餐
+修改宽带密码
+停开机
+判断是否开通GPRS
+取消10元国内闲时流量套餐
+取消XX元流量套餐
+套餐分钟数查询
+套餐资费查询
+密码变更
+密码校验
+开通100元5G流量套餐
+开通10元国内闲时流量套餐
+开通138元飞享套餐
+开通150元10G流量套餐
+开通15元1G流量日流量套餐
+开通188元飞享套餐
+开通18元飞享套餐
+开通20元流量套餐
+开通30元流量套餐
+开通38元飞享套餐
+开通500M日流量套餐
+开通50元流量套餐
+开通58元飞享套餐
+开通6元500M流量小时流量套餐
+开通70元流量套餐
+开通88元飞享套餐
+开通8元飞享套餐
+开通9元1G流量小时流量套餐
+开通GPRS功能
+开通安心包
+开通放心用
+当月是否开通流量套餐
+当月是否开通非常流量套餐
+按规则校验密码
+是否已开通安心包
+是否已开通放心用
+是否开通139邮箱
+是否智能机
+是否有话费记录
+本月是否有138元飞享套餐
+本月是否有188元飞享套餐
+本月是否有18元飞享套餐
+本月是否有38元飞享套餐
+本月是否有58元飞享套餐
+本月是否有88元飞享套餐
+本月是否有8元飞享套餐
+本月是否积分兑换过话费
+查找用户星级
+查询交费记录（短信不由业务端下发）
+查询全额代付
+查询历史话费
+查询垃圾短信黑名单
+查询实时流量
+查询实时话费
+查询已开通业务（根据短信指令，下发短信）
+查询是否月结用户
+查询月份选项语音内容(历史话费)
+查询本月套餐
+查询特殊号码
+查询用户停开机状态信息
+查询积分兑换100M流量是否超限
+查询积分兑换30M流量是否超限
+查询积分范围
+根据宽带账号获取宽带信息
+检查宽带密码
+检查身份证信息
+检测宽带密码是否被锁
+检测密码是否被锁
+积分兑换流量
+积分兑换话费
+紧急开机
+获取当前总积分
+获取当月开通流量套餐达到10次
+返还记录查询（短信不由业务端下发）
+重置宽带密码
+去重前的文本个数： 132,  去重后的文本个数： 95
+2018-03-30 16:01:48,237  INFO AnnotationConfigServletWebServerApplicationContext:989 - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@47ec00b0: startup date [Fri Mar 30 15:51:12 CST 2018]; root of context hierarchy
+2018-03-30 16:01:48,245  INFO AnnotationMBeanExporter:452 - Unregistering JMX-exposed beans on shutdown
+2018-03-30 16:01:49,140  INFO EasyTestAllApplication:16 - 工具开始启动。。。。。。。。。。。。
+2018-03-30 16:01:49,283  INFO EasyTestAllApplication:50 - Starting EasyTestAllApplication on ifly-13753 with PID 4400 (E:\easy-test\target\classes started by admin in E:\easy-test)
+2018-03-30 16:01:49,284  INFO EasyTestAllApplication:652 - No active profile set, falling back to default profiles: default
+2018-03-30 16:01:49,301  INFO AnnotationConfigServletWebServerApplicationContext:589 - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@37d83c3c: startup date [Fri Mar 30 16:01:49 CST 2018]; root of context hierarchy
+2018-03-30 16:01:50,500  INFO TomcatWebServer:91 - Tomcat initialized with port(s): 8008 (http)
+2018-03-30 16:01:51,171  INFO ContextLoader:285 - Root WebApplicationContext: initialization completed in 1870 ms
+2018-03-30 16:01:51,409  INFO ServletRegistrationBean:185 - Servlet dispatcherServlet mapped to [/]
+2018-03-30 16:01:51,412  INFO FilterRegistrationBean:243 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-03-30 16:01:51,412  INFO FilterRegistrationBean:243 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-03-30 16:01:51,413  INFO FilterRegistrationBean:243 - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-03-30 16:01:51,413  INFO FilterRegistrationBean:243 - Mapping filter: 'requestContextFilter' to: [/*]
+2018-03-30 16:01:51,588  INFO RequestMappingHandlerAdapter:567 - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@37d83c3c: startup date [Fri Mar 30 16:01:49 CST 2018]; root of context hierarchy
+2018-03-30 16:01:51,600  INFO RequestMappingHandlerMapping:548 - Mapped "{[/init/getNodes]}" onto java.lang.String com.easytestall.controller.EasyTestController.getTreeNodes()
+2018-03-30 16:01:51,601  INFO RequestMappingHandlerMapping:548 - Mapped "{[/requestDto/getBody]}" onto java.lang.String com.easytestall.controller.EasyTestController.getRequBody(java.lang.String) throws java.io.IOException
+2018-03-30 16:01:51,602  INFO RequestMappingHandlerMapping:548 - Mapped "{[/test/testBatchApi]}" onto java.lang.String com.easytestall.controller.EasyTestController.testApiByBatch(java.lang.String) throws org.apache.http.ParseException,java.io.IOException
+2018-03-30 16:01:51,602  INFO RequestMappingHandlerMapping:548 - Mapped "{[/ztree/updateNodes]}" onto java.lang.String com.easytestall.controller.EasyTestController.updateTreeNodes()
+2018-03-30 16:01:51,602  INFO RequestMappingHandlerMapping:548 - Mapped "{[/requestDto/updateBody]}" onto java.lang.String com.easytestall.controller.EasyTestController.updateParam(java.lang.String,int,java.lang.String)
+2018-03-30 16:01:51,603  INFO RequestMappingHandlerMapping:548 - Mapped "{[/redu/reduText],produces=[application/json]}" onto public com.easytestall.pojo.TextReduplicationPojo com.easytestall.controller.TextReduController.reduText(java.lang.String)
+2018-03-30 16:01:51,617  INFO RequestMappingHandlerMapping:548 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-03-30 16:01:51,617  INFO RequestMappingHandlerMapping:548 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-03-30 16:01:51,627  INFO SimpleUrlHandlerMapping:373 - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-30 16:01:51,628  INFO SimpleUrlHandlerMapping:373 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-30 16:01:51,642  INFO SimpleUrlHandlerMapping:373 - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-30 16:01:51,851  INFO OptionalLiveReloadServer:57 - LiveReload server is running on port 35729
+2018-03-30 16:01:52,110  INFO AnnotationMBeanExporter:434 - Registering beans for JMX exposure on startup
+2018-03-30 16:01:52,152  INFO TomcatWebServer:205 - Tomcat started on port(s): 8008 (http) with context path ''
+2018-03-30 16:01:52,152  INFO EasyTestAllApplication:59 - Started EasyTestAllApplication in 2.986 seconds (JVM running for 2111.536)
+2018-03-30 16:01:52,154  INFO LoadDataService:25 - 启动时加载数据..........
+2018-03-30 16:01:52,164  INFO LoadDataService:32 - 启动时加载数据完毕..........
+2018-03-30 16:01:52,166  INFO ConditionEvaluationDeltaLoggingListener:56 - Condition evaluation unchanged
+2018-03-30 16:01:53,677  INFO AnnotationConfigServletWebServerApplicationContext:989 - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@37d83c3c: startup date [Fri Mar 30 16:01:49 CST 2018]; root of context hierarchy
+2018-03-30 16:01:53,679  INFO AnnotationMBeanExporter:452 - Unregistering JMX-exposed beans on shutdown
+2018-03-30 16:01:53,962  INFO EasyTestAllApplication:16 - 工具开始启动。。。。。。。。。。。。
+2018-03-30 16:01:54,023  INFO EasyTestAllApplication:50 - Starting EasyTestAllApplication on ifly-13753 with PID 4400 (E:\easy-test\target\classes started by admin in E:\easy-test)
+2018-03-30 16:01:54,023  INFO EasyTestAllApplication:652 - No active profile set, falling back to default profiles: default
+2018-03-30 16:01:54,029  INFO AnnotationConfigServletWebServerApplicationContext:589 - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@3b3e6907: startup date [Fri Mar 30 16:01:54 CST 2018]; root of context hierarchy
+2018-03-30 16:01:55,560  INFO TomcatWebServer:91 - Tomcat initialized with port(s): 8008 (http)
+2018-03-30 16:01:55,616  INFO ContextLoader:285 - Root WebApplicationContext: initialization completed in 1587 ms
+2018-03-30 16:01:55,659  INFO ServletRegistrationBean:185 - Servlet dispatcherServlet mapped to [/]
+2018-03-30 16:01:55,660  INFO FilterRegistrationBean:243 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-03-30 16:01:55,667  INFO FilterRegistrationBean:243 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-03-30 16:01:55,667  INFO FilterRegistrationBean:243 - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-03-30 16:01:55,669  INFO FilterRegistrationBean:243 - Mapping filter: 'requestContextFilter' to: [/*]
+2018-03-30 16:01:55,950  INFO RequestMappingHandlerAdapter:567 - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@3b3e6907: startup date [Fri Mar 30 16:01:54 CST 2018]; root of context hierarchy
+2018-03-30 16:01:55,956  INFO RequestMappingHandlerMapping:548 - Mapped "{[/init/getNodes]}" onto java.lang.String com.easytestall.controller.EasyTestController.getTreeNodes()
+2018-03-30 16:01:55,957  INFO RequestMappingHandlerMapping:548 - Mapped "{[/requestDto/getBody]}" onto java.lang.String com.easytestall.controller.EasyTestController.getRequBody(java.lang.String) throws java.io.IOException
+2018-03-30 16:01:55,957  INFO RequestMappingHandlerMapping:548 - Mapped "{[/test/testBatchApi]}" onto java.lang.String com.easytestall.controller.EasyTestController.testApiByBatch(java.lang.String) throws org.apache.http.ParseException,java.io.IOException
+2018-03-30 16:01:55,958  INFO RequestMappingHandlerMapping:548 - Mapped "{[/ztree/updateNodes]}" onto java.lang.String com.easytestall.controller.EasyTestController.updateTreeNodes()
+2018-03-30 16:01:55,959  INFO RequestMappingHandlerMapping:548 - Mapped "{[/requestDto/updateBody]}" onto java.lang.String com.easytestall.controller.EasyTestController.updateParam(java.lang.String,int,java.lang.String)
+2018-03-30 16:01:55,959  INFO RequestMappingHandlerMapping:548 - Mapped "{[/redu/reduText],produces=[application/json]}" onto public com.easytestall.pojo.TextReduplicationPojo com.easytestall.controller.TextReduController.reduText(java.lang.String)
+2018-03-30 16:01:55,961  INFO RequestMappingHandlerMapping:548 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-03-30 16:01:55,964  INFO RequestMappingHandlerMapping:548 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-03-30 16:01:55,993  INFO SimpleUrlHandlerMapping:373 - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-30 16:01:56,001  INFO SimpleUrlHandlerMapping:373 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-30 16:01:56,017  INFO SimpleUrlHandlerMapping:373 - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-30 16:01:56,137  INFO OptionalLiveReloadServer:57 - LiveReload server is running on port 35729
+2018-03-30 16:01:56,221  INFO AnnotationMBeanExporter:434 - Registering beans for JMX exposure on startup
+2018-03-30 16:01:56,237  INFO TomcatWebServer:205 - Tomcat started on port(s): 8008 (http) with context path ''
+2018-03-30 16:01:56,238  INFO EasyTestAllApplication:59 - Started EasyTestAllApplication in 2.272 seconds (JVM running for 2115.622)
+2018-03-30 16:01:56,239  INFO LoadDataService:25 - 启动时加载数据..........
+2018-03-30 16:01:56,251  INFO LoadDataService:32 - 启动时加载数据完毕..........
+2018-03-30 16:01:56,253  INFO ConditionEvaluationDeltaLoggingListener:56 - Condition evaluation unchanged
+2018-03-30 16:14:26,329  INFO DispatcherServlet:494 - FrameworkServlet 'dispatcherServlet': initialization started
+2018-03-30 16:14:26,333  INFO DispatcherServlet:513 - FrameworkServlet 'dispatcherServlet': initialization completed in 4 ms
+2018-03-30 16:57:25,094  INFO EasyTestAllApplication:16 - 工具开始启动。。。。。。。。。。。。
+2018-03-30 16:57:25,354  INFO EasyTestAllApplication:16 - 工具开始启动。。。。。。。。。。。。
+2018-03-30 16:57:25,526  INFO Version:21 - HV000001: Hibernate Validator 6.0.7.Final
+2018-03-30 16:57:25,691  INFO EasyTestAllApplication:50 - Starting EasyTestAllApplication on ifly-13753 with PID 8600 (E:\easy-test\target\classes started by admin in E:\easy-test)
+2018-03-30 16:57:25,692  INFO EasyTestAllApplication:652 - No active profile set, falling back to default profiles: default
+2018-03-30 16:57:25,786  INFO AnnotationConfigServletWebServerApplicationContext:589 - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@78e47e52: startup date [Fri Mar 30 16:57:25 CST 2018]; root of context hierarchy
+2018-03-30 16:57:27,930  INFO TomcatWebServer:91 - Tomcat initialized with port(s): 8008 (http)
+2018-03-30 16:57:28,196  INFO ContextLoader:285 - Root WebApplicationContext: initialization completed in 2414 ms
+2018-03-30 16:57:28,438  INFO ServletRegistrationBean:185 - Servlet dispatcherServlet mapped to [/]
+2018-03-30 16:57:28,446  INFO FilterRegistrationBean:243 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-03-30 16:57:28,447  INFO FilterRegistrationBean:243 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-03-30 16:57:28,447  INFO FilterRegistrationBean:243 - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-03-30 16:57:28,448  INFO FilterRegistrationBean:243 - Mapping filter: 'requestContextFilter' to: [/*]
+2018-03-30 16:57:28,890  INFO RequestMappingHandlerAdapter:567 - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@78e47e52: startup date [Fri Mar 30 16:57:25 CST 2018]; root of context hierarchy
+2018-03-30 16:57:28,991  INFO RequestMappingHandlerMapping:548 - Mapped "{[/init/getNodes]}" onto java.lang.String com.easytestall.controller.EasyTestController.getTreeNodes()
+2018-03-30 16:57:28,996  INFO RequestMappingHandlerMapping:548 - Mapped "{[/requestDto/getBody]}" onto java.lang.String com.easytestall.controller.EasyTestController.getRequBody(java.lang.String) throws java.io.IOException
+2018-03-30 16:57:29,002  INFO RequestMappingHandlerMapping:548 - Mapped "{[/ztree/updateNodes]}" onto java.lang.String com.easytestall.controller.EasyTestController.updateTreeNodes()
+2018-03-30 16:57:29,004  INFO RequestMappingHandlerMapping:548 - Mapped "{[/requestDto/updateBody]}" onto java.lang.String com.easytestall.controller.EasyTestController.updateParam(java.lang.String,int,java.lang.String)
+2018-03-30 16:57:29,005  INFO RequestMappingHandlerMapping:548 - Mapped "{[/test/testBatchApi]}" onto java.lang.String com.easytestall.controller.EasyTestController.testApiByBatch(java.lang.String) throws org.apache.http.ParseException,java.io.IOException
+2018-03-30 16:57:29,007  INFO RequestMappingHandlerMapping:548 - Mapped "{[/redu/reduText],produces=[application/json]}" onto public com.easytestall.pojo.TextReduplicationPojo com.easytestall.controller.TextReduController.reduText(java.lang.String)
+2018-03-30 16:57:29,017  INFO RequestMappingHandlerMapping:548 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-03-30 16:57:29,018  INFO RequestMappingHandlerMapping:548 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-03-30 16:57:29,058  INFO SimpleUrlHandlerMapping:373 - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-30 16:57:29,059  INFO SimpleUrlHandlerMapping:373 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-30 16:57:29,133  INFO SimpleUrlHandlerMapping:373 - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-30 16:57:29,402  INFO OptionalLiveReloadServer:57 - LiveReload server is running on port 35729
+2018-03-30 16:57:29,472  INFO AnnotationMBeanExporter:434 - Registering beans for JMX exposure on startup
+2018-03-30 16:57:29,533  INFO TomcatWebServer:205 - Tomcat started on port(s): 8008 (http) with context path ''
+2018-03-30 16:57:29,536  INFO EasyTestAllApplication:59 - Started EasyTestAllApplication in 4.173 seconds (JVM running for 4.77)
+2018-03-30 16:57:29,539  INFO LoadDataService:25 - 启动时加载数据..........
+2018-03-30 16:57:29,977  INFO LoadDataService:32 - 启动时加载数据完毕..........
+2018-03-30 16:57:39,622  INFO DispatcherServlet:494 - FrameworkServlet 'dispatcherServlet': initialization started
+2018-03-30 16:57:39,650  INFO DispatcherServlet:513 - FrameworkServlet 'dispatcherServlet': initialization completed in 28 ms
+2018-03-30 17:10:09,501  INFO AnnotationConfigServletWebServerApplicationContext:989 - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@78e47e52: startup date [Fri Mar 30 16:57:25 CST 2018]; root of context hierarchy
+2018-03-30 17:10:09,507  INFO AnnotationMBeanExporter:452 - Unregistering JMX-exposed beans on shutdown
+2018-03-30 17:10:09,892  INFO EasyTestAllApplication:16 - 工具开始启动。。。。。。。。。。。。
+2018-03-30 17:10:10,065  INFO EasyTestAllApplication:50 - Starting EasyTestAllApplication on ifly-13753 with PID 8600 (E:\easy-test\target\classes started by admin in E:\easy-test)
+2018-03-30 17:10:10,066  INFO EasyTestAllApplication:652 - No active profile set, falling back to default profiles: default
+2018-03-30 17:10:10,081  INFO AnnotationConfigServletWebServerApplicationContext:589 - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@c336332: startup date [Fri Mar 30 17:10:10 CST 2018]; root of context hierarchy
+2018-03-30 17:10:10,845  INFO TomcatWebServer:91 - Tomcat initialized with port(s): 8008 (http)
+2018-03-30 17:10:10,883  INFO ContextLoader:285 - Root WebApplicationContext: initialization completed in 804 ms
+2018-03-30 17:10:10,910  INFO ServletRegistrationBean:185 - Servlet dispatcherServlet mapped to [/]
+2018-03-30 17:10:10,911  INFO FilterRegistrationBean:243 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-03-30 17:10:10,912  INFO FilterRegistrationBean:243 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-03-30 17:10:10,912  INFO FilterRegistrationBean:243 - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-03-30 17:10:10,912  INFO FilterRegistrationBean:243 - Mapping filter: 'requestContextFilter' to: [/*]
+2018-03-30 17:10:11,057  INFO RequestMappingHandlerAdapter:567 - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@c336332: startup date [Fri Mar 30 17:10:10 CST 2018]; root of context hierarchy
+2018-03-30 17:10:11,091  INFO RequestMappingHandlerMapping:548 - Mapped "{[/init/getNodes]}" onto java.lang.String com.easytestall.controller.EasyTestController.getTreeNodes()
+2018-03-30 17:10:11,092  INFO RequestMappingHandlerMapping:548 - Mapped "{[/requestDto/getBody]}" onto java.lang.String com.easytestall.controller.EasyTestController.getRequBody(java.lang.String) throws java.io.IOException
+2018-03-30 17:10:11,093  INFO RequestMappingHandlerMapping:548 - Mapped "{[/ztree/updateNodes]}" onto java.lang.String com.easytestall.controller.EasyTestController.updateTreeNodes()
+2018-03-30 17:10:11,100  INFO RequestMappingHandlerMapping:548 - Mapped "{[/requestDto/updateBody]}" onto java.lang.String com.easytestall.controller.EasyTestController.updateParam(java.lang.String,int,java.lang.String)
+2018-03-30 17:10:11,101  INFO RequestMappingHandlerMapping:548 - Mapped "{[/test/testBatchApi]}" onto java.lang.String com.easytestall.controller.EasyTestController.testApiByBatch(java.lang.String) throws org.apache.http.ParseException,java.io.IOException
+2018-03-30 17:10:11,102  INFO RequestMappingHandlerMapping:548 - Mapped "{[/redu/reduText],produces=[application/json]}" onto public com.easytestall.pojo.TextReduplicationPojo com.easytestall.controller.TextReduController.reduText(java.lang.String)
+2018-03-30 17:10:11,117  INFO RequestMappingHandlerMapping:548 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-03-30 17:10:11,118  INFO RequestMappingHandlerMapping:548 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-03-30 17:10:11,144  INFO SimpleUrlHandlerMapping:373 - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-30 17:10:11,145  INFO SimpleUrlHandlerMapping:373 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-30 17:10:11,165  INFO SimpleUrlHandlerMapping:373 - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-30 17:10:11,346  INFO OptionalLiveReloadServer:57 - LiveReload server is running on port 35729
+2018-03-30 17:10:11,411  INFO AnnotationMBeanExporter:434 - Registering beans for JMX exposure on startup
+2018-03-30 17:10:11,441  INFO TomcatWebServer:205 - Tomcat started on port(s): 8008 (http) with context path ''
+2018-03-30 17:10:11,442  INFO EasyTestAllApplication:59 - Started EasyTestAllApplication in 1.518 seconds (JVM running for 766.676)
+2018-03-30 17:10:11,443  INFO LoadDataService:25 - 启动时加载数据..........
+2018-03-30 17:10:11,461  INFO LoadDataService:32 - 启动时加载数据完毕..........
+2018-03-30 17:10:11,463  INFO ConditionEvaluationDeltaLoggingListener:56 - Condition evaluation unchanged
+2018-03-30 17:12:46,616  INFO DispatcherServlet:494 - FrameworkServlet 'dispatcherServlet': initialization started
+2018-03-30 17:12:46,619  INFO DispatcherServlet:513 - FrameworkServlet 'dispatcherServlet': initialization completed in 2 ms
+2018-03-30 17:57:38,769  INFO TextReduController:37 - 文本去重。
+输入文本：
+12344
+12344
+去重后文本：
+12344
+去重前的文本个数： 2,  去重后的文本个数： 1
+2018-03-30 17:57:50,872  INFO TextReduController:37 - 文本去重。
+输入文本：
+12344
+12344
+去重后文本：
+12344
+去重前的文本个数： 2,  去重后的文本个数： 1
+2018-03-30 17:58:33,448  INFO TextReduController:37 - 文本去重。
+输入文本：
+12344
+12344
+去重后文本：
+12344
+去重前的文本个数： 2,  去重后的文本个数： 1
+2018-03-30 18:18:56,567  INFO EasyTestAllApplication:16 - 工具开始启动。。。。。。。。。。。。
+2018-03-30 18:18:56,832  INFO EasyTestAllApplication:16 - 工具开始启动。。。。。。。。。。。。
+2018-03-30 18:18:57,017  INFO Version:21 - HV000001: Hibernate Validator 6.0.7.Final
+2018-03-30 18:18:57,189  INFO EasyTestAllApplication:50 - Starting EasyTestAllApplication on ifly-13753 with PID 6936 (E:\easy-test\target\classes started by admin in E:\easy-test)
+2018-03-30 18:18:57,190  INFO EasyTestAllApplication:652 - No active profile set, falling back to default profiles: default
+2018-03-30 18:18:57,303  INFO AnnotationConfigServletWebServerApplicationContext:589 - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@51a181ad: startup date [Fri Mar 30 18:18:57 CST 2018]; root of context hierarchy
+2018-03-30 18:18:59,782  INFO TomcatWebServer:91 - Tomcat initialized with port(s): 8008 (http)
+2018-03-30 18:19:00,091  INFO ContextLoader:285 - Root WebApplicationContext: initialization completed in 2792 ms
+2018-03-30 18:19:00,437  INFO ServletRegistrationBean:185 - Servlet dispatcherServlet mapped to [/]
+2018-03-30 18:19:00,443  INFO FilterRegistrationBean:243 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-03-30 18:19:00,443  INFO FilterRegistrationBean:243 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-03-30 18:19:00,445  INFO FilterRegistrationBean:243 - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-03-30 18:19:00,445  INFO FilterRegistrationBean:243 - Mapping filter: 'requestContextFilter' to: [/*]
+2018-03-30 18:19:01,006  INFO RequestMappingHandlerAdapter:567 - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@51a181ad: startup date [Fri Mar 30 18:18:57 CST 2018]; root of context hierarchy
+2018-03-30 18:19:01,127  INFO RequestMappingHandlerMapping:548 - Mapped "{[/init/getNodes]}" onto java.lang.String com.easytestall.controller.EasyTestController.getTreeNodes()
+2018-03-30 18:19:01,129  INFO RequestMappingHandlerMapping:548 - Mapped "{[/requestDto/getBody]}" onto java.lang.String com.easytestall.controller.EasyTestController.getRequBody(java.lang.String) throws java.io.IOException
+2018-03-30 18:19:01,131  INFO RequestMappingHandlerMapping:548 - Mapped "{[/ztree/updateNodes]}" onto java.lang.String com.easytestall.controller.EasyTestController.updateTreeNodes()
+2018-03-30 18:19:01,133  INFO RequestMappingHandlerMapping:548 - Mapped "{[/requestDto/updateBody]}" onto java.lang.String com.easytestall.controller.EasyTestController.updateParam(java.lang.String,int,java.lang.String)
+2018-03-30 18:19:01,135  INFO RequestMappingHandlerMapping:548 - Mapped "{[/test/testBatchApi]}" onto java.lang.String com.easytestall.controller.EasyTestController.testApiByBatch(java.lang.String) throws org.apache.http.ParseException,java.io.IOException
+2018-03-30 18:19:01,138  INFO RequestMappingHandlerMapping:548 - Mapped "{[/redu/reduText],produces=[application/json]}" onto public com.easytestall.pojo.TextReduplicationPojo com.easytestall.controller.TextReduController.reduText(java.lang.String)
+2018-03-30 18:19:01,146  INFO RequestMappingHandlerMapping:548 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-03-30 18:19:01,146  INFO RequestMappingHandlerMapping:548 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-03-30 18:19:01,201  INFO SimpleUrlHandlerMapping:373 - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-30 18:19:01,201  INFO SimpleUrlHandlerMapping:373 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-30 18:19:01,330  INFO SimpleUrlHandlerMapping:373 - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-30 18:19:01,624  INFO OptionalLiveReloadServer:57 - LiveReload server is running on port 35729
+2018-03-30 18:19:01,706  INFO AnnotationMBeanExporter:434 - Registering beans for JMX exposure on startup
+2018-03-30 18:19:01,782  INFO TomcatWebServer:205 - Tomcat started on port(s): 8008 (http) with context path ''
+2018-03-30 18:19:01,794  INFO EasyTestAllApplication:59 - Started EasyTestAllApplication in 4.954 seconds (JVM running for 5.587)
+2018-03-30 18:19:01,799  INFO LoadDataService:25 - 启动时加载数据..........
+2018-03-30 18:19:02,253  INFO LoadDataService:32 - 启动时加载数据完毕..........
+2018-03-30 18:19:30,901  INFO EasyTestAllApplication:16 - 工具开始启动。。。。。。。。。。。。
+2018-03-30 18:19:31,194  INFO EasyTestAllApplication:16 - 工具开始启动。。。。。。。。。。。。
+2018-03-30 18:19:31,381  INFO Version:21 - HV000001: Hibernate Validator 6.0.7.Final
+2018-03-30 18:19:31,566  INFO EasyTestAllApplication:50 - Starting EasyTestAllApplication on ifly-13753 with PID 1236 (E:\easy-test\target\classes started by admin in E:\easy-test)
+2018-03-30 18:19:31,566  INFO EasyTestAllApplication:652 - No active profile set, falling back to default profiles: default
+2018-03-30 18:19:31,669  INFO AnnotationConfigServletWebServerApplicationContext:589 - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@4847094f: startup date [Fri Mar 30 18:19:31 CST 2018]; root of context hierarchy
+2018-03-30 18:19:34,047  INFO TomcatWebServer:91 - Tomcat initialized with port(s): 8008 (http)
+2018-03-30 18:19:34,315  INFO ContextLoader:285 - Root WebApplicationContext: initialization completed in 2652 ms
+2018-03-30 18:19:34,605  INFO ServletRegistrationBean:185 - Servlet dispatcherServlet mapped to [/]
+2018-03-30 18:19:34,612  INFO FilterRegistrationBean:243 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-03-30 18:19:34,613  INFO FilterRegistrationBean:243 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-03-30 18:19:34,614  INFO FilterRegistrationBean:243 - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-03-30 18:19:34,616  INFO FilterRegistrationBean:243 - Mapping filter: 'requestContextFilter' to: [/*]
+2018-03-30 18:19:35,154  INFO RequestMappingHandlerAdapter:567 - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@4847094f: startup date [Fri Mar 30 18:19:31 CST 2018]; root of context hierarchy
+2018-03-30 18:19:35,300  INFO RequestMappingHandlerMapping:548 - Mapped "{[/requestDto/getBody]}" onto java.lang.String com.easytestall.controller.EasyTestController.getRequBody(java.lang.String) throws java.io.IOException
+2018-03-30 18:19:35,301  INFO RequestMappingHandlerMapping:548 - Mapped "{[/ztree/updateNodes]}" onto java.lang.String com.easytestall.controller.EasyTestController.updateTreeNodes()
+2018-03-30 18:19:35,303  INFO RequestMappingHandlerMapping:548 - Mapped "{[/requestDto/updateBody]}" onto java.lang.String com.easytestall.controller.EasyTestController.updateParam(java.lang.String,int,java.lang.String)
+2018-03-30 18:19:35,304  INFO RequestMappingHandlerMapping:548 - Mapped "{[/init/getNodes]}" onto java.lang.String com.easytestall.controller.EasyTestController.getTreeNodes()
+2018-03-30 18:19:35,304  INFO RequestMappingHandlerMapping:548 - Mapped "{[/test/testBatchApi]}" onto java.lang.String com.easytestall.controller.EasyTestController.testApiByBatch(java.lang.String) throws org.apache.http.ParseException,java.io.IOException
+2018-03-30 18:19:35,307  INFO RequestMappingHandlerMapping:548 - Mapped "{[/redu/reduText],produces=[application/json]}" onto public com.easytestall.pojo.TextReduplicationPojo com.easytestall.controller.TextReduController.reduText(java.lang.String)
+2018-03-30 18:19:35,328  INFO RequestMappingHandlerMapping:548 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-03-30 18:19:35,329  INFO RequestMappingHandlerMapping:548 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-03-30 18:19:35,404  INFO SimpleUrlHandlerMapping:373 - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-30 18:19:35,406  INFO SimpleUrlHandlerMapping:373 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-30 18:19:35,484  INFO SimpleUrlHandlerMapping:373 - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-30 18:19:35,808  INFO OptionalLiveReloadServer:57 - LiveReload server is running on port 35729
+2018-03-30 18:19:35,908  INFO AnnotationMBeanExporter:434 - Registering beans for JMX exposure on startup
+2018-03-30 18:19:35,986  INFO TomcatWebServer:205 - Tomcat started on port(s): 8008 (http) with context path ''
+2018-03-30 18:19:35,990  INFO EasyTestAllApplication:59 - Started EasyTestAllApplication in 4.788 seconds (JVM running for 5.487)
+2018-03-30 18:19:35,992  INFO LoadDataService:25 - 启动时加载数据..........
+2018-03-30 18:19:36,859  INFO LoadDataService:32 - 启动时加载数据完毕..........
+2018-03-30 18:19:41,373  INFO DispatcherServlet:494 - FrameworkServlet 'dispatcherServlet': initialization started
+2018-03-30 18:19:41,403  INFO DispatcherServlet:513 - FrameworkServlet 'dispatcherServlet': initialization completed in 29 ms
+2018-03-30 18:20:49,374  INFO EasyTestAllApplication:16 - 工具开始启动。。。。。。。。。。。。
+2018-03-30 18:20:49,640  INFO EasyTestAllApplication:16 - 工具开始启动。。。。。。。。。。。。
+2018-03-30 18:20:49,813  INFO Version:21 - HV000001: Hibernate Validator 6.0.7.Final
+2018-03-30 18:20:49,998  INFO EasyTestAllApplication:50 - Starting EasyTestAllApplication on ifly-13753 with PID 9832 (E:\easy-test\target\classes started by admin in E:\easy-test)
+2018-03-30 18:20:49,999  INFO EasyTestAllApplication:652 - No active profile set, falling back to default profiles: default
+2018-03-30 18:20:50,109  INFO AnnotationConfigServletWebServerApplicationContext:589 - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@3155024d: startup date [Fri Mar 30 18:20:50 CST 2018]; root of context hierarchy
+2018-03-30 18:20:52,526  INFO TomcatWebServer:91 - Tomcat initialized with port(s): 8008 (http)
+2018-03-30 18:20:52,799  INFO ContextLoader:285 - Root WebApplicationContext: initialization completed in 2695 ms
+2018-03-30 18:20:53,039  INFO ServletRegistrationBean:185 - Servlet dispatcherServlet mapped to [/]
+2018-03-30 18:20:53,050  INFO FilterRegistrationBean:243 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-03-30 18:20:53,051  INFO FilterRegistrationBean:243 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-03-30 18:20:53,051  INFO FilterRegistrationBean:243 - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-03-30 18:20:53,051  INFO FilterRegistrationBean:243 - Mapping filter: 'requestContextFilter' to: [/*]
+2018-03-30 18:20:53,625  INFO RequestMappingHandlerAdapter:567 - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@3155024d: startup date [Fri Mar 30 18:20:50 CST 2018]; root of context hierarchy
+2018-03-30 18:20:53,741  INFO RequestMappingHandlerMapping:548 - Mapped "{[/init/getNodes]}" onto java.lang.String com.easytestall.controller.EasyTestController.getTreeNodes()
+2018-03-30 18:20:53,743  INFO RequestMappingHandlerMapping:548 - Mapped "{[/requestDto/getBody]}" onto java.lang.String com.easytestall.controller.EasyTestController.getRequBody(java.lang.String) throws java.io.IOException
+2018-03-30 18:20:53,747  INFO RequestMappingHandlerMapping:548 - Mapped "{[/ztree/updateNodes]}" onto java.lang.String com.easytestall.controller.EasyTestController.updateTreeNodes()
+2018-03-30 18:20:53,749  INFO RequestMappingHandlerMapping:548 - Mapped "{[/requestDto/updateBody]}" onto java.lang.String com.easytestall.controller.EasyTestController.updateParam(java.lang.String,int,java.lang.String)
+2018-03-30 18:20:53,749  INFO RequestMappingHandlerMapping:548 - Mapped "{[/test/testBatchApi]}" onto java.lang.String com.easytestall.controller.EasyTestController.testApiByBatch(java.lang.String) throws org.apache.http.ParseException,java.io.IOException
+2018-03-30 18:20:53,751  INFO RequestMappingHandlerMapping:548 - Mapped "{[/redu/reduText],produces=[application/json]}" onto public com.easytestall.pojo.TextReduplicationPojo com.easytestall.controller.TextReduController.reduText(java.lang.String)
+2018-03-30 18:20:53,769  INFO RequestMappingHandlerMapping:548 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-03-30 18:20:53,770  INFO RequestMappingHandlerMapping:548 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-03-30 18:20:53,825  INFO SimpleUrlHandlerMapping:373 - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-30 18:20:53,825  INFO SimpleUrlHandlerMapping:373 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-30 18:20:53,924  INFO SimpleUrlHandlerMapping:373 - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-30 18:20:54,210  INFO OptionalLiveReloadServer:57 - LiveReload server is running on port 35729
+2018-03-30 18:20:54,314  INFO AnnotationMBeanExporter:434 - Registering beans for JMX exposure on startup
+2018-03-30 18:20:54,392  INFO TomcatWebServer:205 - Tomcat started on port(s): 8008 (http) with context path ''
+2018-03-30 18:20:54,398  INFO EasyTestAllApplication:59 - Started EasyTestAllApplication in 4.751 seconds (JVM running for 5.345)
+2018-03-30 18:20:54,400  INFO LoadDataService:25 - 启动时加载数据..........
+2018-03-30 18:20:54,946  INFO LoadDataService:32 - 启动时加载数据完毕..........
+2018-03-30 18:22:23,363  INFO EasyTestAllApplication:16 - 工具开始启动。。。。。。。。。。。。
+2018-03-30 18:22:23,637  INFO EasyTestAllApplication:16 - 工具开始启动。。。。。。。。。。。。
+2018-03-30 18:22:23,856  INFO Version:21 - HV000001: Hibernate Validator 6.0.7.Final
+2018-03-30 18:22:24,154  INFO EasyTestAllApplication:50 - Starting EasyTestAllApplication on ifly-13753 with PID 6720 (E:\easy-test\target\classes started by admin in E:\easy-test)
+2018-03-30 18:22:24,155  INFO EasyTestAllApplication:652 - No active profile set, falling back to default profiles: default
+2018-03-30 18:22:24,246  INFO AnnotationConfigServletWebServerApplicationContext:589 - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@59b0930a: startup date [Fri Mar 30 18:22:24 CST 2018]; root of context hierarchy
+2018-03-30 18:23:09,587  INFO EasyTestAllApplication:16 - 工具开始启动。。。。。。。。。。。。
+2018-03-30 18:23:10,070  INFO EasyTestAllApplication:16 - 工具开始启动。。。。。。。。。。。。
+2018-03-30 18:23:10,302  INFO Version:21 - HV000001: Hibernate Validator 6.0.7.Final
+2018-03-30 18:23:10,504  INFO EasyTestAllApplication:50 - Starting EasyTestAllApplication on ifly-13753 with PID 2388 (E:\easy-test\target\classes started by admin in E:\easy-test)
+2018-03-30 18:23:10,509  INFO EasyTestAllApplication:652 - No active profile set, falling back to default profiles: default
+2018-03-30 18:23:10,654  INFO AnnotationConfigServletWebServerApplicationContext:589 - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@6e94093e: startup date [Fri Mar 30 18:23:10 CST 2018]; root of context hierarchy
+2018-03-30 18:23:13,223  INFO TomcatWebServer:91 - Tomcat initialized with port(s): 8008 (http)
+2018-03-30 18:23:13,547  INFO ContextLoader:285 - Root WebApplicationContext: initialization completed in 2896 ms
+2018-03-30 18:23:13,765  INFO ServletRegistrationBean:185 - Servlet dispatcherServlet mapped to [/]
+2018-03-30 18:23:13,771  INFO FilterRegistrationBean:243 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-03-30 18:23:13,774  INFO FilterRegistrationBean:243 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-03-30 18:23:13,775  INFO FilterRegistrationBean:243 - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-03-30 18:23:13,775  INFO FilterRegistrationBean:243 - Mapping filter: 'requestContextFilter' to: [/*]
+2018-03-30 18:23:14,334  INFO RequestMappingHandlerAdapter:567 - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@6e94093e: startup date [Fri Mar 30 18:23:10 CST 2018]; root of context hierarchy
+2018-03-30 18:23:14,463  INFO RequestMappingHandlerMapping:548 - Mapped "{[/ztree/updateNodes]}" onto java.lang.String com.easytestall.controller.EasyTestController.updateTreeNodes()
+2018-03-30 18:23:14,465  INFO RequestMappingHandlerMapping:548 - Mapped "{[/init/getNodes]}" onto java.lang.String com.easytestall.controller.EasyTestController.getTreeNodes()
+2018-03-30 18:23:14,469  INFO RequestMappingHandlerMapping:548 - Mapped "{[/requestDto/updateBody]}" onto java.lang.String com.easytestall.controller.EasyTestController.updateParam(java.lang.String,int,java.lang.String)
+2018-03-30 18:23:14,470  INFO RequestMappingHandlerMapping:548 - Mapped "{[/requestDto/getBody]}" onto java.lang.String com.easytestall.controller.EasyTestController.getRequBody(java.lang.String) throws java.io.IOException
+2018-03-30 18:23:14,471  INFO RequestMappingHandlerMapping:548 - Mapped "{[/test/testBatchApi]}" onto java.lang.String com.easytestall.controller.EasyTestController.testApiByBatch(java.lang.String) throws org.apache.http.ParseException,java.io.IOException
+2018-03-30 18:23:14,472  INFO RequestMappingHandlerMapping:548 - Mapped "{[/redu/reduText],produces=[application/json]}" onto public com.easytestall.pojo.TextReduplicationPojo com.easytestall.controller.TextReduController.reduText(java.lang.String)
+2018-03-30 18:23:14,477  INFO RequestMappingHandlerMapping:548 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-03-30 18:23:14,478  INFO RequestMappingHandlerMapping:548 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-03-30 18:23:14,533  INFO SimpleUrlHandlerMapping:373 - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-30 18:23:14,534  INFO SimpleUrlHandlerMapping:373 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-30 18:23:14,635  INFO SimpleUrlHandlerMapping:373 - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-30 18:23:15,052  INFO OptionalLiveReloadServer:57 - LiveReload server is running on port 35729
+2018-03-30 18:23:15,127  INFO AnnotationMBeanExporter:434 - Registering beans for JMX exposure on startup
+2018-03-30 18:23:15,195  INFO TomcatWebServer:205 - Tomcat started on port(s): 8008 (http) with context path ''
+2018-03-30 18:23:15,199  INFO EasyTestAllApplication:59 - Started EasyTestAllApplication in 5.117 seconds (JVM running for 6.212)
+2018-03-30 18:23:15,201  INFO LoadDataService:25 - 启动时加载数据..........
+2018-03-30 18:23:15,630  INFO LoadDataService:32 - 启动时加载数据完毕..........
+2018-03-30 18:23:22,678  INFO DispatcherServlet:494 - FrameworkServlet 'dispatcherServlet': initialization started
+2018-03-30 18:23:22,703  INFO DispatcherServlet:513 - FrameworkServlet 'dispatcherServlet': initialization completed in 24 ms
+2018-03-30 18:24:16,509  INFO EasyTestAllApplication:16 - 工具开始启动。。。。。。。。。。。。
+2018-03-30 18:24:16,772  INFO EasyTestAllApplication:16 - 工具开始启动。。。。。。。。。。。。
+2018-03-30 18:24:16,960  INFO Version:21 - HV000001: Hibernate Validator 6.0.7.Final
+2018-03-30 18:24:17,157  INFO EasyTestAllApplication:50 - Starting EasyTestAllApplication on ifly-13753 with PID 16600 (E:\easy-test\target\classes started by admin in E:\easy-test)
+2018-03-30 18:24:17,158  INFO EasyTestAllApplication:652 - No active profile set, falling back to default profiles: default
+2018-03-30 18:24:17,264  INFO AnnotationConfigServletWebServerApplicationContext:589 - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@3c602d18: startup date [Fri Mar 30 18:24:17 CST 2018]; root of context hierarchy
+2018-03-30 18:24:19,839  INFO TomcatWebServer:91 - Tomcat initialized with port(s): 8008 (http)
+2018-03-30 18:25:03,460  INFO EasyTestAllApplication:16 - 工具开始启动。。。。。。。。。。。。
+2018-03-30 18:25:04,116  INFO EasyTestAllApplication:16 - 工具开始启动。。。。。。。。。。。。
+2018-03-30 18:25:04,308  INFO Version:21 - HV000001: Hibernate Validator 6.0.7.Final
+2018-03-30 18:25:04,529  INFO EasyTestAllApplication:50 - Starting EasyTestAllApplication on ifly-13753 with PID 10280 (E:\easy-test\target\classes started by admin in E:\easy-test)
+2018-03-30 18:25:04,532  INFO EasyTestAllApplication:652 - No active profile set, falling back to default profiles: default
+2018-03-30 18:25:04,645  INFO AnnotationConfigServletWebServerApplicationContext:589 - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@706bf1f9: startup date [Fri Mar 30 18:25:04 CST 2018]; root of context hierarchy
+2018-03-30 18:25:07,443  INFO TomcatWebServer:91 - Tomcat initialized with port(s): 8008 (http)
+2018-03-30 18:25:07,799  INFO ContextLoader:285 - Root WebApplicationContext: initialization completed in 3161 ms
+2018-03-30 18:25:08,068  INFO ServletRegistrationBean:185 - Servlet dispatcherServlet mapped to [/]
+2018-03-30 18:25:08,074  INFO FilterRegistrationBean:243 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-03-30 18:25:08,076  INFO FilterRegistrationBean:243 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-03-30 18:25:08,077  INFO FilterRegistrationBean:243 - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-03-30 18:25:08,078  INFO FilterRegistrationBean:243 - Mapping filter: 'requestContextFilter' to: [/*]
+2018-03-30 18:25:08,694  INFO RequestMappingHandlerAdapter:567 - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@706bf1f9: startup date [Fri Mar 30 18:25:04 CST 2018]; root of context hierarchy
+2018-03-30 18:25:08,851  INFO RequestMappingHandlerMapping:548 - Mapped "{[/test/testBatchApi]}" onto java.lang.String com.easytestall.controller.EasyTestController.testApiByBatch(java.lang.String) throws org.apache.http.ParseException,java.io.IOException
+2018-03-30 18:25:08,854  INFO RequestMappingHandlerMapping:548 - Mapped "{[/ztree/updateNodes]}" onto java.lang.String com.easytestall.controller.EasyTestController.updateTreeNodes()
+2018-03-30 18:25:08,865  INFO RequestMappingHandlerMapping:548 - Mapped "{[/requestDto/updateBody]}" onto java.lang.String com.easytestall.controller.EasyTestController.updateParam(java.lang.String,int,java.lang.String)
+2018-03-30 18:25:08,866  INFO RequestMappingHandlerMapping:548 - Mapped "{[/requestDto/getBody]}" onto java.lang.String com.easytestall.controller.EasyTestController.getRequBody(java.lang.String) throws java.io.IOException
+2018-03-30 18:25:08,867  INFO RequestMappingHandlerMapping:548 - Mapped "{[/init/getNodes]}" onto java.lang.String com.easytestall.controller.EasyTestController.getTreeNodes()
+2018-03-30 18:25:08,870  INFO RequestMappingHandlerMapping:548 - Mapped "{[/redu/reduText],produces=[application/json]}" onto public com.easytestall.pojo.TextReduplicationPojo com.easytestall.controller.TextReduController.reduText(java.lang.String)
+2018-03-30 18:25:08,881  INFO RequestMappingHandlerMapping:548 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-03-30 18:25:08,882  INFO RequestMappingHandlerMapping:548 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-03-30 18:25:08,948  INFO SimpleUrlHandlerMapping:373 - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-30 18:25:08,949  INFO SimpleUrlHandlerMapping:373 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-30 18:25:09,058  INFO SimpleUrlHandlerMapping:373 - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-30 18:25:09,440  INFO OptionalLiveReloadServer:57 - LiveReload server is running on port 35729
+2018-03-30 18:25:09,528  INFO AnnotationMBeanExporter:434 - Registering beans for JMX exposure on startup
+2018-03-30 18:25:09,642  INFO TomcatWebServer:205 - Tomcat started on port(s): 8008 (http) with context path ''
+2018-03-30 18:25:09,648  INFO EasyTestAllApplication:59 - Started EasyTestAllApplication in 5.522 seconds (JVM running for 6.674)
+2018-03-30 18:25:09,651  INFO LoadDataService:25 - 启动时加载数据..........
+2018-03-30 18:25:09,964  INFO DispatcherServlet:494 - FrameworkServlet 'dispatcherServlet': initialization started
+2018-03-30 18:25:10,010  INFO DispatcherServlet:513 - FrameworkServlet 'dispatcherServlet': initialization completed in 46 ms
+2018-03-30 18:25:10,443  INFO LoadDataService:32 - 启动时加载数据完毕..........
+2018-03-30 18:31:17,484  INFO EasyTestAllApplication:16 - 工具开始启动。。。。。。。。。。。。
+2018-03-30 18:31:17,780  INFO EasyTestAllApplication:16 - 工具开始启动。。。。。。。。。。。。
+2018-03-30 18:31:17,964  INFO Version:21 - HV000001: Hibernate Validator 6.0.7.Final
+2018-03-30 18:31:18,172  INFO EasyTestAllApplication:50 - Starting EasyTestAllApplication on ifly-13753 with PID 9804 (E:\easy-test\target\classes started by admin in E:\easy-test)
+2018-03-30 18:31:18,173  INFO EasyTestAllApplication:652 - No active profile set, falling back to default profiles: default
+2018-03-30 18:31:18,277  INFO AnnotationConfigServletWebServerApplicationContext:589 - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@6c1c2fdc: startup date [Fri Mar 30 18:31:18 CST 2018]; root of context hierarchy
+2018-03-30 18:31:20,845  INFO TomcatWebServer:91 - Tomcat initialized with port(s): 8008 (http)
+2018-03-30 18:31:21,198  INFO ContextLoader:285 - Root WebApplicationContext: initialization completed in 2924 ms
+2018-03-30 18:31:21,513  INFO ServletRegistrationBean:185 - Servlet dispatcherServlet mapped to [/]
+2018-03-30 18:31:21,523  INFO FilterRegistrationBean:243 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-03-30 18:31:21,524  INFO FilterRegistrationBean:243 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-03-30 18:31:21,524  INFO FilterRegistrationBean:243 - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-03-30 18:31:21,524  INFO FilterRegistrationBean:243 - Mapping filter: 'requestContextFilter' to: [/*]
+2018-03-30 18:31:22,091  INFO RequestMappingHandlerAdapter:567 - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@6c1c2fdc: startup date [Fri Mar 30 18:31:18 CST 2018]; root of context hierarchy
+2018-03-30 18:31:22,202  INFO RequestMappingHandlerMapping:548 - Mapped "{[/requestDto/getBody]}" onto java.lang.String com.easytestall.controller.EasyTestController.getRequBody(java.lang.String) throws java.io.IOException
+2018-03-30 18:31:22,204  INFO RequestMappingHandlerMapping:548 - Mapped "{[/requestDto/updateBody]}" onto java.lang.String com.easytestall.controller.EasyTestController.updateParam(java.lang.String,int,java.lang.String)
+2018-03-30 18:31:22,210  INFO RequestMappingHandlerMapping:548 - Mapped "{[/init/getNodes]}" onto java.lang.String com.easytestall.controller.EasyTestController.getTreeNodes()
+2018-03-30 18:31:22,212  INFO RequestMappingHandlerMapping:548 - Mapped "{[/test/testBatchApi]}" onto java.lang.String com.easytestall.controller.EasyTestController.testApiByBatch(java.lang.String) throws org.apache.http.ParseException,java.io.IOException
+2018-03-30 18:31:22,212  INFO RequestMappingHandlerMapping:548 - Mapped "{[/ztree/updateNodes]}" onto java.lang.String com.easytestall.controller.EasyTestController.updateTreeNodes()
+2018-03-30 18:31:22,213  INFO RequestMappingHandlerMapping:548 - Mapped "{[/redu/reduText],produces=[application/json]}" onto public com.easytestall.pojo.TextReduplicationPojo com.easytestall.controller.TextReduController.reduText(java.lang.String)
+2018-03-30 18:31:22,219  INFO RequestMappingHandlerMapping:548 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-03-30 18:31:22,219  INFO RequestMappingHandlerMapping:548 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-03-30 18:31:22,277  INFO SimpleUrlHandlerMapping:373 - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-30 18:31:22,277  INFO SimpleUrlHandlerMapping:373 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-30 18:31:22,411  INFO SimpleUrlHandlerMapping:373 - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-03-30 18:31:22,713  INFO OptionalLiveReloadServer:57 - LiveReload server is running on port 35729
+2018-03-30 18:31:22,799  INFO AnnotationMBeanExporter:434 - Registering beans for JMX exposure on startup
+2018-03-30 18:31:22,878  INFO TomcatWebServer:205 - Tomcat started on port(s): 8008 (http) with context path ''
+2018-03-30 18:31:22,888  INFO EasyTestAllApplication:59 - Started EasyTestAllApplication in 5.1 seconds (JVM running for 5.872)
+2018-03-30 18:31:22,894  INFO LoadDataService:25 - 启动时加载数据..........
+2018-03-30 18:31:23,386  INFO LoadDataService:32 - 启动时加载数据完毕..........
+2018-03-30 18:31:47,685  INFO DispatcherServlet:494 - FrameworkServlet 'dispatcherServlet': initialization started
+2018-03-30 18:31:47,719  INFO DispatcherServlet:513 - FrameworkServlet 'dispatcherServlet': initialization completed in 33 ms

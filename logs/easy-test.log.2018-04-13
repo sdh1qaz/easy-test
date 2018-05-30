@@ -1,0 +1,199 @@
+2018-04-13 11:26:59,392  INFO EasyTestAllApplication:16 - 工具开始启动。。。。。。。。。。。。
+2018-04-13 11:26:59,798  INFO EasyTestAllApplication:16 - 工具开始启动。。。。。。。。。。。。
+2018-04-13 11:27:00,060  INFO Version:21 - HV000001: Hibernate Validator 6.0.7.Final
+2018-04-13 11:27:00,295  INFO EasyTestAllApplication:50 - Starting EasyTestAllApplication on ifly-13753 with PID 7468 (E:\easy-test\target\classes started by admin in E:\easy-test)
+2018-04-13 11:27:00,297  INFO EasyTestAllApplication:652 - No active profile set, falling back to default profiles: default
+2018-04-13 11:27:00,395  INFO AnnotationConfigServletWebServerApplicationContext:589 - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@ff25205: startup date [Fri Apr 13 11:27:00 CST 2018]; root of context hierarchy
+2018-04-13 11:27:03,052  INFO TomcatWebServer:91 - Tomcat initialized with port(s): 8008 (http)
+2018-04-13 11:27:03,384  INFO ContextLoader:285 - Root WebApplicationContext: initialization completed in 2991 ms
+2018-04-13 11:27:03,939  INFO ServletRegistrationBean:185 - Servlet dispatcherServlet mapped to [/]
+2018-04-13 11:27:03,947  INFO FilterRegistrationBean:243 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-04-13 11:27:03,948  INFO FilterRegistrationBean:243 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-04-13 11:27:03,950  INFO FilterRegistrationBean:243 - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-04-13 11:27:03,950  INFO FilterRegistrationBean:243 - Mapping filter: 'requestContextFilter' to: [/*]
+2018-04-13 11:27:04,511  INFO RequestMappingHandlerAdapter:567 - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@ff25205: startup date [Fri Apr 13 11:27:00 CST 2018]; root of context hierarchy
+2018-04-13 11:27:04,642  INFO RequestMappingHandlerMapping:548 - Mapped "{[/ztree/updateNodes]}" onto java.lang.String com.easytestall.controller.EasyTestController.updateTreeNodes()
+2018-04-13 11:27:04,644  INFO RequestMappingHandlerMapping:548 - Mapped "{[/test/testBatchApi]}" onto java.lang.String com.easytestall.controller.EasyTestController.testApiByBatch(java.lang.String) throws org.apache.http.ParseException,java.io.IOException
+2018-04-13 11:27:04,647  INFO RequestMappingHandlerMapping:548 - Mapped "{[/requestDto/getBody]}" onto java.lang.String com.easytestall.controller.EasyTestController.getRequBody(java.lang.String) throws java.io.IOException
+2018-04-13 11:27:04,648  INFO RequestMappingHandlerMapping:548 - Mapped "{[/requestDto/updateBody]}" onto java.lang.String com.easytestall.controller.EasyTestController.updateParam(java.lang.String,int,java.lang.String)
+2018-04-13 11:27:04,648  INFO RequestMappingHandlerMapping:548 - Mapped "{[/init/getNodes]}" onto java.lang.String com.easytestall.controller.EasyTestController.getTreeNodes()
+2018-04-13 11:27:04,649  INFO RequestMappingHandlerMapping:548 - Mapped "{[/redu/reduText],produces=[application/json]}" onto public com.easytestall.pojo.TextReduplicationPojo com.easytestall.controller.TextReduController.reduText(java.lang.String)
+2018-04-13 11:27:04,664  INFO RequestMappingHandlerMapping:548 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-04-13 11:27:04,665  INFO RequestMappingHandlerMapping:548 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-04-13 11:27:04,752  INFO SimpleUrlHandlerMapping:373 - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-04-13 11:27:04,756  INFO SimpleUrlHandlerMapping:373 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-04-13 11:27:04,869  INFO SimpleUrlHandlerMapping:373 - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-04-13 11:27:05,186  INFO OptionalLiveReloadServer:57 - LiveReload server is running on port 35729
+2018-04-13 11:27:05,269  INFO AnnotationMBeanExporter:434 - Registering beans for JMX exposure on startup
+2018-04-13 11:27:05,371  INFO TomcatWebServer:205 - Tomcat started on port(s): 8008 (http) with context path ''
+2018-04-13 11:27:05,375  INFO EasyTestAllApplication:59 - Started EasyTestAllApplication in 5.568 seconds (JVM running for 6.502)
+2018-04-13 11:27:05,378  INFO LoadDataService:25 - 启动时加载数据..........
+2018-04-13 11:27:05,956  INFO LoadDataService:32 - 启动时加载数据完毕..........
+2018-04-13 11:27:12,018  INFO DispatcherServlet:494 - FrameworkServlet 'dispatcherServlet': initialization started
+2018-04-13 11:27:12,090  INFO DispatcherServlet:513 - FrameworkServlet 'dispatcherServlet': initialization completed in 72 ms
+2018-04-13 11:27:19,319  INFO TextReduController:37 - 文本去重。
+输入文本：
+yydhQryFeeInfo
+yydhIsOpen139Email
+yydhSmsrecvcrm
+yydhSmsrecvcrm
+yydhQueryBusiRec
+yydhIsOpen139Email
+yydhEmailRequest
+yydhQueryPromoFeeTar
+yydhIsOpen139Email
+yydhEmailRequest
+yydhQryHisMonthInfo
+yydhIsSmartPhone
+yydhQryHisFeeDetail
+yydhEmailRequest
+yydhQryRealTimeFlow
+
+去重后文本：
+yydhEmailRequest
+yydhIsOpen139Email
+yydhIsSmartPhone
+yydhQryFeeInfo
+yydhQryHisFeeDetail
+yydhQryHisMonthInfo
+yydhQryRealTimeFlow
+yydhQueryBusiRec
+yydhQueryPromoFeeTar
+yydhSmsrecvcrm
+去重前的文本个数： 15,  去重后的文本个数： 10
+2018-04-13 11:27:46,174  INFO TextReduController:37 - 文本去重。
+输入文本：
+yydhQryFlowPgMeal
+yydhSmsDisposeOrderVasOffer
+yydhQryFlowAssMeal
+yydhSmsDisposeOrderVasOffer
+yydhSmsrecvcrm
+yydhQryNowEnjoyMeal
+yydhQueryFeeResource
+yydhQryNowEnjoyMeal
+yydhQryNextMnEnjoyMeal
+yydhQryEnjoyMeal
+yydhQryNowEnjoyMeal
+yydhSmsDisposeZHTCSL
+yydhQryNextMnEnjoyMeal
+yydhQryEnjoyMeal
+yydhQryNowEnjoyMeal
+yydhSmsDisposeZHTCSL
+yydhQryNextMnEnjoyMeal
+yydhQryEnjoyMeal
+yydhQryNowEnjoyMeal
+yydhSmsDisposeZHTCSL
+yydhQryFlowMeal
+yydhQryFlowMeal
+yydhQryNextMonFlowMeal
+yydhSmsDisposeOrderVasOffer
+yydhQryFlowMeal
+yydhQryNextMonFlowMeal
+yydhSmsDisposeOrderVasOffer
+yydhQryFlowMeal
+yydhQryNextMonFlowMeal
+yydhSmsDisposeOrderVasOffer
+yydhQryFlowMeal
+yydhQryNextMonFlowMeal
+yydhSmsDisposeOrderVasOffer
+去重后文本：
+yydhQryEnjoyMeal
+yydhQryFlowAssMeal
+yydhQryFlowMeal
+yydhQryFlowPgMeal
+yydhQryNextMnEnjoyMeal
+yydhQryNextMonFlowMeal
+yydhQryNowEnjoyMeal
+yydhQueryFeeResource
+yydhSmsDisposeOrderVasOffer
+yydhSmsDisposeZHTCSL
+yydhSmsrecvcrm
+去重前的文本个数： 33,  去重后的文本个数： 11
+2018-04-13 11:28:12,552  INFO TextReduController:37 - 文本去重。
+输入文本：
+yydhQryUserCoinEx
+yydhQryUserCoinEx
+yydhQryRange
+yydhQryUserCoinEx
+yydhQryRange
+yydhQryUserCoinEx
+yydhQryRange
+yydhIsOpenGPRS
+yydhQryTranstoFlow
+yydhQryTranstoFlow
+yydhTranCoinToFlow
+yydhSmsDisposeOrderVasOffer
+yydhQryPaymentRecord
+yydhQryCoinRange
+yydhTranCoinToPrepay
+yydhQryAccountUserInfoList
+yydhRealTimeFee
+yydhMonthPayUser
+yydhQryStopOrStartStatus
+yydhStopOpenPhone
+yydhQryUserLevel
+
+去重后文本：
+yydhIsOpenGPRS
+yydhMonthPayUser
+yydhQryAccountUserInfoList
+yydhQryCoinRange
+yydhQryPaymentRecord
+yydhQryRange
+yydhQryStopOrStartStatus
+yydhQryTranstoFlow
+yydhQryUserCoinEx
+yydhQryUserLevel
+yydhRealTimeFee
+yydhSmsDisposeOrderVasOffer
+yydhStopOpenPhone
+yydhTranCoinToFlow
+yydhTranCoinToPrepay
+去重前的文本个数： 21,  去重后的文本个数： 15
+2018-04-13 11:28:38,051  INFO TextReduController:37 - 文本去重。
+输入文本：
+yydhQryNextMnEnjoyMeal
+yydhQryEnjoyMeal
+yydhSmsDisposeZHTCSL
+yydhQryNextMnEnjoyMeal
+yydhQryEnjoyMeal
+yydhQryNowEnjoyMeal
+yydhSmsDisposeZHTCSL
+yydhQryNextMnEnjoyMeal
+yydhQryEnjoyMeal
+yydhQryNowEnjoyMeal
+yydhSmsDisposeZHTCSL
+yydhQryNextMnEnjoyMeal
+yydhQryEnjoyMeal
+yydhQryNowEnjoyMeal
+yydhSmsDisposeZHTCSL
+yydhQryFlowMeal
+yydhQryNextMonFlowMeal
+yydhSmsDisposeOrderVasOffer
+yydhQryFlowMeal
+yydhQryNextMonFlowMeal
+yydhSmsDisposeOrderVasOffer
+yydhQryCurrentMonFlowMeal
+yydhQryNextMonFlowMeal
+yydhSmsDisposeOrderVasOffer
+yydhChkCurrentMonFlowMeal
+yydhSmsDisposeKTLLDJ
+yydhChkCurrentMonFlowMeal
+yydhSmsDisposeKTLLDJ
+yydhChkCurrentMonFlowMeal
+yydhSmsDisposeKTLLDJ
+yydhChkCurrentMonFlowMeal
+yydhSmsDisposeKTLLDJ
+
+去重后文本：
+yydhChkCurrentMonFlowMeal
+yydhQryCurrentMonFlowMeal
+yydhQryEnjoyMeal
+yydhQryFlowMeal
+yydhQryNextMnEnjoyMeal
+yydhQryNextMonFlowMeal
+yydhQryNowEnjoyMeal
+yydhSmsDisposeKTLLDJ
+yydhSmsDisposeOrderVasOffer
+yydhSmsDisposeZHTCSL
+去重前的文本个数： 32,  去重后的文本个数： 10

@@ -1,0 +1,403 @@
+2018-05-07 14:32:13,728  INFO EasyTestAllApplication:16 - 工具开始启动。。。。。。。。。。。。
+2018-05-07 14:32:15,334  INFO EasyTestAllApplication:16 - 工具开始启动。。。。。。。。。。。。
+2018-05-07 14:32:15,628  INFO Version:21 - HV000001: Hibernate Validator 6.0.7.Final
+2018-05-07 14:32:16,052  INFO EasyTestAllApplication:50 - Starting EasyTestAllApplication on ifly-13753 with PID 12884 (E:\easy-test\target\classes started by admin in E:\easy-test)
+2018-05-07 14:32:16,054  INFO EasyTestAllApplication:652 - No active profile set, falling back to default profiles: default
+2018-05-07 14:32:16,269  INFO AnnotationConfigServletWebServerApplicationContext:589 - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@42f959f1: startup date [Mon May 07 14:32:16 CST 2018]; root of context hierarchy
+2018-05-07 14:32:23,151  INFO TomcatWebServer:91 - Tomcat initialized with port(s): 8008 (http)
+2018-05-07 14:32:23,744  INFO ContextLoader:285 - Root WebApplicationContext: initialization completed in 7479 ms
+2018-05-07 14:32:24,144  INFO ServletRegistrationBean:185 - Servlet dispatcherServlet mapped to [/]
+2018-05-07 14:32:24,151  INFO FilterRegistrationBean:243 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-05-07 14:32:24,152  INFO FilterRegistrationBean:243 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-05-07 14:32:24,153  INFO FilterRegistrationBean:243 - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-05-07 14:32:24,154  INFO FilterRegistrationBean:243 - Mapping filter: 'requestContextFilter' to: [/*]
+2018-05-07 14:32:25,168  INFO RequestMappingHandlerAdapter:567 - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@42f959f1: startup date [Mon May 07 14:32:16 CST 2018]; root of context hierarchy
+2018-05-07 14:32:25,424  INFO RequestMappingHandlerMapping:548 - Mapped "{[/requestDto/getBody]}" onto java.lang.String com.easytestall.controller.EasyTestController.getRequBody(java.lang.String) throws java.io.IOException
+2018-05-07 14:32:25,440  INFO RequestMappingHandlerMapping:548 - Mapped "{[/requestDto/updateBody]}" onto java.lang.String com.easytestall.controller.EasyTestController.updateParam(java.lang.String,int,java.lang.String)
+2018-05-07 14:32:25,444  INFO RequestMappingHandlerMapping:548 - Mapped "{[/init/getNodes]}" onto java.lang.String com.easytestall.controller.EasyTestController.getTreeNodes()
+2018-05-07 14:32:25,445  INFO RequestMappingHandlerMapping:548 - Mapped "{[/test/testBatchApi]}" onto java.lang.String com.easytestall.controller.EasyTestController.testApiByBatch(java.lang.String) throws org.apache.http.ParseException,java.io.IOException
+2018-05-07 14:32:25,446  INFO RequestMappingHandlerMapping:548 - Mapped "{[/ztree/updateNodes]}" onto java.lang.String com.easytestall.controller.EasyTestController.updateTreeNodes()
+2018-05-07 14:32:25,450  INFO RequestMappingHandlerMapping:548 - Mapped "{[/redu/reduText],produces=[application/json]}" onto public com.easytestall.pojo.TextReduplicationPojo com.easytestall.controller.TextReduController.reduText(java.lang.String)
+2018-05-07 14:32:25,459  INFO RequestMappingHandlerMapping:548 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-05-07 14:32:25,460  INFO RequestMappingHandlerMapping:548 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-05-07 14:32:25,736  INFO SimpleUrlHandlerMapping:373 - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-07 14:32:25,746  INFO SimpleUrlHandlerMapping:373 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-07 14:32:25,943  INFO SimpleUrlHandlerMapping:373 - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-05-07 14:32:26,529  INFO OptionalLiveReloadServer:57 - LiveReload server is running on port 35729
+2018-05-07 14:32:26,743  INFO AnnotationMBeanExporter:434 - Registering beans for JMX exposure on startup
+2018-05-07 14:32:26,974  INFO TomcatWebServer:205 - Tomcat started on port(s): 8008 (http) with context path ''
+2018-05-07 14:32:26,980  INFO EasyTestAllApplication:59 - Started EasyTestAllApplication in 11.63 seconds (JVM running for 14.452)
+2018-05-07 14:32:26,982  INFO LoadDataService:25 - 启动时加载数据..........
+2018-05-07 14:32:27,706  INFO LoadDataService:32 - 启动时加载数据完毕..........
+2018-05-07 14:32:35,506  INFO DispatcherServlet:494 - FrameworkServlet 'dispatcherServlet': initialization started
+2018-05-07 14:32:35,693  INFO DispatcherServlet:513 - FrameworkServlet 'dispatcherServlet': initialization completed in 186 ms
+2018-05-07 14:32:52,625  INFO TextReduController:37 - 文本去重。
+输入文本：
+yydhQryFeeInfo
+yydhIsOpen139Email
+  
+yydhSmsrecvcrm
+yydhQryIsAcceptActivity
+yydhSmsrecvcrm
+yydhQueryBusiRec
+yydhIsOpen139Email
+yydhEmailRequest
+yydhQryPromoFeeTaransfer
+yydhIsOpen139Email
+yydhEmailRequest
+yydhQryHisMonthInfo
+yydhIsSmartPhone
+yydhQryHisFeeDetail
+yydhEmailRequest
+yydhQryRealTimeFlow
+yydhQryFlowPgMeal
+yydhSmsDisposeOrderVasOffer
+yydhQryFlowAssMeal
+yydhSmsDisposeOrderVasOffer
+yydhSmsrecvcrm
+yydhQryNowEnjoyMeal
+yydhQueryFeeResource
+yydhQryNowEnjoyMeal
+yydhQryNextMnEnjoyMeal
+yydhQryEnjoyMeal
+yydhQryNowEnjoyMeal
+yydhSmsDisposeZHTCSL
+yydhQryNextMnEnjoyMeal
+yydhQryEnjoyMeal
+yydhQryNowEnjoyMeal
+yydhSmsDisposeZHTCSL
+yydhQryNextMnEnjoyMeal
+yydhQryEnjoyMeal
+yydhQryNowEnjoyMeal
+yydhSmsDisposeZHTCSL
+yydhQryFlowMeal
+yydhQryFlowMeal
+yydhQryNextMonFlowMeal
+yydhSmsDisposeOrderVasOffer
+yydhQryFlowMeal
+yydhQryNextMonFlowMeal
+yydhSmsDisposeOrderVasOffer
+yydhQryFlowMeal
+yydhQryNextMonFlowMeal
+yydhSmsDisposeOrderVasOffer
+yydhQryFlowMeal
+yydhQryNextMonFlowMeal
+yydhSmsDisposeOrderVasOffer
+yydhQryUserCoinEx
+yydhQryUserCoinEx
+yydhQryRange
+yydhQryUserCoinEx
+yydhQryRange
+yydhQryUserCoinEx
+yydhQryRange
+yydhIsOpenGPRS
+yydhQryTranstoFlow
+yydhQryTranstoFlow
+yydhTranCoinToFlow
+yydhSmsDisposeOrderVasOffer
+yydhQryPaymentRecord
+yydhQryCoinRange
+yydhTranCoinToPrepay
+yydhQryAccountUserInfoList
+yydhRealTimeFee
+yydhMonthPayUser
+yydhQryStopOrStartStatus
+yydhStopOpenPhone
+yydhQryUserLevel
+yydhQryNextMnEnjoyMeal
+yydhQryEnjoyMeal
+yydhSmsDisposeZHTCSL
+yydhQryUserInfoForCallLog
+yydhQryNextMnEnjoyMeal
+yydhQryEnjoyMeal
+yydhQryNowEnjoyMeal
+yydhSmsDisposeZHTCSL
+yydhQryNextMnEnjoyMeal
+yydhQryEnjoyMeal
+yydhQryNowEnjoyMeal
+yydhSmsDisposeZHTCSL
+yydhQryNextMnEnjoyMeal
+yydhQryEnjoyMeal
+yydhQryNowEnjoyMeal
+yydhSmsDisposeZHTCSL
+yydhQryFlowMeal
+yydhQryNextMonFlowMeal
+yydhSmsDisposeOrderVasOffer
+yydhQryFlowMeal
+yydhQryNextMonFlowMeal
+yydhSmsDisposeOrderVasOffer
+yydhQryCurrentMonFlowMeal
+yydhQryNextMonFlowMeal
+yydhSmsDisposeOrderVasOffer
+yydhChkCurrentMonFlowMeal
+yydhSmsDisposeKTLLDJ
+yydhChkCurrentMonFlowMeal
+yydhSmsDisposeKTLLDJ
+yydhChkCurrentMonFlowMeal
+yydhSmsDisposeKTLLDJ
+yydhChkCurrentMonFlowMeal
+yydhSmsDisposeKTLLDJ
+
+去重后文本：
+yydhChkCurrentMonFlowMeal
+yydhEmailRequest
+yydhIsOpen139Email
+yydhIsOpenGPRS
+yydhIsSmartPhone
+yydhMonthPayUser
+yydhQryAccountUserInfoList
+yydhQryCoinRange
+yydhQryCurrentMonFlowMeal
+yydhQryEnjoyMeal
+yydhQryFeeInfo
+yydhQryFlowAssMeal
+yydhQryFlowMeal
+yydhQryFlowPgMeal
+yydhQryHisFeeDetail
+yydhQryHisMonthInfo
+yydhQryIsAcceptActivity
+yydhQryNextMnEnjoyMeal
+yydhQryNextMonFlowMeal
+yydhQryNowEnjoyMeal
+yydhQryPaymentRecord
+yydhQryPromoFeeTaransfer
+yydhQryRange
+yydhQryRealTimeFlow
+yydhQryStopOrStartStatus
+yydhQryTranstoFlow
+yydhQryUserCoinEx
+yydhQryUserInfoForCallLog
+yydhQryUserLevel
+yydhQueryBusiRec
+yydhQueryFeeResource
+yydhRealTimeFee
+yydhSmsDisposeKTLLDJ
+yydhSmsDisposeOrderVasOffer
+yydhSmsDisposeZHTCSL
+yydhSmsrecvcrm
+yydhStopOpenPhone
+yydhTranCoinToFlow
+yydhTranCoinToPrepay
+去重前的文本个数： 103,  去重后的文本个数： 39
+2018-05-07 14:33:30,247  INFO TextReduController:37 - 文本去重。
+输入文本：
+yydhQryFeeInfo
+yydhIsOpen139Email
+  
+yydhSmsrecvcrm
+yydhQryIsAcceptActivity
+yydhSmsrecvcrm
+yydhQueryBusiRec
+yydhIsOpen139Email
+yydhEmailRequest
+yydhQryPromoFeeTaransfer
+yydhIsOpen139Email
+yydhEmailRequest
+yydhQryHisMonthInfo
+yydhIsSmartPhone
+yydhQryHisFeeDetail
+yydhEmailRequest
+yydhQryRealTimeFlow
+yydhQryFlowPgMeal
+yydhSmsDisposeOrderVasOffer
+yydhQryFlowAssMeal
+yydhSmsDisposeOrderVasOffer
+yydhSmsrecvcrm
+yydhQryNowEnjoyMeal
+yydhQueryFeeResource
+yydhQryNowEnjoyMeal
+yydhQryNextMnEnjoyMeal
+yydhQryEnjoyMeal
+yydhQryNowEnjoyMeal
+yydhSmsDisposeZHTCSL
+yydhQryNextMnEnjoyMeal
+yydhQryEnjoyMeal
+yydhQryNowEnjoyMeal
+yydhSmsDisposeZHTCSL
+yydhQryNextMnEnjoyMeal
+yydhQryEnjoyMeal
+yydhQryNowEnjoyMeal
+yydhSmsDisposeZHTCSL
+yydhQryFlowMeal
+yydhQryFlowMeal
+yydhQryNextMonFlowMeal
+yydhSmsDisposeOrderVasOffer
+yydhQryFlowMeal
+yydhQryNextMonFlowMeal
+yydhSmsDisposeOrderVasOffer
+yydhQryFlowMeal
+yydhQryNextMonFlowMeal
+yydhSmsDisposeOrderVasOffer
+yydhQryFlowMeal
+yydhQryNextMonFlowMeal
+yydhSmsDisposeOrderVasOffer
+yydhQryUserCoinEx
+yydhQryUserCoinEx
+yydhQryRange
+yydhQryUserCoinEx
+yydhQryRange
+yydhQryUserCoinEx
+yydhQryRange
+yydhIsOpenGPRS
+yydhQryTranstoFlow
+yydhQryTranstoFlow
+yydhTranCoinToFlow
+yydhSmsDisposeOrderVasOffer
+yydhQryPaymentRecord
+yydhQryCoinRange
+yydhTranCoinToPrepay
+yydhQryAccountUserInfoList
+yydhRealTimeFee
+yydhMonthPayUser
+yydhQryStopOrStartStatus
+yydhStopOpenPhone
+yydhQryUserLevel
+
+去重后文本：
+yydhEmailRequest
+yydhIsOpen139Email
+yydhIsOpenGPRS
+yydhIsSmartPhone
+yydhMonthPayUser
+yydhQryAccountUserInfoList
+yydhQryCoinRange
+yydhQryEnjoyMeal
+yydhQryFeeInfo
+yydhQryFlowAssMeal
+yydhQryFlowMeal
+yydhQryFlowPgMeal
+yydhQryHisFeeDetail
+yydhQryHisMonthInfo
+yydhQryIsAcceptActivity
+yydhQryNextMnEnjoyMeal
+yydhQryNextMonFlowMeal
+yydhQryNowEnjoyMeal
+yydhQryPaymentRecord
+yydhQryPromoFeeTaransfer
+yydhQryRange
+yydhQryRealTimeFlow
+yydhQryStopOrStartStatus
+yydhQryTranstoFlow
+yydhQryUserCoinEx
+yydhQryUserLevel
+yydhQueryBusiRec
+yydhQueryFeeResource
+yydhRealTimeFee
+yydhSmsDisposeOrderVasOffer
+yydhSmsDisposeZHTCSL
+yydhSmsrecvcrm
+yydhStopOpenPhone
+yydhTranCoinToFlow
+yydhTranCoinToPrepay
+去重前的文本个数： 70,  去重后的文本个数： 35
+2018-05-07 14:34:19,121  INFO TextReduController:37 - 文本去重。
+输入文本：
+NGCRMPFGX_CGXHQGETFEEINFO_POST
+NGCRMPFGX_CGXHCISOPEN139EMAIL_POST
+NGCRMPFGX_CGXHTSENDEMAILREQUEST_POST
+NGCRMPFGX_CGXHTSAVESMSRECVCRM_POST
+NGCRMPFGX_CGXHQQRYISACCEPTACTIVITY_POST
+NGCRMPFGX_CGXHTSAVESMSRECVCRM_POST
+NGCRMPFGX_CGXHQQUERYBUSIREC_POST
+NGCRMPFGX_CGXHCISOPEN139EMAIL_POST
+NGCRMPFGX_CGXHTSENDEMAILREQUEST_POST
+NGCRMPFGX_CGXHQQUERYPROMOFEETRANSFER_POST
+NGCRMPFGX_CGXHCISOPEN139EMAIL_POST
+NGCRMPFGX_CGXHTSENDEMAILREQUEST_POST
+NGCRMPFGX_CGXHQQRYHISMONTHINFO_POST
+NGCRMPFGX_CGXHCISSMARTPHONE_POST
+NGCRMPFGX_CGXHQQRYHISFEEDETAIL_POST
+NGCRMPFGX_CGXHTSENDEMAILREQUEST_POST
+NGCRMPFGX_CGXHQQUERYREALTIMEFLOW_POST
+NGCRMPFGX_CGXHQGETFLOWPGMEAL_POST
+NGCRMPFGX_CGXHTSMSDISPOSEORDERVASOFFER_POST
+NGCRMPFGX_CGXHQGETFLOWASSMEAL_POST
+NGCRMPFGX_CGXHTSMSDISPOSEORDERVASOFFER_POST
+NGCRMPFGX_CGXHTSAVESMSRECVCRM_POST
+NGCRMPFGX_CGXHQGETNOWENJOYMEAL_POST
+NGCRMPFGX_CGXHQQUERYFEERESOURCE_POST
+NGCRMPFGX_CGXHQGETNOWENJOYMEAL_POST
+NGCRMPFGX_CGXHQGETNEXTMNENJOYMEAL_POST
+NGCRMPFGX_CGXHQGETENJOYMEAL_POST
+NGCRMPFGX_CGXHQGETNOWENJOYMEAL_POST
+NGCRMPFGX_CGXHTSMSDISPOSEZHTCSL_POST
+NGCRMPFGX_CGXHQGETNEXTMNENJOYMEAL_POST
+NGCRMPFGX_CGXHQGETENJOYMEAL_POST
+NGCRMPFGX_CGXHQGETNOWENJOYMEAL_POST
+NGCRMPFGX_CGXHTSMSDISPOSEZHTCSL_POST
+NGCRMPFGX_CGXHQGETNEXTMNENJOYMEAL_POST
+NGCRMPFGX_CGXHQGETENJOYMEAL_POST
+NGCRMPFGX_CGXHQGETNOWENJOYMEAL_POST
+NGCRMPFGX_CGXHTSMSDISPOSEZHTCSL_POST
+NGCRMPFGX_CGXHQGETFLOWMEAL_POST
+NGCRMPFGX_CGXHQGETFLOWMEAL_POST
+NGCRMPFGX_CGXHCGETNEXTMONFLOWMEAL_POST
+NGCRMPFGX_CGXHTSMSDISPOSEORDERVASOFFER_POST
+NGCRMPFGX_CGXHQGETFLOWMEAL_POST
+NGCRMPFGX_CGXHCGETNEXTMONFLOWMEAL_POST
+NGCRMPFGX_CGXHTSMSDISPOSEORDERVASOFFER_POST
+NGCRMPFGX_CGXHQGETFLOWMEAL_POST
+NGCRMPFGX_CGXHCGETNEXTMONFLOWMEAL_POST
+NGCRMPFGX_CGXHTSMSDISPOSEORDERVASOFFER_POST
+NGCRMPFGX_CGXHQGETFLOWMEAL_POST
+NGCRMPFGX_CGXHCGETNEXTMONFLOWMEAL_POST
+NGCRMPFGX_CGXHTSMSDISPOSEORDERVASOFFER_POST
+NGCRMPFGX_CGXHQQUERYUSERCOINEX_POST
+NGCRMPFGX_CGXHQQUERYUSERCOINEX_POST
+NGCRMPFGX_CGXHQQUERYRANGE_POST
+NGCRMPFGX_CGXHQQUERYUSERCOINEX_POST
+NGCRMPFGX_CGXHQQUERYRANGE_POST
+NGCRMPFGX_CGXHQQUERYUSERCOINEX_POST
+NGCRMPFGX_CGXHQQUERYRANGE_POST
+NGCRMPFGX_CGXHCISOPENGPRS_POST
+NGCRMPFGX_CGXHQQUERYTRANSTOFLOW_POST
+NGCRMPFGX_CGXHQQUERYTRANSTOFLOW_POST
+NGCRMPFGX_CGXHTDOTRANCOINTOFLOW_POST
+NGCRMPFGX_CGXHTSMSDISPOSEORDERVASOFFER_POST
+NGCRMPFGX_CGXHQGETPAYMENTRECORD_POST
+NGCRMPFGX_CGXHQQUERYCOINRANGE_POST
+NGCRMPFGX_CGXHTTRANCOINTOPREPAY_POST
+NGCRMPFGX_CGXHQGETACCOUNTUSERINFOLIST_POST
+NGCRMPFGX_CGXHQREALTIMEFEE_POST
+NGCRMPFGX_CGXHCISMONTHPAYUSER_POST
+NGCRMPFGX_CGXHQQRYSTOPORSTARTSTATUS_POST
+NGCRMPFGX_CGXHTDOSTOPOPEN_POST
+NGCRMPFGX_CGXHQGETUSERLEVEL_POST
+
+去重后文本：
+NGCRMPFGX_CGXHCGETNEXTMONFLOWMEAL_POST
+NGCRMPFGX_CGXHCISMONTHPAYUSER_POST
+NGCRMPFGX_CGXHCISOPEN139EMAIL_POST
+NGCRMPFGX_CGXHCISOPENGPRS_POST
+NGCRMPFGX_CGXHCISSMARTPHONE_POST
+NGCRMPFGX_CGXHQGETACCOUNTUSERINFOLIST_POST
+NGCRMPFGX_CGXHQGETENJOYMEAL_POST
+NGCRMPFGX_CGXHQGETFEEINFO_POST
+NGCRMPFGX_CGXHQGETFLOWASSMEAL_POST
+NGCRMPFGX_CGXHQGETFLOWMEAL_POST
+NGCRMPFGX_CGXHQGETFLOWPGMEAL_POST
+NGCRMPFGX_CGXHQGETNEXTMNENJOYMEAL_POST
+NGCRMPFGX_CGXHQGETNOWENJOYMEAL_POST
+NGCRMPFGX_CGXHQGETPAYMENTRECORD_POST
+NGCRMPFGX_CGXHQGETUSERLEVEL_POST
+NGCRMPFGX_CGXHQQRYHISFEEDETAIL_POST
+NGCRMPFGX_CGXHQQRYHISMONTHINFO_POST
+NGCRMPFGX_CGXHQQRYISACCEPTACTIVITY_POST
+NGCRMPFGX_CGXHQQRYSTOPORSTARTSTATUS_POST
+NGCRMPFGX_CGXHQQUERYBUSIREC_POST
+NGCRMPFGX_CGXHQQUERYCOINRANGE_POST
+NGCRMPFGX_CGXHQQUERYFEERESOURCE_POST
+NGCRMPFGX_CGXHQQUERYPROMOFEETRANSFER_POST
+NGCRMPFGX_CGXHQQUERYRANGE_POST
+NGCRMPFGX_CGXHQQUERYREALTIMEFLOW_POST
+NGCRMPFGX_CGXHQQUERYTRANSTOFLOW_POST
+NGCRMPFGX_CGXHQQUERYUSERCOINEX_POST
+NGCRMPFGX_CGXHQREALTIMEFEE_POST
+NGCRMPFGX_CGXHTDOSTOPOPEN_POST
+NGCRMPFGX_CGXHTDOTRANCOINTOFLOW_POST
+NGCRMPFGX_CGXHTSAVESMSRECVCRM_POST
+NGCRMPFGX_CGXHTSENDEMAILREQUEST_POST
+NGCRMPFGX_CGXHTSMSDISPOSEORDERVASOFFER_POST
+NGCRMPFGX_CGXHTSMSDISPOSEZHTCSL_POST
+NGCRMPFGX_CGXHTTRANCOINTOPREPAY_POST
+去重前的文本个数： 71,  去重后的文本个数： 35

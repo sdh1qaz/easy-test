@@ -1,0 +1,5016 @@
+2018-04-26 11:00:19,379  INFO EasyTestAllApplication:16 - 工具开始启动。。。。。。。。。。。。
+2018-04-26 11:00:19,863  INFO EasyTestAllApplication:16 - 工具开始启动。。。。。。。。。。。。
+2018-04-26 11:00:20,189  INFO Version:21 - HV000001: Hibernate Validator 6.0.7.Final
+2018-04-26 11:00:20,454  INFO EasyTestAllApplication:50 - Starting EasyTestAllApplication on ifly-13753 with PID 7508 (E:\easy-test\target\classes started by admin in E:\easy-test)
+2018-04-26 11:00:20,455  INFO EasyTestAllApplication:652 - No active profile set, falling back to default profiles: default
+2018-04-26 11:00:20,601  INFO AnnotationConfigServletWebServerApplicationContext:589 - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@39fd1bdf: startup date [Thu Apr 26 11:00:20 CST 2018]; root of context hierarchy
+2018-04-26 11:00:23,671  INFO TomcatWebServer:91 - Tomcat initialized with port(s): 8008 (http)
+2018-04-26 11:00:24,550  INFO ContextLoader:285 - Root WebApplicationContext: initialization completed in 3952 ms
+2018-04-26 11:00:24,910  INFO ServletRegistrationBean:185 - Servlet dispatcherServlet mapped to [/]
+2018-04-26 11:00:24,959  INFO FilterRegistrationBean:243 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-04-26 11:00:24,959  INFO FilterRegistrationBean:243 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-04-26 11:00:24,961  INFO FilterRegistrationBean:243 - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-04-26 11:00:24,962  INFO FilterRegistrationBean:243 - Mapping filter: 'requestContextFilter' to: [/*]
+2018-04-26 11:00:25,593  INFO RequestMappingHandlerAdapter:567 - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@39fd1bdf: startup date [Thu Apr 26 11:00:20 CST 2018]; root of context hierarchy
+2018-04-26 11:00:25,702  INFO RequestMappingHandlerMapping:548 - Mapped "{[/requestDto/updateBody]}" onto java.lang.String com.easytestall.controller.EasyTestController.updateParam(java.lang.String,int,java.lang.String)
+2018-04-26 11:00:25,703  INFO RequestMappingHandlerMapping:548 - Mapped "{[/init/getNodes]}" onto java.lang.String com.easytestall.controller.EasyTestController.getTreeNodes()
+2018-04-26 11:00:25,705  INFO RequestMappingHandlerMapping:548 - Mapped "{[/requestDto/getBody]}" onto java.lang.String com.easytestall.controller.EasyTestController.getRequBody(java.lang.String) throws java.io.IOException
+2018-04-26 11:00:25,706  INFO RequestMappingHandlerMapping:548 - Mapped "{[/test/testBatchApi]}" onto java.lang.String com.easytestall.controller.EasyTestController.testApiByBatch(java.lang.String) throws org.apache.http.ParseException,java.io.IOException
+2018-04-26 11:00:25,706  INFO RequestMappingHandlerMapping:548 - Mapped "{[/ztree/updateNodes]}" onto java.lang.String com.easytestall.controller.EasyTestController.updateTreeNodes()
+2018-04-26 11:00:25,708  INFO RequestMappingHandlerMapping:548 - Mapped "{[/redu/reduText],produces=[application/json]}" onto public com.easytestall.pojo.TextReduplicationPojo com.easytestall.controller.TextReduController.reduText(java.lang.String)
+2018-04-26 11:00:25,713  INFO RequestMappingHandlerMapping:548 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-04-26 11:00:25,713  INFO RequestMappingHandlerMapping:548 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-04-26 11:00:25,765  INFO SimpleUrlHandlerMapping:373 - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-04-26 11:00:25,766  INFO SimpleUrlHandlerMapping:373 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-04-26 11:00:25,843  INFO SimpleUrlHandlerMapping:373 - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-04-26 11:00:26,131  INFO OptionalLiveReloadServer:57 - LiveReload server is running on port 35729
+2018-04-26 11:00:26,206  INFO AnnotationMBeanExporter:434 - Registering beans for JMX exposure on startup
+2018-04-26 11:00:26,281  INFO TomcatWebServer:205 - Tomcat started on port(s): 8008 (http) with context path ''
+2018-04-26 11:00:26,285  INFO EasyTestAllApplication:59 - Started EasyTestAllApplication in 6.41 seconds (JVM running for 7.279)
+2018-04-26 11:00:26,288  INFO LoadDataService:25 - 启动时加载数据..........
+2018-04-26 11:00:26,781  INFO LoadDataService:32 - 启动时加载数据完毕..........
+2018-04-26 11:00:49,935  INFO DispatcherServlet:494 - FrameworkServlet 'dispatcherServlet': initialization started
+2018-04-26 11:00:49,970  INFO DispatcherServlet:513 - FrameworkServlet 'dispatcherServlet': initialization completed in 35 ms
+2018-04-26 11:00:55,475  INFO TextReduController:37 - 文本去重。
+输入文本：
+yydhQryDemoFlowMeal
+yydhQryFlowMeal
+yydhQryCurrentMonFlowMeal
+yydhQryNextMonFlowMeal
+yydhSmsDisposeOrderVasOffer
+yydhQryFlowMeal
+yydhCheckNextMonFlowMeal
+yydhSmsDisposeOrderVasOffer
+yydhQuerySpecialPhone
+yydhQuerySuspicionInfo
+yydhCheckPwdStatus
+yydhCheckUserPwd
+yydhStopOrStartUser
+yydhSmsExt
+yydhGetBroadbandUserInfo
+yydhCheckBroadPwdStatus
+yydhCheckBroadbandPassword
+yydhDoCheckPass
+yydhChangeBroadbandPassword
+yydhGetBroadbandUserInfo
+yydhGetUserInfo
+yydhCheckIdcard
+yydhChangeBroadbandPassword
+yydhCheckPwdStatus
+yydhCheckUserPwd
+yydhDoCheckPass
+yydhModifyUserPassword
+yydhSmsExt
+yydhCheckIdcard
+yydhModifyUserPassword
+yydhSmsExt
+
+去重后文本：
+yydhChangeBroadbandPassword
+yydhCheckBroadPwdStatus
+yydhCheckBroadbandPassword
+yydhCheckIdcard
+yydhCheckNextMonFlowMeal
+yydhCheckPwdStatus
+yydhCheckUserPwd
+yydhDoCheckPass
+yydhGetBroadbandUserInfo
+yydhGetUserInfo
+yydhModifyUserPassword
+yydhQryCurrentMonFlowMeal
+yydhQryDemoFlowMeal
+yydhQryFlowMeal
+yydhQryNextMonFlowMeal
+yydhQuerySpecialPhone
+yydhQuerySuspicionInfo
+yydhSmsDisposeOrderVasOffer
+yydhSmsExt
+yydhStopOrStartUser
+去重前的文本个数： 31,  去重后的文本个数： 20
+2018-04-26 11:34:49,545  INFO AnnotationConfigServletWebServerApplicationContext:989 - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@39fd1bdf: startup date [Thu Apr 26 11:00:20 CST 2018]; root of context hierarchy
+2018-04-26 11:34:49,561  INFO AnnotationMBeanExporter:452 - Unregistering JMX-exposed beans on shutdown
+2018-04-26 11:34:50,268  INFO EasyTestAllApplication:16 - 工具开始启动。。。。。。。。。。。。
+2018-04-26 11:34:50,392  INFO EasyTestAllApplication:50 - Starting EasyTestAllApplication on ifly-13753 with PID 7508 (E:\easy-test\target\classes started by admin in E:\easy-test)
+2018-04-26 11:34:50,397  INFO EasyTestAllApplication:652 - No active profile set, falling back to default profiles: default
+2018-04-26 11:34:50,417  INFO AnnotationConfigServletWebServerApplicationContext:589 - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@195b563f: startup date [Thu Apr 26 11:34:50 CST 2018]; root of context hierarchy
+2018-04-26 11:34:51,571  INFO TomcatWebServer:91 - Tomcat initialized with port(s): 8008 (http)
+2018-04-26 11:34:51,623  INFO ContextLoader:285 - Root WebApplicationContext: initialization completed in 1206 ms
+2018-04-26 11:34:51,667  INFO ServletRegistrationBean:185 - Servlet dispatcherServlet mapped to [/]
+2018-04-26 11:34:51,668  INFO FilterRegistrationBean:243 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-04-26 11:34:51,668  INFO FilterRegistrationBean:243 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-04-26 11:34:51,669  INFO FilterRegistrationBean:243 - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-04-26 11:34:51,669  INFO FilterRegistrationBean:243 - Mapping filter: 'requestContextFilter' to: [/*]
+2018-04-26 11:34:52,026  INFO RequestMappingHandlerAdapter:567 - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@195b563f: startup date [Thu Apr 26 11:34:50 CST 2018]; root of context hierarchy
+2018-04-26 11:34:52,039  INFO RequestMappingHandlerMapping:548 - Mapped "{[/requestDto/updateBody]}" onto java.lang.String com.easytestall.controller.EasyTestController.updateParam(java.lang.String,int,java.lang.String)
+2018-04-26 11:34:52,040  INFO RequestMappingHandlerMapping:548 - Mapped "{[/init/getNodes]}" onto java.lang.String com.easytestall.controller.EasyTestController.getTreeNodes()
+2018-04-26 11:34:52,040  INFO RequestMappingHandlerMapping:548 - Mapped "{[/requestDto/getBody]}" onto java.lang.String com.easytestall.controller.EasyTestController.getRequBody(java.lang.String) throws java.io.IOException
+2018-04-26 11:34:52,041  INFO RequestMappingHandlerMapping:548 - Mapped "{[/test/testBatchApi]}" onto java.lang.String com.easytestall.controller.EasyTestController.testApiByBatch(java.lang.String) throws org.apache.http.ParseException,java.io.IOException
+2018-04-26 11:34:52,042  INFO RequestMappingHandlerMapping:548 - Mapped "{[/ztree/updateNodes]}" onto java.lang.String com.easytestall.controller.EasyTestController.updateTreeNodes()
+2018-04-26 11:34:52,043  INFO RequestMappingHandlerMapping:548 - Mapped "{[/redu/reduText],produces=[application/json]}" onto public com.easytestall.pojo.TextReduplicationPojo com.easytestall.controller.TextReduController.reduText(java.lang.String)
+2018-04-26 11:34:52,050  INFO RequestMappingHandlerMapping:548 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-04-26 11:34:52,051  INFO RequestMappingHandlerMapping:548 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-04-26 11:34:52,070  INFO SimpleUrlHandlerMapping:373 - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-04-26 11:34:52,070  INFO SimpleUrlHandlerMapping:373 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-04-26 11:34:52,090  INFO SimpleUrlHandlerMapping:373 - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-04-26 11:34:52,531  INFO OptionalLiveReloadServer:57 - LiveReload server is running on port 35729
+2018-04-26 11:34:54,319  INFO AnnotationMBeanExporter:434 - Registering beans for JMX exposure on startup
+2018-04-26 11:34:54,376  INFO TomcatWebServer:205 - Tomcat started on port(s): 8008 (http) with context path ''
+2018-04-26 11:34:54,378  INFO EasyTestAllApplication:59 - Started EasyTestAllApplication in 4.096 seconds (JVM running for 2075.372)
+2018-04-26 11:34:54,380  INFO LoadDataService:25 - 启动时加载数据..........
+2018-04-26 11:34:54,399  INFO LoadDataService:32 - 启动时加载数据完毕..........
+2018-04-26 11:34:54,401  INFO ConditionEvaluationDeltaLoggingListener:56 - Condition evaluation unchanged
+2018-04-26 11:41:56,160  INFO DispatcherServlet:494 - FrameworkServlet 'dispatcherServlet': initialization started
+2018-04-26 11:41:56,183  INFO DispatcherServlet:513 - FrameworkServlet 'dispatcherServlet': initialization completed in 22 ms
+2018-04-26 20:06:06,567  INFO EasyTestAllApplication:16 - 工具开始启动。。。。。。。。。。。。
+2018-04-26 20:06:06,853  INFO EasyTestAllApplication:16 - 工具开始启动。。。。。。。。。。。。
+2018-04-26 20:06:07,134  INFO Version:21 - HV000001: Hibernate Validator 6.0.7.Final
+2018-04-26 20:06:07,398  INFO EasyTestAllApplication:50 - Starting EasyTestAllApplication on ifly-13753 with PID 3828 (E:\easy-test\target\classes started by admin in E:\easy-test)
+2018-04-26 20:06:07,400  INFO EasyTestAllApplication:652 - No active profile set, falling back to default profiles: default
+2018-04-26 20:06:07,579  INFO AnnotationConfigServletWebServerApplicationContext:589 - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@574a4c51: startup date [Thu Apr 26 20:06:07 CST 2018]; root of context hierarchy
+2018-04-26 20:06:09,750  INFO TomcatWebServer:91 - Tomcat initialized with port(s): 8008 (http)
+2018-04-26 20:06:09,997  INFO ContextLoader:285 - Root WebApplicationContext: initialization completed in 2420 ms
+2018-04-26 20:06:10,210  INFO ServletRegistrationBean:185 - Servlet dispatcherServlet mapped to [/]
+2018-04-26 20:06:10,217  INFO FilterRegistrationBean:243 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-04-26 20:06:10,218  INFO FilterRegistrationBean:243 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-04-26 20:06:10,219  INFO FilterRegistrationBean:243 - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-04-26 20:06:10,219  INFO FilterRegistrationBean:243 - Mapping filter: 'requestContextFilter' to: [/*]
+2018-04-26 20:06:10,694  INFO RequestMappingHandlerAdapter:567 - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@574a4c51: startup date [Thu Apr 26 20:06:07 CST 2018]; root of context hierarchy
+2018-04-26 20:06:10,818  INFO RequestMappingHandlerMapping:548 - Mapped "{[/ztree/updateNodes]}" onto java.lang.String com.easytestall.controller.EasyTestController.updateTreeNodes()
+2018-04-26 20:06:10,821  INFO RequestMappingHandlerMapping:548 - Mapped "{[/requestDto/getBody]}" onto java.lang.String com.easytestall.controller.EasyTestController.getRequBody(java.lang.String) throws java.io.IOException
+2018-04-26 20:06:10,822  INFO RequestMappingHandlerMapping:548 - Mapped "{[/init/getNodes]}" onto java.lang.String com.easytestall.controller.EasyTestController.getTreeNodes()
+2018-04-26 20:06:10,823  INFO RequestMappingHandlerMapping:548 - Mapped "{[/requestDto/updateBody]}" onto java.lang.String com.easytestall.controller.EasyTestController.updateParam(java.lang.String,int,java.lang.String)
+2018-04-26 20:06:10,825  INFO RequestMappingHandlerMapping:548 - Mapped "{[/test/testBatchApi]}" onto java.lang.String com.easytestall.controller.EasyTestController.testApiByBatch(java.lang.String) throws org.apache.http.ParseException,java.io.IOException
+2018-04-26 20:06:10,827  INFO RequestMappingHandlerMapping:548 - Mapped "{[/redu/reduText],produces=[application/json]}" onto public com.easytestall.pojo.TextReduplicationPojo com.easytestall.controller.TextReduController.reduText(java.lang.String)
+2018-04-26 20:06:10,834  INFO RequestMappingHandlerMapping:548 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-04-26 20:06:10,834  INFO RequestMappingHandlerMapping:548 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-04-26 20:06:10,898  INFO SimpleUrlHandlerMapping:373 - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-04-26 20:06:10,898  INFO SimpleUrlHandlerMapping:373 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-04-26 20:06:10,959  INFO SimpleUrlHandlerMapping:373 - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-04-26 20:06:11,245  INFO OptionalLiveReloadServer:57 - LiveReload server is running on port 35729
+2018-04-26 20:06:11,319  INFO AnnotationMBeanExporter:434 - Registering beans for JMX exposure on startup
+2018-04-26 20:06:11,380  INFO TomcatWebServer:205 - Tomcat started on port(s): 8008 (http) with context path ''
+2018-04-26 20:06:11,384  INFO EasyTestAllApplication:59 - Started EasyTestAllApplication in 4.523 seconds (JVM running for 5.173)
+2018-04-26 20:06:11,386  INFO LoadDataService:25 - 启动时加载数据..........
+2018-04-26 20:06:11,823  INFO LoadDataService:32 - 启动时加载数据完毕..........
+2018-04-26 20:13:18,192  INFO DispatcherServlet:494 - FrameworkServlet 'dispatcherServlet': initialization started
+2018-04-26 20:13:18,228  INFO DispatcherServlet:513 - FrameworkServlet 'dispatcherServlet': initialization completed in 35 ms
+2018-04-26 20:13:21,410  INFO EasyTestController:46 - 从initial_tps.xls中读取最新接口信息。。。。。。。。。。
+2018-04-26 20:13:21,433  INFO EasyTestController:61 - 从initial_tps.xls中读取最新接口信息完毕。。。。。。。。。。
+2018-04-26 20:13:36,895  INFO EasyTestController:94 - 2018-04-26 20:13:34
+第4批_gx047飞享套餐8元档_下月是否有8元飞享套餐  开始测试。。。。。
+接口地址： http://localhost:18080/api/business/gx/businessQuery
+请求参数:
+{
+"callId":"string",
+"channelCode": "IVR",
+"ext": {"isEightLeavl":"1"},
+"regionCode": "GX",
+"telnum": "13627881651",
+"templateCode": "gx_query_0021"
+}
+返回报文:
+{
+	"returnCode":0,
+	"beans":[
+		
+	],
+	"returnMessage":"",
+	"bean":{
+		"result":"0"
+	},
+	"object":{
+		
+	}
+}
+
+#######字段解释#########:
+result:0未开通，
+1已开通
+
+-------->>>用时 2秒
+
+
+2018-04-26 20:13:37,036  INFO EasyTestController:94 - 2018-04-26 20:13:36
+第4批_gx047飞享套餐8元档_本月是否有8元飞享套餐  开始测试。。。。。
+接口地址： http://localhost:18080/api/business/gx/businessQuery
+请求参数:
+{
+"callId":"string",
+"channelCode": "IVR",
+"ext": {"isEightLeavl":"1"},
+"regionCode": "GX",
+"telnum": "13627881651",
+"templateCode": "gx_query_0022"
+}
+返回报文:
+{
+	"returnCode":0,
+	"beans":[
+		
+	],
+	"returnMessage":"",
+	"bean":{
+		"result":"0"
+	},
+	"object":{
+		
+	}
+}
+
+#######字段解释#########:
+result(0未开通，1已开通)
+
+-------->>>用时 0秒
+
+
+2018-04-26 20:13:37,186  INFO EasyTestController:94 - 2018-04-26 20:13:37
+第4批_gx047飞享套餐8元档_开通8元飞享套餐  开始测试。。。。。
+接口地址： http://localhost:18080/api/business/gx/businessHandle
+请求参数:
+{
+"callId":"string",
+"channelCode": "IVR",
+"ext": {"isEightLeavl":"1"},
+"regionCode": "GX",
+"telnum": "13627881651",
+"templateCode": "gx_handle_0006"
+}
+返回报文:
+{
+	"returnCode":0,
+	"beans":[
+		
+	],
+	"returnMessage":"",
+	"bean":{
+		"orderId":"120303404055"
+	},
+	"object":{
+		
+	}
+}
+
+#######字段解释#########:
+orderId(办理编号大于0，成功，否则，失败)
+
+-------->>>用时 0秒
+
+
+2018-04-26 20:13:37,315  INFO EasyTestController:94 - 2018-04-26 20:13:37
+第4批_gx047飞享套餐8元档_查询客户信息提供给通话日志  开始测试。。。。。
+接口地址： http://localhost:18080/api/business/gx/businessQuery
+请求参数:
+{
+"callId":"string",
+"channelCode": "IVR",
+"ext": {},
+"regionCode": "GX",
+"telnum": "13627881651",
+"templateCode": "gx_query_0040"
+}
+返回报文:
+{
+	"returnCode":0,
+	"beans":[
+		
+	],
+	"returnMessage":"",
+	"bean":{
+		"userTypeId":"预付费标志，,
+		1",
+		"regionId":"771",
+		"brandId":"品牌维度",
+		"levelId":"星级维度,
+		0",
+		"successCode":"1"
+	},
+	"object":{
+		
+	}
+}
+
+#######字段解释#########:
+levelId :星级维度；userTypeId:预付费标志；
+brandId：品牌维度；
+regionId：归属地
+successCode:成功标识，0失败1成功
+
+-------->>>用时 0秒
+
+
+2018-04-26 20:13:37,376  INFO EasyTestController:94 - 2018-04-26 20:13:37
+第4批_gx048飞享套餐88元档_下月是否有88元飞享套餐  开始测试。。。。。
+接口地址： http://localhost:18080/api/business/gx/businessQuery
+请求参数:
+{
+"callId":"string",
+"channelCode": "IVR",
+"ext": {"offerId":"211095010781"},
+"regionCode": "GX",
+"telnum": "13627881651",
+"templateCode": "gx_query_0021"
+}
+返回报文:
+{
+	"returnCode":0,
+	"beans":[
+		
+	],
+	"returnMessage":"",
+	"bean":{
+		"result":"0"
+	},
+	"object":{
+		
+	}
+}
+
+#######字段解释#########:
+result:0未开通，1已开通
+
+-------->>>用时 0秒
+
+
+2018-04-26 20:13:37,449  INFO EasyTestController:94 - 2018-04-26 20:13:37
+第4批_gx048飞享套餐88元档_本月是否有88元飞享套餐  开始测试。。。。。
+接口地址： http://localhost:18080/api/business/gx/businessQuery
+请求参数:
+{
+"callId":"string",
+"channelCode": "IVR",
+"ext": {"offerId":"211095010781"},
+"regionCode": "GX",
+"telnum": "13627881651",
+"templateCode": "gx_query_0022"
+}
+返回报文:
+{
+	"returnCode":0,
+	"beans":[
+		
+	],
+	"returnMessage":"",
+	"bean":{
+		"result":"0"
+	},
+	"object":{
+		
+	}
+}
+
+#######字段解释#########:
+result(0未开通，1已开通)
+
+-------->>>用时 0秒
+
+
+2018-04-26 20:13:37,814  INFO EasyTestController:94 - 2018-04-26 20:13:37
+第4批_gx048飞享套餐88元档_查询本月套餐  开始测试。。。。。
+接口地址： http://localhost:18080/api/business/gx/businessQuery
+请求参数:
+{
+"callId":"string",
+"channelCode": "IVR",
+"ext": {},
+"regionCode": "GX",
+"telnum": "13627881651",
+"templateCode": "gx_query_0019"
+}
+返回报文:
+{
+	"returnCode":0,
+	"beans":[
+		
+	],
+	"returnMessage":"",
+	"bean":{
+		"returnCode":"1",
+		"ttsContent":"您目前使用的是[
+			n2
+		]（2014）本地套餐9元档"
+	},
+	"object":{
+		
+	}
+}
+
+#######字段解释#########:
+ttsContent（TTS语音内容）
+
+-------->>>用时 0秒
+
+
+2018-04-26 20:13:37,978  INFO EasyTestController:94 - 2018-04-26 20:13:37
+第4批_gx048飞享套餐88元档_开通88元飞享套餐  开始测试。。。。。
+接口地址： http://localhost:18080/api/business/gx/businessHandle
+请求参数:
+{
+"callId":"string",
+"channelCode": "IVR",
+"ext": {"offerId":"211095010781"},
+"regionCode": "GX",
+"telnum": "13627881651",
+"templateCode": "gx_query_0006"
+}
+返回报文:
+{
+	"path":"/api/business/gx/businessHandle",
+	"returnCode":"5002",
+	"returnMessage":"GX: 请求的业务编码找不到对应的接口方法",
+	"error":"javax.servlet.ServletException: GX: 请求的业务编码找不到对应的接口方法"
+}
+
+#######字段解释#########:
+orderId(办理编号大于0，成功，否则，失败)
+
+-------->>>用时 0秒
+
+
+2018-04-26 20:13:38,119  INFO EasyTestController:94 - 2018-04-26 20:13:38
+第4批_gx049飞享套餐138元档_下月是否有138元飞享套餐  开始测试。。。。。
+接口地址： http://localhost:18080/api/business/gx/businessQuery
+请求参数:
+{
+"callId":"string",
+"channelCode": "IVR",
+"ext": {"offerId":"211095010791"},
+"regionCode": "GX",
+"telnum": "13627881651",
+"templateCode": "gx_query_0021"
+}
+返回报文:
+{
+	"returnCode":0,
+	"beans":[
+		
+	],
+	"returnMessage":"",
+	"bean":{
+		"result":"0"
+	},
+	"object":{
+		
+	}
+}
+
+#######字段解释#########:
+result:0未开通，1已开通
+
+-------->>>用时 0秒
+
+
+2018-04-26 20:13:38,219  INFO EasyTestController:94 - 2018-04-26 20:13:38
+第4批_gx049飞享套餐138元档_本月是否有138元飞享套餐  开始测试。。。。。
+接口地址： http://localhost:18080/api/business/gx/businessQuery
+请求参数:
+{
+"callId":"string",
+"channelCode": "IVR",
+"ext": {"offerId":"211095010791"},
+"regionCode": "GX",
+"telnum": "13627881651",
+"templateCode": "gx_query_0022"
+}
+返回报文:
+{
+	"returnCode":0,
+	"beans":[
+		
+	],
+	"returnMessage":"",
+	"bean":{
+		"result":"0"
+	},
+	"object":{
+		
+	}
+}
+
+#######字段解释#########:
+result(0未开通，1已开通)
+
+-------->>>用时 0秒
+
+
+2018-04-26 20:13:38,295  INFO EasyTestController:94 - 2018-04-26 20:13:38
+第4批_gx049飞享套餐138元档_查询本月套餐  开始测试。。。。。
+接口地址： http://localhost:18080/api/business/gx/businessQuery
+请求参数:
+{
+"callId":"string",
+"channelCode": "IVR",
+"ext": {},
+"regionCode": "GX",
+"telnum": "13627881651",
+"templateCode": "gx_query_0019"
+}
+返回报文:
+{
+	"returnCode":0,
+	"beans":[
+		
+	],
+	"returnMessage":"",
+	"bean":{
+		"returnCode":"1",
+		"ttsContent":"您目前使用的是[
+			n2
+		]（2014）本地套餐9元档"
+	},
+	"object":{
+		
+	}
+}
+
+#######字段解释#########:
+ttsContent（TTS语音内容）
+
+-------->>>用时 0秒
+
+
+2018-04-26 20:13:38,490  INFO EasyTestController:94 - 2018-04-26 20:13:38
+第4批_gx049飞享套餐138元档_开通138元飞享套餐  开始测试。。。。。
+接口地址： http://localhost:18080/api/business/gx/businessHandle
+请求参数:
+{
+"callId":"string",
+"channelCode": "IVR",
+"ext": {"offerId":"211095010791"},
+"regionCode": "GX",
+"telnum": "13627881651",
+"templateCode": "gx_query_0006"
+}
+返回报文:
+{
+	"path":"/api/business/gx/businessHandle",
+	"returnCode":"5002",
+	"returnMessage":"GX: 请求的业务编码找不到对应的接口方法",
+	"error":"javax.servlet.ServletException: GX: 请求的业务编码找不到对应的接口方法"
+}
+
+#######字段解释#########:
+orderId(办理编号大于0，成功，否则，失败)
+
+-------->>>用时 0秒
+
+
+2018-04-26 20:13:38,623  INFO EasyTestController:94 - 2018-04-26 20:13:38
+第4批_gx050飞享套餐188元档_下月是否有188元飞享套餐  开始测试。。。。。
+接口地址： http://localhost:18080/api/business/gx/businessQuery
+请求参数:
+{
+"callId":"string",
+"channelCode": "IVR",
+"ext": {},
+"regionCode": "GX",
+"telnum": "13627881651",
+"templateCode": "gx_query_0021"
+}
+返回报文:
+{
+	"path":"/api/business/gx/businessQuery",
+	"returnCode":"5004",
+	"returnMessage":"GX: offerId不能为空",
+	"error":"javax.servlet.ServletException: GX: offerId不能为空"
+}
+
+#######字段解释#########:
+result:0未开通，1已开通
+
+-------->>>用时 0秒
+
+
+2018-04-26 20:13:38,958  INFO EasyTestController:94 - 2018-04-26 20:13:38
+第4批_gx050飞享套餐188元档_本月是否有188元飞享套餐  开始测试。。。。。
+接口地址： http://localhost:18080/api/business/gx/businessQuery
+请求参数:
+{
+"callId":"string",
+"channelCode": "IVR",
+"ext": {},
+"regionCode": "GX",
+"telnum": "13627881651",
+"templateCode": "gx_query_0022"
+}
+返回报文:
+{
+	"path":"/api/business/gx/businessQuery",
+	"returnCode":"5004",
+	"returnMessage":"GX: offerId不能为空",
+	"error":"javax.servlet.ServletException: GX: offerId不能为空"
+}
+
+#######字段解释#########:
+result(0未开通，1已开通)
+
+-------->>>用时 0秒
+
+
+2018-04-26 20:13:39,130  INFO EasyTestController:94 - 2018-04-26 20:13:39
+第4批_gx050飞享套餐188元档_查询本月套餐  开始测试。。。。。
+接口地址： http://localhost:18080/api/business/gx/businessQuery
+请求参数:
+{
+"callId":"string",
+"channelCode": "IVR",
+"ext": {},
+"regionCode": "GX",
+"telnum": "13627881651",
+"templateCode": "gx_query_0019"
+}
+返回报文:
+{
+	"returnCode":0,
+	"beans":[
+		
+	],
+	"returnMessage":"",
+	"bean":{
+		"returnCode":"1",
+		"ttsContent":"您目前使用的是[
+			n2
+		]（2014）本地套餐9元档"
+	},
+	"object":{
+		
+	}
+}
+
+#######字段解释#########:
+ttsContent（TTS语音内容）
+
+-------->>>用时 0秒
+
+
+2018-04-26 20:13:39,235  INFO EasyTestController:94 - 2018-04-26 20:13:39
+第4批_gx050飞享套餐188元档_开通188元飞享套餐  开始测试。。。。。
+接口地址： http://localhost:18080/api/business/gx/businessHandle
+请求参数:
+{
+"callId":"string",
+"channelCode": "IVR",
+"ext": {},
+"regionCode": "GX",
+"telnum": "13627881651",
+"templateCode": "gx_query_0006"
+}
+返回报文:
+{
+	"path":"/api/business/gx/businessHandle",
+	"returnCode":"5002",
+	"returnMessage":"GX: 请求的业务编码找不到对应的接口方法",
+	"error":"javax.servlet.ServletException: GX: 请求的业务编码找不到对应的接口方法"
+}
+
+#######字段解释#########:
+orderId(办理编号大于0，成功，否则，失败)
+
+-------->>>用时 0秒
+
+
+2018-04-26 20:13:39,310  INFO EasyTestController:94 - 2018-04-26 20:13:39
+第4批_gx030 100元移动数据流量套餐开通_当月是否开通流量套餐  开始测试。。。。。
+接口地址： http://localhost:18080/api/business/gx/businessQuery
+请求参数:
+{
+"callId":"string",
+"channelCode": "IVR",
+"ext": {"groupOfferId":"196000000004"},
+"regionCode": "GX",
+"telnum": "13627881651",
+"templateCode": "gx_query_0008"
+}
+返回报文:
+{
+	"returnCode":0,
+	"beans":[
+		
+	],
+	"returnMessage":"",
+	"bean":{
+		"result":"0",
+		"ttsContent":"您目前使用的是[
+			n2
+		]4G_100元5G数据流量套餐"
+	},
+	"object":{
+		
+	}
+}
+
+#######字段解释#########:
+result（0未开通，1已开通）
+ttsContent （tts语音内容）
+
+-------->>>用时 0秒
+
+
+2018-04-26 20:13:39,410  INFO EasyTestController:94 - 2018-04-26 20:13:39
+第4批_gx030 100元移动数据流量套餐开通_下月是否开通100元5G流量套餐  开始测试。。。。。
+接口地址： http://localhost:18080/api/business/gx/businessQuery
+请求参数:
+{
+"callId":"string",
+"channelCode": "IVR",
+"ext": {"offerId":"212099200168"},
+"regionCode": "GX",
+"telnum": "13627881651",
+"templateCode": "gx_query_0009"
+}
+返回报文:
+{
+	"returnCode":0,
+	"beans":[
+		
+	],
+	"returnMessage":"",
+	"bean":{
+		"result":"0"
+	},
+	"object":{
+		
+	}
+}
+
+#######字段解释#########:
+result(0未开通，1已开通)
+
+-------->>>用时 0秒
+
+
+2018-04-26 20:13:39,529  INFO EasyTestController:94 - 2018-04-26 20:13:39
+第4批_gx030 100元移动数据流量套餐开通_开通100元5G流量套餐（立即生效）  开始测试。。。。。
+接口地址： http://localhost:18080/api/business/gx/businessHandle
+请求参数:
+{
+"callId":"string",
+"channelCode": "IVR",
+"ext": {"offerId":"212099200168","operType":"0","effectType":"1"},
+"regionCode": "GX",
+"telnum": "13627881651",
+"templateCode": "gx_handle_0003"
+}
+返回报文:
+{
+	"returnCode":0,
+	"beans":[
+		
+	],
+	"returnMessage":"",
+	"bean":{
+		"code":"0",
+		"message":"执行成功！"
+	},
+	"object":{
+		
+	}
+}
+
+#######字段解释#########:
+code(0表示办理成功 非0办理失败)
+message（办理成功信息或者异常信息）
+
+-------->>>用时 0秒
+
+
+2018-04-26 20:13:39,610  INFO EasyTestController:94 - 2018-04-26 20:13:39
+第4批_gx030 100元移动数据流量套餐开通_开通100元5G流量套餐（下月生效）  开始测试。。。。。
+接口地址： http://localhost:18080/api/business/gx/businessHandle
+请求参数:
+{
+"callId":"string",
+"channelCode": "IVR",
+"ext": {"offerId":"212099200168","operType":"0","effectType":"2"},
+"regionCode": "GX",
+"telnum": "13627881651",
+"templateCode": "gx_handle_0003"
+}
+返回报文:
+{
+	"returnCode":0,
+	"beans":[
+		
+	],
+	"returnMessage":"",
+	"bean":{
+		"code":"0",
+		"message":"执行成功！"
+	},
+	"object":{
+		
+	}
+}
+
+#######字段解释#########:
+code(0表示办理成功 非0办理失败)
+message（办理成功信息或者异常信息）
+
+-------->>>用时 0秒
+
+
+2018-04-26 20:13:39,702  INFO EasyTestController:94 - 2018-04-26 20:13:39
+第4批_gx030 100元移动数据流量套餐开通_退订100元5G流量套餐（立即生效）  开始测试。。。。。
+接口地址： http://localhost:18080/api/business/gx/businessHandle
+请求参数:
+{
+"callId":"string",
+"channelCode": "IVR",
+"ext": {"offerId":"212099200168","operType":"1","effectType":"1"},
+"regionCode": "GX",
+"telnum": "13627881651",
+"templateCode": "gx_handle_0003"
+}
+返回报文:
+{
+	"returnCode":0,
+	"beans":[
+		
+	],
+	"returnMessage":"",
+	"bean":{
+		"code":"0",
+		"message":"执行成功！"
+	},
+	"object":{
+		
+	}
+}
+
+#######字段解释#########:
+code(0表示办理成功 非0办理失败)
+message（办理成功信息或者异常信息）
+
+-------->>>用时 0秒
+
+
+2018-04-26 20:13:39,802  INFO EasyTestController:94 - 2018-04-26 20:13:39
+第4批_gx030 100元移动数据流量套餐开通_退订100元5G流量套餐（下月生效）  开始测试。。。。。
+接口地址： http://localhost:18080/api/business/gx/businessHandle
+请求参数:
+{
+"callId":"string",
+"channelCode": "IVR",
+"ext": {"offerId":"212099200168","operType":"1","effectType":"2"},
+"regionCode": "GX",
+"telnum": "13627881651",
+"templateCode": "gx_handle_0003"
+}
+返回报文:
+{
+	"returnCode":0,
+	"beans":[
+		
+	],
+	"returnMessage":"",
+	"bean":{
+		"code":"0",
+		"message":"执行成功！"
+	},
+	"object":{
+		
+	}
+}
+
+#######字段解释#########:
+code(0表示办理成功 非0办理失败)
+message（办理成功信息或者异常信息）
+
+-------->>>用时 0秒
+
+
+2018-04-26 20:13:39,878  INFO EasyTestController:94 - 2018-04-26 20:13:39
+第4批_gx031 150元移动数据流量套餐开通_当月是否开通流量套餐  开始测试。。。。。
+接口地址： http://localhost:18080/api/business/gx/businessQuery
+请求参数:
+{
+"callId":"string",
+"channelCode": "IVR",
+"ext": {"groupOfferId":"196000000004"},
+"regionCode": "GX",
+"telnum": "13627881651",
+"templateCode": "gx_query_0008"
+}
+返回报文:
+{
+	"returnCode":0,
+	"beans":[
+		
+	],
+	"returnMessage":"",
+	"bean":{
+		"result":"0",
+		"ttsContent":"您目前使用的是[
+			n2
+		]4G_100元5G数据流量套餐"
+	},
+	"object":{
+		
+	}
+}
+
+#######字段解释#########:
+result（0未开通，1已开通）
+ttsContent （tts语音内容）
+
+-------->>>用时 0秒
+
+
+2018-04-26 20:13:39,977  INFO EasyTestController:94 - 2018-04-26 20:13:39
+第4批_gx031 150元移动数据流量套餐开通_下月是否开通150元10G流量套餐  开始测试。。。。。
+接口地址： http://localhost:18080/api/business/gx/businessQuery
+请求参数:
+{
+"callId":"string",
+"channelCode": "IVR",
+"ext": {"offerId":"212099531656"},
+"regionCode": "GX",
+"telnum": "13627881651",
+"templateCode": "gx_query_0009"
+}
+返回报文:
+{
+	"returnCode":0,
+	"beans":[
+		
+	],
+	"returnMessage":"",
+	"bean":{
+		"result":"0"
+	},
+	"object":{
+		
+	}
+}
+
+#######字段解释#########:
+result(0未开通，1已开通)
+
+-------->>>用时 0秒
+
+
+2018-04-26 20:13:40,135  INFO EasyTestController:94 - 2018-04-26 20:13:40
+第4批_gx031 150元移动数据流量套餐开通_开通150元10G流量套餐（立即生效）  开始测试。。。。。
+接口地址： http://localhost:18080/api/business/gx/businessHandle
+请求参数:
+{
+"callId":"string",
+"channelCode": "IVR",
+"ext": {"offerId":"212099531656","operType":"0","effectType":"1"},
+"regionCode": "GX",
+"telnum": "13627881651",
+"templateCode": "gx_handle_0003"
+}
+返回报文:
+{
+	"path":"/api/business/gx/businessHandle",
+	"returnCode":"5004",
+	"returnMessage":"GX: offerId必须为212099992020/212099992021/212099531070/212099200013/212099200166/212099200167/212099531652/212099531653/212099531654/212030502501/212099200168/212099531069/212099200014",
+	"error":"javax.servlet.ServletException: GX: offerId必须为212099992020/212099992021/212099531070/212099200013/212099200166/212099200167/212099531652/212099531653/212099531654/212030502501/212099200168/212099531069/212099200014"
+}
+
+#######字段解释#########:
+code(0表示办理成功 非0办理失败)
+message（办理成功信息或者异常信息）
+
+-------->>>用时 0秒
+
+
+2018-04-26 20:13:40,274  INFO EasyTestController:94 - 2018-04-26 20:13:40
+第4批_gx031 150元移动数据流量套餐开通_开通150元10G流量套餐（下月生效）  开始测试。。。。。
+接口地址： http://localhost:18080/api/business/gx/businessHandle
+请求参数:
+{
+"callId":"string",
+"channelCode": "IVR",
+"ext": {"offerId":"212099531656","operType":"0","effectType":"2"},
+"regionCode": "GX",
+"telnum": "13627881651",
+"templateCode": "gx_handle_0003"
+}
+返回报文:
+{
+	"path":"/api/business/gx/businessHandle",
+	"returnCode":"5004",
+	"returnMessage":"GX: offerId必须为212099992020/212099992021/212099531070/212099200013/212099200166/212099200167/212099531652/212099531653/212099531654/212030502501/212099200168/212099531069/212099200014",
+	"error":"javax.servlet.ServletException: GX: offerId必须为212099992020/212099992021/212099531070/212099200013/212099200166/212099200167/212099531652/212099531653/212099531654/212030502501/212099200168/212099531069/212099200014"
+}
+
+#######字段解释#########:
+code(0表示办理成功 非0办理失败)
+message（办理成功信息或者异常信息）
+
+-------->>>用时 0秒
+
+
+2018-04-26 20:13:40,415  INFO EasyTestController:94 - 2018-04-26 20:13:40
+第4批_gx031 150元移动数据流量套餐开通_退订150元10G流量套餐（立即生效）  开始测试。。。。。
+接口地址： http://localhost:18080/api/business/gx/businessHandle
+请求参数:
+{
+"callId":"string",
+"channelCode": "IVR",
+"ext": {"offerId":"212099531656","operType":"1","effectType":"1"},
+"regionCode": "GX",
+"telnum": "13627881651",
+"templateCode": "gx_handle_0003"
+}
+返回报文:
+{
+	"path":"/api/business/gx/businessHandle",
+	"returnCode":"5004",
+	"returnMessage":"GX: offerId必须为212099992020/212099992021/212099531070/212099200013/212099200166/212099200167/212099531652/212099531653/212099531654/212030502501/212099200168/212099531069/212099200014",
+	"error":"javax.servlet.ServletException: GX: offerId必须为212099992020/212099992021/212099531070/212099200013/212099200166/212099200167/212099531652/212099531653/212099531654/212030502501/212099200168/212099531069/212099200014"
+}
+
+#######字段解释#########:
+code(0表示办理成功 非0办理失败)
+message（办理成功信息或者异常信息）
+
+-------->>>用时 0秒
+
+
+2018-04-26 20:13:40,558  INFO EasyTestController:94 - 2018-04-26 20:13:40
+第4批_gx031 150元移动数据流量套餐开通_退订150元10G流量套餐（下月生效）  开始测试。。。。。
+接口地址： http://localhost:18080/api/business/gx/businessHandle
+请求参数:
+{
+"callId":"string",
+"channelCode": "IVR",
+"ext": {"offerId":"212099531656","operType":"1","effectType":"2"},
+"regionCode": "GX",
+"telnum": "13627881651",
+"templateCode": "gx_handle_0003"
+}
+返回报文:
+{
+	"path":"/api/business/gx/businessHandle",
+	"returnCode":"5004",
+	"returnMessage":"GX: offerId必须为212099992020/212099992021/212099531070/212099200013/212099200166/212099200167/212099531652/212099531653/212099531654/212030502501/212099200168/212099531069/212099200014",
+	"error":"javax.servlet.ServletException: GX: offerId必须为212099992020/212099992021/212099531070/212099200013/212099200166/212099200167/212099531652/212099531653/212099531654/212030502501/212099200168/212099531069/212099200014"
+}
+
+#######字段解释#########:
+code(0表示办理成功 非0办理失败)
+message（办理成功信息或者异常信息）
+
+-------->>>用时 0秒
+
+
+2018-04-26 20:13:40,751  INFO EasyTestController:94 - 2018-04-26 20:13:40
+第4批_gx032 10元国内闲时流量包开通_当月是否开通非常流量套餐  开始测试。。。。。
+接口地址： http://localhost:18080/api/business/gx/businessQuery
+请求参数:
+{
+"callId":"string",
+"channelCode": "IVR",
+"ext": {"offerId":"212099200014"},
+"regionCode": "GX",
+"telnum": "13627881651",
+"templateCode": "gx_query_0027"
+}
+返回报文:
+{
+	"path":"/api/business/gx/businessQuery",
+	"returnCode":"5003",
+	"returnMessage":"GX: 数据库不存在csfBusinessCode=NGCRMPFGX_CGXHQQRYCURRENTMONFLOWMEAL_POST入参对照信息！",
+	"error":"javax.servlet.ServletException: GX: 数据库不存在csfBusinessCode=NGCRMPFGX_CGXHQQRYCURRENTMONFLOWMEAL_POST入参对照信息！"
+}
+
+#######字段解释#########:
+result:0未开通，1已开通
+ttsContent:语音播报内容
+
+-------->>>用时 0秒
+
+
+2018-04-26 20:13:40,810  INFO EasyTestController:94 - 2018-04-26 20:13:40
+第4批_gx032 10元国内闲时流量包开通_下月是否开通10元国内闲时流量套餐  开始测试。。。。。
+接口地址： http://localhost:18080/api/business/gx/businessQuery
+请求参数:
+{
+"callId":"string",
+"channelCode": "IVR",
+"ext": {"offerId":"212099200014"},
+"regionCode": "GX",
+"telnum": "13627881651",
+"templateCode": "gx_query_0009"
+}
+返回报文:
+{
+	"returnCode":0,
+	"beans":[
+		
+	],
+	"returnMessage":"",
+	"bean":{
+		"result":"0"
+	},
+	"object":{
+		
+	}
+}
+
+#######字段解释#########:
+result(0未开通，1已开通)
+
+-------->>>用时 0秒
+
+
+2018-04-26 20:13:40,942  INFO EasyTestController:94 - 2018-04-26 20:13:40
+第4批_gx032 10元国内闲时流量包开通_开通10元国内闲时流量套餐（立即生效）  开始测试。。。。。
+接口地址： http://localhost:18080/api/business/gx/businessHandle
+请求参数:
+{
+"callId":"string",
+"channelCode": "IVR",
+"ext": {"offerId":"212099200014","operType":"0","effectType":"1"},
+"regionCode": "GX",
+"telnum": "13627881651",
+"templateCode": "gx_handle_0003"
+}
+返回报文:
+{
+	"returnCode":0,
+	"beans":[
+		
+	],
+	"returnMessage":"",
+	"bean":{
+		"code":"0",
+		"message":"执行成功！"
+	},
+	"object":{
+		
+	}
+}
+
+#######字段解释#########:
+code(0表示办理成功 非0办理失败)
+message（办理成功信息或者异常信息）
+
+-------->>>用时 0秒
+
+
+2018-04-26 20:13:41,083  INFO EasyTestController:94 - 2018-04-26 20:13:41
+第4批_gx032 10元国内闲时流量包开通_开通10元国内闲时流量套餐（下月生效）  开始测试。。。。。
+接口地址： http://localhost:18080/api/business/gx/businessHandle
+请求参数:
+{
+"callId":"string",
+"channelCode": "IVR",
+"ext": {"offerId":"212099200014","operType":"0","effectType":"2"},
+"regionCode": "GX",
+"telnum": "13627881651",
+"templateCode": "gx_handle_0003"
+}
+返回报文:
+{
+	"returnCode":0,
+	"beans":[
+		
+	],
+	"returnMessage":"",
+	"bean":{
+		"code":"0",
+		"message":"执行成功！"
+	},
+	"object":{
+		
+	}
+}
+
+#######字段解释#########:
+code(0表示办理成功 非0办理失败)
+message（办理成功信息或者异常信息）
+
+-------->>>用时 0秒
+
+
+2018-04-26 20:13:41,250  INFO EasyTestController:94 - 2018-04-26 20:13:41
+第4批_gx032 10元国内闲时流量包开通_退订10元国内闲时流量套餐（立即生效）  开始测试。。。。。
+接口地址： http://localhost:18080/api/business/gx/businessHandle
+请求参数:
+{
+"callId":"string",
+"channelCode": "IVR",
+"ext": {"offerId":"212099200014","operType":"1","effectType":"1"},
+"regionCode": "GX",
+"telnum": "13627881651",
+"templateCode": "gx_handle_0003"
+}
+返回报文:
+{
+	"returnCode":0,
+	"beans":[
+		
+	],
+	"returnMessage":"",
+	"bean":{
+		"code":"0",
+		"message":"执行成功！"
+	},
+	"object":{
+		
+	}
+}
+
+#######字段解释#########:
+code(0表示办理成功 非0办理失败)
+message（办理成功信息或者异常信息）
+
+-------->>>用时 0秒
+
+
+2018-04-26 20:13:41,407  INFO EasyTestController:94 - 2018-04-26 20:13:41
+第4批_gx032 10元国内闲时流量包开通_退订10元国内闲时流量套餐（下月生效）  开始测试。。。。。
+接口地址： http://localhost:18080/api/business/gx/businessHandle
+请求参数:
+{
+"callId":"string",
+"channelCode": "IVR",
+"ext": {"offerId":"212099200014","operType":"1","effectType":"2"},
+"regionCode": "GX",
+"telnum": "13627881651",
+"templateCode": "gx_handle_0003"
+}
+返回报文:
+{
+	"returnCode":0,
+	"beans":[
+		
+	],
+	"returnMessage":"",
+	"bean":{
+		"code":"0",
+		"message":"执行成功！"
+	},
+	"object":{
+		
+	}
+}
+
+#######字段解释#########:
+code(0表示办理成功 非0办理失败)
+message（办理成功信息或者异常信息）
+
+-------->>>用时 0秒
+
+
+2018-04-26 20:13:41,650  INFO EasyTestController:94 - 2018-04-26 20:13:41
+第4批_gx034 10元500M流量日套餐开通_获取当月开通流量套餐达到10次  开始测试。。。。。
+接口地址： http://localhost:18080/api/business/gx/businessQuery
+请求参数:
+{
+"callId":"string",
+"channelCode": "IVR",
+"ext": {"offerId":"212099531270"},
+"regionCode": "GX",
+"telnum": "13627881651",
+"templateCode": "gx_query_0028"
+}
+返回报文:
+{
+	"path":"/api/business/gx/businessQuery",
+	"returnCode":"5003",
+	"returnMessage":"GX: 数据库不存在csfBusinessCode=NGCRMPFGX_CGXHCCHECKCURRENTMONFLOWMEAL_POST入参对照信息！",
+	"error":"javax.servlet.ServletException: GX: 数据库不存在csfBusinessCode=NGCRMPFGX_CGXHCCHECKCURRENTMONFLOWMEAL_POST入参对照信息！"
+}
+
+#######字段解释#########:
+result:0未达到10次，1已达到10次
+
+-------->>>用时 0秒
+
+
+2018-04-26 20:13:41,765  INFO EasyTestController:94 - 2018-04-26 20:13:41
+第4批_gx034 10元500M流量日套餐开通_开通10元国内闲时流量套餐  开始测试。。。。。
+接口地址： http://localhost:18080/api/business/gx/businessHandle
+请求参数:
+{
+"callId":"string",
+"channelCode": "IVR",
+"ext": {"offerId":"212099531270"},
+"regionCode": "GX",
+"telnum": "13627881651",
+"templateCode": "gx_handle_0008"
+}
+返回报文:
+{
+	"returnCode":0,
+	"beans":[
+		
+	],
+	"returnMessage":"",
+	"bean":{
+		"orderId":"77130001015201"
+	},
+	"object":{
+		
+	}
+}
+
+#######字段解释#########:
+orderId: 办理编号大于0，成功，否则，失败
+
+-------->>>用时 0秒
+
+
+2018-04-26 20:13:41,964  INFO EasyTestController:94 - 2018-04-26 20:13:41
+第4批_gx035 15元1G流量日套餐开通_获取当月开通流量套餐达到10次  开始测试。。。。。
+接口地址： http://localhost:18080/api/business/gx/businessQuery
+请求参数:
+{
+"callId":"string",
+"channelCode": "IVR",
+"ext": {"offerId":"212099531272"},
+"regionCode": "GX",
+"telnum": "13627881651",
+"templateCode": "gx_query_0028"
+}
+返回报文:
+{
+	"path":"/api/business/gx/businessQuery",
+	"returnCode":"5003",
+	"returnMessage":"GX: 数据库不存在csfBusinessCode=NGCRMPFGX_CGXHCCHECKCURRENTMONFLOWMEAL_POST入参对照信息！",
+	"error":"javax.servlet.ServletException: GX: 数据库不存在csfBusinessCode=NGCRMPFGX_CGXHCCHECKCURRENTMONFLOWMEAL_POST入参对照信息！"
+}
+
+#######字段解释#########:
+result:0未达到10次，1已达到10次
+
+-------->>>用时 0秒
+
+
+2018-04-26 20:13:42,098  INFO EasyTestController:94 - 2018-04-26 20:13:42
+第4批_gx035 15元1G流量日套餐开通_开通10元国内闲时流量套餐  开始测试。。。。。
+接口地址： http://localhost:18080/api/business/gx/businessHandle
+请求参数:
+{
+"callId":"string",
+"channelCode": "IVR",
+"ext": {"offerId":"212099531270"},
+"regionCode": "GX",
+"telnum": "13627881651",
+"templateCode": "gx_handle_0008"
+}
+返回报文:
+{
+	"returnCode":0,
+	"beans":[
+		
+	],
+	"returnMessage":"",
+	"bean":{
+		"orderId":"77130001015201"
+	},
+	"object":{
+		
+	}
+}
+
+#######字段解释#########:
+orderId: 办理编号大于0，成功，否则，失败
+
+-------->>>用时 0秒
+
+
+2018-04-26 20:13:42,242  INFO EasyTestController:94 - 2018-04-26 20:13:42
+第4批_gx037 6元500M流量小时套餐开通_获取当月开通流量套餐达到10次  开始测试。。。。。
+接口地址： http://localhost:18080/api/business/gx/businessQuery
+请求参数:
+{
+"callId":"string",
+"channelCode": "IVR",
+"ext": {"offerId":"212099531272"},
+"regionCode": "GX",
+"telnum": "13627881651",
+"templateCode": "gx_query_0028"
+}
+返回报文:
+{
+	"path":"/api/business/gx/businessQuery",
+	"returnCode":"5003",
+	"returnMessage":"GX: 数据库不存在csfBusinessCode=NGCRMPFGX_CGXHCCHECKCURRENTMONFLOWMEAL_POST入参对照信息！",
+	"error":"javax.servlet.ServletException: GX: 数据库不存在csfBusinessCode=NGCRMPFGX_CGXHCCHECKCURRENTMONFLOWMEAL_POST入参对照信息！"
+}
+
+#######字段解释#########:
+result:0未达到10次，1已达到10次
+
+-------->>>用时 0秒
+
+
+2018-04-26 20:13:42,334  INFO EasyTestController:94 - 2018-04-26 20:13:42
+第4批_gx037 6元500M流量小时套餐开通_开通6元500M流量小时流量套餐  开始测试。。。。。
+接口地址： http://localhost:18080/api/business/gx/businessHandle
+请求参数:
+{
+"callId":"string",
+"channelCode": "IVR",
+"ext": {"offerId":"212099531272"},
+"regionCode": "GX",
+"telnum": "13627881651",
+"templateCode": "gx_handle_0008"
+}
+返回报文:
+{
+	"returnCode":0,
+	"beans":[
+		
+	],
+	"returnMessage":"",
+	"bean":{
+		"orderId":"77130001015201"
+	},
+	"object":{
+		
+	}
+}
+
+#######字段解释#########:
+orderId: 办理编号大于0，成功，否则，失败
+
+-------->>>用时 0秒
+
+
+2018-04-26 20:13:42,465  INFO EasyTestController:94 - 2018-04-26 20:13:42
+第4批_gx039 9元1G流量小时套餐开通_获取当月开通流量套餐达到10次  开始测试。。。。。
+接口地址： http://localhost:18080/api/business/gx/businessQuery
+请求参数:
+{
+"callId":"string",
+"channelCode": "IVR",
+"ext": {"offerId":"212099531273"},
+"regionCode": "GX",
+"telnum": "13627881651",
+"templateCode": "gx_query_0028"
+}
+返回报文:
+{
+	"path":"/api/business/gx/businessQuery",
+	"returnCode":"5003",
+	"returnMessage":"GX: 数据库不存在csfBusinessCode=NGCRMPFGX_CGXHCCHECKCURRENTMONFLOWMEAL_POST入参对照信息！",
+	"error":"javax.servlet.ServletException: GX: 数据库不存在csfBusinessCode=NGCRMPFGX_CGXHCCHECKCURRENTMONFLOWMEAL_POST入参对照信息！"
+}
+
+#######字段解释#########:
+result:0未达到10次，1已达到10次
+
+-------->>>用时 0秒
+
+
+2018-04-26 20:13:42,597  INFO EasyTestController:94 - 2018-04-26 20:13:42
+第4批_gx039 9元1G流量小时套餐开通_开通9元1G流量小时流量套餐  开始测试。。。。。
+接口地址： http://localhost:18080/api/business/gx/businessHandle
+请求参数:
+{
+"callId":"string",
+"channelCode": "IVR",
+"ext": {"offerId":"212099531273"},
+"regionCode": "GX",
+"telnum": "13627881651",
+"templateCode": "gx_handle_0008"
+}
+返回报文:
+{
+	"returnCode":0,
+	"beans":[
+		
+	],
+	"returnMessage":"",
+	"bean":{
+		"orderId":"77130001015201"
+	},
+	"object":{
+		
+	}
+}
+
+#######字段解释#########:
+orderId: 办理编号大于0，成功，否则，失败
+
+-------->>>用时 0秒
+
+
+2018-04-26 20:16:59,418  INFO EasyTestController:46 - 从initial_tps.xls中读取最新接口信息。。。。。。。。。。
+2018-04-26 20:16:59,436  INFO EasyTestController:61 - 从initial_tps.xls中读取最新接口信息完毕。。。。。。。。。。
+2018-04-26 20:17:19,642  INFO EasyTestController:94 - 2018-04-26 20:17:19
+第4批_gx047飞享套餐8元档_下月是否有8元飞享套餐  开始测试。。。。。
+接口地址： http://localhost:18080/api/business/gx/businessQuery
+请求参数:
+{
+"callId":"string",
+"channelCode": "IVR",
+"ext": {"isEightLeavl":"1"},
+"regionCode": "GX",
+"telnum": "13627881651",
+"templateCode": "gx_query_0021"
+}
+返回报文:
+{
+	"returnCode":0,
+	"beans":[
+		
+	],
+	"returnMessage":"",
+	"bean":{
+		"result":"0"
+	},
+	"object":{
+		
+	}
+}
+
+#######字段解释#########:
+result:0未开通，
+1已开通
+
+-------->>>用时 0秒
+
+
+2018-04-26 20:17:19,690  INFO EasyTestController:94 - 2018-04-26 20:17:19
+第4批_gx047飞享套餐8元档_本月是否有8元飞享套餐  开始测试。。。。。
+接口地址： http://localhost:18080/api/business/gx/businessQuery
+请求参数:
+{
+"callId":"string",
+"channelCode": "IVR",
+"ext": {"isEightLeavl":"1"},
+"regionCode": "GX",
+"telnum": "13627881651",
+"templateCode": "gx_query_0022"
+}
+返回报文:
+{
+	"returnCode":0,
+	"beans":[
+		
+	],
+	"returnMessage":"",
+	"bean":{
+		"result":"0"
+	},
+	"object":{
+		
+	}
+}
+
+#######字段解释#########:
+result(0未开通，1已开通)
+
+-------->>>用时 0秒
+
+
+2018-04-26 20:17:19,730  INFO EasyTestController:94 - 2018-04-26 20:17:19
+第4批_gx047飞享套餐8元档_开通8元飞享套餐  开始测试。。。。。
+接口地址： http://localhost:18080/api/business/gx/businessHandle
+请求参数:
+{
+"callId":"string",
+"channelCode": "IVR",
+"ext": {"isEightLeavl":"1"},
+"regionCode": "GX",
+"telnum": "13627881651",
+"templateCode": "gx_handle_0006"
+}
+返回报文:
+{
+	"returnCode":0,
+	"beans":[
+		
+	],
+	"returnMessage":"",
+	"bean":{
+		"orderId":"120303404055"
+	},
+	"object":{
+		
+	}
+}
+
+#######字段解释#########:
+orderId(办理编号大于0，成功，否则，失败)
+
+-------->>>用时 0秒
+
+
+2018-04-26 20:17:19,772  INFO EasyTestController:94 - 2018-04-26 20:17:19
+第4批_gx047飞享套餐8元档_查询客户信息提供给通话日志  开始测试。。。。。
+接口地址： http://localhost:18080/api/business/gx/businessQuery
+请求参数:
+{
+"callId":"string",
+"channelCode": "IVR",
+"ext": {},
+"regionCode": "GX",
+"telnum": "13627881651",
+"templateCode": "gx_query_0040"
+}
+返回报文:
+{
+	"returnCode":0,
+	"beans":[
+		
+	],
+	"returnMessage":"",
+	"bean":{
+		"userTypeId":"预付费标志，,
+		1",
+		"regionId":"771",
+		"brandId":"品牌维度",
+		"levelId":"星级维度,
+		0",
+		"successCode":"1"
+	},
+	"object":{
+		
+	}
+}
+
+#######字段解释#########:
+levelId :星级维度；userTypeId:预付费标志；
+brandId：品牌维度；
+regionId：归属地
+successCode:成功标识，0失败1成功
+
+-------->>>用时 0秒
+
+
+2018-04-26 20:17:19,815  INFO EasyTestController:94 - 2018-04-26 20:17:19
+第4批_gx048飞享套餐88元档_下月是否有88元飞享套餐  开始测试。。。。。
+接口地址： http://localhost:18080/api/business/gx/businessQuery
+请求参数:
+{
+"callId":"string",
+"channelCode": "IVR",
+"ext": {"offerId":"211095010781"},
+"regionCode": "GX",
+"telnum": "13627881651",
+"templateCode": "gx_query_0021"
+}
+返回报文:
+{
+	"returnCode":0,
+	"beans":[
+		
+	],
+	"returnMessage":"",
+	"bean":{
+		"result":"0"
+	},
+	"object":{
+		
+	}
+}
+
+#######字段解释#########:
+result:0未开通，1已开通
+
+-------->>>用时 0秒
+
+
+2018-04-26 20:17:19,857  INFO EasyTestController:94 - 2018-04-26 20:17:19
+第4批_gx048飞享套餐88元档_本月是否有88元飞享套餐  开始测试。。。。。
+接口地址： http://localhost:18080/api/business/gx/businessQuery
+请求参数:
+{
+"callId":"string",
+"channelCode": "IVR",
+"ext": {"offerId":"211095010781"},
+"regionCode": "GX",
+"telnum": "13627881651",
+"templateCode": "gx_query_0022"
+}
+返回报文:
+{
+	"returnCode":0,
+	"beans":[
+		
+	],
+	"returnMessage":"",
+	"bean":{
+		"result":"0"
+	},
+	"object":{
+		
+	}
+}
+
+#######字段解释#########:
+result(0未开通，1已开通)
+
+-------->>>用时 0秒
+
+
+2018-04-26 20:17:19,915  INFO EasyTestController:94 - 2018-04-26 20:17:19
+第4批_gx048飞享套餐88元档_查询本月套餐  开始测试。。。。。
+接口地址： http://localhost:18080/api/business/gx/businessQuery
+请求参数:
+{
+"callId":"string",
+"channelCode": "IVR",
+"ext": {},
+"regionCode": "GX",
+"telnum": "13627881651",
+"templateCode": "gx_query_0019"
+}
+返回报文:
+{
+	"returnCode":0,
+	"beans":[
+		
+	],
+	"returnMessage":"",
+	"bean":{
+		"returnCode":"1",
+		"ttsContent":"您目前使用的是[
+			n2
+		]（2014）本地套餐9元档"
+	},
+	"object":{
+		
+	}
+}
+
+#######字段解释#########:
+ttsContent（TTS语音内容）
+
+-------->>>用时 0秒
+
+
+2018-04-26 20:17:19,958  INFO EasyTestController:94 - 2018-04-26 20:17:19
+第4批_gx048飞享套餐88元档_开通88元飞享套餐  开始测试。。。。。
+接口地址： http://localhost:18080/api/business/gx/businessHandle
+请求参数:
+{
+"callId":"string",
+"channelCode": "IVR",
+"ext": {"offerId":"211095010781"},
+"regionCode": "GX",
+"telnum": "13627881651",
+"templateCode": "gx_query_0006"
+}
+返回报文:
+{
+	"path":"/api/business/gx/businessHandle",
+	"returnCode":"5002",
+	"returnMessage":"GX: 请求的业务编码找不到对应的接口方法",
+	"error":"javax.servlet.ServletException: GX: 请求的业务编码找不到对应的接口方法"
+}
+
+#######字段解释#########:
+orderId(办理编号大于0，成功，否则，失败)
+
+-------->>>用时 0秒
+
+
+2018-04-26 20:17:20,002  INFO EasyTestController:94 - 2018-04-26 20:17:19
+第4批_gx049飞享套餐138元档_下月是否有138元飞享套餐  开始测试。。。。。
+接口地址： http://localhost:18080/api/business/gx/businessQuery
+请求参数:
+{
+"callId":"string",
+"channelCode": "IVR",
+"ext": {"offerId":"211095010791"},
+"regionCode": "GX",
+"telnum": "13627881651",
+"templateCode": "gx_query_0021"
+}
+返回报文:
+{
+	"returnCode":0,
+	"beans":[
+		
+	],
+	"returnMessage":"",
+	"bean":{
+		"result":"0"
+	},
+	"object":{
+		
+	}
+}
+
+#######字段解释#########:
+result:0未开通，1已开通
+
+-------->>>用时 0秒
+
+
+2018-04-26 20:17:20,115  INFO EasyTestController:94 - 2018-04-26 20:17:20
+第4批_gx049飞享套餐138元档_本月是否有138元飞享套餐  开始测试。。。。。
+接口地址： http://localhost:18080/api/business/gx/businessQuery
+请求参数:
+{
+"callId":"string",
+"channelCode": "IVR",
+"ext": {"offerId":"211095010791"},
+"regionCode": "GX",
+"telnum": "13627881651",
+"templateCode": "gx_query_0022"
+}
+返回报文:
+{
+	"returnCode":0,
+	"beans":[
+		
+	],
+	"returnMessage":"",
+	"bean":{
+		"result":"0"
+	},
+	"object":{
+		
+	}
+}
+
+#######字段解释#########:
+result(0未开通，1已开通)
+
+-------->>>用时 0秒
+
+
+2018-04-26 20:17:20,172  INFO EasyTestController:94 - 2018-04-26 20:17:20
+第4批_gx049飞享套餐138元档_查询本月套餐  开始测试。。。。。
+接口地址： http://localhost:18080/api/business/gx/businessQuery
+请求参数:
+{
+"callId":"string",
+"channelCode": "IVR",
+"ext": {},
+"regionCode": "GX",
+"telnum": "13627881651",
+"templateCode": "gx_query_0019"
+}
+返回报文:
+{
+	"returnCode":0,
+	"beans":[
+		
+	],
+	"returnMessage":"",
+	"bean":{
+		"returnCode":"1",
+		"ttsContent":"您目前使用的是[
+			n2
+		]（2014）本地套餐9元档"
+	},
+	"object":{
+		
+	}
+}
+
+#######字段解释#########:
+ttsContent（TTS语音内容）
+
+-------->>>用时 0秒
+
+
+2018-04-26 20:17:20,254  INFO EasyTestController:94 - 2018-04-26 20:17:20
+第4批_gx049飞享套餐138元档_开通138元飞享套餐  开始测试。。。。。
+接口地址： http://localhost:18080/api/business/gx/businessHandle
+请求参数:
+{
+"callId":"string",
+"channelCode": "IVR",
+"ext": {"offerId":"211095010791"},
+"regionCode": "GX",
+"telnum": "13627881651",
+"templateCode": "gx_query_0006"
+}
+返回报文:
+{
+	"path":"/api/business/gx/businessHandle",
+	"returnCode":"5002",
+	"returnMessage":"GX: 请求的业务编码找不到对应的接口方法",
+	"error":"javax.servlet.ServletException: GX: 请求的业务编码找不到对应的接口方法"
+}
+
+#######字段解释#########:
+orderId(办理编号大于0，成功，否则，失败)
+
+-------->>>用时 0秒
+
+
+2018-04-26 20:17:20,334  INFO EasyTestController:94 - 2018-04-26 20:17:20
+第4批_gx050飞享套餐188元档_下月是否有188元飞享套餐  开始测试。。。。。
+接口地址： http://localhost:18080/api/business/gx/businessQuery
+请求参数:
+{
+"callId":"string",
+"channelCode": "IVR",
+"ext": {},
+"regionCode": "GX",
+"telnum": "13627881651",
+"templateCode": "gx_query_0021"
+}
+返回报文:
+{
+	"path":"/api/business/gx/businessQuery",
+	"returnCode":"5004",
+	"returnMessage":"GX: offerId不能为空",
+	"error":"javax.servlet.ServletException: GX: offerId不能为空"
+}
+
+#######字段解释#########:
+result:0未开通，1已开通
+
+-------->>>用时 0秒
+
+
+2018-04-26 20:17:20,470  INFO EasyTestController:94 - 2018-04-26 20:17:20
+第4批_gx050飞享套餐188元档_本月是否有188元飞享套餐  开始测试。。。。。
+接口地址： http://localhost:18080/api/business/gx/businessQuery
+请求参数:
+{
+"callId":"string",
+"channelCode": "IVR",
+"ext": {},
+"regionCode": "GX",
+"telnum": "13627881651",
+"templateCode": "gx_query_0022"
+}
+返回报文:
+{
+	"path":"/api/business/gx/businessQuery",
+	"returnCode":"5004",
+	"returnMessage":"GX: offerId不能为空",
+	"error":"javax.servlet.ServletException: GX: offerId不能为空"
+}
+
+#######字段解释#########:
+result(0未开通，1已开通)
+
+-------->>>用时 0秒
+
+
+2018-04-26 20:17:20,564  INFO EasyTestController:94 - 2018-04-26 20:17:20
+第4批_gx050飞享套餐188元档_查询本月套餐  开始测试。。。。。
+接口地址： http://localhost:18080/api/business/gx/businessQuery
+请求参数:
+{
+"callId":"string",
+"channelCode": "IVR",
+"ext": {},
+"regionCode": "GX",
+"telnum": "13627881651",
+"templateCode": "gx_query_0019"
+}
+返回报文:
+{
+	"returnCode":0,
+	"beans":[
+		
+	],
+	"returnMessage":"",
+	"bean":{
+		"returnCode":"1",
+		"ttsContent":"您目前使用的是[
+			n2
+		]（2014）本地套餐9元档"
+	},
+	"object":{
+		
+	}
+}
+
+#######字段解释#########:
+ttsContent（TTS语音内容）
+
+-------->>>用时 0秒
+
+
+2018-04-26 20:17:20,813  INFO EasyTestController:94 - 2018-04-26 20:17:20
+第4批_gx050飞享套餐188元档_开通188元飞享套餐  开始测试。。。。。
+接口地址： http://localhost:18080/api/business/gx/businessHandle
+请求参数:
+{
+"callId":"string",
+"channelCode": "IVR",
+"ext": {},
+"regionCode": "GX",
+"telnum": "13627881651",
+"templateCode": "gx_handle_0006"
+}
+返回报文:
+{
+	"path":"/api/business/gx/businessHandle",
+	"returnCode":"5004",
+	"returnMessage":"GX: offerId不能为空",
+	"error":"javax.servlet.ServletException: GX: offerId不能为空"
+}
+
+#######字段解释#########:
+orderId(办理编号大于0，成功，否则，失败)
+
+-------->>>用时 0秒
+
+
+2018-04-26 20:17:20,861  INFO EasyTestController:94 - 2018-04-26 20:17:20
+第4批_gx030 100元移动数据流量套餐开通_当月是否开通流量套餐  开始测试。。。。。
+接口地址： http://localhost:18080/api/business/gx/businessQuery
+请求参数:
+{
+"callId":"string",
+"channelCode": "IVR",
+"ext": {"groupOfferId":"196000000004"},
+"regionCode": "GX",
+"telnum": "13627881651",
+"templateCode": "gx_query_0008"
+}
+返回报文:
+{
+	"returnCode":0,
+	"beans":[
+		
+	],
+	"returnMessage":"",
+	"bean":{
+		"result":"0",
+		"ttsContent":"您目前使用的是[
+			n2
+		]4G_100元5G数据流量套餐"
+	},
+	"object":{
+		
+	}
+}
+
+#######字段解释#########:
+result（0未开通，1已开通）
+ttsContent （tts语音内容）
+
+-------->>>用时 0秒
+
+
+2018-04-26 20:17:20,908  INFO EasyTestController:94 - 2018-04-26 20:17:20
+第4批_gx030 100元移动数据流量套餐开通_下月是否开通100元5G流量套餐  开始测试。。。。。
+接口地址： http://localhost:18080/api/business/gx/businessQuery
+请求参数:
+{
+"callId":"string",
+"channelCode": "IVR",
+"ext": {"offerId":"212099200168"},
+"regionCode": "GX",
+"telnum": "13627881651",
+"templateCode": "gx_query_0009"
+}
+返回报文:
+{
+	"returnCode":0,
+	"beans":[
+		
+	],
+	"returnMessage":"",
+	"bean":{
+		"result":"0"
+	},
+	"object":{
+		
+	}
+}
+
+#######字段解释#########:
+result(0未开通，1已开通)
+
+-------->>>用时 0秒
+
+
+2018-04-26 20:17:21,005  INFO EasyTestController:94 - 2018-04-26 20:17:20
+第4批_gx030 100元移动数据流量套餐开通_开通100元5G流量套餐（立即生效）  开始测试。。。。。
+接口地址： http://localhost:18080/api/business/gx/businessHandle
+请求参数:
+{
+"callId":"string",
+"channelCode": "IVR",
+"ext": {"offerId":"212099200168","operType":"0","effectType":"1"},
+"regionCode": "GX",
+"telnum": "13627881651",
+"templateCode": "gx_handle_0003"
+}
+返回报文:
+{
+	"returnCode":0,
+	"beans":[
+		
+	],
+	"returnMessage":"",
+	"bean":{
+		"code":"0",
+		"message":"执行成功！"
+	},
+	"object":{
+		
+	}
+}
+
+#######字段解释#########:
+code(0表示办理成功 非0办理失败)
+message（办理成功信息或者异常信息）
+
+-------->>>用时 0秒
+
+
+2018-04-26 20:17:21,091  INFO EasyTestController:94 - 2018-04-26 20:17:21
+第4批_gx030 100元移动数据流量套餐开通_开通100元5G流量套餐（下月生效）  开始测试。。。。。
+接口地址： http://localhost:18080/api/business/gx/businessHandle
+请求参数:
+{
+"callId":"string",
+"channelCode": "IVR",
+"ext": {"offerId":"212099200168","operType":"0","effectType":"2"},
+"regionCode": "GX",
+"telnum": "13627881651",
+"templateCode": "gx_handle_0003"
+}
+返回报文:
+{
+	"returnCode":0,
+	"beans":[
+		
+	],
+	"returnMessage":"",
+	"bean":{
+		"code":"0",
+		"message":"执行成功！"
+	},
+	"object":{
+		
+	}
+}
+
+#######字段解释#########:
+code(0表示办理成功 非0办理失败)
+message（办理成功信息或者异常信息）
+
+-------->>>用时 0秒
+
+
+2018-04-26 20:17:21,156  INFO EasyTestController:94 - 2018-04-26 20:17:21
+第4批_gx030 100元移动数据流量套餐开通_退订100元5G流量套餐（立即生效）  开始测试。。。。。
+接口地址： http://localhost:18080/api/business/gx/businessHandle
+请求参数:
+{
+"callId":"string",
+"channelCode": "IVR",
+"ext": {"offerId":"212099200168","operType":"1","effectType":"1"},
+"regionCode": "GX",
+"telnum": "13627881651",
+"templateCode": "gx_handle_0003"
+}
+返回报文:
+{
+	"returnCode":0,
+	"beans":[
+		
+	],
+	"returnMessage":"",
+	"bean":{
+		"code":"0",
+		"message":"执行成功！"
+	},
+	"object":{
+		
+	}
+}
+
+#######字段解释#########:
+code(0表示办理成功 非0办理失败)
+message（办理成功信息或者异常信息）
+
+-------->>>用时 0秒
+
+
+2018-04-26 20:17:21,217  INFO EasyTestController:94 - 2018-04-26 20:17:21
+第4批_gx030 100元移动数据流量套餐开通_退订100元5G流量套餐（下月生效）  开始测试。。。。。
+接口地址： http://localhost:18080/api/business/gx/businessHandle
+请求参数:
+{
+"callId":"string",
+"channelCode": "IVR",
+"ext": {"offerId":"212099200168","operType":"1","effectType":"2"},
+"regionCode": "GX",
+"telnum": "13627881651",
+"templateCode": "gx_handle_0003"
+}
+返回报文:
+{
+	"returnCode":0,
+	"beans":[
+		
+	],
+	"returnMessage":"",
+	"bean":{
+		"code":"0",
+		"message":"执行成功！"
+	},
+	"object":{
+		
+	}
+}
+
+#######字段解释#########:
+code(0表示办理成功 非0办理失败)
+message（办理成功信息或者异常信息）
+
+-------->>>用时 0秒
+
+
+2018-04-26 20:17:21,263  INFO EasyTestController:94 - 2018-04-26 20:17:21
+第4批_gx031 150元移动数据流量套餐开通_当月是否开通流量套餐  开始测试。。。。。
+接口地址： http://localhost:18080/api/business/gx/businessQuery
+请求参数:
+{
+"callId":"string",
+"channelCode": "IVR",
+"ext": {"groupOfferId":"196000000004"},
+"regionCode": "GX",
+"telnum": "13627881651",
+"templateCode": "gx_query_0008"
+}
+返回报文:
+{
+	"returnCode":0,
+	"beans":[
+		
+	],
+	"returnMessage":"",
+	"bean":{
+		"result":"0",
+		"ttsContent":"您目前使用的是[
+			n2
+		]4G_100元5G数据流量套餐"
+	},
+	"object":{
+		
+	}
+}
+
+#######字段解释#########:
+result（0未开通，1已开通）
+ttsContent （tts语音内容）
+
+-------->>>用时 0秒
+
+
+2018-04-26 20:17:21,307  INFO EasyTestController:94 - 2018-04-26 20:17:21
+第4批_gx031 150元移动数据流量套餐开通_下月是否开通150元10G流量套餐  开始测试。。。。。
+接口地址： http://localhost:18080/api/business/gx/businessQuery
+请求参数:
+{
+"callId":"string",
+"channelCode": "IVR",
+"ext": {"offerId":"212099531656"},
+"regionCode": "GX",
+"telnum": "13627881651",
+"templateCode": "gx_query_0009"
+}
+返回报文:
+{
+	"returnCode":0,
+	"beans":[
+		
+	],
+	"returnMessage":"",
+	"bean":{
+		"result":"0"
+	},
+	"object":{
+		
+	}
+}
+
+#######字段解释#########:
+result(0未开通，1已开通)
+
+-------->>>用时 0秒
+
+
+2018-04-26 20:17:21,383  INFO EasyTestController:94 - 2018-04-26 20:17:21
+第4批_gx031 150元移动数据流量套餐开通_开通150元10G流量套餐（立即生效）  开始测试。。。。。
+接口地址： http://localhost:18080/api/business/gx/businessHandle
+请求参数:
+{
+"callId":"string",
+"channelCode": "IVR",
+"ext": {"offerId":"212099531656","operType":"0","effectType":"1"},
+"regionCode": "GX",
+"telnum": "13627881651",
+"templateCode": "gx_handle_0003"
+}
+返回报文:
+{
+	"path":"/api/business/gx/businessHandle",
+	"returnCode":"5004",
+	"returnMessage":"GX: offerId必须为212099992020/212099992021/212099531070/212099200013/212099200166/212099200167/212099531652/212099531653/212099531654/212030502501/212099200168/212099531069/212099200014",
+	"error":"javax.servlet.ServletException: GX: offerId必须为212099992020/212099992021/212099531070/212099200013/212099200166/212099200167/212099531652/212099531653/212099531654/212030502501/212099200168/212099531069/212099200014"
+}
+
+#######字段解释#########:
+code(0表示办理成功 非0办理失败)
+message（办理成功信息或者异常信息）
+
+-------->>>用时 0秒
+
+
+2018-04-26 20:17:21,483  INFO EasyTestController:94 - 2018-04-26 20:17:21
+第4批_gx031 150元移动数据流量套餐开通_开通150元10G流量套餐（下月生效）  开始测试。。。。。
+接口地址： http://localhost:18080/api/business/gx/businessHandle
+请求参数:
+{
+"callId":"string",
+"channelCode": "IVR",
+"ext": {"offerId":"212099531656","operType":"0","effectType":"2"},
+"regionCode": "GX",
+"telnum": "13627881651",
+"templateCode": "gx_handle_0003"
+}
+返回报文:
+{
+	"path":"/api/business/gx/businessHandle",
+	"returnCode":"5004",
+	"returnMessage":"GX: offerId必须为212099992020/212099992021/212099531070/212099200013/212099200166/212099200167/212099531652/212099531653/212099531654/212030502501/212099200168/212099531069/212099200014",
+	"error":"javax.servlet.ServletException: GX: offerId必须为212099992020/212099992021/212099531070/212099200013/212099200166/212099200167/212099531652/212099531653/212099531654/212030502501/212099200168/212099531069/212099200014"
+}
+
+#######字段解释#########:
+code(0表示办理成功 非0办理失败)
+message（办理成功信息或者异常信息）
+
+-------->>>用时 0秒
+
+
+2018-04-26 20:17:21,668  INFO EasyTestController:94 - 2018-04-26 20:17:21
+第4批_gx031 150元移动数据流量套餐开通_退订150元10G流量套餐（立即生效）  开始测试。。。。。
+接口地址： http://localhost:18080/api/business/gx/businessHandle
+请求参数:
+{
+"callId":"string",
+"channelCode": "IVR",
+"ext": {"offerId":"212099531656","operType":"1","effectType":"1"},
+"regionCode": "GX",
+"telnum": "13627881651",
+"templateCode": "gx_handle_0003"
+}
+返回报文:
+{
+	"path":"/api/business/gx/businessHandle",
+	"returnCode":"5004",
+	"returnMessage":"GX: offerId必须为212099992020/212099992021/212099531070/212099200013/212099200166/212099200167/212099531652/212099531653/212099531654/212030502501/212099200168/212099531069/212099200014",
+	"error":"javax.servlet.ServletException: GX: offerId必须为212099992020/212099992021/212099531070/212099200013/212099200166/212099200167/212099531652/212099531653/212099531654/212030502501/212099200168/212099531069/212099200014"
+}
+
+#######字段解释#########:
+code(0表示办理成功 非0办理失败)
+message（办理成功信息或者异常信息）
+
+-------->>>用时 0秒
+
+
+2018-04-26 20:17:21,770  INFO EasyTestController:94 - 2018-04-26 20:17:21
+第4批_gx031 150元移动数据流量套餐开通_退订150元10G流量套餐（下月生效）  开始测试。。。。。
+接口地址： http://localhost:18080/api/business/gx/businessHandle
+请求参数:
+{
+"callId":"string",
+"channelCode": "IVR",
+"ext": {"offerId":"212099531656","operType":"1","effectType":"2"},
+"regionCode": "GX",
+"telnum": "13627881651",
+"templateCode": "gx_handle_0003"
+}
+返回报文:
+{
+	"path":"/api/business/gx/businessHandle",
+	"returnCode":"5004",
+	"returnMessage":"GX: offerId必须为212099992020/212099992021/212099531070/212099200013/212099200166/212099200167/212099531652/212099531653/212099531654/212030502501/212099200168/212099531069/212099200014",
+	"error":"javax.servlet.ServletException: GX: offerId必须为212099992020/212099992021/212099531070/212099200013/212099200166/212099200167/212099531652/212099531653/212099531654/212030502501/212099200168/212099531069/212099200014"
+}
+
+#######字段解释#########:
+code(0表示办理成功 非0办理失败)
+message（办理成功信息或者异常信息）
+
+-------->>>用时 0秒
+
+
+2018-04-26 20:17:21,955  INFO EasyTestController:94 - 2018-04-26 20:17:21
+第4批_gx032 10元国内闲时流量包开通_当月是否开通非常流量套餐  开始测试。。。。。
+接口地址： http://localhost:18080/api/business/gx/businessQuery
+请求参数:
+{
+"callId":"string",
+"channelCode": "IVR",
+"ext": {"offerId":"212099200014"},
+"regionCode": "GX",
+"telnum": "13627881651",
+"templateCode": "gx_query_0027"
+}
+返回报文:
+{
+	"path":"/api/business/gx/businessQuery",
+	"returnCode":"5003",
+	"returnMessage":"GX: 数据库不存在csfBusinessCode=NGCRMPFGX_CGXHQQRYCURRENTMONFLOWMEAL_POST入参对照信息！",
+	"error":"javax.servlet.ServletException: GX: 数据库不存在csfBusinessCode=NGCRMPFGX_CGXHQQRYCURRENTMONFLOWMEAL_POST入参对照信息！"
+}
+
+#######字段解释#########:
+result:0未开通，1已开通
+ttsContent:语音播报内容
+
+-------->>>用时 0秒
+
+
+2018-04-26 20:17:22,034  INFO EasyTestController:94 - 2018-04-26 20:17:22
+第4批_gx032 10元国内闲时流量包开通_下月是否开通10元国内闲时流量套餐  开始测试。。。。。
+接口地址： http://localhost:18080/api/business/gx/businessQuery
+请求参数:
+{
+"callId":"string",
+"channelCode": "IVR",
+"ext": {"offerId":"212099200014"},
+"regionCode": "GX",
+"telnum": "13627881651",
+"templateCode": "gx_query_0009"
+}
+返回报文:
+{
+	"returnCode":0,
+	"beans":[
+		
+	],
+	"returnMessage":"",
+	"bean":{
+		"result":"0"
+	},
+	"object":{
+		
+	}
+}
+
+#######字段解释#########:
+result(0未开通，1已开通)
+
+-------->>>用时 0秒
+
+
+2018-04-26 20:17:22,120  INFO EasyTestController:94 - 2018-04-26 20:17:22
+第4批_gx032 10元国内闲时流量包开通_开通10元国内闲时流量套餐（立即生效）  开始测试。。。。。
+接口地址： http://localhost:18080/api/business/gx/businessHandle
+请求参数:
+{
+"callId":"string",
+"channelCode": "IVR",
+"ext": {"offerId":"212099200014","operType":"0","effectType":"1"},
+"regionCode": "GX",
+"telnum": "13627881651",
+"templateCode": "gx_handle_0003"
+}
+返回报文:
+{
+	"returnCode":0,
+	"beans":[
+		
+	],
+	"returnMessage":"",
+	"bean":{
+		"code":"0",
+		"message":"执行成功！"
+	},
+	"object":{
+		
+	}
+}
+
+#######字段解释#########:
+code(0表示办理成功 非0办理失败)
+message（办理成功信息或者异常信息）
+
+-------->>>用时 0秒
+
+
+2018-04-26 20:17:22,185  INFO EasyTestController:94 - 2018-04-26 20:17:22
+第4批_gx032 10元国内闲时流量包开通_开通10元国内闲时流量套餐（下月生效）  开始测试。。。。。
+接口地址： http://localhost:18080/api/business/gx/businessHandle
+请求参数:
+{
+"callId":"string",
+"channelCode": "IVR",
+"ext": {"offerId":"212099200014","operType":"0","effectType":"2"},
+"regionCode": "GX",
+"telnum": "13627881651",
+"templateCode": "gx_handle_0003"
+}
+返回报文:
+{
+	"returnCode":0,
+	"beans":[
+		
+	],
+	"returnMessage":"",
+	"bean":{
+		"code":"0",
+		"message":"执行成功！"
+	},
+	"object":{
+		
+	}
+}
+
+#######字段解释#########:
+code(0表示办理成功 非0办理失败)
+message（办理成功信息或者异常信息）
+
+-------->>>用时 0秒
+
+
+2018-04-26 20:17:22,263  INFO EasyTestController:94 - 2018-04-26 20:17:22
+第4批_gx032 10元国内闲时流量包开通_退订10元国内闲时流量套餐（立即生效）  开始测试。。。。。
+接口地址： http://localhost:18080/api/business/gx/businessHandle
+请求参数:
+{
+"callId":"string",
+"channelCode": "IVR",
+"ext": {"offerId":"212099200014","operType":"1","effectType":"1"},
+"regionCode": "GX",
+"telnum": "13627881651",
+"templateCode": "gx_handle_0003"
+}
+返回报文:
+{
+	"returnCode":0,
+	"beans":[
+		
+	],
+	"returnMessage":"",
+	"bean":{
+		"code":"0",
+		"message":"执行成功！"
+	},
+	"object":{
+		
+	}
+}
+
+#######字段解释#########:
+code(0表示办理成功 非0办理失败)
+message（办理成功信息或者异常信息）
+
+-------->>>用时 0秒
+
+
+2018-04-26 20:17:22,333  INFO EasyTestController:94 - 2018-04-26 20:17:22
+第4批_gx032 10元国内闲时流量包开通_退订10元国内闲时流量套餐（下月生效）  开始测试。。。。。
+接口地址： http://localhost:18080/api/business/gx/businessHandle
+请求参数:
+{
+"callId":"string",
+"channelCode": "IVR",
+"ext": {"offerId":"212099200014","operType":"1","effectType":"2"},
+"regionCode": "GX",
+"telnum": "13627881651",
+"templateCode": "gx_handle_0003"
+}
+返回报文:
+{
+	"returnCode":0,
+	"beans":[
+		
+	],
+	"returnMessage":"",
+	"bean":{
+		"code":"0",
+		"message":"执行成功！"
+	},
+	"object":{
+		
+	}
+}
+
+#######字段解释#########:
+code(0表示办理成功 非0办理失败)
+message（办理成功信息或者异常信息）
+
+-------->>>用时 0秒
+
+
+2018-04-26 20:17:22,574  INFO EasyTestController:94 - 2018-04-26 20:17:22
+第4批_gx034 10元500M流量日套餐开通_获取当月开通流量套餐达到10次  开始测试。。。。。
+接口地址： http://localhost:18080/api/business/gx/businessQuery
+请求参数:
+{
+"callId":"string",
+"channelCode": "IVR",
+"ext": {"offerId":"212099531270"},
+"regionCode": "GX",
+"telnum": "13627881651",
+"templateCode": "gx_query_0028"
+}
+返回报文:
+{
+	"path":"/api/business/gx/businessQuery",
+	"returnCode":"5003",
+	"returnMessage":"GX: 数据库不存在csfBusinessCode=NGCRMPFGX_CGXHCCHECKCURRENTMONFLOWMEAL_POST入参对照信息！",
+	"error":"javax.servlet.ServletException: GX: 数据库不存在csfBusinessCode=NGCRMPFGX_CGXHCCHECKCURRENTMONFLOWMEAL_POST入参对照信息！"
+}
+
+#######字段解释#########:
+result:0未达到10次，1已达到10次
+
+-------->>>用时 0秒
+
+
+2018-04-26 20:17:22,634  INFO EasyTestController:94 - 2018-04-26 20:17:22
+第4批_gx034 10元500M流量日套餐开通_开通10元国内闲时流量套餐  开始测试。。。。。
+接口地址： http://localhost:18080/api/business/gx/businessHandle
+请求参数:
+{
+"callId":"string",
+"channelCode": "IVR",
+"ext": {"offerId":"212099531270"},
+"regionCode": "GX",
+"telnum": "13627881651",
+"templateCode": "gx_handle_0008"
+}
+返回报文:
+{
+	"returnCode":0,
+	"beans":[
+		
+	],
+	"returnMessage":"",
+	"bean":{
+		"orderId":"77130001015201"
+	},
+	"object":{
+		
+	}
+}
+
+#######字段解释#########:
+orderId: 办理编号大于0，成功，否则，失败
+
+-------->>>用时 0秒
+
+
+2018-04-26 20:17:22,757  INFO EasyTestController:94 - 2018-04-26 20:17:22
+第4批_gx035 15元1G流量日套餐开通_获取当月开通流量套餐达到10次  开始测试。。。。。
+接口地址： http://localhost:18080/api/business/gx/businessQuery
+请求参数:
+{
+"callId":"string",
+"channelCode": "IVR",
+"ext": {"offerId":"212099531272"},
+"regionCode": "GX",
+"telnum": "13627881651",
+"templateCode": "gx_query_0028"
+}
+返回报文:
+{
+	"path":"/api/business/gx/businessQuery",
+	"returnCode":"5003",
+	"returnMessage":"GX: 数据库不存在csfBusinessCode=NGCRMPFGX_CGXHCCHECKCURRENTMONFLOWMEAL_POST入参对照信息！",
+	"error":"javax.servlet.ServletException: GX: 数据库不存在csfBusinessCode=NGCRMPFGX_CGXHCCHECKCURRENTMONFLOWMEAL_POST入参对照信息！"
+}
+
+#######字段解释#########:
+result:0未达到10次，1已达到10次
+
+-------->>>用时 0秒
+
+
+2018-04-26 20:17:22,851  INFO EasyTestController:94 - 2018-04-26 20:17:22
+第4批_gx035 15元1G流量日套餐开通_开通10元国内闲时流量套餐  开始测试。。。。。
+接口地址： http://localhost:18080/api/business/gx/businessHandle
+请求参数:
+{
+"callId":"string",
+"channelCode": "IVR",
+"ext": {"offerId":"212099531270"},
+"regionCode": "GX",
+"telnum": "13627881651",
+"templateCode": "gx_handle_0008"
+}
+返回报文:
+{
+	"returnCode":0,
+	"beans":[
+		
+	],
+	"returnMessage":"",
+	"bean":{
+		"orderId":"77130001015201"
+	},
+	"object":{
+		
+	}
+}
+
+#######字段解释#########:
+orderId: 办理编号大于0，成功，否则，失败
+
+-------->>>用时 0秒
+
+
+2018-04-26 20:17:22,975  INFO EasyTestController:94 - 2018-04-26 20:17:22
+第4批_gx037 6元500M流量小时套餐开通_获取当月开通流量套餐达到10次  开始测试。。。。。
+接口地址： http://localhost:18080/api/business/gx/businessQuery
+请求参数:
+{
+"callId":"string",
+"channelCode": "IVR",
+"ext": {"offerId":"212099531272"},
+"regionCode": "GX",
+"telnum": "13627881651",
+"templateCode": "gx_query_0028"
+}
+返回报文:
+{
+	"path":"/api/business/gx/businessQuery",
+	"returnCode":"5003",
+	"returnMessage":"GX: 数据库不存在csfBusinessCode=NGCRMPFGX_CGXHCCHECKCURRENTMONFLOWMEAL_POST入参对照信息！",
+	"error":"javax.servlet.ServletException: GX: 数据库不存在csfBusinessCode=NGCRMPFGX_CGXHCCHECKCURRENTMONFLOWMEAL_POST入参对照信息！"
+}
+
+#######字段解释#########:
+result:0未达到10次，1已达到10次
+
+-------->>>用时 0秒
+
+
+2018-04-26 20:17:23,127  INFO EasyTestController:94 - 2018-04-26 20:17:23
+第4批_gx037 6元500M流量小时套餐开通_开通6元500M流量小时流量套餐  开始测试。。。。。
+接口地址： http://localhost:18080/api/business/gx/businessHandle
+请求参数:
+{
+"callId":"string",
+"channelCode": "IVR",
+"ext": {"offerId":"212099531272"},
+"regionCode": "GX",
+"telnum": "13627881651",
+"templateCode": "gx_handle_0008"
+}
+返回报文:
+{
+	"returnCode":0,
+	"beans":[
+		
+	],
+	"returnMessage":"",
+	"bean":{
+		"orderId":"77130001015201"
+	},
+	"object":{
+		
+	}
+}
+
+#######字段解释#########:
+orderId: 办理编号大于0，成功，否则，失败
+
+-------->>>用时 0秒
+
+
+2018-04-26 20:17:23,332  INFO EasyTestController:94 - 2018-04-26 20:17:23
+第4批_gx039 9元1G流量小时套餐开通_获取当月开通流量套餐达到10次  开始测试。。。。。
+接口地址： http://localhost:18080/api/business/gx/businessQuery
+请求参数:
+{
+"callId":"string",
+"channelCode": "IVR",
+"ext": {"offerId":"212099531273"},
+"regionCode": "GX",
+"telnum": "13627881651",
+"templateCode": "gx_query_0028"
+}
+返回报文:
+{
+	"path":"/api/business/gx/businessQuery",
+	"returnCode":"5003",
+	"returnMessage":"GX: 数据库不存在csfBusinessCode=NGCRMPFGX_CGXHCCHECKCURRENTMONFLOWMEAL_POST入参对照信息！",
+	"error":"javax.servlet.ServletException: GX: 数据库不存在csfBusinessCode=NGCRMPFGX_CGXHCCHECKCURRENTMONFLOWMEAL_POST入参对照信息！"
+}
+
+#######字段解释#########:
+result:0未达到10次，1已达到10次
+
+-------->>>用时 0秒
+
+
+2018-04-26 20:17:23,454  INFO EasyTestController:94 - 2018-04-26 20:17:23
+第4批_gx039 9元1G流量小时套餐开通_开通9元1G流量小时流量套餐  开始测试。。。。。
+接口地址： http://localhost:18080/api/business/gx/businessHandle
+请求参数:
+{
+"callId":"string",
+"channelCode": "IVR",
+"ext": {"offerId":"212099531273"},
+"regionCode": "GX",
+"telnum": "13627881651",
+"templateCode": "gx_handle_0008"
+}
+返回报文:
+{
+	"returnCode":0,
+	"beans":[
+		
+	],
+	"returnMessage":"",
+	"bean":{
+		"orderId":"77130001015201"
+	},
+	"object":{
+		
+	}
+}
+
+#######字段解释#########:
+orderId: 办理编号大于0，成功，否则，失败
+
+-------->>>用时 0秒
+
+
+2018-04-26 20:22:55,407  INFO EasyTestController:94 - 2018-04-26 20:22:55
+第4批_gx031 150元移动数据流量套餐开通_开通150元10G流量套餐（立即生效）  开始测试。。。。。
+接口地址： http://localhost:18080/api/business/gx/businessHandle
+请求参数:
+{
+"callId":"string",
+"channelCode": "IVR",
+"ext": {"offerId":"212099531656","operType":"0","effectType":"1"},
+"regionCode": "GX",
+"telnum": "13627881651",
+"templateCode": "gx_handle_0003"
+}
+返回报文:
+{
+	"returnCode":0,
+	"beans":[
+		
+	],
+	"returnMessage":"",
+	"bean":{
+		"code":"0",
+		"message":"执行成功！"
+	},
+	"object":{
+		
+	}
+}
+
+#######字段解释#########:
+code(0表示办理成功 非0办理失败)
+message（办理成功信息或者异常信息）
+
+-------->>>用时 0秒
+
+
+2018-04-26 20:22:55,481  INFO EasyTestController:94 - 2018-04-26 20:22:55
+第4批_gx031 150元移动数据流量套餐开通_开通150元10G流量套餐（下月生效）  开始测试。。。。。
+接口地址： http://localhost:18080/api/business/gx/businessHandle
+请求参数:
+{
+"callId":"string",
+"channelCode": "IVR",
+"ext": {"offerId":"212099531656","operType":"0","effectType":"2"},
+"regionCode": "GX",
+"telnum": "13627881651",
+"templateCode": "gx_handle_0003"
+}
+返回报文:
+{
+	"returnCode":0,
+	"beans":[
+		
+	],
+	"returnMessage":"",
+	"bean":{
+		"code":"0",
+		"message":"执行成功！"
+	},
+	"object":{
+		
+	}
+}
+
+#######字段解释#########:
+code(0表示办理成功 非0办理失败)
+message（办理成功信息或者异常信息）
+
+-------->>>用时 0秒
+
+
+2018-04-26 20:22:55,539  INFO EasyTestController:94 - 2018-04-26 20:22:55
+第4批_gx031 150元移动数据流量套餐开通_退订150元10G流量套餐（立即生效）  开始测试。。。。。
+接口地址： http://localhost:18080/api/business/gx/businessHandle
+请求参数:
+{
+"callId":"string",
+"channelCode": "IVR",
+"ext": {"offerId":"212099531656","operType":"1","effectType":"1"},
+"regionCode": "GX",
+"telnum": "13627881651",
+"templateCode": "gx_handle_0003"
+}
+返回报文:
+{
+	"returnCode":0,
+	"beans":[
+		
+	],
+	"returnMessage":"",
+	"bean":{
+		"code":"0",
+		"message":"执行成功！"
+	},
+	"object":{
+		
+	}
+}
+
+#######字段解释#########:
+code(0表示办理成功 非0办理失败)
+message（办理成功信息或者异常信息）
+
+-------->>>用时 0秒
+
+
+2018-04-26 20:22:55,594  INFO EasyTestController:94 - 2018-04-26 20:22:55
+第4批_gx031 150元移动数据流量套餐开通_退订150元10G流量套餐（下月生效）  开始测试。。。。。
+接口地址： http://localhost:18080/api/business/gx/businessHandle
+请求参数:
+{
+"callId":"string",
+"channelCode": "IVR",
+"ext": {"offerId":"212099531656","operType":"1","effectType":"2"},
+"regionCode": "GX",
+"telnum": "13627881651",
+"templateCode": "gx_handle_0003"
+}
+返回报文:
+{
+	"returnCode":0,
+	"beans":[
+		
+	],
+	"returnMessage":"",
+	"bean":{
+		"code":"0",
+		"message":"执行成功！"
+	},
+	"object":{
+		
+	}
+}
+
+#######字段解释#########:
+code(0表示办理成功 非0办理失败)
+message（办理成功信息或者异常信息）
+
+-------->>>用时 0秒
+
+
+2018-04-26 20:23:30,444  INFO EasyTestController:94 - 2018-04-26 20:23:30
+第4批_gx032 10元国内闲时流量包开通_当月是否开通非常流量套餐  开始测试。。。。。
+接口地址： http://localhost:18080/api/business/gx/businessQuery
+请求参数:
+{
+"callId":"string",
+"channelCode": "IVR",
+"ext": {"offerId":"212099200014"},
+"regionCode": "GX",
+"telnum": "13627881651",
+"templateCode": "gx_query_0027"
+}
+返回报文:
+{
+	"path":"/api/business/gx/businessQuery",
+	"returnCode":"5003",
+	"returnMessage":"GX: 数据库不存在csfBusinessCode=NGCRMPFGX_CGXHQQRYCURRENTMONFLOWMEAL_POST入参对照信息！",
+	"error":"javax.servlet.ServletException: GX: 数据库不存在csfBusinessCode=NGCRMPFGX_CGXHQQRYCURRENTMONFLOWMEAL_POST入参对照信息！"
+}
+
+#######字段解释#########:
+result:0未开通，1已开通
+ttsContent:语音播报内容
+
+-------->>>用时 0秒
+
+
+2018-04-26 20:23:30,489  INFO EasyTestController:94 - 2018-04-26 20:23:30
+第4批_gx032 10元国内闲时流量包开通_下月是否开通10元国内闲时流量套餐  开始测试。。。。。
+接口地址： http://localhost:18080/api/business/gx/businessQuery
+请求参数:
+{
+"callId":"string",
+"channelCode": "IVR",
+"ext": {"offerId":"212099200014"},
+"regionCode": "GX",
+"telnum": "13627881651",
+"templateCode": "gx_query_0009"
+}
+返回报文:
+{
+	"returnCode":0,
+	"beans":[
+		
+	],
+	"returnMessage":"",
+	"bean":{
+		"result":"0"
+	},
+	"object":{
+		
+	}
+}
+
+#######字段解释#########:
+result(0未开通，1已开通)
+
+-------->>>用时 0秒
+
+
+2018-04-26 20:23:30,544  INFO EasyTestController:94 - 2018-04-26 20:23:30
+第4批_gx032 10元国内闲时流量包开通_开通10元国内闲时流量套餐（立即生效）  开始测试。。。。。
+接口地址： http://localhost:18080/api/business/gx/businessHandle
+请求参数:
+{
+"callId":"string",
+"channelCode": "IVR",
+"ext": {"offerId":"212099200014","operType":"0","effectType":"1"},
+"regionCode": "GX",
+"telnum": "13627881651",
+"templateCode": "gx_handle_0003"
+}
+返回报文:
+{
+	"returnCode":0,
+	"beans":[
+		
+	],
+	"returnMessage":"",
+	"bean":{
+		"code":"0",
+		"message":"执行成功！"
+	},
+	"object":{
+		
+	}
+}
+
+#######字段解释#########:
+code(0表示办理成功 非0办理失败)
+message（办理成功信息或者异常信息）
+
+-------->>>用时 0秒
+
+
+2018-04-26 20:23:30,618  INFO EasyTestController:94 - 2018-04-26 20:23:30
+第4批_gx032 10元国内闲时流量包开通_开通10元国内闲时流量套餐（下月生效）  开始测试。。。。。
+接口地址： http://localhost:18080/api/business/gx/businessHandle
+请求参数:
+{
+"callId":"string",
+"channelCode": "IVR",
+"ext": {"offerId":"212099200014","operType":"0","effectType":"2"},
+"regionCode": "GX",
+"telnum": "13627881651",
+"templateCode": "gx_handle_0003"
+}
+返回报文:
+{
+	"returnCode":0,
+	"beans":[
+		
+	],
+	"returnMessage":"",
+	"bean":{
+		"code":"0",
+		"message":"执行成功！"
+	},
+	"object":{
+		
+	}
+}
+
+#######字段解释#########:
+code(0表示办理成功 非0办理失败)
+message（办理成功信息或者异常信息）
+
+-------->>>用时 0秒
+
+
+2018-04-26 20:23:30,660  INFO EasyTestController:94 - 2018-04-26 20:23:30
+第4批_gx032 10元国内闲时流量包开通_退订10元国内闲时流量套餐（立即生效）  开始测试。。。。。
+接口地址： http://localhost:18080/api/business/gx/businessHandle
+请求参数:
+{
+"callId":"string",
+"channelCode": "IVR",
+"ext": {"offerId":"212099200014","operType":"1","effectType":"1"},
+"regionCode": "GX",
+"telnum": "13627881651",
+"templateCode": "gx_handle_0003"
+}
+返回报文:
+{
+	"returnCode":0,
+	"beans":[
+		
+	],
+	"returnMessage":"",
+	"bean":{
+		"code":"0",
+		"message":"执行成功！"
+	},
+	"object":{
+		
+	}
+}
+
+#######字段解释#########:
+code(0表示办理成功 非0办理失败)
+message（办理成功信息或者异常信息）
+
+-------->>>用时 0秒
+
+
+2018-04-26 20:23:30,701  INFO EasyTestController:94 - 2018-04-26 20:23:30
+第4批_gx032 10元国内闲时流量包开通_退订10元国内闲时流量套餐（下月生效）  开始测试。。。。。
+接口地址： http://localhost:18080/api/business/gx/businessHandle
+请求参数:
+{
+"callId":"string",
+"channelCode": "IVR",
+"ext": {"offerId":"212099200014","operType":"1","effectType":"2"},
+"regionCode": "GX",
+"telnum": "13627881651",
+"templateCode": "gx_handle_0003"
+}
+返回报文:
+{
+	"returnCode":0,
+	"beans":[
+		
+	],
+	"returnMessage":"",
+	"bean":{
+		"code":"0",
+		"message":"执行成功！"
+	},
+	"object":{
+		
+	}
+}
+
+#######字段解释#########:
+code(0表示办理成功 非0办理失败)
+message（办理成功信息或者异常信息）
+
+-------->>>用时 0秒
+
+
+2018-04-26 20:23:31,824  INFO EasyTestController:94 - 2018-04-26 20:23:31
+第4批_gx032 10元国内闲时流量包开通_当月是否开通非常流量套餐  开始测试。。。。。
+接口地址： http://localhost:18080/api/business/gx/businessQuery
+请求参数:
+{
+"callId":"string",
+"channelCode": "IVR",
+"ext": {"offerId":"212099200014"},
+"regionCode": "GX",
+"telnum": "13627881651",
+"templateCode": "gx_query_0027"
+}
+返回报文:
+{
+	"path":"/api/business/gx/businessQuery",
+	"returnCode":"5003",
+	"returnMessage":"GX: 数据库不存在csfBusinessCode=NGCRMPFGX_CGXHQQRYCURRENTMONFLOWMEAL_POST入参对照信息！",
+	"error":"javax.servlet.ServletException: GX: 数据库不存在csfBusinessCode=NGCRMPFGX_CGXHQQRYCURRENTMONFLOWMEAL_POST入参对照信息！"
+}
+
+#######字段解释#########:
+result:0未开通，1已开通
+ttsContent:语音播报内容
+
+-------->>>用时 0秒
+
+
+2018-04-26 20:23:31,853  INFO EasyTestController:94 - 2018-04-26 20:23:31
+第4批_gx032 10元国内闲时流量包开通_下月是否开通10元国内闲时流量套餐  开始测试。。。。。
+接口地址： http://localhost:18080/api/business/gx/businessQuery
+请求参数:
+{
+"callId":"string",
+"channelCode": "IVR",
+"ext": {"offerId":"212099200014"},
+"regionCode": "GX",
+"telnum": "13627881651",
+"templateCode": "gx_query_0009"
+}
+返回报文:
+{
+	"returnCode":0,
+	"beans":[
+		
+	],
+	"returnMessage":"",
+	"bean":{
+		"result":"0"
+	},
+	"object":{
+		
+	}
+}
+
+#######字段解释#########:
+result(0未开通，1已开通)
+
+-------->>>用时 0秒
+
+
+2018-04-26 20:23:31,889  INFO EasyTestController:94 - 2018-04-26 20:23:31
+第4批_gx032 10元国内闲时流量包开通_开通10元国内闲时流量套餐（立即生效）  开始测试。。。。。
+接口地址： http://localhost:18080/api/business/gx/businessHandle
+请求参数:
+{
+"callId":"string",
+"channelCode": "IVR",
+"ext": {"offerId":"212099200014","operType":"0","effectType":"1"},
+"regionCode": "GX",
+"telnum": "13627881651",
+"templateCode": "gx_handle_0003"
+}
+返回报文:
+{
+	"returnCode":0,
+	"beans":[
+		
+	],
+	"returnMessage":"",
+	"bean":{
+		"code":"0",
+		"message":"执行成功！"
+	},
+	"object":{
+		
+	}
+}
+
+#######字段解释#########:
+code(0表示办理成功 非0办理失败)
+message（办理成功信息或者异常信息）
+
+-------->>>用时 0秒
+
+
+2018-04-26 20:23:31,919  INFO EasyTestController:94 - 2018-04-26 20:23:31
+第4批_gx032 10元国内闲时流量包开通_开通10元国内闲时流量套餐（下月生效）  开始测试。。。。。
+接口地址： http://localhost:18080/api/business/gx/businessHandle
+请求参数:
+{
+"callId":"string",
+"channelCode": "IVR",
+"ext": {"offerId":"212099200014","operType":"0","effectType":"2"},
+"regionCode": "GX",
+"telnum": "13627881651",
+"templateCode": "gx_handle_0003"
+}
+返回报文:
+{
+	"returnCode":0,
+	"beans":[
+		
+	],
+	"returnMessage":"",
+	"bean":{
+		"code":"0",
+		"message":"执行成功！"
+	},
+	"object":{
+		
+	}
+}
+
+#######字段解释#########:
+code(0表示办理成功 非0办理失败)
+message（办理成功信息或者异常信息）
+
+-------->>>用时 0秒
+
+
+2018-04-26 20:23:31,958  INFO EasyTestController:94 - 2018-04-26 20:23:31
+第4批_gx032 10元国内闲时流量包开通_退订10元国内闲时流量套餐（立即生效）  开始测试。。。。。
+接口地址： http://localhost:18080/api/business/gx/businessHandle
+请求参数:
+{
+"callId":"string",
+"channelCode": "IVR",
+"ext": {"offerId":"212099200014","operType":"1","effectType":"1"},
+"regionCode": "GX",
+"telnum": "13627881651",
+"templateCode": "gx_handle_0003"
+}
+返回报文:
+{
+	"returnCode":0,
+	"beans":[
+		
+	],
+	"returnMessage":"",
+	"bean":{
+		"code":"0",
+		"message":"执行成功！"
+	},
+	"object":{
+		
+	}
+}
+
+#######字段解释#########:
+code(0表示办理成功 非0办理失败)
+message（办理成功信息或者异常信息）
+
+-------->>>用时 0秒
+
+
+2018-04-26 20:23:32,001  INFO EasyTestController:94 - 2018-04-26 20:23:31
+第4批_gx032 10元国内闲时流量包开通_退订10元国内闲时流量套餐（下月生效）  开始测试。。。。。
+接口地址： http://localhost:18080/api/business/gx/businessHandle
+请求参数:
+{
+"callId":"string",
+"channelCode": "IVR",
+"ext": {"offerId":"212099200014","operType":"1","effectType":"2"},
+"regionCode": "GX",
+"telnum": "13627881651",
+"templateCode": "gx_handle_0003"
+}
+返回报文:
+{
+	"returnCode":0,
+	"beans":[
+		
+	],
+	"returnMessage":"",
+	"bean":{
+		"code":"0",
+		"message":"执行成功！"
+	},
+	"object":{
+		
+	}
+}
+
+#######字段解释#########:
+code(0表示办理成功 非0办理失败)
+message（办理成功信息或者异常信息）
+
+-------->>>用时 0秒
+
+
+2018-04-26 20:27:31,474  INFO EasyTestController:94 - 2018-04-26 20:27:31
+第4批_gx032 10元国内闲时流量包开通_当月是否开通非常流量套餐  开始测试。。。。。
+接口地址： http://localhost:18080/api/business/gx/businessQuery
+请求参数:
+{
+"callId":"string",
+"channelCode": "IVR",
+"ext": {"offerId":"212099200014"},
+"regionCode": "GX",
+"telnum": "13627881651",
+"templateCode": "gx_query_0027"
+}
+返回报文:
+{
+	"path":"/api/business/gx/businessQuery",
+	"returnCode":"5003",
+	"returnMessage":"GX: 数据库不存在csfBusinessCode=NGCRMPFGX_CGXHQQRYCURRENTMONFLOWMEAL_POST入参对照信息！",
+	"error":"javax.servlet.ServletException: GX: 数据库不存在csfBusinessCode=NGCRMPFGX_CGXHQQRYCURRENTMONFLOWMEAL_POST入参对照信息！"
+}
+
+#######字段解释#########:
+result:0未开通，1已开通
+ttsContent:语音播报内容
+
+-------->>>用时 0秒
+
+
+2018-04-26 20:27:31,514  INFO EasyTestController:94 - 2018-04-26 20:27:31
+第4批_gx032 10元国内闲时流量包开通_下月是否开通10元国内闲时流量套餐  开始测试。。。。。
+接口地址： http://localhost:18080/api/business/gx/businessQuery
+请求参数:
+{
+"callId":"string",
+"channelCode": "IVR",
+"ext": {"offerId":"212099200014"},
+"regionCode": "GX",
+"telnum": "13627881651",
+"templateCode": "gx_query_0009"
+}
+返回报文:
+{
+	"returnCode":0,
+	"beans":[
+		
+	],
+	"returnMessage":"",
+	"bean":{
+		"result":"0"
+	},
+	"object":{
+		
+	}
+}
+
+#######字段解释#########:
+result(0未开通，1已开通)
+
+-------->>>用时 0秒
+
+
+2018-04-26 20:27:31,586  INFO EasyTestController:94 - 2018-04-26 20:27:31
+第4批_gx032 10元国内闲时流量包开通_开通10元国内闲时流量套餐（立即生效）  开始测试。。。。。
+接口地址： http://localhost:18080/api/business/gx/businessHandle
+请求参数:
+{
+"callId":"string",
+"channelCode": "IVR",
+"ext": {"offerId":"212099200014","operType":"0","effectType":"1"},
+"regionCode": "GX",
+"telnum": "13627881651",
+"templateCode": "gx_handle_0003"
+}
+返回报文:
+{
+	"returnCode":0,
+	"beans":[
+		
+	],
+	"returnMessage":"",
+	"bean":{
+		"code":"0",
+		"message":"执行成功！"
+	},
+	"object":{
+		
+	}
+}
+
+#######字段解释#########:
+code(0表示办理成功 非0办理失败)
+message（办理成功信息或者异常信息）
+
+-------->>>用时 0秒
+
+
+2018-04-26 20:27:31,627  INFO EasyTestController:94 - 2018-04-26 20:27:31
+第4批_gx032 10元国内闲时流量包开通_开通10元国内闲时流量套餐（下月生效）  开始测试。。。。。
+接口地址： http://localhost:18080/api/business/gx/businessHandle
+请求参数:
+{
+"callId":"string",
+"channelCode": "IVR",
+"ext": {"offerId":"212099200014","operType":"0","effectType":"2"},
+"regionCode": "GX",
+"telnum": "13627881651",
+"templateCode": "gx_handle_0003"
+}
+返回报文:
+{
+	"returnCode":0,
+	"beans":[
+		
+	],
+	"returnMessage":"",
+	"bean":{
+		"code":"0",
+		"message":"执行成功！"
+	},
+	"object":{
+		
+	}
+}
+
+#######字段解释#########:
+code(0表示办理成功 非0办理失败)
+message（办理成功信息或者异常信息）
+
+-------->>>用时 0秒
+
+
+2018-04-26 20:27:31,666  INFO EasyTestController:94 - 2018-04-26 20:27:31
+第4批_gx032 10元国内闲时流量包开通_退订10元国内闲时流量套餐（立即生效）  开始测试。。。。。
+接口地址： http://localhost:18080/api/business/gx/businessHandle
+请求参数:
+{
+"callId":"string",
+"channelCode": "IVR",
+"ext": {"offerId":"212099200014","operType":"1","effectType":"1"},
+"regionCode": "GX",
+"telnum": "13627881651",
+"templateCode": "gx_handle_0003"
+}
+返回报文:
+{
+	"returnCode":0,
+	"beans":[
+		
+	],
+	"returnMessage":"",
+	"bean":{
+		"code":"0",
+		"message":"执行成功！"
+	},
+	"object":{
+		
+	}
+}
+
+#######字段解释#########:
+code(0表示办理成功 非0办理失败)
+message（办理成功信息或者异常信息）
+
+-------->>>用时 0秒
+
+
+2018-04-26 20:27:31,722  INFO EasyTestController:94 - 2018-04-26 20:27:31
+第4批_gx032 10元国内闲时流量包开通_退订10元国内闲时流量套餐（下月生效）  开始测试。。。。。
+接口地址： http://localhost:18080/api/business/gx/businessHandle
+请求参数:
+{
+"callId":"string",
+"channelCode": "IVR",
+"ext": {"offerId":"212099200014","operType":"1","effectType":"2"},
+"regionCode": "GX",
+"telnum": "13627881651",
+"templateCode": "gx_handle_0003"
+}
+返回报文:
+{
+	"returnCode":0,
+	"beans":[
+		
+	],
+	"returnMessage":"",
+	"bean":{
+		"code":"0",
+		"message":"执行成功！"
+	},
+	"object":{
+		
+	}
+}
+
+#######字段解释#########:
+code(0表示办理成功 非0办理失败)
+message（办理成功信息或者异常信息）
+
+-------->>>用时 0秒
+
+
+2018-04-26 20:31:29,010  INFO EasyTestController:94 - 2018-04-26 20:31:28
+第4批_gx032 10元国内闲时流量包开通_当月是否开通非常流量套餐  开始测试。。。。。
+接口地址： http://localhost:18080/api/business/gx/businessQuery
+请求参数:
+{
+"callId":"string",
+"channelCode": "IVR",
+"ext": {"offerId":"212099200014"},
+"regionCode": "GX",
+"telnum": "13627881651",
+"templateCode": "gx_query_0027"
+}
+返回报文:
+{
+	"returnCode":0,
+	"beans":[
+		
+	],
+	"returnMessage":"",
+	"bean":{
+		
+	},
+	"object":{
+		
+	}
+}
+
+#######字段解释#########:
+result:0未开通，1已开通
+ttsContent:语音播报内容
+
+-------->>>用时 0秒
+
+
+2018-04-26 20:31:29,066  INFO EasyTestController:94 - 2018-04-26 20:31:29
+第4批_gx032 10元国内闲时流量包开通_下月是否开通10元国内闲时流量套餐  开始测试。。。。。
+接口地址： http://localhost:18080/api/business/gx/businessQuery
+请求参数:
+{
+"callId":"string",
+"channelCode": "IVR",
+"ext": {"offerId":"212099200014"},
+"regionCode": "GX",
+"telnum": "13627881651",
+"templateCode": "gx_query_0009"
+}
+返回报文:
+{
+	"returnCode":0,
+	"beans":[
+		
+	],
+	"returnMessage":"",
+	"bean":{
+		"result":"0"
+	},
+	"object":{
+		
+	}
+}
+
+#######字段解释#########:
+result(0未开通，1已开通)
+
+-------->>>用时 0秒
+
+
+2018-04-26 20:31:29,125  INFO EasyTestController:94 - 2018-04-26 20:31:29
+第4批_gx032 10元国内闲时流量包开通_开通10元国内闲时流量套餐（立即生效）  开始测试。。。。。
+接口地址： http://localhost:18080/api/business/gx/businessHandle
+请求参数:
+{
+"callId":"string",
+"channelCode": "IVR",
+"ext": {"offerId":"212099200014","operType":"0","effectType":"1"},
+"regionCode": "GX",
+"telnum": "13627881651",
+"templateCode": "gx_handle_0003"
+}
+返回报文:
+{
+	"returnCode":0,
+	"beans":[
+		
+	],
+	"returnMessage":"",
+	"bean":{
+		"code":"0",
+		"message":"执行成功！"
+	},
+	"object":{
+		
+	}
+}
+
+#######字段解释#########:
+code(0表示办理成功 非0办理失败)
+message（办理成功信息或者异常信息）
+
+-------->>>用时 0秒
+
+
+2018-04-26 20:31:29,183  INFO EasyTestController:94 - 2018-04-26 20:31:29
+第4批_gx032 10元国内闲时流量包开通_开通10元国内闲时流量套餐（下月生效）  开始测试。。。。。
+接口地址： http://localhost:18080/api/business/gx/businessHandle
+请求参数:
+{
+"callId":"string",
+"channelCode": "IVR",
+"ext": {"offerId":"212099200014","operType":"0","effectType":"2"},
+"regionCode": "GX",
+"telnum": "13627881651",
+"templateCode": "gx_handle_0003"
+}
+返回报文:
+{
+	"returnCode":0,
+	"beans":[
+		
+	],
+	"returnMessage":"",
+	"bean":{
+		"code":"0",
+		"message":"执行成功！"
+	},
+	"object":{
+		
+	}
+}
+
+#######字段解释#########:
+code(0表示办理成功 非0办理失败)
+message（办理成功信息或者异常信息）
+
+-------->>>用时 0秒
+
+
+2018-04-26 20:31:29,236  INFO EasyTestController:94 - 2018-04-26 20:31:29
+第4批_gx032 10元国内闲时流量包开通_退订10元国内闲时流量套餐（立即生效）  开始测试。。。。。
+接口地址： http://localhost:18080/api/business/gx/businessHandle
+请求参数:
+{
+"callId":"string",
+"channelCode": "IVR",
+"ext": {"offerId":"212099200014","operType":"1","effectType":"1"},
+"regionCode": "GX",
+"telnum": "13627881651",
+"templateCode": "gx_handle_0003"
+}
+返回报文:
+{
+	"returnCode":0,
+	"beans":[
+		
+	],
+	"returnMessage":"",
+	"bean":{
+		"code":"0",
+		"message":"执行成功！"
+	},
+	"object":{
+		
+	}
+}
+
+#######字段解释#########:
+code(0表示办理成功 非0办理失败)
+message（办理成功信息或者异常信息）
+
+-------->>>用时 0秒
+
+
+2018-04-26 20:31:29,293  INFO EasyTestController:94 - 2018-04-26 20:31:29
+第4批_gx032 10元国内闲时流量包开通_退订10元国内闲时流量套餐（下月生效）  开始测试。。。。。
+接口地址： http://localhost:18080/api/business/gx/businessHandle
+请求参数:
+{
+"callId":"string",
+"channelCode": "IVR",
+"ext": {"offerId":"212099200014","operType":"1","effectType":"2"},
+"regionCode": "GX",
+"telnum": "13627881651",
+"templateCode": "gx_handle_0003"
+}
+返回报文:
+{
+	"returnCode":0,
+	"beans":[
+		
+	],
+	"returnMessage":"",
+	"bean":{
+		"code":"0",
+		"message":"执行成功！"
+	},
+	"object":{
+		
+	}
+}
+
+#######字段解释#########:
+code(0表示办理成功 非0办理失败)
+message（办理成功信息或者异常信息）
+
+-------->>>用时 0秒
+
+
+2018-04-26 20:31:48,345  INFO EasyTestController:94 - 2018-04-26 20:31:48
+第4批_gx034 10元500M流量日套餐开通_获取当月开通流量套餐达到10次  开始测试。。。。。
+接口地址： http://localhost:18080/api/business/gx/businessQuery
+请求参数:
+{
+"callId":"string",
+"channelCode": "IVR",
+"ext": {"offerId":"212099531270"},
+"regionCode": "GX",
+"telnum": "13627881651",
+"templateCode": "gx_query_0028"
+}
+返回报文:
+{
+	"path":"/api/business/gx/businessQuery",
+	"returnCode":"5003",
+	"returnMessage":"GX: 数据库不存在csfBusinessCode=NGCRMPFGX_CGXHCCHECKCURRENTMONFLOWMEAL_POST入参对照信息！",
+	"error":"javax.servlet.ServletException: GX: 数据库不存在csfBusinessCode=NGCRMPFGX_CGXHCCHECKCURRENTMONFLOWMEAL_POST入参对照信息！"
+}
+
+#######字段解释#########:
+result:0未达到10次，1已达到10次
+
+-------->>>用时 0秒
+
+
+2018-04-26 20:31:48,382  INFO EasyTestController:94 - 2018-04-26 20:31:48
+第4批_gx034 10元500M流量日套餐开通_开通10元国内闲时流量套餐  开始测试。。。。。
+接口地址： http://localhost:18080/api/business/gx/businessHandle
+请求参数:
+{
+"callId":"string",
+"channelCode": "IVR",
+"ext": {"offerId":"212099531270"},
+"regionCode": "GX",
+"telnum": "13627881651",
+"templateCode": "gx_handle_0008"
+}
+返回报文:
+{
+	"returnCode":0,
+	"beans":[
+		
+	],
+	"returnMessage":"",
+	"bean":{
+		"orderId":"77130001015201"
+	},
+	"object":{
+		
+	}
+}
+
+#######字段解释#########:
+orderId: 办理编号大于0，成功，否则，失败
+
+-------->>>用时 0秒
+
+
+2018-04-26 20:35:35,936  INFO EasyTestController:94 - 2018-04-26 20:35:35
+第4批_gx034 10元500M流量日套餐开通_获取当月开通流量套餐达到10次  开始测试。。。。。
+接口地址： http://localhost:18080/api/business/gx/businessQuery
+请求参数:
+{
+"callId":"string",
+"channelCode": "IVR",
+"ext": {"offerId":"212099531270"},
+"regionCode": "GX",
+"telnum": "13627881651",
+"templateCode": "gx_query_0028"
+}
+返回报文:
+{
+	"path":"/api/business/gx/businessQuery",
+	"returnCode":"5003",
+	"returnMessage":"GX: 数据库不存在csfBusinessCode=NGCRMPFGX_CGXHCCHECKCURRENTMONFLOWMEAL_POST入参对照信息！",
+	"error":"javax.servlet.ServletException: GX: 数据库不存在csfBusinessCode=NGCRMPFGX_CGXHCCHECKCURRENTMONFLOWMEAL_POST入参对照信息！"
+}
+
+#######字段解释#########:
+result:0未达到10次，1已达到10次
+
+-------->>>用时 0秒
+
+
+2018-04-26 20:35:35,985  INFO EasyTestController:94 - 2018-04-26 20:35:35
+第4批_gx034 10元500M流量日套餐开通_开通10元国内闲时流量套餐  开始测试。。。。。
+接口地址： http://localhost:18080/api/business/gx/businessHandle
+请求参数:
+{
+"callId":"string",
+"channelCode": "IVR",
+"ext": {"offerId":"212099531270"},
+"regionCode": "GX",
+"telnum": "13627881651",
+"templateCode": "gx_handle_0008"
+}
+返回报文:
+{
+	"returnCode":0,
+	"beans":[
+		
+	],
+	"returnMessage":"",
+	"bean":{
+		"orderId":"77130001015201"
+	},
+	"object":{
+		
+	}
+}
+
+#######字段解释#########:
+orderId: 办理编号大于0，成功，否则，失败
+
+-------->>>用时 0秒
+
+
+2018-04-26 20:35:57,890  INFO EasyTestController:94 - 2018-04-26 20:35:57
+第4批_gx034 10元500M流量日套餐开通_获取当月开通流量套餐达到10次  开始测试。。。。。
+接口地址： http://localhost:18080/api/business/gx/businessQuery
+请求参数:
+{
+"callId":"string",
+"channelCode": "IVR",
+"ext": {"offerId":"212099531270"},
+"regionCode": "GX",
+"telnum": "13627881651",
+"templateCode": "gx_query_0028"
+}
+返回报文:
+{
+	"path":"/api/business/gx/businessQuery",
+	"returnCode":"5003",
+	"returnMessage":"GX: 数据库不存在csfBusinessCode=NGCRMPFGX_CGXHCCHECKCURRENTMONFLOWMEAL_POST入参对照信息！",
+	"error":"javax.servlet.ServletException: GX: 数据库不存在csfBusinessCode=NGCRMPFGX_CGXHCCHECKCURRENTMONFLOWMEAL_POST入参对照信息！"
+}
+
+#######字段解释#########:
+result:0未达到10次，1已达到10次
+
+-------->>>用时 0秒
+
+
+2018-04-26 20:35:57,922  INFO EasyTestController:94 - 2018-04-26 20:35:57
+第4批_gx034 10元500M流量日套餐开通_开通10元国内闲时流量套餐  开始测试。。。。。
+接口地址： http://localhost:18080/api/business/gx/businessHandle
+请求参数:
+{
+"callId":"string",
+"channelCode": "IVR",
+"ext": {"offerId":"212099531270"},
+"regionCode": "GX",
+"telnum": "13627881651",
+"templateCode": "gx_handle_0008"
+}
+返回报文:
+{
+	"returnCode":0,
+	"beans":[
+		
+	],
+	"returnMessage":"",
+	"bean":{
+		"orderId":"77130001015201"
+	},
+	"object":{
+		
+	}
+}
+
+#######字段解释#########:
+orderId: 办理编号大于0，成功，否则，失败
+
+-------->>>用时 0秒
+
+
+2018-04-26 20:36:24,261  INFO EasyTestController:94 - 2018-04-26 20:36:24
+第4批_gx034 10元500M流量日套餐开通_获取当月开通流量套餐达到10次  开始测试。。。。。
+接口地址： http://localhost:18080/api/business/gx/businessQuery
+请求参数:
+{
+"callId":"string",
+"channelCode": "IVR",
+"ext": {"offerId":"212099531270"},
+"regionCode": "GX",
+"telnum": "13627881651",
+"templateCode": "gx_query_0028"
+}
+返回报文:
+{
+	"path":"/api/business/gx/businessQuery",
+	"returnCode":"5003",
+	"returnMessage":"GX: 数据库不存在csfBusinessCode=NGCRMPFGX_CGXHCCHECKCURRENTMONFLOWMEAL_POST入参对照信息！",
+	"error":"javax.servlet.ServletException: GX: 数据库不存在csfBusinessCode=NGCRMPFGX_CGXHCCHECKCURRENTMONFLOWMEAL_POST入参对照信息！"
+}
+
+#######字段解释#########:
+result:0未达到10次，1已达到10次
+
+-------->>>用时 0秒
+
+
+2018-04-26 20:36:24,297  INFO EasyTestController:94 - 2018-04-26 20:36:24
+第4批_gx034 10元500M流量日套餐开通_开通10元国内闲时流量套餐  开始测试。。。。。
+接口地址： http://localhost:18080/api/business/gx/businessHandle
+请求参数:
+{
+"callId":"string",
+"channelCode": "IVR",
+"ext": {"offerId":"212099531270"},
+"regionCode": "GX",
+"telnum": "13627881651",
+"templateCode": "gx_handle_0008"
+}
+返回报文:
+{
+	"returnCode":0,
+	"beans":[
+		
+	],
+	"returnMessage":"",
+	"bean":{
+		"orderId":"77130001015201"
+	},
+	"object":{
+		
+	}
+}
+
+#######字段解释#########:
+orderId: 办理编号大于0，成功，否则，失败
+
+-------->>>用时 0秒
+
+
+2018-04-26 20:37:00,473  INFO EasyTestController:94 - 2018-04-26 20:37:00
+第4批_gx034 10元500M流量日套餐开通_获取当月开通流量套餐达到10次  开始测试。。。。。
+接口地址： http://localhost:18080/api/business/gx/businessQuery
+请求参数:
+{
+"callId":"string",
+"channelCode": "IVR",
+"ext": {"offerId":"212099531270"},
+"regionCode": "GX",
+"telnum": "13627881651",
+"templateCode": "gx_query_0028"
+}
+返回报文:
+{
+	"path":"/api/business/gx/businessQuery",
+	"returnCode":"5003",
+	"returnMessage":"GX: 数据库不存在csfBusinessCode=NGCRMPFGX_CGXHCCHECKCURRENTMONFLOWMEAL_POST入参对照信息！",
+	"error":"javax.servlet.ServletException: GX: 数据库不存在csfBusinessCode=NGCRMPFGX_CGXHCCHECKCURRENTMONFLOWMEAL_POST入参对照信息！"
+}
+
+#######字段解释#########:
+result:0未达到10次，1已达到10次
+
+-------->>>用时 0秒
+
+
+2018-04-26 20:37:00,507  INFO EasyTestController:94 - 2018-04-26 20:37:00
+第4批_gx034 10元500M流量日套餐开通_开通10元国内闲时流量套餐  开始测试。。。。。
+接口地址： http://localhost:18080/api/business/gx/businessHandle
+请求参数:
+{
+"callId":"string",
+"channelCode": "IVR",
+"ext": {"offerId":"212099531270"},
+"regionCode": "GX",
+"telnum": "13627881651",
+"templateCode": "gx_handle_0008"
+}
+返回报文:
+{
+	"returnCode":0,
+	"beans":[
+		
+	],
+	"returnMessage":"",
+	"bean":{
+		"orderId":"77130001015201"
+	},
+	"object":{
+		
+	}
+}
+
+#######字段解释#########:
+orderId: 办理编号大于0，成功，否则，失败
+
+-------->>>用时 0秒
+
+
+2018-04-26 20:37:01,356  INFO EasyTestController:94 - 2018-04-26 20:37:01
+第4批_gx034 10元500M流量日套餐开通_获取当月开通流量套餐达到10次  开始测试。。。。。
+接口地址： http://localhost:18080/api/business/gx/businessQuery
+请求参数:
+{
+"callId":"string",
+"channelCode": "IVR",
+"ext": {"offerId":"212099531270"},
+"regionCode": "GX",
+"telnum": "13627881651",
+"templateCode": "gx_query_0028"
+}
+返回报文:
+{
+	"path":"/api/business/gx/businessQuery",
+	"returnCode":"5003",
+	"returnMessage":"GX: 数据库不存在csfBusinessCode=NGCRMPFGX_CGXHCCHECKCURRENTMONFLOWMEAL_POST入参对照信息！",
+	"error":"javax.servlet.ServletException: GX: 数据库不存在csfBusinessCode=NGCRMPFGX_CGXHCCHECKCURRENTMONFLOWMEAL_POST入参对照信息！"
+}
+
+#######字段解释#########:
+result:0未达到10次，1已达到10次
+
+-------->>>用时 0秒
+
+
+2018-04-26 20:37:01,386  INFO EasyTestController:94 - 2018-04-26 20:37:01
+第4批_gx034 10元500M流量日套餐开通_开通10元国内闲时流量套餐  开始测试。。。。。
+接口地址： http://localhost:18080/api/business/gx/businessHandle
+请求参数:
+{
+"callId":"string",
+"channelCode": "IVR",
+"ext": {"offerId":"212099531270"},
+"regionCode": "GX",
+"telnum": "13627881651",
+"templateCode": "gx_handle_0008"
+}
+返回报文:
+{
+	"returnCode":0,
+	"beans":[
+		
+	],
+	"returnMessage":"",
+	"bean":{
+		"orderId":"77130001015201"
+	},
+	"object":{
+		
+	}
+}
+
+#######字段解释#########:
+orderId: 办理编号大于0，成功，否则，失败
+
+-------->>>用时 0秒
+
+
+2018-04-26 20:37:01,823  INFO EasyTestController:94 - 2018-04-26 20:37:01
+第4批_gx034 10元500M流量日套餐开通_获取当月开通流量套餐达到10次  开始测试。。。。。
+接口地址： http://localhost:18080/api/business/gx/businessQuery
+请求参数:
+{
+"callId":"string",
+"channelCode": "IVR",
+"ext": {"offerId":"212099531270"},
+"regionCode": "GX",
+"telnum": "13627881651",
+"templateCode": "gx_query_0028"
+}
+返回报文:
+{
+	"path":"/api/business/gx/businessQuery",
+	"returnCode":"5003",
+	"returnMessage":"GX: 数据库不存在csfBusinessCode=NGCRMPFGX_CGXHCCHECKCURRENTMONFLOWMEAL_POST入参对照信息！",
+	"error":"javax.servlet.ServletException: GX: 数据库不存在csfBusinessCode=NGCRMPFGX_CGXHCCHECKCURRENTMONFLOWMEAL_POST入参对照信息！"
+}
+
+#######字段解释#########:
+result:0未达到10次，1已达到10次
+
+-------->>>用时 0秒
+
+
+2018-04-26 20:37:01,850  INFO EasyTestController:94 - 2018-04-26 20:37:01
+第4批_gx034 10元500M流量日套餐开通_开通10元国内闲时流量套餐  开始测试。。。。。
+接口地址： http://localhost:18080/api/business/gx/businessHandle
+请求参数:
+{
+"callId":"string",
+"channelCode": "IVR",
+"ext": {"offerId":"212099531270"},
+"regionCode": "GX",
+"telnum": "13627881651",
+"templateCode": "gx_handle_0008"
+}
+返回报文:
+{
+	"returnCode":0,
+	"beans":[
+		
+	],
+	"returnMessage":"",
+	"bean":{
+		"orderId":"77130001015201"
+	},
+	"object":{
+		
+	}
+}
+
+#######字段解释#########:
+orderId: 办理编号大于0，成功，否则，失败
+
+-------->>>用时 0秒
+
+
+2018-04-26 20:37:02,209  INFO EasyTestController:94 - 2018-04-26 20:37:02
+第4批_gx034 10元500M流量日套餐开通_获取当月开通流量套餐达到10次  开始测试。。。。。
+接口地址： http://localhost:18080/api/business/gx/businessQuery
+请求参数:
+{
+"callId":"string",
+"channelCode": "IVR",
+"ext": {"offerId":"212099531270"},
+"regionCode": "GX",
+"telnum": "13627881651",
+"templateCode": "gx_query_0028"
+}
+返回报文:
+{
+	"path":"/api/business/gx/businessQuery",
+	"returnCode":"5003",
+	"returnMessage":"GX: 数据库不存在csfBusinessCode=NGCRMPFGX_CGXHCCHECKCURRENTMONFLOWMEAL_POST入参对照信息！",
+	"error":"javax.servlet.ServletException: GX: 数据库不存在csfBusinessCode=NGCRMPFGX_CGXHCCHECKCURRENTMONFLOWMEAL_POST入参对照信息！"
+}
+
+#######字段解释#########:
+result:0未达到10次，1已达到10次
+
+-------->>>用时 0秒
+
+
+2018-04-26 20:37:02,285  INFO EasyTestController:94 - 2018-04-26 20:37:02
+第4批_gx034 10元500M流量日套餐开通_开通10元国内闲时流量套餐  开始测试。。。。。
+接口地址： http://localhost:18080/api/business/gx/businessHandle
+请求参数:
+{
+"callId":"string",
+"channelCode": "IVR",
+"ext": {"offerId":"212099531270"},
+"regionCode": "GX",
+"telnum": "13627881651",
+"templateCode": "gx_handle_0008"
+}
+返回报文:
+{
+	"returnCode":0,
+	"beans":[
+		
+	],
+	"returnMessage":"",
+	"bean":{
+		"orderId":"77130001015201"
+	},
+	"object":{
+		
+	}
+}
+
+#######字段解释#########:
+orderId: 办理编号大于0，成功，否则，失败
+
+-------->>>用时 0秒
+
+
+2018-04-26 20:37:02,383  INFO EasyTestController:94 - 2018-04-26 20:37:02
+第4批_gx034 10元500M流量日套餐开通_获取当月开通流量套餐达到10次  开始测试。。。。。
+接口地址： http://localhost:18080/api/business/gx/businessQuery
+请求参数:
+{
+"callId":"string",
+"channelCode": "IVR",
+"ext": {"offerId":"212099531270"},
+"regionCode": "GX",
+"telnum": "13627881651",
+"templateCode": "gx_query_0028"
+}
+返回报文:
+{
+	"path":"/api/business/gx/businessQuery",
+	"returnCode":"5003",
+	"returnMessage":"GX: 数据库不存在csfBusinessCode=NGCRMPFGX_CGXHCCHECKCURRENTMONFLOWMEAL_POST入参对照信息！",
+	"error":"javax.servlet.ServletException: GX: 数据库不存在csfBusinessCode=NGCRMPFGX_CGXHCCHECKCURRENTMONFLOWMEAL_POST入参对照信息！"
+}
+
+#######字段解释#########:
+result:0未达到10次，1已达到10次
+
+-------->>>用时 0秒
+
+
+2018-04-26 20:37:02,553  INFO EasyTestController:94 - 2018-04-26 20:37:02
+第4批_gx034 10元500M流量日套餐开通_获取当月开通流量套餐达到10次  开始测试。。。。。
+接口地址： http://localhost:18080/api/business/gx/businessQuery
+请求参数:
+{
+"callId":"string",
+"channelCode": "IVR",
+"ext": {"offerId":"212099531270"},
+"regionCode": "GX",
+"telnum": "13627881651",
+"templateCode": "gx_query_0028"
+}
+返回报文:
+{
+	"path":"/api/business/gx/businessQuery",
+	"returnCode":"5003",
+	"returnMessage":"GX: 数据库不存在csfBusinessCode=NGCRMPFGX_CGXHCCHECKCURRENTMONFLOWMEAL_POST入参对照信息！",
+	"error":"javax.servlet.ServletException: GX: 数据库不存在csfBusinessCode=NGCRMPFGX_CGXHCCHECKCURRENTMONFLOWMEAL_POST入参对照信息！"
+}
+
+#######字段解释#########:
+result:0未达到10次，1已达到10次
+
+-------->>>用时 0秒
+
+
+2018-04-26 20:37:02,554  INFO EasyTestController:94 - 2018-04-26 20:37:02
+第4批_gx034 10元500M流量日套餐开通_开通10元国内闲时流量套餐  开始测试。。。。。
+接口地址： http://localhost:18080/api/business/gx/businessHandle
+请求参数:
+{
+"callId":"string",
+"channelCode": "IVR",
+"ext": {"offerId":"212099531270"},
+"regionCode": "GX",
+"telnum": "13627881651",
+"templateCode": "gx_handle_0008"
+}
+返回报文:
+{
+	"returnCode":0,
+	"beans":[
+		
+	],
+	"returnMessage":"",
+	"bean":{
+		"orderId":"77130001015201"
+	},
+	"object":{
+		
+	}
+}
+
+#######字段解释#########:
+orderId: 办理编号大于0，成功，否则，失败
+
+-------->>>用时 0秒
+
+
+2018-04-26 20:37:02,645  INFO EasyTestController:94 - 2018-04-26 20:37:02
+第4批_gx034 10元500M流量日套餐开通_获取当月开通流量套餐达到10次  开始测试。。。。。
+接口地址： http://localhost:18080/api/business/gx/businessQuery
+请求参数:
+{
+"callId":"string",
+"channelCode": "IVR",
+"ext": {"offerId":"212099531270"},
+"regionCode": "GX",
+"telnum": "13627881651",
+"templateCode": "gx_query_0028"
+}
+返回报文:
+{
+	"path":"/api/business/gx/businessQuery",
+	"returnCode":"5003",
+	"returnMessage":"GX: 数据库不存在csfBusinessCode=NGCRMPFGX_CGXHCCHECKCURRENTMONFLOWMEAL_POST入参对照信息！",
+	"error":"javax.servlet.ServletException: GX: 数据库不存在csfBusinessCode=NGCRMPFGX_CGXHCCHECKCURRENTMONFLOWMEAL_POST入参对照信息！"
+}
+
+#######字段解释#########:
+result:0未达到10次，1已达到10次
+
+-------->>>用时 0秒
+
+
+2018-04-26 20:37:02,650  INFO EasyTestController:94 - 2018-04-26 20:37:02
+第4批_gx034 10元500M流量日套餐开通_开通10元国内闲时流量套餐  开始测试。。。。。
+接口地址： http://localhost:18080/api/business/gx/businessHandle
+请求参数:
+{
+"callId":"string",
+"channelCode": "IVR",
+"ext": {"offerId":"212099531270"},
+"regionCode": "GX",
+"telnum": "13627881651",
+"templateCode": "gx_handle_0008"
+}
+返回报文:
+{
+	"returnCode":0,
+	"beans":[
+		
+	],
+	"returnMessage":"",
+	"bean":{
+		"orderId":"77130001015201"
+	},
+	"object":{
+		
+	}
+}
+
+#######字段解释#########:
+orderId: 办理编号大于0，成功，否则，失败
+
+-------->>>用时 0秒
+
+
+2018-04-26 20:37:02,765  INFO EasyTestController:94 - 2018-04-26 20:37:02
+第4批_gx034 10元500M流量日套餐开通_开通10元国内闲时流量套餐  开始测试。。。。。
+接口地址： http://localhost:18080/api/business/gx/businessHandle
+请求参数:
+{
+"callId":"string",
+"channelCode": "IVR",
+"ext": {"offerId":"212099531270"},
+"regionCode": "GX",
+"telnum": "13627881651",
+"templateCode": "gx_handle_0008"
+}
+返回报文:
+{
+	"returnCode":0,
+	"beans":[
+		
+	],
+	"returnMessage":"",
+	"bean":{
+		"orderId":"77130001015201"
+	},
+	"object":{
+		
+	}
+}
+
+#######字段解释#########:
+orderId: 办理编号大于0，成功，否则，失败
+
+-------->>>用时 0秒
+
+
+2018-04-26 20:37:03,538  INFO EasyTestController:94 - 2018-04-26 20:37:02
+第4批_gx034 10元500M流量日套餐开通_获取当月开通流量套餐达到10次  开始测试。。。。。
+接口地址： http://localhost:18080/api/business/gx/businessQuery
+请求参数:
+{
+"callId":"string",
+"channelCode": "IVR",
+"ext": {"offerId":"212099531270"},
+"regionCode": "GX",
+"telnum": "13627881651",
+"templateCode": "gx_query_0028"
+}
+返回报文:
+{
+	"path":"/api/business/gx/businessQuery",
+	"returnCode":"5003",
+	"returnMessage":"GX: 数据库不存在csfBusinessCode=NGCRMPFGX_CGXHCCHECKCURRENTMONFLOWMEAL_POST入参对照信息！",
+	"error":"javax.servlet.ServletException: GX: 数据库不存在csfBusinessCode=NGCRMPFGX_CGXHCCHECKCURRENTMONFLOWMEAL_POST入参对照信息！"
+}
+
+#######字段解释#########:
+result:0未达到10次，1已达到10次
+
+-------->>>用时 0秒
+
+
+2018-04-26 20:37:03,569  INFO EasyTestController:94 - 2018-04-26 20:37:03
+第4批_gx034 10元500M流量日套餐开通_开通10元国内闲时流量套餐  开始测试。。。。。
+接口地址： http://localhost:18080/api/business/gx/businessHandle
+请求参数:
+{
+"callId":"string",
+"channelCode": "IVR",
+"ext": {"offerId":"212099531270"},
+"regionCode": "GX",
+"telnum": "13627881651",
+"templateCode": "gx_handle_0008"
+}
+返回报文:
+{
+	"returnCode":0,
+	"beans":[
+		
+	],
+	"returnMessage":"",
+	"bean":{
+		"orderId":"77130001015201"
+	},
+	"object":{
+		
+	}
+}
+
+#######字段解释#########:
+orderId: 办理编号大于0，成功，否则，失败
+
+-------->>>用时 0秒
+
+
+2018-04-26 20:37:04,650  INFO EasyTestController:94 - 2018-04-26 20:37:04
+第4批_gx034 10元500M流量日套餐开通_获取当月开通流量套餐达到10次  开始测试。。。。。
+接口地址： http://localhost:18080/api/business/gx/businessQuery
+请求参数:
+{
+"callId":"string",
+"channelCode": "IVR",
+"ext": {"offerId":"212099531270"},
+"regionCode": "GX",
+"telnum": "13627881651",
+"templateCode": "gx_query_0028"
+}
+返回报文:
+{
+	"path":"/api/business/gx/businessQuery",
+	"returnCode":"5003",
+	"returnMessage":"GX: 数据库不存在csfBusinessCode=NGCRMPFGX_CGXHCCHECKCURRENTMONFLOWMEAL_POST入参对照信息！",
+	"error":"javax.servlet.ServletException: GX: 数据库不存在csfBusinessCode=NGCRMPFGX_CGXHCCHECKCURRENTMONFLOWMEAL_POST入参对照信息！"
+}
+
+#######字段解释#########:
+result:0未达到10次，1已达到10次
+
+-------->>>用时 0秒
+
+
+2018-04-26 20:37:04,682  INFO EasyTestController:94 - 2018-04-26 20:37:04
+第4批_gx034 10元500M流量日套餐开通_开通10元国内闲时流量套餐  开始测试。。。。。
+接口地址： http://localhost:18080/api/business/gx/businessHandle
+请求参数:
+{
+"callId":"string",
+"channelCode": "IVR",
+"ext": {"offerId":"212099531270"},
+"regionCode": "GX",
+"telnum": "13627881651",
+"templateCode": "gx_handle_0008"
+}
+返回报文:
+{
+	"returnCode":0,
+	"beans":[
+		
+	],
+	"returnMessage":"",
+	"bean":{
+		"orderId":"77130001015201"
+	},
+	"object":{
+		
+	}
+}
+
+#######字段解释#########:
+orderId: 办理编号大于0，成功，否则，失败
+
+-------->>>用时 0秒
+
+
+2018-04-26 20:37:06,103  INFO EasyTestController:94 - 2018-04-26 20:37:06
+第4批_gx034 10元500M流量日套餐开通_获取当月开通流量套餐达到10次  开始测试。。。。。
+接口地址： http://localhost:18080/api/business/gx/businessQuery
+请求参数:
+{
+"callId":"string",
+"channelCode": "IVR",
+"ext": {"offerId":"212099531270"},
+"regionCode": "GX",
+"telnum": "13627881651",
+"templateCode": "gx_query_0028"
+}
+返回报文:
+{
+	"path":"/api/business/gx/businessQuery",
+	"returnCode":"5003",
+	"returnMessage":"GX: 数据库不存在csfBusinessCode=NGCRMPFGX_CGXHCCHECKCURRENTMONFLOWMEAL_POST入参对照信息！",
+	"error":"javax.servlet.ServletException: GX: 数据库不存在csfBusinessCode=NGCRMPFGX_CGXHCCHECKCURRENTMONFLOWMEAL_POST入参对照信息！"
+}
+
+#######字段解释#########:
+result:0未达到10次，1已达到10次
+
+-------->>>用时 0秒
+
+
+2018-04-26 20:37:06,139  INFO EasyTestController:94 - 2018-04-26 20:37:06
+第4批_gx034 10元500M流量日套餐开通_开通10元国内闲时流量套餐  开始测试。。。。。
+接口地址： http://localhost:18080/api/business/gx/businessHandle
+请求参数:
+{
+"callId":"string",
+"channelCode": "IVR",
+"ext": {"offerId":"212099531270"},
+"regionCode": "GX",
+"telnum": "13627881651",
+"templateCode": "gx_handle_0008"
+}
+返回报文:
+{
+	"returnCode":0,
+	"beans":[
+		
+	],
+	"returnMessage":"",
+	"bean":{
+		"orderId":"77130001015201"
+	},
+	"object":{
+		
+	}
+}
+
+#######字段解释#########:
+orderId: 办理编号大于0，成功，否则，失败
+
+-------->>>用时 0秒
+
+
+2018-04-26 20:37:07,626  INFO EasyTestController:94 - 2018-04-26 20:37:07
+第4批_gx034 10元500M流量日套餐开通_获取当月开通流量套餐达到10次  开始测试。。。。。
+接口地址： http://localhost:18080/api/business/gx/businessQuery
+请求参数:
+{
+"callId":"string",
+"channelCode": "IVR",
+"ext": {"offerId":"212099531270"},
+"regionCode": "GX",
+"telnum": "13627881651",
+"templateCode": "gx_query_0028"
+}
+返回报文:
+{
+	"path":"/api/business/gx/businessQuery",
+	"returnCode":"5003",
+	"returnMessage":"GX: 数据库不存在csfBusinessCode=NGCRMPFGX_CGXHCCHECKCURRENTMONFLOWMEAL_POST入参对照信息！",
+	"error":"javax.servlet.ServletException: GX: 数据库不存在csfBusinessCode=NGCRMPFGX_CGXHCCHECKCURRENTMONFLOWMEAL_POST入参对照信息！"
+}
+
+#######字段解释#########:
+result:0未达到10次，1已达到10次
+
+-------->>>用时 0秒
+
+
+2018-04-26 20:37:07,648  INFO EasyTestController:94 - 2018-04-26 20:37:07
+第4批_gx034 10元500M流量日套餐开通_开通10元国内闲时流量套餐  开始测试。。。。。
+接口地址： http://localhost:18080/api/business/gx/businessHandle
+请求参数:
+{
+"callId":"string",
+"channelCode": "IVR",
+"ext": {"offerId":"212099531270"},
+"regionCode": "GX",
+"telnum": "13627881651",
+"templateCode": "gx_handle_0008"
+}
+返回报文:
+{
+	"returnCode":0,
+	"beans":[
+		
+	],
+	"returnMessage":"",
+	"bean":{
+		"orderId":"77130001015201"
+	},
+	"object":{
+		
+	}
+}
+
+#######字段解释#########:
+orderId: 办理编号大于0，成功，否则，失败
+
+-------->>>用时 0秒
+
+
+2018-04-26 20:37:09,680  INFO EasyTestController:94 - 2018-04-26 20:37:09
+第4批_gx034 10元500M流量日套餐开通_获取当月开通流量套餐达到10次  开始测试。。。。。
+接口地址： http://localhost:18080/api/business/gx/businessQuery
+请求参数:
+{
+"callId":"string",
+"channelCode": "IVR",
+"ext": {"offerId":"212099531270"},
+"regionCode": "GX",
+"telnum": "13627881651",
+"templateCode": "gx_query_0028"
+}
+返回报文:
+{
+	"path":"/api/business/gx/businessQuery",
+	"returnCode":"5003",
+	"returnMessage":"GX: 数据库不存在csfBusinessCode=NGCRMPFGX_CGXHCCHECKCURRENTMONFLOWMEAL_POST入参对照信息！",
+	"error":"javax.servlet.ServletException: GX: 数据库不存在csfBusinessCode=NGCRMPFGX_CGXHCCHECKCURRENTMONFLOWMEAL_POST入参对照信息！"
+}
+
+#######字段解释#########:
+result:0未达到10次，1已达到10次
+
+-------->>>用时 0秒
+
+
+2018-04-26 20:37:09,711  INFO EasyTestController:94 - 2018-04-26 20:37:09
+第4批_gx034 10元500M流量日套餐开通_开通10元国内闲时流量套餐  开始测试。。。。。
+接口地址： http://localhost:18080/api/business/gx/businessHandle
+请求参数:
+{
+"callId":"string",
+"channelCode": "IVR",
+"ext": {"offerId":"212099531270"},
+"regionCode": "GX",
+"telnum": "13627881651",
+"templateCode": "gx_handle_0008"
+}
+返回报文:
+{
+	"returnCode":0,
+	"beans":[
+		
+	],
+	"returnMessage":"",
+	"bean":{
+		"orderId":"77130001015201"
+	},
+	"object":{
+		
+	}
+}
+
+#######字段解释#########:
+orderId: 办理编号大于0，成功，否则，失败
+
+-------->>>用时 0秒
+
+
+2018-04-26 20:37:20,638  INFO EasyTestController:94 - 2018-04-26 20:37:20
+第4批_gx034 10元500M流量日套餐开通_获取当月开通流量套餐达到10次  开始测试。。。。。
+接口地址： http://localhost:18080/api/business/gx/businessQuery
+请求参数:
+{
+"callId":"string",
+"channelCode": "IVR",
+"ext": {"offerId":"212099531270"},
+"regionCode": "GX",
+"telnum": "13627881651",
+"templateCode": "gx_query_0028"
+}
+返回报文:
+{
+	"path":"/api/business/gx/businessQuery",
+	"returnCode":"5003",
+	"returnMessage":"GX: 数据库不存在csfBusinessCode=NGCRMPFGX_CGXHCCHECKCURRENTMONFLOWMEAL_POST入参对照信息！",
+	"error":"javax.servlet.ServletException: GX: 数据库不存在csfBusinessCode=NGCRMPFGX_CGXHCCHECKCURRENTMONFLOWMEAL_POST入参对照信息！"
+}
+
+#######字段解释#########:
+result:0未达到10次，1已达到10次
+
+-------->>>用时 0秒
+
+
+2018-04-26 20:37:20,668  INFO EasyTestController:94 - 2018-04-26 20:37:20
+第4批_gx034 10元500M流量日套餐开通_开通10元国内闲时流量套餐  开始测试。。。。。
+接口地址： http://localhost:18080/api/business/gx/businessHandle
+请求参数:
+{
+"callId":"string",
+"channelCode": "IVR",
+"ext": {"offerId":"212099531270"},
+"regionCode": "GX",
+"telnum": "13627881651",
+"templateCode": "gx_handle_0008"
+}
+返回报文:
+{
+	"returnCode":0,
+	"beans":[
+		
+	],
+	"returnMessage":"",
+	"bean":{
+		"orderId":"77130001015201"
+	},
+	"object":{
+		
+	}
+}
+
+#######字段解释#########:
+orderId: 办理编号大于0，成功，否则，失败
+
+-------->>>用时 0秒
+
+
+2018-04-26 20:38:57,834  INFO EasyTestController:94 - 2018-04-26 20:38:57
+第4批_gx034 10元500M流量日套餐开通_获取当月开通流量套餐达到10次  开始测试。。。。。
+接口地址： http://localhost:18080/api/business/gx/businessQuery
+请求参数:
+{
+"callId":"string",
+"channelCode": "IVR",
+"ext": {"offerId":"212099531270"},
+"regionCode": "GX",
+"telnum": "13627881651",
+"templateCode": "gx_query_0028"
+}
+返回报文:
+{
+	"path":"/api/business/gx/businessQuery",
+	"returnCode":"5003",
+	"returnMessage":"GX: 数据库不存在csfBusinessCode=NGCRMPFGX_CGXHCCHECKCURRENTMONFLOWMEAL_POST入参对照信息！",
+	"error":"javax.servlet.ServletException: GX: 数据库不存在csfBusinessCode=NGCRMPFGX_CGXHCCHECKCURRENTMONFLOWMEAL_POST入参对照信息！"
+}
+
+#######字段解释#########:
+result:0未达到10次，1已达到10次
+
+-------->>>用时 0秒
+
+
+2018-04-26 20:38:58,616  INFO EasyTestController:94 - 2018-04-26 20:38:58
+第4批_gx034 10元500M流量日套餐开通_获取当月开通流量套餐达到10次  开始测试。。。。。
+接口地址： http://localhost:18080/api/business/gx/businessQuery
+请求参数:
+{
+"callId":"string",
+"channelCode": "IVR",
+"ext": {"offerId":"212099531270"},
+"regionCode": "GX",
+"telnum": "13627881651",
+"templateCode": "gx_query_0028"
+}
+返回报文:
+{
+	"path":"/api/business/gx/businessQuery",
+	"returnCode":"5003",
+	"returnMessage":"GX: 数据库不存在csfBusinessCode=NGCRMPFGX_CGXHCCHECKCURRENTMONFLOWMEAL_POST入参对照信息！",
+	"error":"javax.servlet.ServletException: GX: 数据库不存在csfBusinessCode=NGCRMPFGX_CGXHCCHECKCURRENTMONFLOWMEAL_POST入参对照信息！"
+}
+
+#######字段解释#########:
+result:0未达到10次，1已达到10次
+
+-------->>>用时 0秒
+
+
+2018-04-26 20:38:58,833  INFO EasyTestController:94 - 2018-04-26 20:38:58
+第4批_gx034 10元500M流量日套餐开通_获取当月开通流量套餐达到10次  开始测试。。。。。
+接口地址： http://localhost:18080/api/business/gx/businessQuery
+请求参数:
+{
+"callId":"string",
+"channelCode": "IVR",
+"ext": {"offerId":"212099531270"},
+"regionCode": "GX",
+"telnum": "13627881651",
+"templateCode": "gx_query_0028"
+}
+返回报文:
+{
+	"path":"/api/business/gx/businessQuery",
+	"returnCode":"5003",
+	"returnMessage":"GX: 数据库不存在csfBusinessCode=NGCRMPFGX_CGXHCCHECKCURRENTMONFLOWMEAL_POST入参对照信息！",
+	"error":"javax.servlet.ServletException: GX: 数据库不存在csfBusinessCode=NGCRMPFGX_CGXHCCHECKCURRENTMONFLOWMEAL_POST入参对照信息！"
+}
+
+#######字段解释#########:
+result:0未达到10次，1已达到10次
+
+-------->>>用时 0秒
+
+
+2018-04-26 20:38:59,017  INFO EasyTestController:94 - 2018-04-26 20:38:58
+第4批_gx034 10元500M流量日套餐开通_获取当月开通流量套餐达到10次  开始测试。。。。。
+接口地址： http://localhost:18080/api/business/gx/businessQuery
+请求参数:
+{
+"callId":"string",
+"channelCode": "IVR",
+"ext": {"offerId":"212099531270"},
+"regionCode": "GX",
+"telnum": "13627881651",
+"templateCode": "gx_query_0028"
+}
+返回报文:
+{
+	"path":"/api/business/gx/businessQuery",
+	"returnCode":"5003",
+	"returnMessage":"GX: 数据库不存在csfBusinessCode=NGCRMPFGX_CGXHCCHECKCURRENTMONFLOWMEAL_POST入参对照信息！",
+	"error":"javax.servlet.ServletException: GX: 数据库不存在csfBusinessCode=NGCRMPFGX_CGXHCCHECKCURRENTMONFLOWMEAL_POST入参对照信息！"
+}
+
+#######字段解释#########:
+result:0未达到10次，1已达到10次
+
+-------->>>用时 0秒
+
+
+2018-04-26 20:38:59,221  INFO EasyTestController:94 - 2018-04-26 20:38:59
+第4批_gx034 10元500M流量日套餐开通_获取当月开通流量套餐达到10次  开始测试。。。。。
+接口地址： http://localhost:18080/api/business/gx/businessQuery
+请求参数:
+{
+"callId":"string",
+"channelCode": "IVR",
+"ext": {"offerId":"212099531270"},
+"regionCode": "GX",
+"telnum": "13627881651",
+"templateCode": "gx_query_0028"
+}
+返回报文:
+{
+	"path":"/api/business/gx/businessQuery",
+	"returnCode":"5003",
+	"returnMessage":"GX: 数据库不存在csfBusinessCode=NGCRMPFGX_CGXHCCHECKCURRENTMONFLOWMEAL_POST入参对照信息！",
+	"error":"javax.servlet.ServletException: GX: 数据库不存在csfBusinessCode=NGCRMPFGX_CGXHCCHECKCURRENTMONFLOWMEAL_POST入参对照信息！"
+}
+
+#######字段解释#########:
+result:0未达到10次，1已达到10次
+
+-------->>>用时 0秒
+
+
+2018-04-26 20:38:59,329  INFO EasyTestController:94 - 2018-04-26 20:38:59
+第4批_gx034 10元500M流量日套餐开通_获取当月开通流量套餐达到10次  开始测试。。。。。
+接口地址： http://localhost:18080/api/business/gx/businessQuery
+请求参数:
+{
+"callId":"string",
+"channelCode": "IVR",
+"ext": {"offerId":"212099531270"},
+"regionCode": "GX",
+"telnum": "13627881651",
+"templateCode": "gx_query_0028"
+}
+返回报文:
+{
+	"path":"/api/business/gx/businessQuery",
+	"returnCode":"5003",
+	"returnMessage":"GX: 数据库不存在csfBusinessCode=NGCRMPFGX_CGXHCCHECKCURRENTMONFLOWMEAL_POST入参对照信息！",
+	"error":"javax.servlet.ServletException: GX: 数据库不存在csfBusinessCode=NGCRMPFGX_CGXHCCHECKCURRENTMONFLOWMEAL_POST入参对照信息！"
+}
+
+#######字段解释#########:
+result:0未达到10次，1已达到10次
+
+-------->>>用时 0秒
+
+
+2018-04-26 20:38:59,482  INFO EasyTestController:94 - 2018-04-26 20:38:59
+第4批_gx034 10元500M流量日套餐开通_获取当月开通流量套餐达到10次  开始测试。。。。。
+接口地址： http://localhost:18080/api/business/gx/businessQuery
+请求参数:
+{
+"callId":"string",
+"channelCode": "IVR",
+"ext": {"offerId":"212099531270"},
+"regionCode": "GX",
+"telnum": "13627881651",
+"templateCode": "gx_query_0028"
+}
+返回报文:
+{
+	"path":"/api/business/gx/businessQuery",
+	"returnCode":"5003",
+	"returnMessage":"GX: 数据库不存在csfBusinessCode=NGCRMPFGX_CGXHCCHECKCURRENTMONFLOWMEAL_POST入参对照信息！",
+	"error":"javax.servlet.ServletException: GX: 数据库不存在csfBusinessCode=NGCRMPFGX_CGXHCCHECKCURRENTMONFLOWMEAL_POST入参对照信息！"
+}
+
+#######字段解释#########:
+result:0未达到10次，1已达到10次
+
+-------->>>用时 0秒
+
+
+2018-04-26 20:38:59,667  INFO EasyTestController:94 - 2018-04-26 20:38:59
+第4批_gx034 10元500M流量日套餐开通_获取当月开通流量套餐达到10次  开始测试。。。。。
+接口地址： http://localhost:18080/api/business/gx/businessQuery
+请求参数:
+{
+"callId":"string",
+"channelCode": "IVR",
+"ext": {"offerId":"212099531270"},
+"regionCode": "GX",
+"telnum": "13627881651",
+"templateCode": "gx_query_0028"
+}
+返回报文:
+{
+	"path":"/api/business/gx/businessQuery",
+	"returnCode":"5003",
+	"returnMessage":"GX: 数据库不存在csfBusinessCode=NGCRMPFGX_CGXHCCHECKCURRENTMONFLOWMEAL_POST入参对照信息！",
+	"error":"javax.servlet.ServletException: GX: 数据库不存在csfBusinessCode=NGCRMPFGX_CGXHCCHECKCURRENTMONFLOWMEAL_POST入参对照信息！"
+}
+
+#######字段解释#########:
+result:0未达到10次，1已达到10次
+
+-------->>>用时 0秒
+
+
+2018-04-26 20:38:59,789  INFO EasyTestController:94 - 2018-04-26 20:38:59
+第4批_gx034 10元500M流量日套餐开通_获取当月开通流量套餐达到10次  开始测试。。。。。
+接口地址： http://localhost:18080/api/business/gx/businessQuery
+请求参数:
+{
+"callId":"string",
+"channelCode": "IVR",
+"ext": {"offerId":"212099531270"},
+"regionCode": "GX",
+"telnum": "13627881651",
+"templateCode": "gx_query_0028"
+}
+返回报文:
+{
+	"path":"/api/business/gx/businessQuery",
+	"returnCode":"5003",
+	"returnMessage":"GX: 数据库不存在csfBusinessCode=NGCRMPFGX_CGXHCCHECKCURRENTMONFLOWMEAL_POST入参对照信息！",
+	"error":"javax.servlet.ServletException: GX: 数据库不存在csfBusinessCode=NGCRMPFGX_CGXHCCHECKCURRENTMONFLOWMEAL_POST入参对照信息！"
+}
+
+#######字段解释#########:
+result:0未达到10次，1已达到10次
+
+-------->>>用时 0秒
+
+

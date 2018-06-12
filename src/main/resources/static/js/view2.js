@@ -5,6 +5,7 @@
     var selectNode = 0;//全局变量
     var selectNodeAttr="";//全局变量
     
+    
     function createTree(treeId){ //创建接口Tree函数
         var zTree; //用于保存创建的树节点
         var setting = { //设置
@@ -88,11 +89,11 @@
     function clearResPon(){
 		$("#returnText").val("");
 		returnZero();
-		//alert("你好");
 	 }
     
     /*采用递归的方法进行循环ajax调用*/
     function Loop_ajax(index, array) {
+    	
         if (index < array.length) {
             var param = array[index];
             var cont = $("#returnText").val();
@@ -121,7 +122,6 @@
         $("#testing").hide();
         $("#startTest").click(function() {
         	returnZero();
-        	
             var treeObj = $.fn.zTree.getZTreeObj("treeDemo");
             var nodes = treeObj.getCheckedNodes(true);
             if(0 === nodes.length) {
@@ -146,6 +146,11 @@
         });
     });
     
+    /*监听请求参数textArea中的变化*/
+    $('#requestParam').bind('input',function(){  
+    	saveRequParam();   
+    });
+    
     /*把excel中心加的接口信息更新到ztree*/
     function updateRequParam(){
   	  $.get("ztree/updateNodes",function(status){
@@ -165,7 +170,8 @@
   		  return;
   	  var params = $("#requestParam").val();
   	  $.post("requestDto/updateBody",{"params":params,"rowNum":selectNode,"attrKey":selectNodeAttr},function(status){
-  	      alert(status);
+  	     // alert(status);
+  		  console.log(status);
   	  })
     }
     

@@ -102,7 +102,7 @@ public class TreeNode {
           if(!(obj instanceof TreeNode))  
               return false;  
           TreeNode p=(TreeNode)obj;  
-          return this.id.equals(p.id) && this.pid==p.pid && this.name==p.name;  
+          return this.id.equals(p.id) && this.pid.equals(p.pid) && this.name.equals(p.name);  
     } 
 	
 }

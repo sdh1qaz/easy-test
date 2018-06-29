@@ -11,18 +11,23 @@ import com.easytestall.pojo.TextCompareResultPojo;
 import com.easytestall.pojo.TextReduplicationPojo;
 import com.easytestall.util.TextOperation;
 
+import io.swagger.annotations.Api;
+import io.swagger.annotations.ApiOperation;
+
 /**
  * @ClassName： TextReduController
  * @Author: dhSu
  * @Description:
  * @Date:Created in 2018年3月14日
  */
+@Api(description = "文本操作接口",value="文本操作接口")
 @RestController
 public class TextReduController {
 	
     private static final Logger logger = Logger.getLogger(TextReduController.class);
     
 	//文本去重
+    @ApiOperation(value = "文本去重 ",notes="文本去重",consumes="application/json",produces="application/json",httpMethod="POST")
 	@RequestMapping(value="redu/reduText",produces={MediaType.APPLICATION_JSON_VALUE})
 	public TextReduplicationPojo reduText(String text){
 		List<String> list = TextOperation.quchong(text);
@@ -40,6 +45,7 @@ public class TextReduController {
 	}
 	
 	//文本比较，左边有右边没有
+    @ApiOperation(value = "文本比较，左边有右边没有 ",notes="文本比较，左边有右边没有",consumes="application/json",produces="application/json",httpMethod="POST")
 	@RequestMapping(value="redu/leftHasRightNot",produces={MediaType.APPLICATION_JSON_VALUE})
 	public TextCompareResultPojo leftHasRightNot(String textLeft,String textRight ){
 		List<String> list = StringComomnUtil.getStrA(textLeft, textRight);
@@ -56,6 +62,7 @@ public class TextReduController {
 	}
 	
 	//文本比较，左边无右边有
+    @ApiOperation(value = "文本比较，左边无右边有 ",notes="文本比较，左边无右边有",consumes="application/json",produces="application/json",httpMethod="POST")
 	@RequestMapping(value="redu/leftNotRightHas",produces={MediaType.APPLICATION_JSON_VALUE})
 	public TextCompareResultPojo leftNotRightHas(String textLeft,String textRight ){
 		//字符串变为字符串数组

@@ -15,31 +15,36 @@ import com.easytestall.pojo.ParamPojo;
 import com.easytestall.util.ExcelUtil;
 import com.easytestall.util.HttpClientUtil;
 
+import io.swagger.annotations.Api;
+import io.swagger.annotations.ApiOperation;
+
 /**
  * @ClassName： EasyTestController
  * @Author: dhSu
  * @Description:
  * @Date:Created in 2018年3月14日
  */
+@Api(description = "批量测试",value="批量测试")
 @RestController
 public class EasyTestController {
 	private Logger logger = Logger.getLogger(EasyTestController.class);
     
-	
-	
     //加载节点数据
+	@ApiOperation(value = "加载节点数据 ",notes="加载节点数据",consumes="application/json",produces="application/json",httpMethod="POST")
 	@RequestMapping("init/getNodes")
 	String getTreeNodes(){
 		return ExcelUtil.getNodesStr();
 	}
 	
 	//返回单个接口的请求入参
+	@ApiOperation(value = "返回单个接口的请求入参",notes="返回单个接口的请求入参",consumes="application/json",produces="application/json",httpMethod="POST")
 	@RequestMapping("requestDto/getBody")
 	String getRequBody(String interfaceName) throws IOException {
 		return RuntimeData.getMapparampojo().get(interfaceName).getParams();
 	}
 	
-	//把新添加到excel中的接口数据更新到内存中  
+	//把新添加到excel中的接口数据更新到内存中 
+	@ApiOperation(value = "把新添加到excel中的接口数据更新到内存中 ",notes="把新添加到excel中的接口数据更新到内存中",consumes="application/json",produces="application/json",httpMethod="POST")
 	@RequestMapping("ztree/updateNodes")
 	String updateTreeNodes() {
 		String status="ok";
@@ -63,6 +68,7 @@ public class EasyTestController {
 	}
 	
 	//更新某一行的params列单元格内容（请求入参）
+	@ApiOperation(value = "更新某一行的params列单元格内容 ",notes="更新某一行的params列单元格内容",consumes="application/json",produces="application/json",httpMethod="POST")
 	@RequestMapping("requestDto/updateBody")
 	String updateParam(String params,int rowNum,String attrKey) {
 		RuntimeData.getMapparampojo().get(attrKey).setParams(params);//将新的请求参数更新到内存中
@@ -73,7 +79,8 @@ public class EasyTestController {
 			return "修改失败，找不到文件或者文件正在被其他程序使用！";
 	}
 	
-	//批量测试接口
+	//测试接口
+	@ApiOperation(value = "测试接口",notes="测试接口",consumes="application/json",produces="application/json",httpMethod="POST")
 	@RequestMapping("test/testBatchApi")
 	String testApiByBatch(String param) throws ParseException, IOException {
 		StringBuffer bufReturn = new StringBuffer();

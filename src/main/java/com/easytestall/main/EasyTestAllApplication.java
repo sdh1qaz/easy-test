@@ -8,14 +8,14 @@ import org.springframework.context.annotation.ComponentScan;
 import springfox.documentation.swagger2.annotations.EnableSwagger2;
 
 @EnableSwagger2
-@ComponentScan(basePackages = {"com.easytestall.controller","com.easytest.service.impl"})
+@ComponentScan(basePackages = { "com.easytestall.controller", "com.easytest.service.impl" })
 @SpringBootApplication
 public class EasyTestAllApplication {
-	
-    private static final Logger logger = Logger.getLogger(EasyTestAllApplication.class);
-    
- 	public static void main(String[] args) {
- 		logger.info("工具开始启动。。。。。。。。。。。。");
+
+	private static final Logger logger = Logger.getLogger(EasyTestAllApplication.class);
+
+	public static void main(String[] args) {
+		logger.info("工具开始启动。。。。。。。。。。。。");
 		SpringApplication.run(EasyTestAllApplication.class, args);
 	}
 }

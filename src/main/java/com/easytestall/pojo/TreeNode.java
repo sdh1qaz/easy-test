@@ -2,6 +2,7 @@ package com.easytestall.pojo;
 
 /**
  * @ClassName： TreeNode
+ * 
  * @Author: dhSu
  * @Description:
  * @Date:Created in 2018年3月13日
@@ -13,11 +14,7 @@ public class TreeNode {
 	private String name;
 	private boolean open;
 	private String attr;
-	private int rowNum;//节点对应在excel的行数
-	
-	
-
-	
+	private int rowNum;// 节点对应在excel的行数
 
 	public TreeNode(String id, String pid, String name, boolean open, String attr, int rowNum) {
 		super();
@@ -53,7 +50,6 @@ public class TreeNode {
 		this.name = name;
 	}
 
-	
 	public boolean isOpen() {
 		return open;
 	}
@@ -62,8 +58,6 @@ public class TreeNode {
 		this.open = open;
 	}
 
-	
-	
 	public String getAttr() {
 		return attr;
 	}
@@ -71,9 +65,7 @@ public class TreeNode {
 	public void setAttr(String attr) {
 		this.attr = attr;
 	}
-    
-	
-	
+
 	public int getRowNum() {
 		return rowNum;
 	}
@@ -82,27 +74,25 @@ public class TreeNode {
 		this.rowNum = rowNum;
 	}
 
-	
-
 	@Override
 	public String toString() {
 		return "TreeNode [id=" + id + ", pid=" + pid + ", name=" + name + ", open=" + open + ", attr=" + attr
 				+ ", rowNum=" + rowNum + "]";
 	}
 
-	//重写hashcode方法
-	public int hashCode()//重写    
-    {  
-        return id.hashCode() + pid.hashCode() + name.hashCode() ;  
-    }  
-	
-	//重写equals方法
-	public boolean equals(Object obj)//重写   Object不能换  
-    {  
-          if(!(obj instanceof TreeNode))  
-              return false;  
-          TreeNode p=(TreeNode)obj;  
-          return this.id.equals(p.id) && this.pid.equals(p.pid) && this.name.equals(p.name);  
-    } 
-	
+	// 重写hashcode方法
+	public int hashCode()// 重写
+	{
+		return id.hashCode() + pid.hashCode() + name.hashCode();
+	}
+
+	// 重写equals方法
+	public boolean equals(Object obj)// 重写 Object不能换
+	{
+		if (!(obj instanceof TreeNode))
+			return false;
+		TreeNode p = (TreeNode) obj;
+		return this.id.equals(p.id) && this.pid.equals(p.pid) && this.name.equals(p.name);
+	}
+
 }

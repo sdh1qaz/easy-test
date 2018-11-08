@@ -17,16 +17,19 @@ import com.easytestall.util.ExcelUtil;
  */
 
 @Service
-public class LoadDataService implements CommandLineRunner{
+public class LoadDataService implements CommandLineRunner {
 	private static final Logger logger = Logger.getLogger(LoadDataService.class);
+
 	@Override
-    public void run(String... arg0) {
+	public void run(String... arg0) {
 		try {
 			logger.info("启动时加载数据..........");
 			RuntimeData.getListparampojo().addAll(ExcelUtil.getParamPojoList());
-			//加载批次_业务名_接口名 与接口信息的映射
-			for(ParamPojo paramPojo:RuntimeData.getListparampojo()) {
-				RuntimeData.getMapparampojo().put(paramPojo.getBatchNum()+"_"+paramPojo.getBusinessName()+"_"+paramPojo.getLuaName(), paramPojo);
+			// 加载批次_业务名_接口名 与接口信息的映射
+			for (ParamPojo paramPojo : RuntimeData.getListparampojo()) {
+				RuntimeData.getMapparampojo().put(
+						paramPojo.getBatchNum() + "_" + paramPojo.getBusinessName() + "_" + paramPojo.getLuaName(),
+						paramPojo);
 			}
 			RuntimeData.dataIsOk = 0;
 			logger.info("启动时加载数据完毕..........");
@@ -34,6 +37,6 @@ public class LoadDataService implements CommandLineRunner{
 			RuntimeData.dataIsOk = e.getExceptionCode();
 			RuntimeData.notOkReason = e.getMessage();
 		}
-		
+
 	}
 }
